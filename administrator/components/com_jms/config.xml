@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+
+	<fieldset name="general_settings"
+		description="COM_JMS_CONFIG_GENERAL_SETTINGS"
+		label="COM_JMS_CONFIG_GENERAL_SETTINGS" addfieldpath="/administrator/components/com_jms/models/fields">
+	
+		<field
+			name="payment_method"
+			type="list"
+			label="COM_JMS_CFG_PAYMENT_METHOD_LABEL"
+			description="COM_JMS_CFG_PAYMENT_METHOD_DESC"
+			size="4"
+			default=""
+			class="jms_label"
+			multiple="true">
+				<option value="iwl_moneybooker">Moneybooker</option>
+				<option value="iwl_paypal">Paypal</option>
+				<option value="iwl_authnet">Authorize.net</option>
+		</field>
+		
+		<field name="currency_sign" type="text" default="$" label="COM_JMS_CFG_CURRENCY_SIGN_LABEL" description="COM_JMS_CFG_CURRENCY_SIGN_DESC" size="10" />
+		
+		<field name="notification_emails" type="text" default="" label="COM_JMS_CFG_NOTIFICATION_EMAILS_LABEL" description="COM_JMS_CFG_NOTIFICATION_EMAILS_DESC" size="60" />
+		<field name="admin_email_subject" type="text" default="New Subscription" label="COM_JMS_CFG_ADMIN_EMAIL_SUBJECT_LABEL" description="COM_JMS_CFG_ADMIN_EMAIL_SUBJECT_DESC" size="60" />
+		<field name="admin_email_body" type="textarea" default="" label="COM_JMS_CFG_ADMIN_EMAIL_BODY_LABEL" description="COM_JMS_CFG_ADMIN_EMAIL_BODY_DESC" rows="10" cols="70" />
+		
+		<field name="user_email_subject" type="text" default="" label="COM_JMS_CFG_USER_EMAIL_SUBJECT_LABEL" description="COM_JMS_CFG_USER_EMAIL_SUBJECT_DESC" size="60" />
+		<field name="user_email_body" type="textarea" default="" label="COM_JMS_CFG_USER_EMAIL_BODY_LABEL" description="COM_JMS_CFG_USER_EMAIL_BODY_DESC" rows="10" cols="70" />
+		
+		<field name="admin_recurring_email_subject" type="text" default="" label="COM_JMS_CFG_ADMIN_RECURRING_EMAIL_SUBJECT_LABEL" description="COM_JMS_CFG_ADMIN_RECURRING_EMAIL_SUBJECT_DESC" size="60" />
+		<field name="admin_recurring_email_body" type="textarea" default="" label="COM_JMS_CFG_ADMIN_RECURRING_EMAIL_BODY_LABEL" description="COM_JMS_CFG_ADMIN_RECURRING_EMAIL_BODY_DESC" rows="10" cols="70" />
+		
+		<field name="user_recurring_email_subject" type="text" default="" label="COM_JMS_CFG_USER_RECURRING_EMAIL_SUBJECT_LABEL" description="COM_JMS_CFG_USER_RECURRING_EMAIL_SUBJECT_DESC" size="60" />
+		<field name="user_recurring_email_body" type="textarea" default="" label="COM_JMS_CFG_USER_RECURRING_EMAIL_BODY_LABEL" description="COM_JMS_CFG_USER_RECURRING_EMAIL_BODY_DESC" rows="10" cols="70" />
+		
+		<field name="completed_msg" type="textarea" default="" label="COM_JMS_CFG_COMPLETED_MSG_LABEL" description="COM_JMS_CFG_COMPLETED_MSG_DESC" rows="10" cols="70" />
+		<field name="cancel_msg" type="textarea" default="" label="COM_JMS_CFG_CANCEL_MSG_LABEL" description="COM_JMS_CFG_CANCEL_MSG_DESC" rows="10" cols="70" />
+
+	</fieldset>
+	
+	<fieldset name="payment_settings"
+		description="COM_JMS_CONFIG_PAYMENT_SETTINGS"
+		label="COM_JMS_CONFIG_PAYMENT_SETTINGS" addfieldpath="/administrator/components/com_jms/models/fields">
+		
+		<field type="spacer" label="&lt;strong&gt;Paypal&lt;/strong&gt;" />
+		
+		<field name="paypal_id" type="text" default="" label="COM_JMS_CFG_PAYPAL_ID_LABEL" description="COM_JMS_CFG_PAYPAL_ID_DESC" size="50" />
+		
+		<field
+            name="paypal_mode"
+            type="list"
+            label="COM_JMS_CFG_PAYPAL_MODE_LABEL"
+            description="COM_JMS_CFG_PAYPAL_MODE_DESC"
+            class="inputbox"
+            size="1"
+            default="0">
+				<option value="0">Test Mode</option>
+				<option value="1">Live Mode</option>
+        </field>
+		
+		<field
+            name="paypal_currency"
+            type="list"
+            label="COM_JMS_CFG_PAYPAL_CURRENCY_LABEL"
+            description="COM_JMS_CFG_PAYPAL_CURRENCY_DESC"
+            class="inputbox"
+            size="1"
+            default="">
+				<option value="CAD">Canadian Dollars</option>
+				<option value="EUR">Euros</option>
+				<option value="GBP">Pounds Sterling</option>
+				<option value="USD">U.S. Dollars</option>
+				<option value="JPY">Yen</option>
+				<option value="AUD">Australian Dollars</option>
+				<option value="NZD">New Zealand Dollars</option>
+				<option value="CHF">Swiss Francs</option>
+				<option value="HKD">Hong Kong Dollars</option>
+				<option value="SGD">Singapore Dollars</option>
+				<option value="SEK">Swedish Kronor</option>
+				<option value="DKK">Danish Kroner</option>
+				<option value="PLN">Polish Zloty</option>
+				<option value="NOK">Norwegian Kroner</option>
+				<option value="HUF">Hungarian Forint</option>
+				<option value="CZK">Czech Koruna</option>
+        </field> 
+		
+		<field type="spacer" hr="true" />
+		<field type="spacer" label="&lt;strong&gt;MoneyBooker&lt;/strong&gt;" />
+		
+		<field name="mb_merchant_email" type="text" default="" label="COM_JMS_CFG_MB_MERCHANT_EMAIL_LABEL" description="COM_JMS_CFG_MB_MERCHANT_EMAIL_DESC" size="50" />
+		<field name="mb_merchant_id" type="text" default="" label="COM_JMS_CFG_MB_MERCHANT_ID_LABEL" description="COM_JMS_CFG_MB_MERCHANT_ID_DESC" size="50" />
+		<field name="mb_secret_word" type="text" default="" label="COM_JMS_CFG_MB_SECRET_WORD_LABEL" description="COM_JMS_CFG_MB_SECRET_WORD_DESC" size="50" />
+		
+		<field
+            name="mb_currency"
+            type="list"
+            label="COM_JMS_CFG_MB_CURRENCY_LABEL"
+            description="COM_JMS_CFG_MB_CURRENCY_DESC"
+            class="inputbox"
+            size="1"
+            default="">
+				<option value="EUR">Euro</option>
+				<option value="USD">U.S. Dollar</option>		
+				<option value="GBP">British Pound</option>
+				<option value="HKD">Hong Kong Dollar</option>
+				<option value="SGD">Singapore Dollar</option>
+				<option value="JPY">Japanese Yen</option>
+				<option value="CAD">Canadian Dollar</option>
+				<option value="AUD">Australian Dollar</option>
+				<option value="CHF">Swiss Franc</option>
+				<option value="DKK">Danish Krone</option>
+				<option value="SEK">Swedish Krona</option>
+				<option value="NOK">Norwegian Krone</option>
+				<option value="ILS">Israeli Shekel</option>
+				<option value="MYR">Malaysian Ringgit</option>
+				<option value="NZD">New Zealand Dollar</option>
+				<option value="TRY">New Turkish Lira</option>				
+				<option value="TWD">Taiwan Dollar</option>
+				<option value="THB">Thailand Baht</option>		
+				<option value="CZK">Czech Koruna</option>
+				<option value="HUF">Hungarian Forint</option>
+				<option value="SKK">Slovakian Koruna</option>
+				<option value="EEK">Estonian Kroon</option>
+				<option value="BGN">Bulgarian Leva</option>
+				<option value="PLN">Polish Zloty</option>
+				<option value="ISK">Iceland Krona</option>
+				<option value="INR">Indian Rupee</option>
+				<option value="LVL">Latvian Lat</option>
+				<option value="KRW">South-Korean Won</option>
+				<option value="ZAR">South-African Rand</option>
+				<option value="RON">Romanian Leu New</option>
+				<option value="HRK">Croatian kuna</option>
+				<option value="LTL">Lithuanian litas</option>
+        </field> 
+		
+		<field type="spacer" hr="true" />
+		<field type="spacer" label="&lt;strong&gt;Authorize.net&lt;/strong&gt;" />
+		
+		<field
+            name="authnet_mode"
+            type="list"
+            label="COM_JMS_CFG_AUTHORIZE_NET_MODE_LABEL"
+            description="COM_JMS_CFG_AUTHORIZE_NET_MODE_DESC"
+            class="inputbox"
+            size="1"
+            default="0">
+				<option value="0">Test Mode</option>
+				<option value="1">Live Mode</option>
+        </field>
+		
+		<field name="x_login" type="text" default="" label="COM_JMS_CFG_X_MERCHANT_ID_LABEL" description="COM_JMS_CFG_X_MERCHANT_ID_DESC" size="50" />
+		<field name="x_tran_key" type="text" default="" label="COM_JMS_CFG_X_TRANSACTION_KEY_LABEL" description="COM_JMS_CFG_X_TRANSACTION_KEY_DESC" size="50" />
+		
+	</fieldset>
+	
+	<fieldset name="layout_settings"
+		description="COM_JMS_CONFIG_LAYOUT_SETTINGS"
+		label="COM_JMS_CONFIG_LAYOUT_SETTINGS" addfieldpath="/administrator/components/com_jms/models/fields">
+		
+		<field name="show_available_plans_to_guest" type="radio" default="0" label="COM_JMS_CFG_SHOW_PLANS_TO_GUEST_LABEL" description="COM_JMS_CFG_SHOW_PLANS_TO_GUEST_DESC">
+		  <option value="0">No</option>
+		  <option value="1">Yes</option>
+		</field>
+		
+		<field name="login_form_title" type="text" class="inputbox" label="COM_JMS_CFG_LOGIN_FORM_TITLE_LABEL" size="80" description="COM_JMS_CFG_LOGIN_FORM_TITLE_DESC" />
+		<field name="login_form_text" type="textarea" default="" label="COM_JMS_CFG_LOGIN_FORM_TEXT_LABEL" description="COM_JMS_CFG_LOGIN_FORM_TEXT_DESC" rows="10" cols="70" />
+		<field name="subscription_page_title" type="text" class="inputbox" label="COM_JMS_CFG_SUBSCRIPTION_PAGE_TITLE_LABEL" size="80" description="COM_JMS_CFG_SUBSCRIPTION_PAGE_TITLE_DESC" />
+		<field name="subscription_page_text" type="textarea" default="" label="COM_JMS_CFG_SUBSCRIPTION_PAGE_TEXT_LABEL" description="COM_JMS_CFG_SUBSCRIPTION_PAGE_TEXT_DESC" rows="10" cols="70" />
+		<field name="history_page_title" type="text" class="inputbox" label="COM_JMS_CFG_HISTORY_PAGE_TITLE_LABEL" size="80" description="COM_JMS_CFG_HISTORY_PAGE_TITLE_DESC" />
+		<field name="history_page_text" type="textarea" default="" label="COM_JMS_CFG_HISTORY_PAGE_TEXT_LABEL" description="COM_JMS_CFG_HISTORY_PAGE_TEXT_DESC" rows="10" cols="70" />
+		
+	</fieldset>
+	
+	<fieldset name="mailchimp_settings"
+		description="COM_JMS_CONFIG_MAILCHIMP_SETTINGS"
+		label="COM_JMS_CONFIG_MAILCHIMP_SETTINGS" addfieldpath="/administrator/components/com_jms/models/fields">
+		
+		<field name="mc_enable" type="radio" default="0" label="COM_JMS_CFG_ENABLE_MAILCHIMP_LABEL" description="COM_JMS_CFG_ENABLE_MAILCHIMP_LABEL">
+		  <option value="0">No</option>
+		  <option value="1">Yes</option>
+		</field>
+		
+		<field name="mc_api" type="mcapi" class="inputbox" label="COM_JMS_CFG_MC_APIKEY_LABEL" size="50" description="COM_JMS_CFG_MC_APIKEY_LABEL" />
+		
+		<field
+			name="mc_listid"
+			type="listid" class="inputbox"
+			label="COM_JMS_CFG_MC_LISTID_LABEL"
+			size="1"
+			description="COM_JMS_CFG_MC_LISTID_LABEL">
+				<option value="0">Select a List</option>
+		</field>
+		
+		<field name="mc_groupid" type="text" class="inputbox" label="COM_JMS_CFG_MC_GROUPS_LABEL" size="50" description="COM_JMS_CFG_MC_GROUPS_LABEL" />
+		
+	</fieldset>
+	
+	<fieldset name="plugin_settings"
+		description="COM_JMS_CONFIG_PLUGIN_SETTINGS"
+		label="COM_JMS_CONFIG_PLUGIN_SETTINGS" addfieldpath="/administrator/components/com_jms/models/fields">
+		
+		<field name="se" type="list" default="1" label="COM_JMS_CONFIG_ALLOW_USER_AGENT_SKIP_LABEL" description="COM_JMS_CONFIG_ALLOW_USER_AGENT_SKIP_DESC">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</field>
+	
+		<field name="bots" cols="40" rows="10" type="textarea" default="googlebot&lt;br /&gt;mediapartners-google&lt;br /&gt;yahoo-verticalcrawler&lt;br /&gt;yahoo! slurp&lt;br /&gt;yahoo-mm&lt;br /&gt;inktomi&lt;br /&gt;slurp&lt;br /&gt;iltrovatore-setaccio&lt;br /&gt;fast-webcrawler&lt;br /&gt;msnbot&lt;br /&gt;ask jeeves&lt;br /&gt;teoma&lt;br /&gt;scooter&lt;br /&gt;psbot&lt;br /&gt;openbot&lt;br /&gt;ia_archiver&lt;br /&gt;almaden&lt;br /&gt;baiduspider&lt;br /&gt;zyborg&lt;br /&gt;gigabot&lt;br /&gt;naverbot&lt;br /&gt;surveybot&lt;br /&gt;boitho.com-dc&lt;br /&gt;objectssearch&lt;br /&gt;answerbus&lt;br /&gt;nsohu-search" label="COM_JMS_CONFIG_USER_AGENT_TO_SKIP_LABEL" filter="raw" description="COM_JMS_CONFIG_USER_AGENT_TO_SKIP_DESC" />
+				
+		<field name="mark" type="radio" default="1" label="COM_JMS_CONFIG_MARK_SUSCRIBE_ARTICLES_WITH_SIGN_LABEL" description="COM_JMS_CONFIG_MARK_SUSCRIBE_ARTICLES_WITH_SIGN_DESC">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</field>
+				
+		<field name="link" type="radio" default="1" label="COM_JMS_CONFIG_MARK_AS_LINK_LABEL" description="COM_JMS_CONFIG_MARK_AS_LINK_DESC">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</field>
+				
+		<field name="mark_type" type="list" default="2" label="COM_JMS_CONFIG_WHERE_TO_PLACE_SIGN_LABEL" description="COM_JMS_CONFIG_WHERE_TO_PLACE_SIGN_DESC">
+			<option value="0">Title (before text)</option>
+			<option value="1">Title (after text)</option>    	
+			<option value="2">Intro (before text)</option>
+			<option value="3">Intro (after text)</option>
+		</field>
+				
+		<field name="pic" type="text" size="50" default="components/com_jms/images/sign.gif" label="COM_JMS_CONFIG_SUBSCRIPTION_SIGN_LABEL" description="COM_JMS_CONFIG_SUBSCRIPTION_SIGN_DESC" />
+				
+		<field name="pic_text" type="text" size="50" default="" label="COM_JMS_CONFIG_PLACE_TEXT_AFTER_IMG_LABEL" description="COM_JMS_CONFIG_PLACE_TEXT_AFTER_IMG_DESC" />
+				
+		<field name="regpic" type="text" size="50" default="components/com_jms/images/access.gif" label="COM_JMS_CONFIG_SUBSCRIPTION_SIGN_FOR_REGISTERED_USER_LABEL" description="COM_JMS_CONFIG_SUBSCRIPTION_SIGN_FOR_REGISTERED_USER_DESC" />   
+				 
+		<field name="regpic_text" type="text" size="50" default="" label="COM_JMS_CONFIG_PLACE_TEXT_AFTER_IMAGE_FOR_REGISTERED_USER_LABEL" description="COM_JMS_CONFIG_PLACE_TEXT_AFTER_IMAGE_FOR_REGISTERED_USER_DESC" />
+		
+		<field name="subscribe_btn_img" type="text" default="components/com_jms/assets/images/subscribe.gif" size="60" label="COM_JMS_CONFIG_SUBSCRIBE_BUTTON_IMG_LABEL" description="COM_JMS_CONFIG_SUBSCRIBE_BUTTON_IMG_DESC" />
+				
+	</fieldset>
+
+</config>
+

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset>
+			
+		<field name="user_id" type="user" label="COM_JMS_SUBSCR_USER" default="" required="true" />
+		
+		<field name="plan_id"
+			type="sql"
+			default=""
+			size="1"
+			label="COM_JMS_SUBSCR_SUBSCRIPTION"
+			query="SELECT id, name AS title
+				   FROM #__jms_plans
+				   WHERE state = 1
+				   ORDER BY name"
+			key_field="id"
+			value_field="title"
+			required="true"
+			class="inputbox" />
+			
+		<field name="access_limit" type="text" label="COM_JMS_SUBSCR_ACCESS_LIMIT" size="20" default="" class="inputbox"  />
+		<field name="created" type="calendar" label="COM_JMS_SUBSCR_START_TIME" size="30" default="" class="inputbox"  />
+		<field name="expired" type="calendar" label="COM_JMS_SUBSCR_EXPIRED_TIME" size="30" default="" class="inputbox"  />
+		
+		<field name="id" type="hidden" default="0" readonly="true" class="readonly" /> 
+		<field name="checked_out" type="hidden" filter="unset" />
+        <field name="checked_out_time" type="hidden" filter="unset" />
+		
+		<field
+            name="state"
+            type="list"
+            label="JSTATUS"
+            description="JFIELD_PUBLISHED_DESC"
+            class="inputbox"
+            size="1"
+            default="1">
+                <option value="1">JPUBLISHED</option>
+                <option value="0">JUNPUBLISHED</option>
+        </field> 
+
+	</fieldset>
+
+</form>

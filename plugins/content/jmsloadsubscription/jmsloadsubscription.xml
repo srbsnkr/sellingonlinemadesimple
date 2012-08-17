@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="1.7" type="plugin" group="content">
+	<name>Content - Joomla Membership Sites Load Subscriptions</name>
+	<author>Infoweblink</author>
+	<creationDate>Sept 2011</creationDate>
+	<copyright>Copyright (C) 2011 Infoweblink</copyright>
+	<license>Commercial</license>
+	<authorEmail>support@infoweblink.com</authorEmail>
+	<authorUrl>http://joomlasubscriptionsites.com/</authorUrl>
+	<version>2.0.0</version>
+	<description>Content plugin to load subscriptions into an article</description>
+	
+	<files>
+		<filename plugin="jmsloadsubscription">jmsloadsubscription.php</filename>
+		<filename>index.html</filename>
+	</files>
+	
+	<config></config>
+	
+	<languages>
+		<language tag="en-GB">en-GB.plg_content_jmsloadsubscription.ini</language>
+	</languages>
+	
+</extension>

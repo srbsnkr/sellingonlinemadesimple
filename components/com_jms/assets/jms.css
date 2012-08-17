@@ -1,0 +1,36 @@
+.clr {
+	clear: both;
+	}
+.jms20 {
+	width: 19%;
+	}
+.jms30 {
+	width: 29%;
+	}
+.jms40 {
+	width: 39%;
+	}
+.jms50 {
+	width: 49%;
+	}
+.jms60 {
+	width: 59%;
+	}
+.jms70 {
+	width: 69%;
+	}
+.jms80 {
+	width: 79%;
+	}
+	
+.floatleft {
+	float: left;
+	}
+.floatright {
+	float: right;
+	}
+	
+.coupon-table,
+.buton-table {
+	border: 0;
+	}

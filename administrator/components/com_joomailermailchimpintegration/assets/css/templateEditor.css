@@ -1,0 +1,187 @@
+#templateEditor{
+	width: 100%;
+}
+#preview {
+	width: 64%;
+	float:left;
+	overflow: auto;
+	border: 7px double #616161;
+}
+#optionsTitle {
+	float:left;
+	margin-left:10px;
+	width:auto;
+	color: #555555;
+}
+#options {
+	color: #555555;
+	width: 34%;
+	display: block;
+	float: right;
+	background-color: #f1f1f1;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	overflow: hidden;
+}
+
+*:focus {
+	outline: none;
+}
+
+.draggable, .draggable label {
+	cursor: move;
+}
+
+.editable {
+	cursor: pointer;
+}
+
+#phPosition {
+	min-width: 200px;
+}
+#phOptions {
+	display: none;
+}
+ul#placeholders {
+	list-style-type: none;
+	margin: 5px 0;
+	padding: 0 0 0 10px;
+}
+
+#font { 
+	width: 100%;
+}
+#fontCustom {
+    margin-top: 5px;
+}
+
+.colorPreviewBox {
+	border: 1px solid #616161;
+	padding: 2px;
+	width: 40px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+.colorPreview {
+	width: 40px;
+	height: 1.4em;
+	cursor: pointer;
+}
+
+
+.optionsHeader { 
+	background: url(../../assets/images/optionsHeader.png) no-repeat 0 0; 
+	height: 20px;
+	font-size: 12px;
+	font-weight: bold;
+	padding: 6px 0 0 10px;
+	-webkit-border-radius: 0 10px 10px 0;
+	-moz-border-radius: 0 10px 10px 0;
+	border-radius: 0 10px 10px 0;
+}
+.optionsHeader_r {
+	background: url(../../assets/images/optionsHeader_r.png) no-repeat 0 0; 
+	height: 26px;
+	width: 24px;
+	float:right;
+	position:relative;
+	top:-6px;
+	cursor: pointer;
+}
+.optionsHeader_rc {
+	background: url(../../assets/images/optionsHeader_rc.png) no-repeat 0 0; 
+}
+
+.optionsContent {
+	padding: 10px;
+}
+
+.color_samples {
+	float: left;
+}
+
+#uploadLogo {
+	display: inline-block;
+}
+
+#twitterUpload {
+	margin-top: 10px;
+}
+#twitterUpload .qq-upload-button {
+	background: url(../../assets/images/addtw.png) no-repeat 0 0;
+	width:32px;
+	height: 32px;
+	float:left;
+	margin-right: 5px;
+	z-index:3;
+	text-indent: -5000px;
+}
+#facebookUpload .qq-upload-button {
+	background: url(../../assets/images/addfb.png) no-repeat 0 0;
+	width:32px;
+	height: 32px;
+	float:left;
+	margin-right: 5px;
+	z-index:2;
+	text-indent: -5000px;
+}
+#myspaceUpload .qq-upload-button {
+	background: url(../../assets/images/addms.png) no-repeat 0 0;
+	width:32px;
+	height: 32px;
+	text-indent: -5000px;
+}
+#twitterUpload .qq-upload-list, #facebookUpload .qq-upload-list, #myspaceUpload .qq-upload-list {
+	display:none;
+}
+
+.qq-upload-button-hover { cursor: pointer; }
+.qq-upload-button-focus {outline:0px dotted black;}
+
+#logoFilename {
+	display:inline-block;
+	font-size:12px;
+	font-weight:bold;
+	margin-left:10px;
+	position:relative;
+	top:-8px;
+}
+#logoSizeInfo {
+    margin-bottom: 5px;
+}
+
+.JMbuttonOrange, .qq-upload-button {
+    font-size: 14px;
+    margin: 0;
+    padding: 4px 13px;
+    float: none;
+}
+
+.browse{ background-position: 0 0; width: 99px; height: 25px; } 
+.reload{ background-position: 0 -105px; width: 64px; height: 25px; } 
+.shuffle{ background-position: 0 -175px; width: 122px; height: 25px; }
+
+#toggleSelect {
+	background: url(../../assets/images/tick_16.png) no-repeat 0 0; 
+	width: 16px; 
+	height: 16px;
+	display:block;
+	text-indent:-5000px;
+	margin-left: 13px;
+}
+.selNone {
+	background: url(../../assets/images/deselect.png) no-repeat center center !important; 
+}
+.ColorSetInfo {
+	background: url(../../assets/images/link.png) no-repeat 0 0; 
+	width: 16px; 
+	height: 16px;
+	display:block;
+	text-indent:-5000px;
+	margin-left:10px;
+	position:relative;
+	top:-4px !important;
+	display:inline-block
+}

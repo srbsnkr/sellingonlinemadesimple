@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5" type="plugin" group="system" method="upgrade">
+	<name>System - freakedout Mailchimp STS</name>
+	<author>freakedout</author>
+	<creationDate>May 2011</creationDate>
+	<copyright>Copyright (C) 2011 freakedout . All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-3.0.html GNU/GPL</license>
+	<authorEmail>contact@freakedout.de</authorEmail>
+	<authorUrl>http://freakedout.de</authorUrl>
+	<version>1.0</version>
+	<description>Integrates Mailchimp's STS service</description>
+	<languages folder="administrator/language/">
+		<language tag="en-GB">en-GB/en-GB.plg_system_fmsts.ini</language>
+	</languages>
+	<files>
+		<filename plugin="fmsts">fmsts.php</filename>
+		<folder>fmsts</folder>
+	</files>
+	<params>
+		<param name="apiKey" type="text" default="" size="50" label="ApiKey" description="Your mailchimp API key"/>	
+		<param name="secure" type="radio" default="0" label="Use https" description="Use a secure connection to send the mails?">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+	</params>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+			<field name="apiKey" type="text" default="" size="50" label="ApiKey" description="Your mailchimp API key"/>	
+			<field name="secure" type="radio" default="0" label="Use https" description="Use a secure connection to send the mails?">
+				<option value="0">No</option>
+				<option value="1">Yes</option>
+			</field>
+			</fieldset>
+		</fields>
+	</config>
+</install>

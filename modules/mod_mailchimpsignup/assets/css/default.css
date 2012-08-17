@@ -1,0 +1,15 @@
+.mcsignup {
+
+}
+.mcsignup input[type="text"] {
+	margin-bottom: 5px;
+}
+.mcsignup select {
+	margin-bottom: 5px;
+}
+.mcsignup .calendar {
+	position: relative;
+	left:3px;
+	top:4px;
+}
+

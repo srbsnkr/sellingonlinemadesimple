@@ -1,0 +1,324 @@
+/**
+* @version 1.0.0
+* @package RSEvents! 1.0.0
+* @copyright (C) 2009 www.rsjoomla.com
+* @license GPL, http://www.gnu.org/copyleft/gpl.html
+*/
+
+/* standard form style table */
+
+td.componentPreview{
+	width: 500px;
+}
+
+td.components{
+	width: 220px;
+}
+
+table #componentPreview{
+	width: 600px;
+}
+table.componentEdit{
+	background: #FFF;
+	border-bottom: 1px solid #fff;
+	border-right: 1px solid #d8d8d8;
+	width:200px;
+}
+
+td.components a.component{
+	display: block;
+	width:200px;
+	height:20px;
+	border-top: 1px solid #d8d8d8;
+	border-bottom: 1px solid #fff;
+	border-right: 1px solid #d8d8d8;
+	/*background: #FFF;*/
+	padding-left: 25px;
+	padding-top: 2px;
+	background-position: 2px 2px;
+}
+
+td.components a.component:hover{
+	background-position: 3px 3px;
+}
+
+table.componentForm{
+	width:226px;
+	background: #FFF;
+	border-right: 1px solid #d8d8d8;
+}
+
+.wide{
+	width:200px;
+}
+
+
+
+table.thisform {
+	background-color: #F7F8F9;
+	border: solid 1px #d5d5d5;
+	width: 100%;
+	padding: 10px;
+	border-collapse: collapse;
+}
+table.thisform tr.row0 {
+	background-color: #F7F8F9;
+}
+table.thisform tr.row1 {
+	background-color: #eeeeee;
+}
+table.thisform th {
+	font-size: 15px;
+	font-weight:normal;
+	font-variant:small-caps;
+	padding-top: 6px;
+	padding-bottom: 2px;
+	padding-left: 4px;
+	padding-right: 4px;
+	text-align: left;
+	height: 25px;
+	color: #666666;
+	background: url(../images/background.gif);
+	background-repeat: repeat;
+}
+table.thisform td {
+	padding: 3px;
+	text-align: left;
+	border: 1px;
+	border-style:solid;
+	border-bottom-color:#EFEFEF;
+	border-right-color:#EFEFEF;
+	border-left-color:#EFEFEF;
+	border-top-color:#EFEFEF;
+}
+
+table.thisform2 {
+	background-color: #F7F8F9;
+	border: solid 1px #d5d5d5;
+	width: 100%;
+	padding: 5px;
+}
+table.thisform2 td {
+	padding: 5px;
+	text-align: center;
+	border: 1x;
+	border-style: solid;
+	border-bottom-color:#EFEFEF;
+	border-right-color:#EFEFEF;
+	border-left-color:#EFEFEF;
+	border-top-color:#EFEFEF;
+}
+.thisform2 td:hover {
+	background-color: #B5CDE8;
+	border:	1px solid #30559C;
+}
+
+.thisformError{
+	background-color: #FFDFDF;
+}
+
+.thisformOk{
+	background-color: #CFFFDA;
+}
+textarea.hidden {
+	display: none;
+}
+
+span.selected{
+	text-decoration: underline;
+}
+
+div.pagenav{
+	text-align:center;
+	padding: 2px;
+}
+
+div.pagenav span, div.pagenav div.statistics{
+	padding: 2px;
+	font-size:12px;
+}
+div.loading{
+	background: url(../images/load.gif) #FFFFFF no-repeat;
+	background-position: top left;
+	padding: 10px;
+	padding-left:40px;
+}
+
+div.none{
+	background: url(../images/none.gif) #FFFFFF no-repeat;
+	background-position: top left;
+	padding: 10px;
+	padding-left:40px;
+}
+
+#state{
+    top: 5px; 
+    right: 5px; 
+    left: auto; 
+    bottom: auto; 
+    position: fixed;
+    z-index:10;
+    padding-right:20px;
+    margin-top:130px;
+    width: 150px;
+    color: white;
+    font-weight: bold;
+    height: 20px;
+    text-align:right;
+    padding-top:6px;
+}
+
+table.plugins td{
+	border-bottom: 1px solid #d8d8d8;
+}
+
+.icon-48-rsseo
+{
+background-image: url(../images/rsseo_logo.png);
+}
+
+.sitemapContainer{
+	width:100%;
+	border:1px solid #cccccc;
+	height:30px;
+}
+
+.sitemapProgress{
+	background:#56A901;
+	height:30px;
+	line-height:30px;
+	text-align:center;
+	white-space:nowrap;
+}
+
+.pageGradeContainer{
+	padding:0;
+	margin:0;
+	width:80px;
+}
+
+.pageGradeGray{
+	background:#DFDFDF;
+	height:20px;
+	line-height:20px;
+	text-align:center;
+	white-space:nowrap;
+	color: #000000;
+}
+.pageGradeGreen{
+	background:#95EF86;
+	height:20px;
+	line-height:20px;
+	text-align:center;
+	white-space:nowrap;
+	color: #000000;
+}
+.pageGradeOrange{
+	background:#FFB55F;
+	height:20px;
+	line-height:20px;
+	text-align:center;
+	white-space:nowrap;
+	color: #000000;
+}
+.pageGradeRed{
+	background:#FF5F5F;
+	height:20px;
+	line-height:20px;
+	text-align:center;
+	white-space:nowrap;
+	color: #000000;
+}
+
+.icon-32-competitors-32 {
+	background-image:url(../images/competitors-32.png);
+}
+.icon-32-compete {
+	background-image:url(../images/compete.png);
+}
+.icon-32-sitemap-play {
+	background-image:url(../images/sitemap-play.png);
+}
+.icon-32-sitemap-new {
+	background-image:url(../images/sitemap-new.png);
+}
+.icon-32-sitemap-pause {
+	background-image:url(../images/sitemap-pause.png);
+}
+.icon-32-rsseo_ignore {
+	background-image:url(../images/unignore.png);
+}
+.icon-32-rsseo_unignore {
+	background-image:url(../images/ignore.png);
+}
+.icon-32-refresh {
+	background-image:url(../images/refresh.png);
+}
+.icon-32-checking {
+	background-image:url(../images/checking.png);
+}
+
+.colorgreen{
+	font-family: Verdana;
+	font-weight: bold;
+	color: green;
+}
+.colorred{
+	font-family: Verdana;
+	font-weight: bold;
+	color: red;
+}
+.colornone{
+	font-family: Verdana;
+}
+
+#rss_loader {
+	padding-bottom:9px;
+	text-align:center;
+	width:100%;
+}
+
+.rsseo_info{
+	font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+div.current{
+	width:98% !important;
+}
+
+div.current input {
+	float:none !important;
+}
+
+div.current label {
+	float:none !important;
+	display:inline !important;
+}
+
+.rss_options {
+	width: 100%;
+	text-align: center;
+}
+
+.rss_options  img {
+	vertical-align: middle;
+}
+
+.rss_graph {
+	background: none repeat scroll 0 0 #1A87D5;
+	display: inline;
+    float: left;
+    height: 1.1em;
+    margin: 0 0.3em 0 0;
+    width: 1px;
+}
+
+.rss_color {
+	display: inline;
+    float: right;
+    height: 12px;
+    margin-left: 5px;
+    width: 12px;
+}

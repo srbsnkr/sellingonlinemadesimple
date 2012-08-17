@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset addfieldpath="/administrator/components/com_jms/models/fields">
+	
+		<field name="code" type="text" label="COM_JMS_CODE_LABEL" description="COM_JMS_CODE_DESC" size="50" default="" class="inputbox"  />
+		<field name="discount" type="text" label="COM_JMS_DISCOUNT_LABEL" size="10" description="COM_JMS_DISCOUNT_DESC" default="100" class="inputbox"  />
+		
+		<field
+            name="discount_type"
+            type="list"
+            label=""
+            description=""
+            class="inputbox"
+            size="1"
+            default="1">
+            <option value="1">% discount</option>
+            <option value="2">, Gift Certificate</option>
+        </field> 
+		
+		<field name="recurring" type="checkbox" label="COM_JMS_CRECURRING_LABEL" description="COM_JMS_CRECURRING_DESC" default="" class="inputbox" value="1"  />
+		<field name="num_recurring" type="text" label="COM_JMS_CNUMRECURRING_LABEL" description="COM_JMS_CNUMRECURRING_DESC" size="10" default="" class="inputbox"  />
+		<field name="user_ids" type="text" label="COM_JMS_BINDUSER_LABEL" description="COM_JMS_BINDUSER_DESC" size="50" default="" class="inputbox"  />
+				
+		<field
+			name="plan_ids"
+			type="sql"
+			default=""
+			multiple="true"
+			label="COM_JMS_BINDPLAN_LABEL"
+			query="SELECT id, name AS text FROM #__jms_plans"
+			key_field="id"
+			value_field="text"
+			size="10"
+			class="inputbox"
+			description="COM_JMS_BINDPLAN_DESC"
+			/>
+			
+		<field name="limit_time" type="text" label="COM_JMS_CNUMX_LABEL" size="30" description="COM_JMS_CNUMX_DESC" default="" class="inputbox"  />
+		<field name="limit_time_user" type="text" label="COM_JMS_CNUMX_LABEL" description="COM_JMS_CNUMXPERUSER_DESC" size="30" default="" class="inputbox"  />
+		<field name="created" type="calendar" label="COM_JMS_CDATETIME_LABEL" size="30" description="COM_JMS_CDATETIME_DESC" default="" class="inputbox"  />
+		<field name="expired" type="calendar" label="COM_JMS_CEXPIRY_LABEL" size="30" description="COM_JMS_CEXPIRY_DESC" default="" class="inputbox"  />
+
+		<field
+            name="state"
+            type="list"
+            label="JSTATUS"
+            description="JFIELD_PUBLISHED_DESC"
+            class="inputbox"
+            size="1"
+            default="1">
+            <option value="1">JPUBLISHED</option>
+            <option value="0">JUNPUBLISHED</option>
+        </field> 
+
+		<field name="id" type="hidden" default="0" readonly="true" class="readonly" /> 
+        <field name="checked_out" type="hidden" filter="unset" />
+        <field name="checked_out_time" type="hidden" filter="unset" />
+
+	</fieldset>
+
+</form>

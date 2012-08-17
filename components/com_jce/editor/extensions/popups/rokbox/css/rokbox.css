@@ -1,0 +1,12 @@
+#popup_extension_rokbox input[type="text"] {
+	width : 250px;
+}
+
+#popup_extension_rokbox #rokbox_width, #popup_extension_rokbox #rokbox_height {
+	width : 50px;
+	text-align: center;
+}
+
+#popup_extension_rokbox #rokbox_width_unit, #popup_extension_rokbox #rokbox_height_unit {
+	width : auto;
+}

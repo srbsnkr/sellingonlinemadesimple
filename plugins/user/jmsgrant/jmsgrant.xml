@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="1.7" type="plugin" group="user">
+
+	<name>User - Joomla Membership Sites Grant User</name>
+	<author>Infoweblink</author>
+	<creationDate>Sept 2011</creationDate>
+	<copyright>Copyright (C) 2011 Infoweblink</copyright>
+	<license>Commercial</license>
+	<authorEmail>support@infoweblink.com</authorEmail>
+	<authorUrl>http://joomlasubscriptionsites.com/</authorUrl>
+	<version>2.0.0</version>
+	<description>Joomla Membership Sites Plugin to grant plans for users automatically</description>	
+	
+	<files>
+		<filename plugin="jmsgrant">jmsgrant.php</filename>
+	</files>
+	
+	<config></config>
+	
+</extension>
