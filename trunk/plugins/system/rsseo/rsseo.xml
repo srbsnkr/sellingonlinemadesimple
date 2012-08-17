@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5" type="plugin" group="system" method="upgrade">
+	<name>System - RSSeo</name>
+	<author>http://www.rsjoomla.com</author>
+	<creationDate>14/09/2009</creationDate>
+	<license>GNU General Public License</license>
+	<authorEmail>techsupport@rsjoomla.com</authorEmail>
+	<authorUrl>www.rsjoomla.com</authorUrl>
+	<version>1.2.0</version>
+	<description>RSSeo system plugin</description>
+	<files>
+			<filename plugin="rsseo">rsseo.php</filename>
+	</files>
+	
+	<params>
+		<param type="spacer" default="&lt;strong&gt;Google sitemap verification&lt;/strong&gt;" />
+		<param name="enable" type="radio" default="0" label="Enable sitemap verification" description="Enable Google sitemap verification">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="type" type="radio" default="google-site-verification" label="Verification name" description="Select the type of the verification">
+			<option value="google-site-verification">google-site-verification</option>
+			<option value="verify-v1">verify-v1</option>
+		</param>
+		<param name="content" type="text" default="" size="70" label="Content" description="Enter the code that Google provide you." />
+		<param type="spacer" default="&lt;strong&gt;Yahoo! sitemap verification&lt;/strong&gt;" />
+		<param name="enabley" type="radio" default="0" label="Enable sitemap verification" description="Enable Yahoo! sitemap verification">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="contenty" type="text" default="" size="70" label="Content" description="Enter the code that Yahoo! provide you." />
+		<param type="spacer" default="&lt;strong&gt;Bing sitemap verification&lt;/strong&gt;" />
+		<param name="enableb" type="radio" default="0" label="Enable sitemap verification" description="Enable Bing sitemap verification">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="contentb" type="text" default="" size="70" label="Content" description="Enter the code that Bing provide you." />
+		<param type="spacer" default="&lt;strong&gt;Canonicalization&lt;/strong&gt;" />
+		<param name="enablecan" type="radio" default="0" label="Enable canonicalization" description="Enable canonicalization setup">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="domain" type="text" default="" size="30" label="Domain name" description="Make sure that you have entered the right domain. &lt;br/&gt; Example: www.yourdomain.com or yourdomain.com" />
+	</params>
+	
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field type="spacer" default="&lt;strong&gt;Google sitemap verification&lt;/strong&gt;" />
+				<field name="enable" type="radio" default="0" label="Enable sitemap verification" description="Enable Google sitemap verification">
+					<option value="0">JNo</option>
+					<option value="1">JYes</option>
+				</field>
+				<field name="type" type="radio" default="google-site-verification" label="Verification name" description="Select the type of the verification">
+					<option value="google-site-verification">google-site-verification</option>
+					<option value="verify-v1">verify-v1</option>
+				</field>
+				<field name="content" type="text" default="" size="70" label="Content" description="Enter the code that Google provide you." />
+				<field type="spacer" default="&lt;strong&gt;Yahoo! sitemap verification&lt;/strong&gt;" />
+				<field name="enabley" type="radio" default="0" label="Enable sitemap verification" description="Enable Yahoo! sitemap verification">
+					<option value="0">JNo</option>
+					<option value="1">JYes</option>
+				</field>
+				<field name="contenty" type="text" default="" size="70" label="Content" description="Enter the code that Yahoo! provide you." />
+				<field type="spacer" default="&lt;strong&gt;Bing sitemap verification&lt;/strong&gt;" />
+				<field name="enableb" type="radio" default="0" label="Enable sitemap verification" description="Enable Bing sitemap verification">
+					<option value="0">JNo</option>
+					<option value="1">JYes</option>
+				</field>
+				<field name="contentb" type="text" default="" size="70" label="Content" description="Enter the code that Bing provide you." />
+				<field type="spacer" default="&lt;strong&gt;Canonicalization&lt;/strong&gt;" />
+				<field name="enablecan" type="radio" default="0" label="Enable canonicalization" description="Enable canonicalization setup">
+					<option value="0">JNo</option>
+					<option value="1">JYes</option>
+				</field>
+				<field name="domain" type="text" default="" size="30" label="Domain name" description="Make sure that you have entered the right domain. &lt;br/&gt; Example: www.yourdomain.com or yourdomain.com" />
+			</fieldset>
+		</fields>
+	</config>
+	
+</install>

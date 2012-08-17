@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="module" version="1.5.0" method="upgrade" client="administrator">
+	<name>MailChimp Stats</name>
+	<version>1.1</version>
+	<creationDate>2011-04-22</creationDate>
+	<author>freakedout</author>
+	<authorEmail>contact@feakedout.de</authorEmail>
+	<authorUrl>http://www.freakedout.de</authorUrl>
+	<copyright>Copyright (C) 2011 freakedout - All rights reserved.</copyright>
+	<license>GNU/GPL - http://www.gnu.org/licenses/gpl-2.0.html</license>
+	<description>This module shows a quick overview of your campaign statistics.</description>
+	<files>
+		<filename module="mod_mailchimpstats">mod_mailchimpstats.php</filename>
+	</files>
+	<params>
+		<param name="cache" type="list" default="0" label="Caching" description="Select whether to cache the content of this module">
+			<option value="0">Never</option>
+	  	</param>
+	</params>
+</install>

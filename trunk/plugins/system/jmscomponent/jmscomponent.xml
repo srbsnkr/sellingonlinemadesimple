@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="1.7" type="plugin" group="system">
+	<name>System - Joomla Membership Sites - Extensions/Component Restrictions</name>
+	<author>Infoweblink</author>
+	<creationDate>October 2011</creationDate>
+	<license>Commercial</license>
+	<authorEmail>support@infoweblink.com</authorEmail>
+	<authorUrl>http://joomlasubscriptionsites.com/</authorUrl>
+	<version>2.0.0</version>
+	<description>Joomla Resource Subscription Plugin to controll access to component</description>
+	
+	<files>
+		<filename plugin="jmscomponent">jmscomponent.php</filename>
+		<filename>index.html</filename>
+	</files>
+
+	<config>
+		<fields name="params">
+		</fields>
+	</config>
+</extension>

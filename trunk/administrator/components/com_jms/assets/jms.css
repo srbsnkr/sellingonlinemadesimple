@@ -1,0 +1,139 @@
+/**
+ * @version     2.0.2
+ * @package		Joomla
+ * @subpackage	Joomla Membership Sites
+ * @author		Infoweblink
+ * @authorEmail	support@infoweblink.com 
+ * @home page	http://joomlasubscriptionsites.com/ 
+ * @copyright	Copyright (C) 2011. Infoweblink. All rights reserved.
+ * @license		GNU/GPL, see LICENSE.php
+ * This component manages Subscriptions for members to access to Joomla Resource
+ */
+
+div#cpanel {
+	padding: 6px;
+	}
+.cpanel-left {
+	}
+.cpanel-right {
+	background: #fff;
+	border: 1px solid #CCCCCC;
+	}
+
+div.icon-48-configs {
+	background: url('images/icon-48-config.png') no-repeat left;
+}
+div.icon-48-plans {
+	background: url('images/icon-48-plan.png') no-repeat left;
+}
+
+div.icon-48-subscriber {
+	background: url('images/icon-48-subscriber.png') no-repeat left;
+}
+
+div.icon-48-coupon {
+	background: url('images/icon-48-coupon.png') no-repeat left;
+}
+
+div.icon-48-about {
+	background: url('images/icon-48-about.png') no-repeat left;
+}
+
+
+a.icon-16-jms {
+	background: url('images/icon-16-component.png') no-repeat left;
+}
+a.icon-16-configs {
+	background: url('images/icon-16-config.png') no-repeat left;
+}
+a.icon-16-plans {
+	background: url('images/icon-16-plan.png') no-repeat left;
+}
+
+a.icon-16-subscrs {
+	background: url('images/icon-16-subscriber.png') no-repeat left;
+}
+
+a.icon-16-coupons {
+	background: url('images/icon-16-coupon.png') no-repeat left;
+}
+
+a.icon-16-about {
+	background: url('images/icon-16-about.png') no-repeat left;
+}
+
+.jms_h2 {
+	color: #146295;
+	font-size: 20px;
+	margin: 0 0 12px 0;
+	padding: 0;
+	}
+.jms_greentxt {
+	color: #397804;
+	font-weight: bold;
+	}
+.clr {
+	clear: both;
+	}
+.jms_pdesc {
+	padding: 0;
+	margin: 0 0 30px 0;
+	}
+
+ul.adminaboutlist {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	}
+ul.adminaboutlist li {
+	padding: 0;
+	margin: 0 0 6px 0;
+	list-style: none;
+	}
+.adminaboutlist label {
+	width: 200px;
+	display: block;
+	float: left;
+	}
+	
+.modal-pad {
+	padding-left: 20px;
+	}
+.jmsblockshow {
+	border: 0px;
+	padding: 0px;
+	visibility: visible;
+	display: block;
+	margin-left: 20px;
+	}
+.jmsblockhide {
+	visibility: hidden;
+	display: none;
+	}
+.jmsblockshow-pad {
+	border: 1px solid Silver;
+	padding: 10px;
+	}
+
+input[disabled="disabled"] {
+  	background: #F0F0EE;
+}
+
+div.label-pad {
+	width: 340px;
+	display: block
+	}
+div.col-1 {
+	width: 48%;
+	float: left;
+	}
+div.col-2 {
+	float: right;
+	width: 48%;
+	}
+	
+hr {
+	background: #CCCCCC;
+	border: 0;
+	height: 1px;
+	}

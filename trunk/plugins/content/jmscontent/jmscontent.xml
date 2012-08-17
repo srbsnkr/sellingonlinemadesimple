@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="1.7" type="plugin" group="content">
+	<name>Content - Joomla Membership Sites - Content Restrictions</name>
+	<author>Infoweblink</author>
+	<creationDate>October 2011</creationDate>
+	<license>Commercial</license>
+	<authorEmail>support@infoweblink.com</authorEmail>
+	<authorUrl>http://joomlasubscriptionsites.com/</authorUrl>
+	<version>2.0.0</version>
+	<description>Joomla Resource Subscription Plugin to controll access to content</description>
+	
+	<files>
+		<filename plugin="jmscontent">jmscontent.php</filename>
+		<filename>index.html</filename>
+	</files>
+	
+	<config>
+		<fields name="params">
+		</fields>
+	</config>
+</extension>

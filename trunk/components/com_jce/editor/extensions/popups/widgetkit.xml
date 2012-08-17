@@ -1,0 +1,52 @@
+<?xml version="1.0" ?>
+<install version="2.0" type="extension" extension="widgetkit" folder="popups">
+	<name>WF_POPUPS_WIDGETKIT_TITLE</name>
+	<version>2.0.1</version>
+	<creationDate>17 January 2012</creationDate>
+	<author>Ryan Demmer</author>
+	<authorEmail>info@joomlacontenteditor.net</authorEmail>
+	<authorUrl>http://www.joomlacontenteditor.net/</authorUrl>
+	<copyright>Copyright (C) 2006 - 2012 Ryan Demmer. All rights reserved</copyright>
+	<license>GNU/GPL Version 2 - http://www.gnu.org/licenses/gpl-2.0.html</license>
+	<description>WF_POPUPS_WIDGETKIT_DESC</description>
+	<files>
+		<file>widgetkit.php</file>
+		<folder>widgetkit</folder>
+	</files>
+	<params group="widgetkit">
+		<param name="enable" type="list" default="1" label="WF_LABEL_EXTENSION_ENABLE" description="WF_LABEL_EXTENSION_ENABLE_DESC">
+			<option value="1">WF_OPTION_YES</option>
+			<option value="0">WF_OPTION_NO</option>
+		</param>
+		<param name="lightbox_titlePosition" type="list" default="" label="WF_POPUPS_WIDGETKIT_TITLEPOSITION" description="WF_POPUPS_WIDGETKIT_TITLEPOSITION_DESC">
+			<option value="">WF_OPTION_NOT_SET</option>
+			<option value="float">WF_POPUPS_WIDGETKIT_FLOAT</option>
+			<option value="outside">WF_POPUPS_WIDGETKIT_OUTSIDE</option>
+			<option value="inside">WF_POPUPS_WIDGETKIT_INSIDE</option>
+			<option value="over">WF_POPUPS_WIDGETKIT_OVER</option>
+		</param>
+		<param type="text" size="5" default="" name="lightbox_padding" label="WF_POPUPS_WIDGETKIT_PADDING" description="WF_POPUPS_WIDGETKIT_PADDING_DESC" />
+		<param name="lightbox_overlayShow" type="list" default="" label="WF_POPUPS_WIDGETKIT_OVERLAYSHOW" description="WF_POPUPS_WIDGETKIT_OVERLAYSHOW_DESC">
+			<option value="">WF_OPTION_NOT_SET</option>
+			<option value="1">WF_OPTION_YES</option>
+			<option value="0">WF_OPTION_NO</option>
+		</param>
+		<param name="lightbox_transitionIn" type="list" default="" label="WF_POPUPS_WIDGETKIT_TRANSITIONIN" description="WF_POPUPS_WIDGETKIT_TRANSITIONIN_DESC">
+			<option value="">WF_OPTION_NOT_SET</option>
+			<option value="fade">WF_POPUPS_WIDGETKIT_FADE</option>
+			<option value="elastic">WF_POPUPS_WIDGETKIT_ELASTIC</option>
+			<option value="none">WF_OPTION_NONE</option>
+		</param>
+		<param name="lightbox_transitionOut" type="list" default="" label="WF_POPUPS_WIDGETKIT_TRANSITIONOUT" description="WF_POPUPS_WIDGETKIT_TRANSITIONOUT_DESC">
+			<option value="">WF_OPTION_NOT_SET</option>
+			<option value="fade">WF_POPUPS_WIDGETKIT_FADE</option>
+			<option value="elastic">WF_POPUPS_WIDGETKIT_ELASTIC</option>
+			<option value="none">WF_OPTION_NONE</option>
+		</param>
+	</params>
+	<media></media>
+	<plugins>link,imgmanager_ext,mediamanager</plugins>
+	<languages>
+		<language tag="en-GB">en-GB.com_jce_popups_widgetkit.ini</language>
+	</languages>
+</install>

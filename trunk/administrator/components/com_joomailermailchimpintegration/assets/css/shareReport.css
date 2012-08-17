@@ -1,0 +1,167 @@
+/* share report */
+*:focus {
+	outline: none;
+}
+table.noPadding {
+	border-collapse: collapse;
+	display:block;
+}
+table.noPadding td {
+	padding: 0;
+}
+
+#directLink{
+	display:inline-block;
+	font-size:12px;
+	font-weight:bold;
+	margin:2px 10px;
+}
+
+#shareReport {
+	width: 350px;
+}
+
+#shareReportTitle {
+	float: left;
+	margin: 0 0px 0 0;
+	background: #dedede !important;
+	border: 1px solid #CCCCCC !important;
+	-webkit-border-radius: 5px 5px 0 0;
+	-moz-border-radius: 5px 5px 0 0;
+	border-radius: 5px 5px 0 0;
+	border-bottom: 0px solid #dedede !important;
+	z-index: 2;
+	position: relative;
+}
+#shareReportTitle h3 {
+	background: transparent url(../../assets/images/mail_16.png) no-repeat scroll left center;
+	margin: 0 10px;
+	padding: 10px 0px 10px 25px;
+	font-size: 12px;
+	max-width:450px;
+}
+#shareReportTable {
+	padding: 10px;
+	background: #dedede !important;
+	border: 1px solid #CCCCCC !important;
+	-webkit-border-radius: 0 5px 5px 5px;
+	-moz-border-radius: 0 5px 5px 5px;
+	border-radius: 0 5px 5px 5px;
+	float: left;
+	width: 100%;
+	position: relative;
+	top: -1px;
+	z-index: 1;
+}
+#shareReportTable td {
+	padding: 5px;
+}
+
+
+#shareReportOptionsTitle {
+	float: left;
+	margin: 0 0px 0 0;
+	background: #dedede !important;
+	border: 1px solid #CCCCCC !important;
+	-webkit-border-radius: 5px 5px 0 0;
+	-moz-border-radius: 5px 5px 0 0;
+	border-radius: 5px 5px 0 0;
+	border-bottom: 0px solid #dedede !important;
+	z-index: 2;
+	position: relative;
+}
+#shareReportOptionsTitle h3 {
+	background: transparent url(../../assets/images/mail_16.png) no-repeat scroll left center;
+	margin: 0 10px;
+	padding: 10px 0px 10px 25px;
+	font-size: 12px;
+	max-width:450px;
+}
+#shareReportOptionsTable {
+	padding: 10px;
+	background: #dedede !important;
+	border: 1px solid #CCCCCC !important;
+	-webkit-border-radius: 0 5px 5px 5px;
+	-moz-border-radius: 0 5px 5px 5px;
+	border-radius: 0 5px 5px 5px;
+	float: left;
+	width: 96%;
+	position: relative;
+	top: -1px;
+	z-index: 1;
+}
+#shareReportOptionsTable td {
+	padding: 5px;
+}
+.ColorSetInfo {
+	background: url(../../assets/images/link.png) no-repeat 0 0; 
+	width: 16px; 
+	height: 16px;
+	display:block;
+	text-indent:-5000px;
+	margin-left:10px;
+	position:relative;
+	top:-4px !important;
+	display:inline-block
+}
+.refresh {
+	background: url(../../assets/images/autoresponder.png) no-repeat 0 0; 
+	width: 16px; 
+	height: 16px;
+	display:block;
+	text-indent:-5000px;
+	position:relative;
+	top:-4px !important;
+}
+
+.colorPreviewBox {
+	border: 1px solid #616161;
+	padding: 2px;
+	width: 40px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+.colorPreview {
+	width: 40px;
+	height: 1.4em;
+	cursor: pointer;
+}
+
+.color_list {
+	margin-right: 20px;
+	float: left;
+}
+
+#uploadLogo {
+	display:inline-block;
+	float:left;
+	width:50px;
+	margin-left: 20px;
+}
+
+#uploadLogo .qq-upload-button {
+	width: 32px; 
+	height: 32px;
+	display:block;
+	text-indent:-5000px;
+	background: url(../../assets/images/upload.png) no-repeat !important;
+	cursor: pointer;
+}
+#uploadLogo .qq-upload-list {
+	display:none;
+}
+
+
+#previewButton {
+	display: inline-block;
+	padding: 15px 0 0 10px; 
+	margin: auto;
+	background: transparent url(../../assets/images/buttonPreview.png) no-repeat scroll right center;
+	cursor: pointer;
+	width: 115px;
+	height: 33px;
+	border: 0px solid #000000;
+	text-indent: -5000px;
+	outline: none;
+}

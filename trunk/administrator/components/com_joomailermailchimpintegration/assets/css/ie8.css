@@ -1,0 +1,30 @@
+#info dl.tabs {
+	float: none !important;
+}
+#info div.tabContent {
+	float: left !important;
+	width: 275px;
+}
+
+#campaignDetailsTitle {
+ position: absolute;
+}
+#campaignDetailsButtons {
+	position: relative;
+	right:0;
+	float:right;
+	height: 30px;
+}
+
+.calendar {
+
+}
+
+input[type="text"] {
+	
+}
+
+
+#form_container .calendar {
+	top:0;
+}

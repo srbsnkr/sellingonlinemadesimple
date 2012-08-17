@@ -1,0 +1,53 @@
+#initialScreen table,
+#initialScreen tr,
+#initialScreen td {
+	border-collapse: collapse;
+}
+#signupBox ul li {
+	margin: 0 0 15px 0;
+	line-height: 29px;
+}
+#signupBox ul .bullet {
+	padding: 0 0 4px 9px;
+}
+#authTabs div.current dd table {
+	position: relative;
+	left: -37px;
+}
+#authTabs .text_area {
+	height: 19px;
+}
+#info dl.tabs {
+	margin-left: 0 !important;
+	float: none !important;
+}
+#info div.tabContent {
+	float: left !important;
+	position: relative;
+	left: -37px;
+	top: -10px;
+	width: 275px;
+}
+input[type="text"] {
+	border: none;
+}
+.sendOptionsTitle {
+	width: 100%;
+}
+#campaignDetailsCell {
+	width: 315px;
+}
+#campaignDetails {
+	width: 315px;
+}
+.checkboxInfo {
+	display: inline;
+	margin: 0;
+}
+.note {
+	width: 97%;
+}
+#filter_date {
+	
+	
+}

@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<install version="1.5" type="plugin" group="vmcustom" >
+    <name>VMCustom - dropbox</name>
+    <creationDate>March 1 2012</creationDate>
+    <copyright> Banquet Tables Pro </copyright>
+    <license>http://www.gnu.org/licenses/gpl-3.0.html GNU/GPL</license>
+    <version>2.0</version>
+    <description>VMCUSTOM_DROP_BOX_DESC</description>
+    <languages>
+        <language tag="en-GB">en-GB.plg_vmcustom_drop.ini</language>
+     <language tag="en-GB">en-GB.plg_vmcustom_drop.sys.ini</language>
+    </languages>
+    <files>
+        <filename plugin="drop">drop.php</filename>
+    </files>
+    <params addpath="/administrator/components/com_virtuemart/elements">
+        <param type="vmjpluginwarning" />
+<param name="custom_drop_name" type="text"  label="VMCUSTOM_DROP_STRING_NAME" description="VMCUSTOM_DROP_STRING_NAME" />
+<param name="custom_drop" type="textarea"  rows="10" cols="45" label="VMCUSTOM_DROP_INS" description="VMCUSTOM_DROP_STRING_DESC" />
+    </params>
+</install>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5" type="plugin" group="system" method="upgrade">
+    <name>System - joomlamailer MailChimp Signup</name>
+    <author>freakedout</author>
+    <creationDate>2011-06-29</creationDate>
+    <copyright>Copyright (C) 2011 freakedout. All rights reserved.</copyright>
+    <license>http://www.gnu.org/licenses/gpl-3.0.html GNU/GPL</license>
+    <authorEmail>contact@freakedout.de</authorEmail>
+    <authorUrl>www.freakedout.de</authorUrl>
+    <version>1.9</version>
+    <description>Plugin to add MailChimp newsletter signup options to Core, Community Builder and JomSocial registration processes</description>
+    <files>
+	<filename plugin="joomailermailchimpsignup">joomailermailchimpsignup.php</filename>
+	<folder>joomailermailchimpsignup/elements</folder>
+    </files>
+    <languages>
+	<language tag="en-GB">language/en-GB/en-GB.plg_system_joomailermailchimpsignup.ini</language>
+	<language tag="de-DE">language/de-DE/de-DE.plg_system_joomailermailchimpsignup.ini</language>
+	<language tag="es-ES">language/es-ES/es-ES.plg_system_joomailermailchimpsignup.ini</language>
+    </languages>
+
+    <!-- Joomla 1.5 -->
+    <params addpath="/plugins/system/joomailermailchimpsignup/elements">
+	<param name="listid" type="lists" default="" label="Newsletter List" description="Select a list to which new users will be assigned if they choose to receive your newsletter"/>
+	<param name="fields" type="fields" default="" label="Fields" description="Select fields to display"/>
+	<param name="interests" type="interests" default="" label="Interests" description="Select interests to display"/>
+
+	<param name="unsubscribe" type="radio" default="0" label="Unsubscribe onDelete" description="Unsubscribe the user when his account is deleted.">
+	    <option value="1">Yes</option>
+	    <option value="0">No</option>
+	</param>
+
+	<param name="sugar" type="radio" default="0" label="SugarCRM" description="Add the user to SugarCRM on signup. Please make sure you have configured SugarCRM in joomlamailer!">
+	    <option value="1">Yes</option>
+	    <option value="0">No</option>
+	</param>
+	<param name="highrise" type="radio" default="0" label="Highrise" description="Add the user to Highrise on signup. Please make sure you have configured Highrise in joomlamailer!">
+	    <option value="1">Yes</option>
+	    <option value="0">No</option>
+	</param>
+    </params>
+
+    <!-- Joomla 1.6 -->
+    <config> 
+	<fields name="params" addfieldpath="/plugins/system/joomailermailchimpsignup/joomailermailchimpsignup/elements">
+	    <fieldset name="basic">
+		<field name="listid" type="lists" default="" label="Newsletter List" description="Select a list to which new users will be assigned if they choose to receive your newsletter"/>
+		<field name="fields" type="fields" default="" label="Fields" description="Select fields to display"/>
+		<field name="interests" type="interests" default="" label="Interests" description="Select interests to display"/>
+
+		<field name="unsubscribe" type="radio" default="0" label="Unsubscribe onDelete" description="Unsubscribe the user when his account is deleted.">
+		    <option value="1">Yes</option>
+		    <option value="0">No</option>
+		</field>
+
+		<field name="sugar" type="radio" default="0" label="SugarCRM" description="Add the user to SugarCRM on signup. Please make sure you have configured SugarCRM in joomlamailer!">
+		    <option value="1">Yes</option>
+		    <option value="0">No</option>
+		</field>
+		<field name="highrise" type="radio" default="0" label="Highrise" description="Add the user to Highrise on signup. Please make sure you have configured Highrise in joomlamailer!">
+		    <option value="1">Yes</option>
+		    <option value="0">No</option>
+		</field>
+	    </fieldset>
+	</fields>
+    </config>
+</install>

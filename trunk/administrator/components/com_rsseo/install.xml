@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="component" version="1.5" method="upgrade">
+	<name>RSSeo</name>
+	<creationDate>20/12/2010</creationDate>
+	<author>RSJoomla!</author>
+	<authorEmail>support@rsjoomla.com</authorEmail>
+	<authorUrl>www.rsjoomla.com</authorUrl>
+	<copyright>(C) 2007-2009 www.rsjoomla.com</copyright>
+	<license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license> 
+	<version>1.0.0</version>
+	<description>RSSeo! helps you increase the website traffic and optimize it for search engines.</description>
+	<installfile>install.rsseo.php</installfile>
+	<uninstallfile>uninstall.rsseo.php</uninstallfile>
+	<scriptfile>script.rsseo.php</scriptfile>
+	
+	<install>
+		<sql>
+			<file driver="mysql" charset="utf8">install.mysql.utf8.sql</file>
+			<file driver="mysql">install.mysql.nonutf8.sql</file>
+		</sql>
+	</install>
+	
+	<uninstall>
+		<sql>
+			<file driver="mysql" charset="utf8">uninstall.mysql.sql</file>
+		</sql>
+	</uninstall>
+	
+
+	<files folder="site">
+		<filename>rsseo.php</filename>
+		<filename>helper.php</filename>
+		<filename>index.html</filename>
+		<filename>style.css</filename>
+		<filename>metadata.xml</filename>
+	</files>
+
+	<administration>
+		<menu img="../administrator/components/com_rsseo/assets/images/rsseo_small.gif">RSSeo</menu>
+		<submenu>
+			  <menu link="option=com_rsseo">COM_RSSEO_MENU_OVERVIEW</menu>
+			  <menu link="option=com_rsseo&amp;task=listcompetitors">COM_RSSEO_MENU_SEO_PERFORMANCE</menu>
+			  <menu link="option=com_rsseo&amp;task=listpages">COM_RSSEO_MENU_PAGES</menu>
+			  <menu link="option=com_rsseo&amp;task=listredirects">COM_RSSEO_MENU_REDIRECTS</menu>
+			  <menu link="option=com_rsseo&amp;task=sitemap">COM_RSSEO_MENU_SITEMAP</menu>
+			  <menu link="option=com_rsseo&amp;task=crawler">COM_RSSEO_MENU_CRAWLER</menu>
+			  <menu link="option=com_rsseo&amp;task=listkeywords">COM_RSSEO_MENU_KEYWORDS</menu>
+			  <menu link="option=com_rsseo&amp;task=backuprestore">COM_RSSEO_MENU_BACKUPRESTORE</menu>
+			  <menu link="option=com_rsseo&amp;task=analytics">COM_RSSEO_MENU_GAANALYTICS</menu>
+			  <menu link="option=com_rsseo&amp;task=editsettings">COM_RSSEO_MENU_SETTINGS</menu>
+			  <menu link="option=com_rsseo&amp;task=update">COM_RSSEO_MENU_UPDATES</menu>
+			  <menu link="option=com_rsseo&amp;task=checkconnections">COM_RSSEO_MENU_CHECKCONNECTIVITY</menu>
+		</submenu>
+		
+		<files folder="admin">
+			<filename>install.mysql.utf8.sql</filename>
+			<filename>install.mysql.nonutf8.sql</filename>
+			<filename>uninstall.mysql.sql</filename>
+		
+			<filename>index.html</filename>
+			<filename>rsseo.php</filename>
+			<filename>controller.php</filename>
+			<folder>controllers</folder>
+			<folder>assets</folder>
+			<folder>helpers</folder>
+			<folder>views</folder>
+			<folder>models</folder>
+			<folder>tables</folder>
+		</files>
+
+		<languages>
+			<language tag="en-GB">languages/admin/en-GB.com_rsseo.ini</language>
+			<language tag="en-GB">languages/admin/en-GB.com_rsseo.sys.ini</language>
+			<language tag="en-GB">languages/admin/en-GB.com_rsseo.menu.ini</language>
+		</languages>
+
+	</administration>
+</install>

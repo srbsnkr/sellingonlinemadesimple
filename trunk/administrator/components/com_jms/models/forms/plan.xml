@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+
+	<fieldset name="general_settings" description="general_settings">		
+		
+		<field name="name" type="text" label="COM_JMS_PLAN_NAME_LABEL" description="COM_JMS_PLAN_NAME_DESC" size="60" default="" class="inputbox"  />
+		
+		<field
+            name="plan_type"
+            type="list"
+            label="COM_JMS_PLAN_TYPE_LABEL"
+            description="COM_JMS_PLAN_TYPE_DESC"
+            class="inputbox"
+            size="1"
+            default="">
+                <option value="I">One Time</option>
+				<option value="R">Recurring</option>
+        </field>
+		
+		<field name="period" type="text" label="COM_JMS_PLAN_PERIOD_LABEL" size="10" description="COM_JMS_PLAN_PERIOD_DESC" class="inputbox"  />
+		
+		<field
+            name="period_type"
+            type="list"
+            label=""
+            description=""
+            class="inputbox"
+            size="1"
+			onchange="applyUnlimitedPeriod();"
+            default="">
+                <option value="1">Days</option>
+				<option value="2">Weeks</option>
+				<option value="3">Months</option>
+				<option value="4">Years</option>
+				<option value="5">Unlimited</option>
+        </field>
+		
+		<field name="number_of_installments" type="text" label="COM_JMS_PLAN_NUMINSTALLMENTS_LABEL" size="10" description="COM_JMS_PLAN_NUMINSTALLMENTS_DESC" class="inputbox"  />
+		<field name="limit_time" type="text" label="COM_JMS_PLAN_LIMIT_ACCESS_LABEL" size="20" description="COM_JMS_PLAN_LIMIT_ACCESS_DESC" class="inputbox"  />
+		<field name="price" type="text" label="COM_JMS_PLAN_PRICE_LABEL" size="20" description="COM_JMS_PLAN_PRICE_DESC" class="inputbox"  />
+		<field name="discount" type="text" label="COM_JMS_PLAN_DISCOUNT_LABEL" size="20" description="COM_JMS_PLAN_DISCOUNT_DESC" class="inputbox"  />
+		
+		<field
+            name="state"
+            type="list"
+            label="JSTATUS"
+            description="JFIELD_PUBLISHED_DESC"
+            class="inputbox"
+            size="1"
+            default="1">
+            <option value="1">JPUBLISHED</option>
+            <option value="0">JUNPUBLISHED</option>
+        </field>	
+		
+		<field name="order" type="Ordering" class="inputbox" label="COM_JMS_PLAN_ORDER_LABEL" description="COM_JMS_PLAN_ORDER_LABEL" />
+		
+		<field name="description" type="editor" filter="safehtml" label="COM_JMS_PLAN_DESCRIPTION_LABEL" description="COM_JMS_PLAN_DESCRIPTION_DESC" />
+		
+	</fieldset>
+	<fieldset addfieldpath="/administrator/components/com_jms/models/fields">
+				
+		<field name="articles"
+			type="sql"
+			default=""
+			size="20"
+			multiple="true"
+			label="COM_JMS_PLAN_RESTRICT_ARTICLES_LABEL"
+			query="SELECT t.id, CONCAT( (REPLACE(c.path ,'-',' ')), ' / ', t.title ) AS title
+				   FROM #__content AS t
+				   INNER JOIN #__categories AS c ON (t.catid = c.id)
+				   WHERE c.extension = 'com_content'
+				   ORDER BY c.path, t.title"
+			key_field="id"
+			value_field="title"
+			description="COM_JMS_PLAN_RESTRICT_ARTICLES_DESC"
+			class="inputbox">
+				<option value="">------Select Articles------</option>
+		</field>
+			
+		<field name="user_type" type="checkbox" label="COM_JMS_PLAN_USER_INDIVIDUALIZATION_LABEL" size="10" description="COM_JMS_PLAN_USER_INDIVIDUALIZATION_DESC" default="" class="inputbox" value="1" />	
+		<field name="categories" type="category" extension="com_content" label="COM_JMS_PLAN_RESTRICT_CAT_LABEL" description="COM_JMS_PLAN_RESTRICT_CAT_DESC" multiple="multiple" size="20">
+			<option value="">------Select Categories------</option>
+		</field>
+
+	</fieldset>
+	<fieldset addfieldpath="/administrator/components/com_jms/models/fields">
+	
+			<field name="components" type="Extensions" class="inputbox" label="COM_JMS_PLAN_RESTRICT_EXT_LABEL" description="COM_JMS_PLAN_RESTRICT_EXT_DESC" />
+	
+	</fieldset>
+	<fieldset>
+	
+		<field name="grant_new_user" type="radio" default="0" label="COM_JMS_PLAN_GRANT_NEW_USER_LABEL" description="COM_JMS_PLAN_GRANT_NEW_USER_DESC">
+		  <option value="0">No</option>
+		  <option value="1">Yes</option>
+		</field>
+		
+		<field name="grant_old_user" type="radio" default="0" label="COM_JMS_PLAN_GRANT_OLD_USER_LABEL" description="COM_JMS_PLAN_GRANT_OLD_USER_DESC">
+		  <option value="0">No</option>
+		  <option value="1">Yes</option>
+		</field>
+		
+		<field name="completed_msg" type="editor" filter="safehtml" label="COM_JMS_PLAN_COMPLETED_MSG_LABEL" description="COM_JMS_PLAN_COMPLETED_MSG_DESC" />
+		<field name="cancel_msg" type="editor" filter="safehtml" label="COM_JMS_PLAN_CANCEL_MSG_LABEL" description="COM_JMS_PLAN_CANCEL_MSG_DESC" />
+	
+	</fieldset>
+	<fieldset>
+	
+		<field name="autores_enable" type="radio" default="0" label="COM_JMS_PLAN_USE_AWEBER_LABEL" description="COM_JMS_PLAN_USE_AWEBER_DESC">
+		  <option value="0">No</option>
+		  <option value="1">Yes</option>
+		</field>
+	
+		<field name="autores_url" type="text" class="inputbox" label="COM_JMS_PLAN_AUTORES_URL_LABEL" size="100" description="COM_JMS_PLAN_AUTORES_URL_DESC" />
+		<field name="autores_redirect" type="text" class="inputbox" label="COM_JMS_PLAN_AUTORES_REDIRECT_LABEL" size="100" description="COM_JMS_PLAN_AUTORES_REDIRECT_LABEL" />
+		<field name="autores_list" type="text" class="inputbox" label="COM_JMS_PLAN_AUTORES_LIST_LABEL" size="50" description="COM_JMS_PLAN_AUTORES_LIST_DESC" />
+		
+		<field name="crm_enable" type="radio" default="0" label="COM_JMS_PLAN_USE_CRM_LABEL" description="COM_JMS_PLAN_USE_CRM_LABEL">
+		  <option value="0">No</option>
+		  <option value="1">Yes</option>
+		</field>
+				
+		<field name="crm_url" type="text" class="inputbox" label="COM_JMS_PLAN_CRM_URL_LABEL" size="100" description="COM_JMS_PLAN_CRM_URL_LABEL" />
+		<field name="inf_form_xid" type="text" class="inputbox" label="COM_JMS_PLAN_INF_FORM_XID_LABEL" size="50" description="COM_JMS_PLAN_INF_FORM_XID_LABEL" />
+		<field name="inf_form_name" type="text" class="inputbox" label="COM_JMS_PLAN_INF_FORM_NAME_LABEL" size="50" description="COM_JMS_PLAN_INF_FORM_NAME_LABEL" />
+		<field name="infusionsoft_version" type="text" class="inputbox" label="COM_JMS_PLAN_INF_VERSION_LABEL" size="50" description="COM_JMS_PLAN_INF_VERSION_LABEL" />
+		
+		<field name="plan_mc_enable" type="radio" default="0" label="COM_JMS_PLAN_USE_MAILCHIMP_LABEL" description="COM_JMS_PLAN_USE_MAILCHIMP_LABEL">
+		  <option value="0">No</option>
+		  <option value="1">Yes</option>
+		</field>
+		
+		<field name="plan_mc_api" type="mcapi" class="inputbox" label="COM_JMS_PLAN_MC_APIKEY_LABEL" size="50" description="COM_JMS_PLAN_MC_APIKEY_LABEL" />
+		
+		<field
+			name="plan_mc_listid"
+			type="listid"
+			class="inputbox"
+			label="COM_JMS_PLAN_MC_LISTID_LABEL"
+			size="1"
+			description="COM_JMS_PLAN_MC_LISTID_DESC">
+				<option value="0">Select a List</option>
+		</field>
+		
+		<field name="plan_mc_groupid" type="text" class="inputbox" label="COM_JMS_PLAN_MC_GROUPS_LABEL" size="50" description="COM_JMS_PLAN_MC_GROUPS_LABEL" />
+	
+	</fieldset>
+	<fieldset>
+
+		<field name="id" type="hidden" default="0" readonly="true" class="readonly" />
+        <field name="checked_out" type="hidden" filter="unset" />
+        <field name="checked_out_time" type="hidden" filter="unset" />
+
+	</fieldset>
+
+</form>

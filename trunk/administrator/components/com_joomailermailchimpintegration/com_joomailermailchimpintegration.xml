@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install SYSTEM "http://dev.joomla.org/xml/1.5/component-install.dtd">
+<install method="upgrade" type="component" version="1.5.0">
+    <name>JoomailerMailchimpIntegration</name>
+    <version>1.7.2</version>
+    <license>http://www.gnu.org/licenses/gpl-3.0.html GNU/GPL</license>
+    <author>freakedout</author>
+    <authorEmail>contact@freakedout.de</authorEmail>
+    <authorUrl>www.freakedout.de</authorUrl>
+    <copyright>Copyright (C) 2011 freakedout - All rights reserved.</copyright>
+    <creationDate>2011-06-29</creationDate>
+    <description>joomlamailer - MailChimp integration</description>
+
+<installfile>install.joomailermailchimpintegration.php</installfile>
+<uninstallfile>uninstall.joomailermailchimpintegration.php</uninstallfile> 
+
+<files folder="site">
+    <filename>index.html</filename>
+    <filename>joomailermailchimpintegration.php</filename>
+    <filename>controller.php</filename>
+    <folder>assets</folder>
+    <folder>models</folder>
+    <folder>views</folder>
+</files>
+
+<media destination="com_joomailermailchimpintegration" folder="media">
+    <folder>backend</folder>
+</media>
+
+<languages>
+    <language tag="en-GB">language/site/en-GB/en-GB.com_joomailermailchimpintegration.ini</language>
+    <language tag="de-DE">language/site/de-DE/de-DE.com_joomailermailchimpintegration.ini</language>
+    <language tag="es-ES">language/site/es-ES/es-ES.com_joomailermailchimpintegration.ini</language>
+</languages>
+
+<administration>
+        <menu link="option=com_joomailermailchimpintegration&amp;view=main" img="components/com_joomailermailchimpintegration/assets/images/mail_16.png">JM_NEWSLETTER</menu>
+            <submenu>
+            <menu link="option=com_joomailermailchimpintegration&amp;view=joomailermailchimpintegrations" img="components/com_joomailermailchimpintegration/assets/images/lists_16.png">JM_LISTS</menu>
+            <menu link="option=com_joomailermailchimpintegration&amp;view=campaignlist" img="components/com_joomailermailchimpintegration/assets/images/template_16.png">JM_CAMPAIGNS</menu>
+            <menu link="option=com_joomailermailchimpintegration&amp;view=campaigns" img="components/com_joomailermailchimpintegration/assets/images/recent_campaigns_16.png">JM_REPORTS</menu>
+            </submenu >
+
+    <files folder="admin">
+	<filename>index.html</filename>
+	<filename>admin.joomailermailchimpintegration.php</filename>
+	<filename>config.xml</filename>
+	<filename>controller.php</filename>
+	<filename>version.php</filename>
+	<folder>archive</folder>
+	<folder>assets</folder>
+	<folder>controllers</folder>
+	<folder>helpers</folder>
+	<folder>libraries</folder>
+	<folder>models</folder>
+	<folder>templates</folder>
+	<folder>views</folder>
+	<folder>extensions</folder>
+    </files>
+
+   <languages>
+        <language tag="en-GB">language/admin/en-GB/en-GB.com_joomailermailchimpintegration.ini</language>
+        <language tag="en-GB">language/admin/en-GB/en-GB.com_joomailermailchimpintegration.menu.ini</language>
+        <language tag="en-GB">language/admin/en-GB/en-GB.com_joomailermailchimpintegration.sys.ini</language>
+        <language tag="de-DE">language/admin/de-DE/de-DE.com_joomailermailchimpintegration.ini</language>
+        <language tag="de-DE">language/admin/de-DE/de-DE.com_joomailermailchimpintegration.menu.ini</language>
+        <language tag="de-DE">language/admin/de-DE/de-DE.com_joomailermailchimpintegration.sys.ini</language>
+        <language tag="es-ES">language/admin/es-ES/es-ES.com_joomailermailchimpintegration.ini</language>
+        <language tag="es-ES">language/admin/es-ES/es-ES.com_joomailermailchimpintegration.menu.ini</language>
+        <language tag="es-ES">language/admin/es-ES/es-ES.com_joomailermailchimpintegration.sys.ini</language>
+   </languages>
+</administration>
+
+</install>
