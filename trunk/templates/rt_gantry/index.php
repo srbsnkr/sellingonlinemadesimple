@@ -80,17 +80,15 @@ require_once('lib/gantry/gantry.php');
 		<?php /** End Showcase **/ endif; ?>
 		<?php /** Begin Feature **/ if ($gantry->countModules('feature')) : ?>
 		<div id="rt-feature">
-			<div class="rt-container">
-			
-				<?php
-					$app = JFactory::getApplication();
-					$menu = $app->getMenu();
-					if ($menu->getActive() == $menu->getDefault()) { ?>
-						<div class="banner">
-							<img src="templates/rt_gantry/images/banner.png" alt="" />
-						</div>
-					<?php }
-				?>
+			<div class="rt-container">		
+		<?php /** Check homepage**/
+			$app = JFactory::getApplication();
+			$menu = $app->getMenu();
+			if ($menu->getActive() == $menu->getDefault()) { ?>
+				<div class="banner">
+					<img src="templates/rt_gantry/images/banner.png" alt="" />
+				</div>
+		<?php }	?>
 							
 				<?php echo $gantry->displayModules('feature','standard','standard'); ?>
 				<div class="clear"></div>
