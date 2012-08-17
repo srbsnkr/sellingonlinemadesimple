@@ -21,7 +21,7 @@ require_once('lib/gantry/gantry.php');
         <?php
             $gantry->displayHead();
             $gantry->addStyles(array('template.css','joomla.css','style.css','customs.css'));
-        ?>
+        ?>		
     </head>
     <body <?php echo $gantry->displayBodyTag(); ?>>
         <?php /** Begin Drawer **/ if ($gantry->countModules('drawer')) : ?>
@@ -179,6 +179,7 @@ require_once('lib/gantry/gantry.php');
 		<?php /** Begin Analytics **/ if ($gantry->countModules('analytics')) : ?>
 		<?php echo $gantry->displayModules('analytics','basic','basic'); ?>
 		<?php /** End Analytics **/ endif; ?>
+		<script src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template ?>/js/custom.js" type="text/javascript"></script>
 	</body>
 </html>
 <?php
