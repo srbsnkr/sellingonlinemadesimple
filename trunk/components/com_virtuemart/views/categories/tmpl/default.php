@@ -43,7 +43,7 @@ if ($this->category->children ) {
 
 	    // Show the horizontal seperator
 	    if ($iCol == 1 && $iCategory > $categories_per_row) { ?>
-	    <div class="horizontal-separator"></div>
+	    
 	    <?php }
 
 	    // this is an indicator wether a row needs to be opened or not
@@ -66,11 +66,12 @@ if ($this->category->children ) {
 			    <div class="spacer">
 				    <h2>
 					    <a href="<?php echo $caturl ?>" title="<?php echo $category->category_name ?>">
-					    <?php echo $category->category_name ?>
+						<?php echo $category->category_name ?>
 					    <br />
 					    <?php // if ($category->ids) {
-						    echo $category->images[0]->displayMediaThumb("",false);
+						    echo $category->images[0]->displayMediaThumb("",true);
 					    //} ?>
+						 
 					    </a>
 				    </h2>
 			    </div>
