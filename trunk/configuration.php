@@ -6,7 +6,7 @@ class JConfig {
 	public $offline_image = '';
 	public $sitename = 'Ugg';
 	public $editor = 'jce';
-	public $captcha = '0';
+	public $captcha = 'recaptcha';
 	public $list_limit = '20';
 	public $access = '1';
 	public $debug = '0';
@@ -20,7 +20,7 @@ class JConfig {
 	public $live_site = '';
 	public $secret = '9ogYq6AnvNEPHYiW';
 	public $gzip = '0';
-	public $error_reporting = '6135';
+	public $error_reporting = 'default';
 	public $helpurl = 'http://help.joomla.org/proxy/index.php?option=com_help&keyref=Help16:{keyref}';
 	public $ftp_host = '127.0.0.1';
 	public $ftp_port = '21';
@@ -35,8 +35,8 @@ class JConfig {
 	public $fromname = 'ugg';
 	public $sendmail = '/usr/sbin/sendmail';
 	public $smtpauth = '0';
-	public $smtpuser = '';
-	public $smtppass = '';
+	public $smtpuser = 'adminm';
+	public $smtppass = 'ugglife2030';
 	public $smtphost = 'localhost';
 	public $smtpsecure = 'none';
 	public $smtpport = '25';
