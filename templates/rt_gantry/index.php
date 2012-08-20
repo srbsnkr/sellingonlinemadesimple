@@ -154,9 +154,13 @@ require_once('lib/gantry/gantry.php');
 						<div class="border-bot">
 							<div class="txt-copyright">
 								&copy; Copyright Artson UGG Prt Ltd 2012
-							</div>
-							<div class="menu-bottom">
-								<ul>
+							</div>							
+							<?php if ($this->countModules('menu-footer')) : ?>
+								<div class="menu-bottom">
+								<jdoc:include type="modules" name="menu-footer" />
+								</div>
+							<?php endif; ?>
+								<!-- <ul>
 									<li><a href="#">Home</a></li>
 									<li><a href="#">About Us</a></li>
 									<li><a href="#">Site Map</a></li>
@@ -164,8 +168,7 @@ require_once('lib/gantry/gantry.php');
 									<li><a href="#">Disclaimer</a></li>
 									<li><a href="#">Terms & Conditions</a></li>
 									<li><a href="#">Contact</a></li>
-								</ul>
-							</div>
+								</ul> -->							
 						</div>
 					</div>
 				</div>
