@@ -100,6 +100,7 @@
         <position>footer-d</position>
         <position>footer-e</position>
         <position>footer-f</position>
+        <position>menu-footer</position>
         <position>copyright</position>
         <position mobile="true">mobile-drawer</position>
         <position mobile="true">mobile-top</position>
