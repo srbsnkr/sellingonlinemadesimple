@@ -9,7 +9,7 @@
 defined('_JEXEC') or die;
 JHtml::_('behavior.keepalive');
 JHtml::_('behavior.formvalidation');
-JHtml::_('behavior.tooltip');
+#JHtml::_('behavior.tooltip');
  if (isset($this->error)) : ?>
 	<div class="contact-error">
 		<?php echo $this->error; ?>
@@ -19,7 +19,7 @@ JHtml::_('behavior.tooltip');
 <div class="contact-form">
 	<form id="contact-form" action="<?php echo JRoute::_('index.php'); ?>" method="post" class="form-validate">
 		<fieldset>
-			<legend><?php echo JText::_('COM_CONTACT_FORM_LABEL'); ?></legend>
+			<legend><?php #echo JText::_('COM_CONTACT_FORM_LABEL'); ?></legend>
 			<dl>
 				<dt><?php echo $this->form->getLabel('contact_name'); ?></dt>
 				<dd><?php echo $this->form->getInput('contact_name'); ?></dd>
