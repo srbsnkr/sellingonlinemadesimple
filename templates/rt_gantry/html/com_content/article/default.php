@@ -33,8 +33,8 @@ $user		= JFactory::getUser();
 <?php /** Begin Article Title **/ if ($params->get('show_title')) : ?>
 <h2 class="title">
 	<?php if ($params->get('link_titles') && !empty($this->item->readmore_link)) : ?>
-	<a href="<?php echo $this->item->readmore_link; ?>">
-		<?php echo $this->escape($this->item->title); ?></a>
+	<!--<a href="<?php echo $this->item->readmore_link; ?>">-->
+		<?php echo $this->escape($this->item->title); ?><!--</a>-->
 	<?php else : ?>
 		<?php echo $this->escape($this->item->title); ?>
 	<?php endif; ?>

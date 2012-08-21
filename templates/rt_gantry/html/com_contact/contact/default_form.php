@@ -17,6 +17,18 @@ JHtml::_('behavior.formvalidation');
 <?php endif; ?>
 
 <div class="contact-form">
+
+	<div class="show_telephone sub-desc">
+	<?php if ($this->contact->telephone && $this->params->get('show_telephone')) : ?>	
+			<span><strong>Phone: </strong><?php echo nl2br($this->contact->telephone); ?></span>
+	<?php endif; ?>
+	</div>
+	<div class="sub-desc">
+	<?php if ($this->params->get('address_check') > 0) : ?>
+			<span><?php echo nl2br($this->contact->address); ?></span>		
+	<?php endif; ?>
+	</div>
+
 	<form id="contact-form" action="<?php echo JRoute::_('index.php'); ?>" method="post" class="form-validate">
 		<fieldset>
 			<legend><?php #echo JText::_('COM_CONTACT_FORM_LABEL'); ?></legend>
@@ -52,15 +64,15 @@ JHtml::_('behavior.formvalidation');
 			               <?php endforeach;?>
 			          <?php endif ?>
 			     <?php endforeach;?>
-				<dt></dt>
-				<dd><button class="button validate" type="submit"><?php echo JText::_('COM_CONTACT_CONTACT_SEND'); ?></button>
-					<input type="hidden" name="option" value="com_contact" />
-					<input type="hidden" name="task" value="contact.submit" />
-					<input type="hidden" name="return" value="<?php echo $this->return_page;?>" />
-					<input type="hidden" name="id" value="<?php echo $this->contact->slug; ?>" />
-					<?php echo JHtml::_( 'form.token' ); ?>
-				</dd>
 			</dl>
 		</fieldset>
+		<div class="btn-send">
+			<button class="button validate" type="submit"><?php echo JText::_('COM_CONTACT_CONTACT_SEND'); ?></button>
+			<input type="hidden" name="option" value="com_contact" />
+			<input type="hidden" name="task" value="contact.submit" />
+			<input type="hidden" name="return" value="<?php echo $this->return_page;?>" />
+			<input type="hidden" name="id" value="<?php echo $this->contact->slug; ?>" />
+			<?php echo JHtml::_( 'form.token' ); ?>
+		</div>
 	</form>
 </div>

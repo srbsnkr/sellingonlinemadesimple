@@ -14,22 +14,11 @@ $cparams = JComponentHelper::getParams ('com_media');
 <?php if($this->state->{"contact.id"}==9){ ?>
 <?php if ($this->contact->name && $this->params->get('show_name')) : ?>
 		<h2 class="title">
-			<span class="contact-name"><?php echo $this->contact->name; ?></span>
+			<?php echo $this->contact->name; ?>
 		</h2>
 <?php endif;  ?>
-<div class="show_telephone">
-<?php if ($this->contact->telephone && $this->params->get('show_telephone')) : ?>
-	<p>		
-		<span><strong>Phone: </strong><?php echo nl2br($this->contact->telephone); ?></span>
-	</p>
-<?php endif; ?>
-</div>
-<div>
-<?php if ($this->params->get('address_check') > 0) : ?>
-		<span><?php echo nl2br($this->contact->address); ?></span>		
-<?php endif; ?>
-</div>
-<div id="contact-image" style="">
+
+<div id="contact-image" class="image-left-article">
 	<?php echo JHtml::_('image', $this->contact->image, JText::_('COM_CONTACT_IMAGE_DETAILS'), array('align' => 'middle')); ?>
 </div>
 <div>
