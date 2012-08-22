@@ -86,6 +86,11 @@ require_once('lib/gantry/gantry.php');
 				$app = JFactory::getApplication();
 				$menu = $app->getMenu();
 				if ($menu->getActive() == $menu->getDefault()) { ?>
+					<style>
+						#rt-mainbody .component-content{
+							display:none;
+						}
+					</style>
 					<div class="banner">
 						<img src="templates/rt_gantry/images/banner.png" alt="" />
 					</div>
@@ -160,16 +165,7 @@ require_once('lib/gantry/gantry.php');
 									<div class="menu-bottom">
 									<jdoc:include type="modules" name="menu-footer" />
 									</div>
-								<?php endif; ?>
-									<!-- <ul>
-										<li><a href="#">Home</a></li>
-										<li><a href="#">About Us</a></li>
-										<li><a href="#">Site Map</a></li>
-										<li><a href="#">Privacy</a></li>
-										<li><a href="#">Disclaimer</a></li>
-										<li><a href="#">Terms & Conditions</a></li>
-										<li><a href="#">Contact</a></li>
-									</ul> -->							
+								<?php endif; ?>													
 							</div>
 						</div>
 					</div>

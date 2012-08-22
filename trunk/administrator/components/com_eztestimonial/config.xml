@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+	<fields name="params">
+	<fieldset name="basic" label="COM_TESTIMONIALS_BAK_PARA_LBL_BASICSETTINGS">
+		<field name="disableadding" type="list" default="0" label="COM_TESTIMONIALS_BAK_PARA_DISABLEADD" description="COM_TESTIMONIALS_BAK_PARA_TIP_DISABLEADD">
+			<option value="0">COM_TESTIMONIALS_BAK_PARA_NO</option>
+			<option value="1">COM_TESTIMONIALS_BAK_PARA_YES</option>
+		</field>
+		<field name="hideaddbutton" type="list" default="0" label="COM_TESTIMONIALS_BAK_PARA_HIDEBUTTON" description="COM_TESTIMONIALS_BAK_PARA_TIP_HIDEBUTTON">
+			<option value="0">COM_TESTIMONIALS_BAK_PARA_NO</option>
+			<option value="1">COM_TESTIMONIALS_BAK_PARA_YES</option>
+		</field>
+		<field name="disableImg" type="list" default="0" label="COM_TESTIMONIALS_BAK_DISABLEIMG" description="COM_TESTIMONIALS_BAK_DISABLEIMG_DESC">
+			<option value="0">COM_TESTIMONIALS_BAK_PARA_NO</option>
+			<option value="1">COM_TESTIMONIALS_BAK_PARA_YES</option>
+		</field>
+		<field name="sortby" type="list" default="id" label="COM_TESTIMONIALS_BAK_PARA_SORTBY" description="COM_TESTIMONIALS_BAK_PARA_TIP_SORTBY">
+			<option value="id">ID</option>
+			<option value="location">Location</option>
+			<option value="rating">Rating</option>
+		</field>	
+		<field name="sorting" type="list" default="DESC" label="COM_TESTIMONIALS_BAK_PARA_SORTING" description="COM_TESTIMONIALS_BAK_PARA_TIP_SORTING">
+			<option value="DESC">Descending</option>
+			<option value="ASC">Ascending</option>
+		</field>
+		<field name="summerytxtlength" type="text" default="100" label="COM_TESTIMONIALS_BAK_PARA_SUMMERYLEN" description="COM_TESTIMONIALS_BAK_PARA_TIP_SUMMERYLEN" directory="images" filter="" exclude="" stripext="" hide_default="true" hide_none="true" />
+
+		<field name="imagefolder" type="folderlist" default="" label="COM_TESTIMONIALS_BAK_PARA_IMAGEFOLDER" description="COM_TESTIMONIALS_BAK_PARA_TIP_IMGFOLDER" directory="images" filter="" exclude="" stripext="" hide_default="true" hide_none="true" />
+		<field name="imagesize" type="text" default="4" label="COM_TESTIMONIALS_BAK_PARA_IMAGESIZE" description="COM_TESTIMONIALS_BAK_PARA_TIP_IMAGESIZE"/>
+
+		<field name="styletype" type="filelist" default="style.css" directory="components/com_eztestimonial/assets/css" label="COM_TESTIMONIALS_BAK_PARA_STYLE" description="COM_TESTIMONIALS_BAK_PARA_TIP_STYLE" filter="" exclude="formstyle.css" stripext="" hide_default="true" hide_none="true"/>
+		
+		<field name="autoapprove" type="list" default="0" label="COM_TESTIMONIALS_BAK_PARA_AUTOAPPROVE" description="COM_TESTIMONIALS_BAK_PARA_TIP_AUTOAPPROVE">
+			<option value="0">COM_TESTIMONIALS_BAK_PARA_NO</option>
+			<option value="1">COM_TESTIMONIALS_BAK_PARA_YES</option>
+		</field>
+		<field name="whocanpost" type="list" default="0" label="COM_TESTIMONIALS_BAK_PARA_RESTRICTION" description="COM_TESTIMONIALS_BAK_PARA_TIP_RESTRICTION">
+			<option value="0">COM_TESTIMONIALS_BAK_PARA_ANYONEPOST</option>
+			<option value="1">COM_TESTIMONIALS_BAK_PARA_ONLYRGDPOST</option>
+		</field>
+		<field name="spamfilter" type="list" default="0" label="COM_TESTIMONIALS_BAK_PARA_ANTISPAMFILTER" description="COM_TESTIMONIALS_BAK_PARA_TIP_ANTISPAMFILTER">
+			<option value="0">COM_TESTIMONIALS_BAK_PARA_NONE</option>
+			<option value="1">reCAPTCHA</option>
+			<option value="2">Akismet</option>
+		</field>
+		
+		<field name="brandingremoval" type="text" default="" label="COM_TESTIMONIALS_BAK_BRANDING" description="COM_TESTIMONIALS_BAK_BRANDING_DESC" directory="images" filter="" exclude="" stripext="" hide_default="true" hide_none="true" />
+
+	</fieldset>
+	
+	<fieldset name="recaptcha" label="reCAPTCHA" >
+			<field name="republickey" type="text" default="" label="COM_TESTIMONIALS_BAK_PARA_PUBLICKEY" size="50" description="COM_TESTIMONIALS_BAK_PARA_TIP_PUBLICKEY"/>
+			<field name="reprivatekey" type="text" default="" label="COM_TESTIMONIALS_BAK_PARA_PRIVATEKEY" size="50" description="COM_TESTIMONIALS_BAK_PARA_TIP_PRIVATEKEY"/>
+		<field name="restyle" type="list" default="clean" label="COM_TESTIMONIALS_BAK_PARA_LOOKNFEEL" description="COM_TESTIMONIALS_BAK_PARA_TIP_LOOKNFEEL">
+			<option value="clean">COM_TESTIMONIALS_BAK_PARA_CLEAN</option>
+			<option value="blackglass">COM_TESTIMONIALS_BAK_PARA_BLACKGLASS</option>
+			<option value="white">COM_TESTIMONIALS_BAK_PARA_WHITE</option>
+			<option value="red">COM_TESTIMONIALS_BAK_PARA_RED</option>
+		</field>
+	</fieldset>
+	<fieldset name="akismet" label="Akismet" >
+			<field name="akismetKey" type="text" default="" label="COM_TESTIMONIALS_BAK_PARA_AKISMETKEY" size="50" description="COM_TESTIMONIALS_BAK_PARA_TIP_AKISMETKEY"/>
+	</fieldset>
+	<fieldset name="emailsetting" label="COM_TESTIMONIALS_BAK_PARA_LBL_EMAILSETTINGS" >
+		<field name="sendemailtouser" type="radio" default="0" label="COM_TESTIMONIALS_BAK_PARA_SENDEMAILTOUSER" description="COM_TESTIMONIALS_BAK_PARA_TIP_SENDEMAILTOUSER">
+			<option value="0">COM_TESTIMONIALS_BAK_PARA_NO</option>
+			<option value="1">COM_TESTIMONIALS_BAK_PARA_YES</option>
+		</field>
+		<field name="useremailfromnametxt" type="text" default="Your Company" label="COM_TESTIMONIALS_BAK_PARA_YOURCOMPANYNAME" size="50" description="COM_TESTIMONIALS_BAK_PARA_TIP_YOURCOMPANYNAME"/>
+		<field name="useremailfromtxt" type="text" default="noreply@yoursite.com" label="COM_TESTIMONIALS_BAK_PARA_EMAILFROM" size="50" description="COM_TESTIMONIALS_BAK_PARA_TIP_EMAILFROM"/>
+		<field name="useremailsubjecttxt" type="text" default="Thanks for your Testimonial" label="COM_TESTIMONIALS_BAK_PARA_EMAILSUBJECT" size="50" description="COM_TESTIMONIALS_BAK_PARA_TIP_EMAILSUBJECT"/>
+		<field name="useremailtxt" rows="6" cols="50" type="textarea" default="Dear {b}{name}{/b},{br}{br}Thank you for your time, we have received your valuable testimonial. We will review it shortly and publish it as soon as possible.{br}{br}-Yours" label="COM_TESTIMONIALS_BAK_PARA_USEREMAILBODY" description="COM_TESTIMONIALS_BAK_PARA_TIP_USEREMAILBODY"/>
+		<field type="spacer" name="myspacer" hr="true" />
+		
+		<field name="sendemailtoadmin" type="radio" default="0" label="COM_TESTIMONIALS_BAK_PARA_NOTIFYALLADMIN" description="COM_TESTIMONIALS_BAK_PARA_TIP_NOTIFYALLADMIN">
+			<option value="0">COM_TESTIMONIALS_BAK_PARA_NO</option>
+			<option value="1">COM_TESTIMONIALS_BAK_PARA_YES</option>
+		</field>
+		<field name="adminemails" type="text" default="admin@yoursite.com" label="Admin Emails" size="50" description="Enter Admin Emails seperated by comma."/>
+		<field name="adminmailsubjecttxt" type="text" default="New Testimonial Submission (Required Action)" label="COM_TESTIMONIALS_BAK_PARA_ADMINEMAILSUBJECT" size="50" description="COM_TESTIMONIALS_BAK_PARA_TIP_ADMINEMAILSUBJECT"/>
+		<field name="adminmailtxt" rows="6" cols="50" type="textarea" default="You have received a new Testimonial. You may want to review it or publish it.{br}{br}-Testimonial Bot" label="COM_TESTIMONIALS_BAK_PARA_ADMINEMAILBODY" description="COM_TESTIMONIALS_BAK_PARA_TIP_ADMINEMAILBODY"/>
+
+	</fieldset>
+	
+	</fields>
+</config>

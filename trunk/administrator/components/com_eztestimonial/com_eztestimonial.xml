@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install SYSTEM "http://dev.joomla.org/xml/1.5/component-install.dtd">
+<extension type="component" version="1.6.0" method="upgrade">
+        <name>EzTestimonial</name>
+        <creationDate>2012-01-30</creationDate>
+        <author>Saran Chamling</author>
+        <authorEmail>saaraan@gmail.com</authorEmail>
+        <authorUrl>http://www.saaraan.com</authorUrl>
+		<version>1.3</version>
+		<license>http://www.gnu.org/licenses/gpl-3.0-standalone.html</license>
+        <copyright>Copyright (C) 2011 http://www.saaraan.com. All rights reserved.</copyright>
+		<description><![CDATA[Testimonial]]></description>
+		<install>
+			<sql>
+			<file driver="mysql" charset="utf8">install.sql</file>
+			</sql>
+		</install>
+        <files folder="site">
+			<filename>eztestimonial.php</filename>
+			<filename>index.html</filename>
+			<filename>controller.php</filename>
+			<filename>index.html</filename>
+			<folder>tables</folder>
+			<folder>views</folder>
+			<folder>assets</folder>
+			<folder>models</folder>
+        </files>
+		<languages folder="languages">
+			<language tag="en-GB">site/en-GB.com_eztestimonial.ini</language>
+			<language tag="fr-FR">site/fr-FR.com_eztestimonial.ini</language>
+		</languages>
+		
+        <administration>
+                <menu img="components/com_eztestimonial/testimonial.png">Tesimonial</menu>
+                <files folder="admin">
+					<filename>admin.eztestimonial.php</filename>
+					<filename>config.xml</filename>
+					<filename>controller.php</filename>
+					<filename>index.html</filename>
+					<filename>install.sql</filename>
+					<filename>testimonial.png</filename>
+					<folder>tables</folder>
+					<folder>views</folder>
+					<folder>assets</folder>
+					<folder>models</folder>
+              </files> 
+			<languages folder="languages">
+				<language tag="en-GB">admin/en-GB.com_eztestimonial.ini</language>
+				<language tag="fr-FR">admin/fr-FR.com_eztestimonial.ini</language>
+			</languages>
+        </administration>
+</extension>
