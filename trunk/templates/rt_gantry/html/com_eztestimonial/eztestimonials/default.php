@@ -105,7 +105,7 @@ if($hideaddbutton==0)
 
 ?>
 
-<ul id="monialLists" style="padding-left:0px;font-size:12px;">
+<ul id="monialLists">
 
 <?php
 
@@ -157,7 +157,7 @@ for ($i=0, $n=count( $this->items ); $i < $n; $i++)
 
 	$ImageUrl=(strlen($row->image_name)>0)?$ImgUrl.$row->image_name:$defaultImg; //image path to large image
 
-	$imageLink = (strlen($row->image_name)>0)?'<a href="'.$ImageUrl.'" class="modal" ><img src="'.$ImageThumbUrl.'" border="0" width="100" height="100" /></a>':'<img src="'.$ImageThumbUrl.'" border="0" width="100" height="100" />';
+	$imageLink = (strlen($row->image_name)>0)?'<a href="'.$ImageUrl.'" class="modal" ><img src="'.$ImageThumbUrl.'" border="0" width="82" height="110" /></a>':'<img src="'.$ImageThumbUrl.'" border="0" width="100" height="100" />';
 
 	$UserUrlLink=(strlen($row->fullName)>8)?'<a href="'.$row->website.'" rel="nofollow" target="_new">'.$row->fullName.'</a>':$row->fullName; //image path to large image
 	
@@ -173,8 +173,8 @@ for ($i=0, $n=count( $this->items ); $i < $n; $i++)
 
 	#echo '<li><div class="monialItem">'.$imageblock.'<div '.$marginLftZero.' class="topblock"><div class="postername">'.$UserUrlLink.' <span class="location">'.$row->location.'</span> <span class="date" style="font-size:11px;"> '.$addedDate .'</span> <span class="star_ratings">'.$stars.$estars.'</span></div></div><div '.$marginLftZero.' class="message">'.$row->message_long.'</div><div class="authortext">'.$row->aboutauthor.'</div>		
 	#</div>';
-	echo '<li><div class="monialItem">'.$imageblock.'<div '.$marginLftZero.' class="message">'.$row->message_long.'</div>
-			<div class="postername">'.$UserUrlLink.','.$row->aboutauthor.'</div></div>';
+	echo '<li><div class="monialItem">'.$imageblock.'<div class="item-post"><div '.$marginLftZero.' class="message">'.$row->message_long.'</div>
+			<div class="postername">'.$UserUrlLink.','.$row->aboutauthor.'</div></div></div>';
 	
 	$k = 1 - $k;
 
@@ -193,7 +193,7 @@ $cache = & JFactory::getCache();
 </ul>
 
 
-
+<div style="display:none;">
 <?php   echo '<form action="'.JRoute::_("index.php?option=com_eztestimonial").'" method=\"post\">';
 
   echo '<div class="pagination" align="center">'.$this->pagination->getListFooter().'</div>';
@@ -206,4 +206,4 @@ $cache = & JFactory::getCache();
   ';
 
   ?>
-  
+</div>
