@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="Testimonials">
+		<message>
+			<![CDATA[Testimonials]]>
+		</message>
+	</layout>
+	<state>
+		<name>Testimonials</name>
+		<description>Testimonials</description>
+        <url>
+
+        </url>
+		<params>
+
+		</params>
+		<advanced>
+
+		</advanced>
+	</state>
+</metadata>

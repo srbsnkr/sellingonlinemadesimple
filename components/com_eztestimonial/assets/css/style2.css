@@ -1,0 +1,76 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* Testimonial comments */
+#monialLists .monialItem .image {
+	display: block;
+	float: left;
+}
+#monialLists .monialItem .postername {
+	text-transform: capitalize;
+	font-weight: bold;
+	color: #003366;
+}
+#monialLists .monialItem .topblock .postername .location {
+	color: #666666;
+	margin-left: 5px;
+	font-weight: normal;
+	text-transform: capitalize;
+	float: right;
+}
+#monialLists .monialItem .topblock .postername .date {
+	color: #666666;
+	margin-left: 10px;
+	font-style: italic;
+	font-weight: normal;
+}
+#monialLists .monialItem .message {
+	margin-left: 115px;
+	min-height: 60px;
+	display: block;
+	font-size: 12px;
+}
+#monialLists li {
+
+	color: #4C4C4C;
+	list-style: none;
+	padding: 10px;
+	clear: left;
+	margin-bottom: 20px;
+	border-bottom: 1px dotted #CCCCCC;
+}
+#monialLists .monialItem .topblock {
+	margin-left: 115px;
+	background: #DDFFFF;
+	padding: 5px;
+	border: 1px solid #C7F1FE;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	margin-bottom: 10px;
+}
+
+ .addbutton {
+	background: #FFFFCC;
+	width:110px;
+	padding: 5px;
+	border: 1px solid #FFCC66;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	margin-bottom: 10px;
+	text-align:center;
+	font-size: 12px;
+	font-weight: bold;
+	margin-right: 10px;
+}
+ .addbutton a{
+	color:#333333;
+}
+.star_ratings {
+    float: right;
+    margin-left: 0;
+}
+.authortext {
+    font: 11px italic;
+    margin-top: 5px;
+    text-align: right;
+}
