@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="module" version="1.5.0">
+    <name>Last Testimonial</name>
+    <author>Vu Dieu Gio</author>
+    <version>1.0</version>
+    <description>Displays Last Testimonial</description>
+    <files>
+        <filename module="mod_last_testimonial">mod_last_testimonial.php</filename>
+    </files>
+    
+    
+    
+</install>
