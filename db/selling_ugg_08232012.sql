@@ -2,10 +2,10 @@
 -- version 3.4.5
 -- http://www.phpmyadmin.net
 --
--- Host: localhost
--- Generation Time: Aug 22, 2012 at 05:32 AM
--- Server version: 5.5.16
--- PHP Version: 5.3.8
+-- Client: localhost
+-- Généré le : Jeu 23 Août 2012 à 06:55
+-- Version du serveur: 5.5.16
+-- Version de PHP: 5.3.8
 
 SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
@@ -17,13 +17,13 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8 */;
 
 --
--- Database: `selling_ugg`
+-- Base de données: `selling_ugg`
 --
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `fpael_assets`
+-- Structure de la table `fpael_assets`
 --
 
 CREATE TABLE IF NOT EXISTS `fpael_assets` (
@@ -42,7 +42,7 @@ CREATE TABLE IF NOT EXISTS `fpael_assets` (
 ) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=38 ;
 
 --
--- Dumping data for table `fpael_assets`
+-- Contenu de la table `fpael_assets`
 --
 
 INSERT INTO `fpael_assets` (`id`, `parent_id`, `lft`, `rgt`, `level`, `name`, `title`, `rules`) VALUES
@@ -87,7 +87,7 @@ INSERT INTO `fpael_assets` (`id`, `parent_id`, `lft`, `rgt`, `level`, `name`, `t
 -- --------------------------------------------------------
 
 --
--- Table structure for table `fpael_associations`
+-- Structure de la table `fpael_associations`
 --
 
 CREATE TABLE IF NOT EXISTS `fpael_associations` (
@@ -101,7 +101,7 @@ CREATE TABLE IF NOT EXISTS `fpael_associations` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `fpael_banners`
+-- Structure de la table `fpael_banners`
 --
 
 CREATE TABLE IF NOT EXISTS `fpael_banners` (
@@ -145,7 +145,7 @@ CREATE TABLE IF NOT EXISTS `fpael_banners` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `fpael_banner_clients`
+-- Structure de la table `fpael_banner_clients`
 --
 
 CREATE TABLE IF NOT EXISTS `fpael_banner_clients` (
@@ -171,7 +171,7 @@ CREATE TABLE IF NOT EXISTS `fpael_banner_clients` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `fpael_banner_tracks`
+-- Structure de la table `fpael_banner_tracks`
 --
 
 CREATE TABLE IF NOT EXISTS `fpael_banner_tracks` (
@@ -188,7 +188,7 @@ CREATE TABLE IF NOT EXISTS `fpael_banner_tracks` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `fpael_categories`
+-- Structure de la table `fpael_categories`
 --
 
 CREATE TABLE IF NOT EXISTS `fpael_categories` (
@@ -229,7 +229,7 @@ CREATE TABLE IF NOT EXISTS `fpael_categories` (
 ) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=9 ;
 
 --
--- Dumping data for table `fpael_categories`
+-- Contenu de la table `fpael_categories`
 --
 
 INSERT INTO `fpael_categories` (`id`, `asset_id`, `parent_id`, `lft`, `rgt`, `level`, `path`, `extension`, `title`, `alias`, `note`, `description`, `published`, `checked_out`, `checked_out_time`, `access`, `params`, `metadesc`, `metakey`, `metadata`, `created_user_id`, `created_time`, `modified_user_id`, `modified_time`, `hits`, `language`) VALUES
@@ -245,7 +245,7 @@ INSERT INTO `fpael_categories` (`id`, `asset_id`, `parent_id`, `lft`, `rgt`, `le
 -- --------------------------------------------------------
 
 --
--- Table structure for table `fpael_contact_details`
+-- Structure de la table `fpael_contact_details`
 --
 
 CREATE TABLE IF NOT EXISTS `fpael_contact_details` (
@@ -305,7 +305,7 @@ CREATE TABLE IF NOT EXISTS `fpael_contact_details` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `fpael_content`
+-- Structure de la table `fpael_content`
 --
 
 CREATE TABLE IF NOT EXISTS `fpael_content` (
@@ -355,7 +355,7 @@ CREATE TABLE IF NOT EXISTS `fpael_content` (
 ) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=3 ;
 
 --
--- Dumping data for table `fpael_content`
+-- Contenu de la table `fpael_content`
 --
 
 INSERT INTO `fpael_content` (`id`, `asset_id`, `title`, `alias`, `title_alias`, `introtext`, `fulltext`, `state`, `sectionid`, `mask`, `catid`, `created`, `created_by`, `created_by_alias`, `modified`, `modified_by`, `checked_out`, `checked_out_time`, `publish_up`, `publish_down`, `images`, `urls`, `attribs`, `version`, `parentid`, `ordering`, `metakey`, `metadesc`, `access`, `hits`, `metadata`, `featured`, `language`, `xreference`) VALUES
@@ -365,7 +365,7 @@ INSERT INTO `fpael_content` (`id`, `asset_id`, `title`, `alias`, `title_alias`, 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `fpael_content_frontpage`
+-- Structure de la table `fpael_content_frontpage`
 --
 
 CREATE TABLE IF NOT EXISTS `fpael_content_frontpage` (
@@ -375,7 +375,7 @@ CREATE TABLE IF NOT EXISTS `fpael_content_frontpage` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `fpael_content_frontpage`
+-- Contenu de la table `fpael_content_frontpage`
 --
 
 INSERT INTO `fpael_content_frontpage` (`content_id`, `ordering`) VALUES
@@ -384,7 +384,7 @@ INSERT INTO `fpael_content_frontpage` (`content_id`, `ordering`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `fpael_content_rating`
+-- Structure de la table `fpael_content_rating`
 --
 
 CREATE TABLE IF NOT EXISTS `fpael_content_rating` (
@@ -398,7 +398,7 @@ CREATE TABLE IF NOT EXISTS `fpael_content_rating` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `fpael_core_log_searches`
+-- Structure de la table `fpael_core_log_searches`
 --
 
 CREATE TABLE IF NOT EXISTS `fpael_core_log_searches` (
@@ -409,7 +409,7 @@ CREATE TABLE IF NOT EXISTS `fpael_core_log_searches` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `fpael_extensions`
+-- Structure de la table `fpael_extensions`
 --
 
 CREATE TABLE IF NOT EXISTS `fpael_extensions` (
@@ -437,7 +437,7 @@ CREATE TABLE IF NOT EXISTS `fpael_extensions` (
 ) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=10018 ;
 
 --
--- Dumping data for table `fpael_extensions`
+-- Contenu de la table `fpael_extensions`
 --
 
 INSERT INTO `fpael_extensions` (`extension_id`, `name`, `type`, `element`, `folder`, `client_id`, `enabled`, `access`, `protected`, `manifest_cache`, `params`, `custom_data`, `system_data`, `checked_out`, `checked_out_time`, `ordering`, `state`) VALUES
@@ -588,7 +588,7 @@ INSERT INTO `fpael_extensions` (`extension_id`, `name`, `type`, `element`, `fold
 -- --------------------------------------------------------
 
 --
--- Table structure for table `fpael_finder_filters`
+-- Structure de la table `fpael_finder_filters`
 --
 
 CREATE TABLE IF NOT EXISTS `fpael_finder_filters` (
@@ -612,7 +612,7 @@ CREATE TABLE IF NOT EXISTS `fpael_finder_filters` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `fpael_finder_links`
+-- Structure de la table `fpael_finder_links`
 --
 
 CREATE TABLE IF NOT EXISTS `fpael_finder_links` (
@@ -647,7 +647,7 @@ CREATE TABLE IF NOT EXISTS `fpael_finder_links` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `fpael_finder_links_terms0`
+-- Structure de la table `fpael_finder_links_terms0`
 --
 
 CREATE TABLE IF NOT EXISTS `fpael_finder_links_terms0` (
@@ -662,7 +662,7 @@ CREATE TABLE IF NOT EXISTS `fpael_finder_links_terms0` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `fpael_finder_links_terms1`
+-- Structure de la table `fpael_finder_links_terms1`
 --
 
 CREATE TABLE IF NOT EXISTS `fpael_finder_links_terms1` (
@@ -677,7 +677,7 @@ CREATE TABLE IF NOT EXISTS `fpael_finder_links_terms1` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `fpael_finder_links_terms2`
+-- Structure de la table `fpael_finder_links_terms2`
 --
 
 CREATE TABLE IF NOT EXISTS `fpael_finder_links_terms2` (
@@ -692,7 +692,7 @@ CREATE TABLE IF NOT EXISTS `fpael_finder_links_terms2` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `fpael_finder_links_terms3`
+-- Structure de la table `fpael_finder_links_terms3`
 --
 
 CREATE TABLE IF NOT EXISTS `fpael_finder_links_terms3` (
@@ -707,7 +707,7 @@ CREATE TABLE IF NOT EXISTS `fpael_finder_links_terms3` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `fpael_finder_links_terms4`
+-- Structure de la table `fpael_finder_links_terms4`
 --
 
 CREATE TABLE IF NOT EXISTS `fpael_finder_links_terms4` (
@@ -722,7 +722,7 @@ CREATE TABLE IF NOT EXISTS `fpael_finder_links_terms4` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `fpael_finder_links_terms5`
+-- Structure de la table `fpael_finder_links_terms5`
 --
 
 CREATE TABLE IF NOT EXISTS `fpael_finder_links_terms5` (
@@ -737,7 +737,7 @@ CREATE TABLE IF NOT EXISTS `fpael_finder_links_terms5` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `fpael_finder_links_terms6`
+-- Structure de la table `fpael_finder_links_terms6`
 --
 
 CREATE TABLE IF NOT EXISTS `fpael_finder_links_terms6` (
@@ -752,7 +752,7 @@ CREATE TABLE IF NOT EXISTS `fpael_finder_links_terms6` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `fpael_finder_links_terms7`
+-- Structure de la table `fpael_finder_links_terms7`
 --
 
 CREATE TABLE IF NOT EXISTS `fpael_finder_links_terms7` (
@@ -767,7 +767,7 @@ CREATE TABLE IF NOT EXISTS `fpael_finder_links_terms7` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `fpael_finder_links_terms8`
+-- Structure de la table `fpael_finder_links_terms8`
 --
 
 CREATE TABLE IF NOT EXISTS `fpael_finder_links_terms8` (
@@ -782,7 +782,7 @@ CREATE TABLE IF NOT EXISTS `fpael_finder_links_terms8` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `fpael_finder_links_terms9`
+-- Structure de la table `fpael_finder_links_terms9`
 --
 
 CREATE TABLE IF NOT EXISTS `fpael_finder_links_terms9` (
@@ -797,7 +797,7 @@ CREATE TABLE IF NOT EXISTS `fpael_finder_links_terms9` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `fpael_finder_links_termsa`
+-- Structure de la table `fpael_finder_links_termsa`
 --
 
 CREATE TABLE IF NOT EXISTS `fpael_finder_links_termsa` (
@@ -812,7 +812,7 @@ CREATE TABLE IF NOT EXISTS `fpael_finder_links_termsa` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `fpael_finder_links_termsb`
+-- Structure de la table `fpael_finder_links_termsb`
 --
 
 CREATE TABLE IF NOT EXISTS `fpael_finder_links_termsb` (
@@ -827,7 +827,7 @@ CREATE TABLE IF NOT EXISTS `fpael_finder_links_termsb` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `fpael_finder_links_termsc`
+-- Structure de la table `fpael_finder_links_termsc`
 --
 
 CREATE TABLE IF NOT EXISTS `fpael_finder_links_termsc` (
@@ -842,7 +842,7 @@ CREATE TABLE IF NOT EXISTS `fpael_finder_links_termsc` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `fpael_finder_links_termsd`
+-- Structure de la table `fpael_finder_links_termsd`
 --
 
 CREATE TABLE IF NOT EXISTS `fpael_finder_links_termsd` (
@@ -857,7 +857,7 @@ CREATE TABLE IF NOT EXISTS `fpael_finder_links_termsd` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `fpael_finder_links_termse`
+-- Structure de la table `fpael_finder_links_termse`
 --
 
 CREATE TABLE IF NOT EXISTS `fpael_finder_links_termse` (
@@ -872,7 +872,7 @@ CREATE TABLE IF NOT EXISTS `fpael_finder_links_termse` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `fpael_finder_links_termsf`
+-- Structure de la table `fpael_finder_links_termsf`
 --
 
 CREATE TABLE IF NOT EXISTS `fpael_finder_links_termsf` (
@@ -887,7 +887,7 @@ CREATE TABLE IF NOT EXISTS `fpael_finder_links_termsf` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `fpael_finder_taxonomy`
+-- Structure de la table `fpael_finder_taxonomy`
 --
 
 CREATE TABLE IF NOT EXISTS `fpael_finder_taxonomy` (
@@ -906,7 +906,7 @@ CREATE TABLE IF NOT EXISTS `fpael_finder_taxonomy` (
 ) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=2 ;
 
 --
--- Dumping data for table `fpael_finder_taxonomy`
+-- Contenu de la table `fpael_finder_taxonomy`
 --
 
 INSERT INTO `fpael_finder_taxonomy` (`id`, `parent_id`, `title`, `state`, `access`, `ordering`) VALUES
@@ -915,7 +915,7 @@ INSERT INTO `fpael_finder_taxonomy` (`id`, `parent_id`, `title`, `state`, `acces
 -- --------------------------------------------------------
 
 --
--- Table structure for table `fpael_finder_taxonomy_map`
+-- Structure de la table `fpael_finder_taxonomy_map`
 --
 
 CREATE TABLE IF NOT EXISTS `fpael_finder_taxonomy_map` (
@@ -929,7 +929,7 @@ CREATE TABLE IF NOT EXISTS `fpael_finder_taxonomy_map` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `fpael_finder_terms`
+-- Structure de la table `fpael_finder_terms`
 --
 
 CREATE TABLE IF NOT EXISTS `fpael_finder_terms` (
@@ -951,7 +951,7 @@ CREATE TABLE IF NOT EXISTS `fpael_finder_terms` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `fpael_finder_terms_common`
+-- Structure de la table `fpael_finder_terms_common`
 --
 
 CREATE TABLE IF NOT EXISTS `fpael_finder_terms_common` (
@@ -962,7 +962,7 @@ CREATE TABLE IF NOT EXISTS `fpael_finder_terms_common` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `fpael_finder_terms_common`
+-- Contenu de la table `fpael_finder_terms_common`
 --
 
 INSERT INTO `fpael_finder_terms_common` (`term`, `language`) VALUES
@@ -1085,7 +1085,7 @@ INSERT INTO `fpael_finder_terms_common` (`term`, `language`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `fpael_finder_tokens`
+-- Structure de la table `fpael_finder_tokens`
 --
 
 CREATE TABLE IF NOT EXISTS `fpael_finder_tokens` (
@@ -1102,7 +1102,7 @@ CREATE TABLE IF NOT EXISTS `fpael_finder_tokens` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `fpael_finder_tokens_aggregate`
+-- Structure de la table `fpael_finder_tokens_aggregate`
 --
 
 CREATE TABLE IF NOT EXISTS `fpael_finder_tokens_aggregate` (
@@ -1123,7 +1123,7 @@ CREATE TABLE IF NOT EXISTS `fpael_finder_tokens_aggregate` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `fpael_finder_types`
+-- Structure de la table `fpael_finder_types`
 --
 
 CREATE TABLE IF NOT EXISTS `fpael_finder_types` (
@@ -1137,7 +1137,7 @@ CREATE TABLE IF NOT EXISTS `fpael_finder_types` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `fpael_languages`
+-- Structure de la table `fpael_languages`
 --
 
 CREATE TABLE IF NOT EXISTS `fpael_languages` (
@@ -1163,7 +1163,7 @@ CREATE TABLE IF NOT EXISTS `fpael_languages` (
 ) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=2 ;
 
 --
--- Dumping data for table `fpael_languages`
+-- Contenu de la table `fpael_languages`
 --
 
 INSERT INTO `fpael_languages` (`lang_id`, `lang_code`, `title`, `title_native`, `sef`, `image`, `description`, `metakey`, `metadesc`, `sitename`, `published`, `access`, `ordering`) VALUES
@@ -1172,7 +1172,7 @@ INSERT INTO `fpael_languages` (`lang_id`, `lang_code`, `title`, `title_native`, 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `fpael_menu`
+-- Structure de la table `fpael_menu`
 --
 
 CREATE TABLE IF NOT EXISTS `fpael_menu` (
@@ -1212,7 +1212,7 @@ CREATE TABLE IF NOT EXISTS `fpael_menu` (
 ) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=129 ;
 
 --
--- Dumping data for table `fpael_menu`
+-- Contenu de la table `fpael_menu`
 --
 
 INSERT INTO `fpael_menu` (`id`, `menutype`, `title`, `alias`, `note`, `path`, `link`, `type`, `published`, `parent_id`, `level`, `component_id`, `ordering`, `checked_out`, `checked_out_time`, `browserNav`, `access`, `img`, `template_style_id`, `params`, `lft`, `rgt`, `home`, `language`, `client_id`) VALUES
@@ -1265,7 +1265,7 @@ INSERT INTO `fpael_menu` (`id`, `menutype`, `title`, `alias`, `note`, `path`, `l
 -- --------------------------------------------------------
 
 --
--- Table structure for table `fpael_menu_types`
+-- Structure de la table `fpael_menu_types`
 --
 
 CREATE TABLE IF NOT EXISTS `fpael_menu_types` (
@@ -1278,7 +1278,7 @@ CREATE TABLE IF NOT EXISTS `fpael_menu_types` (
 ) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=2 ;
 
 --
--- Dumping data for table `fpael_menu_types`
+-- Contenu de la table `fpael_menu_types`
 --
 
 INSERT INTO `fpael_menu_types` (`id`, `menutype`, `title`, `description`) VALUES
@@ -1287,7 +1287,7 @@ INSERT INTO `fpael_menu_types` (`id`, `menutype`, `title`, `description`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `fpael_messages`
+-- Structure de la table `fpael_messages`
 --
 
 CREATE TABLE IF NOT EXISTS `fpael_messages` (
@@ -1307,7 +1307,7 @@ CREATE TABLE IF NOT EXISTS `fpael_messages` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `fpael_messages_cfg`
+-- Structure de la table `fpael_messages_cfg`
 --
 
 CREATE TABLE IF NOT EXISTS `fpael_messages_cfg` (
@@ -1320,7 +1320,7 @@ CREATE TABLE IF NOT EXISTS `fpael_messages_cfg` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `fpael_modules`
+-- Structure de la table `fpael_modules`
 --
 
 CREATE TABLE IF NOT EXISTS `fpael_modules` (
@@ -1348,7 +1348,7 @@ CREATE TABLE IF NOT EXISTS `fpael_modules` (
 ) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=89 ;
 
 --
--- Dumping data for table `fpael_modules`
+-- Contenu de la table `fpael_modules`
 --
 
 INSERT INTO `fpael_modules` (`id`, `title`, `note`, `content`, `ordering`, `position`, `checked_out`, `checked_out_time`, `publish_up`, `publish_down`, `published`, `module`, `access`, `showtitle`, `params`, `client_id`, `language`) VALUES
@@ -1373,7 +1373,7 @@ INSERT INTO `fpael_modules` (`id`, `title`, `note`, `content`, `ordering`, `posi
 -- --------------------------------------------------------
 
 --
--- Table structure for table `fpael_modules_menu`
+-- Structure de la table `fpael_modules_menu`
 --
 
 CREATE TABLE IF NOT EXISTS `fpael_modules_menu` (
@@ -1383,7 +1383,7 @@ CREATE TABLE IF NOT EXISTS `fpael_modules_menu` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `fpael_modules_menu`
+-- Contenu de la table `fpael_modules_menu`
 --
 
 INSERT INTO `fpael_modules_menu` (`moduleid`, `menuid`) VALUES
@@ -1409,7 +1409,7 @@ INSERT INTO `fpael_modules_menu` (`moduleid`, `menuid`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `fpael_newsfeeds`
+-- Structure de la table `fpael_newsfeeds`
 --
 
 CREATE TABLE IF NOT EXISTS `fpael_newsfeeds` (
@@ -1453,7 +1453,7 @@ CREATE TABLE IF NOT EXISTS `fpael_newsfeeds` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `fpael_overrider`
+-- Structure de la table `fpael_overrider`
 --
 
 CREATE TABLE IF NOT EXISTS `fpael_overrider` (
@@ -1467,7 +1467,7 @@ CREATE TABLE IF NOT EXISTS `fpael_overrider` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `fpael_redirect_links`
+-- Structure de la table `fpael_redirect_links`
 --
 
 CREATE TABLE IF NOT EXISTS `fpael_redirect_links` (
@@ -1486,7 +1486,7 @@ CREATE TABLE IF NOT EXISTS `fpael_redirect_links` (
 ) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=2 ;
 
 --
--- Dumping data for table `fpael_redirect_links`
+-- Contenu de la table `fpael_redirect_links`
 --
 
 INSERT INTO `fpael_redirect_links` (`id`, `old_url`, `new_url`, `referer`, `comment`, `hits`, `published`, `created_date`, `modified_date`) VALUES
@@ -1495,7 +1495,7 @@ INSERT INTO `fpael_redirect_links` (`id`, `old_url`, `new_url`, `referer`, `comm
 -- --------------------------------------------------------
 
 --
--- Table structure for table `fpael_rsseo_competitors`
+-- Structure de la table `fpael_rsseo_competitors`
 --
 
 CREATE TABLE IF NOT EXISTS `fpael_rsseo_competitors` (
@@ -1521,7 +1521,7 @@ CREATE TABLE IF NOT EXISTS `fpael_rsseo_competitors` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `fpael_rsseo_competitors_history`
+-- Structure de la table `fpael_rsseo_competitors_history`
 --
 
 CREATE TABLE IF NOT EXISTS `fpael_rsseo_competitors_history` (
@@ -1543,7 +1543,7 @@ CREATE TABLE IF NOT EXISTS `fpael_rsseo_competitors_history` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `fpael_rsseo_config`
+-- Structure de la table `fpael_rsseo_config`
 --
 
 CREATE TABLE IF NOT EXISTS `fpael_rsseo_config` (
@@ -1554,7 +1554,7 @@ CREATE TABLE IF NOT EXISTS `fpael_rsseo_config` (
 ) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=56 ;
 
 --
--- Dumping data for table `fpael_rsseo_config`
+-- Contenu de la table `fpael_rsseo_config`
 --
 
 INSERT INTO `fpael_rsseo_config` (`IdConfig`, `ConfigName`, `ConfigValue`) VALUES
@@ -1616,7 +1616,7 @@ INSERT INTO `fpael_rsseo_config` (`IdConfig`, `ConfigName`, `ConfigValue`) VALUE
 -- --------------------------------------------------------
 
 --
--- Table structure for table `fpael_rsseo_keywords`
+-- Structure de la table `fpael_rsseo_keywords`
 --
 
 CREATE TABLE IF NOT EXISTS `fpael_rsseo_keywords` (
@@ -1638,7 +1638,7 @@ CREATE TABLE IF NOT EXISTS `fpael_rsseo_keywords` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `fpael_rsseo_pages`
+-- Structure de la table `fpael_rsseo_pages`
 --
 
 CREATE TABLE IF NOT EXISTS `fpael_rsseo_pages` (
@@ -1663,7 +1663,7 @@ CREATE TABLE IF NOT EXISTS `fpael_rsseo_pages` (
 ) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=2 ;
 
 --
--- Dumping data for table `fpael_rsseo_pages`
+-- Contenu de la table `fpael_rsseo_pages`
 --
 
 INSERT INTO `fpael_rsseo_pages` (`IdPage`, `PageURL`, `PageTitle`, `PageKeywords`, `PageKeywordsDensity`, `PageDescription`, `PageSitemap`, `PageInSitemap`, `PageCrawled`, `DatePageCrawled`, `PageModified`, `PageLevel`, `PageGrade`, `params`, `densityparams`, `published`) VALUES
@@ -1672,7 +1672,7 @@ INSERT INTO `fpael_rsseo_pages` (`IdPage`, `PageURL`, `PageTitle`, `PageKeywords
 -- --------------------------------------------------------
 
 --
--- Table structure for table `fpael_rsseo_redirects`
+-- Structure de la table `fpael_rsseo_redirects`
 --
 
 CREATE TABLE IF NOT EXISTS `fpael_rsseo_redirects` (
@@ -1687,7 +1687,7 @@ CREATE TABLE IF NOT EXISTS `fpael_rsseo_redirects` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `fpael_schemas`
+-- Structure de la table `fpael_schemas`
 --
 
 CREATE TABLE IF NOT EXISTS `fpael_schemas` (
@@ -1697,7 +1697,7 @@ CREATE TABLE IF NOT EXISTS `fpael_schemas` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `fpael_schemas`
+-- Contenu de la table `fpael_schemas`
 --
 
 INSERT INTO `fpael_schemas` (`extension_id`, `version_id`) VALUES
@@ -1706,7 +1706,7 @@ INSERT INTO `fpael_schemas` (`extension_id`, `version_id`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `fpael_session`
+-- Structure de la table `fpael_session`
 --
 
 CREATE TABLE IF NOT EXISTS `fpael_session` (
@@ -1725,7 +1725,7 @@ CREATE TABLE IF NOT EXISTS `fpael_session` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `fpael_session`
+-- Contenu de la table `fpael_session`
 --
 
 INSERT INTO `fpael_session` (`session_id`, `client_id`, `guest`, `time`, `data`, `userid`, `username`, `usertype`) VALUES
@@ -1735,7 +1735,7 @@ INSERT INTO `fpael_session` (`session_id`, `client_id`, `guest`, `time`, `data`,
 -- --------------------------------------------------------
 
 --
--- Table structure for table `fpael_template_styles`
+-- Structure de la table `fpael_template_styles`
 --
 
 CREATE TABLE IF NOT EXISTS `fpael_template_styles` (
@@ -1751,7 +1751,7 @@ CREATE TABLE IF NOT EXISTS `fpael_template_styles` (
 ) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=8 ;
 
 --
--- Dumping data for table `fpael_template_styles`
+-- Contenu de la table `fpael_template_styles`
 --
 
 INSERT INTO `fpael_template_styles` (`id`, `template`, `client_id`, `home`, `title`, `params`) VALUES
@@ -1765,7 +1765,7 @@ INSERT INTO `fpael_template_styles` (`id`, `template`, `client_id`, `home`, `tit
 -- --------------------------------------------------------
 
 --
--- Table structure for table `fpael_updates`
+-- Structure de la table `fpael_updates`
 --
 
 CREATE TABLE IF NOT EXISTS `fpael_updates` (
@@ -1787,7 +1787,7 @@ CREATE TABLE IF NOT EXISTS `fpael_updates` (
 ) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COMMENT='Available Updates' AUTO_INCREMENT=3 ;
 
 --
--- Dumping data for table `fpael_updates`
+-- Contenu de la table `fpael_updates`
 --
 
 INSERT INTO `fpael_updates` (`update_id`, `update_site_id`, `extension_id`, `categoryid`, `name`, `description`, `element`, `type`, `folder`, `client_id`, `version`, `data`, `detailsurl`, `infourl`) VALUES
@@ -1796,7 +1796,7 @@ INSERT INTO `fpael_updates` (`update_id`, `update_site_id`, `extension_id`, `cat
 -- --------------------------------------------------------
 
 --
--- Table structure for table `fpael_update_categories`
+-- Structure de la table `fpael_update_categories`
 --
 
 CREATE TABLE IF NOT EXISTS `fpael_update_categories` (
@@ -1811,7 +1811,7 @@ CREATE TABLE IF NOT EXISTS `fpael_update_categories` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `fpael_update_sites`
+-- Structure de la table `fpael_update_sites`
 --
 
 CREATE TABLE IF NOT EXISTS `fpael_update_sites` (
@@ -1825,7 +1825,7 @@ CREATE TABLE IF NOT EXISTS `fpael_update_sites` (
 ) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COMMENT='Update Sites' AUTO_INCREMENT=4 ;
 
 --
--- Dumping data for table `fpael_update_sites`
+-- Contenu de la table `fpael_update_sites`
 --
 
 INSERT INTO `fpael_update_sites` (`update_site_id`, `name`, `type`, `location`, `enabled`, `last_check_timestamp`) VALUES
@@ -1836,7 +1836,7 @@ INSERT INTO `fpael_update_sites` (`update_site_id`, `name`, `type`, `location`, 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `fpael_update_sites_extensions`
+-- Structure de la table `fpael_update_sites_extensions`
 --
 
 CREATE TABLE IF NOT EXISTS `fpael_update_sites_extensions` (
@@ -1846,7 +1846,7 @@ CREATE TABLE IF NOT EXISTS `fpael_update_sites_extensions` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 COMMENT='Links extensions to update sites';
 
 --
--- Dumping data for table `fpael_update_sites_extensions`
+-- Contenu de la table `fpael_update_sites_extensions`
 --
 
 INSERT INTO `fpael_update_sites_extensions` (`update_site_id`, `extension_id`) VALUES
@@ -1857,7 +1857,7 @@ INSERT INTO `fpael_update_sites_extensions` (`update_site_id`, `extension_id`) V
 -- --------------------------------------------------------
 
 --
--- Table structure for table `fpael_usergroups`
+-- Structure de la table `fpael_usergroups`
 --
 
 CREATE TABLE IF NOT EXISTS `fpael_usergroups` (
@@ -1874,7 +1874,7 @@ CREATE TABLE IF NOT EXISTS `fpael_usergroups` (
 ) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=9 ;
 
 --
--- Dumping data for table `fpael_usergroups`
+-- Contenu de la table `fpael_usergroups`
 --
 
 INSERT INTO `fpael_usergroups` (`id`, `parent_id`, `lft`, `rgt`, `title`) VALUES
@@ -1890,7 +1890,7 @@ INSERT INTO `fpael_usergroups` (`id`, `parent_id`, `lft`, `rgt`, `title`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `fpael_users`
+-- Structure de la table `fpael_users`
 --
 
 CREATE TABLE IF NOT EXISTS `fpael_users` (
@@ -1917,7 +1917,7 @@ CREATE TABLE IF NOT EXISTS `fpael_users` (
 ) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=43 ;
 
 --
--- Dumping data for table `fpael_users`
+-- Contenu de la table `fpael_users`
 --
 
 INSERT INTO `fpael_users` (`id`, `name`, `username`, `email`, `password`, `usertype`, `block`, `sendEmail`, `registerDate`, `lastvisitDate`, `activation`, `params`, `lastResetTime`, `resetCount`) VALUES
@@ -1926,7 +1926,7 @@ INSERT INTO `fpael_users` (`id`, `name`, `username`, `email`, `password`, `usert
 -- --------------------------------------------------------
 
 --
--- Table structure for table `fpael_user_notes`
+-- Structure de la table `fpael_user_notes`
 --
 
 CREATE TABLE IF NOT EXISTS `fpael_user_notes` (
@@ -1953,7 +1953,7 @@ CREATE TABLE IF NOT EXISTS `fpael_user_notes` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `fpael_user_profiles`
+-- Structure de la table `fpael_user_profiles`
 --
 
 CREATE TABLE IF NOT EXISTS `fpael_user_profiles` (
@@ -1967,7 +1967,7 @@ CREATE TABLE IF NOT EXISTS `fpael_user_profiles` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `fpael_user_usergroup_map`
+-- Structure de la table `fpael_user_usergroup_map`
 --
 
 CREATE TABLE IF NOT EXISTS `fpael_user_usergroup_map` (
@@ -1977,7 +1977,7 @@ CREATE TABLE IF NOT EXISTS `fpael_user_usergroup_map` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `fpael_user_usergroup_map`
+-- Contenu de la table `fpael_user_usergroup_map`
 --
 
 INSERT INTO `fpael_user_usergroup_map` (`user_id`, `group_id`) VALUES
@@ -1986,7 +1986,7 @@ INSERT INTO `fpael_user_usergroup_map` (`user_id`, `group_id`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `fpael_viewlevels`
+-- Structure de la table `fpael_viewlevels`
 --
 
 CREATE TABLE IF NOT EXISTS `fpael_viewlevels` (
@@ -1999,7 +1999,7 @@ CREATE TABLE IF NOT EXISTS `fpael_viewlevels` (
 ) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=4 ;
 
 --
--- Dumping data for table `fpael_viewlevels`
+-- Contenu de la table `fpael_viewlevels`
 --
 
 INSERT INTO `fpael_viewlevels` (`id`, `title`, `ordering`, `rules`) VALUES
@@ -2010,7 +2010,7 @@ INSERT INTO `fpael_viewlevels` (`id`, `title`, `ordering`, `rules`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `fpael_weblinks`
+-- Structure de la table `fpael_weblinks`
 --
 
 CREATE TABLE IF NOT EXISTS `fpael_weblinks` (
@@ -2058,7 +2058,7 @@ CREATE TABLE IF NOT EXISTS `fpael_weblinks` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `fpael_wf_profiles`
+-- Structure de la table `fpael_wf_profiles`
 --
 
 CREATE TABLE IF NOT EXISTS `fpael_wf_profiles` (
@@ -2080,7 +2080,7 @@ CREATE TABLE IF NOT EXISTS `fpael_wf_profiles` (
 ) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=3 ;
 
 --
--- Dumping data for table `fpael_wf_profiles`
+-- Contenu de la table `fpael_wf_profiles`
 --
 
 INSERT INTO `fpael_wf_profiles` (`id`, `name`, `description`, `users`, `types`, `components`, `area`, `rows`, `plugins`, `published`, `ordering`, `checked_out`, `checked_out_time`, `params`) VALUES
@@ -2090,7 +2090,7 @@ INSERT INTO `fpael_wf_profiles` (`id`, `name`, `description`, `users`, `types`, 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `m4pmt_ak_acl`
+-- Structure de la table `m4pmt_ak_acl`
 --
 
 CREATE TABLE IF NOT EXISTS `m4pmt_ak_acl` (
@@ -2102,7 +2102,7 @@ CREATE TABLE IF NOT EXISTS `m4pmt_ak_acl` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `m4pmt_ak_profiles`
+-- Structure de la table `m4pmt_ak_profiles`
 --
 
 CREATE TABLE IF NOT EXISTS `m4pmt_ak_profiles` (
@@ -2114,7 +2114,7 @@ CREATE TABLE IF NOT EXISTS `m4pmt_ak_profiles` (
 ) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=2 ;
 
 --
--- Dumping data for table `m4pmt_ak_profiles`
+-- Contenu de la table `m4pmt_ak_profiles`
 --
 
 INSERT INTO `m4pmt_ak_profiles` (`id`, `description`, `configuration`, `filters`) VALUES
@@ -2123,7 +2123,7 @@ INSERT INTO `m4pmt_ak_profiles` (`id`, `description`, `configuration`, `filters`
 -- --------------------------------------------------------
 
 --
--- Table structure for table `m4pmt_ak_stats`
+-- Structure de la table `m4pmt_ak_stats`
 --
 
 CREATE TABLE IF NOT EXISTS `m4pmt_ak_stats` (
@@ -2149,7 +2149,7 @@ CREATE TABLE IF NOT EXISTS `m4pmt_ak_stats` (
 ) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=3 ;
 
 --
--- Dumping data for table `m4pmt_ak_stats`
+-- Contenu de la table `m4pmt_ak_stats`
 --
 
 INSERT INTO `m4pmt_ak_stats` (`id`, `description`, `comment`, `backupstart`, `backupend`, `status`, `origin`, `type`, `profile_id`, `archivename`, `absolute_path`, `multipart`, `tag`, `filesexist`, `remote_filename`, `total_size`) VALUES
@@ -2159,7 +2159,7 @@ INSERT INTO `m4pmt_ak_stats` (`id`, `description`, `comment`, `backupstart`, `ba
 -- --------------------------------------------------------
 
 --
--- Table structure for table `m4pmt_ak_storage`
+-- Structure de la table `m4pmt_ak_storage`
 --
 
 CREATE TABLE IF NOT EXISTS `m4pmt_ak_storage` (
@@ -2172,7 +2172,7 @@ CREATE TABLE IF NOT EXISTS `m4pmt_ak_storage` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `m4pmt_assets`
+-- Structure de la table `m4pmt_assets`
 --
 
 CREATE TABLE IF NOT EXISTS `m4pmt_assets` (
@@ -2191,7 +2191,7 @@ CREATE TABLE IF NOT EXISTS `m4pmt_assets` (
 ) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=193 ;
 
 --
--- Dumping data for table `m4pmt_assets`
+-- Contenu de la table `m4pmt_assets`
 --
 
 INSERT INTO `m4pmt_assets` (`id`, `parent_id`, `lft`, `rgt`, `level`, `name`, `title`, `rules`) VALUES
@@ -2379,7 +2379,7 @@ INSERT INTO `m4pmt_assets` (`id`, `parent_id`, `lft`, `rgt`, `level`, `name`, `t
 -- --------------------------------------------------------
 
 --
--- Table structure for table `m4pmt_associations`
+-- Structure de la table `m4pmt_associations`
 --
 
 CREATE TABLE IF NOT EXISTS `m4pmt_associations` (
@@ -2393,7 +2393,7 @@ CREATE TABLE IF NOT EXISTS `m4pmt_associations` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `m4pmt_banners`
+-- Structure de la table `m4pmt_banners`
 --
 
 CREATE TABLE IF NOT EXISTS `m4pmt_banners` (
@@ -2435,7 +2435,7 @@ CREATE TABLE IF NOT EXISTS `m4pmt_banners` (
 ) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=5 ;
 
 --
--- Dumping data for table `m4pmt_banners`
+-- Contenu de la table `m4pmt_banners`
 --
 
 INSERT INTO `m4pmt_banners` (`id`, `cid`, `type`, `name`, `alias`, `imptotal`, `impmade`, `clicks`, `clickurl`, `state`, `catid`, `description`, `custombannercode`, `sticky`, `ordering`, `metakey`, `params`, `own_prefix`, `metakey_prefix`, `purchase_type`, `track_clicks`, `track_impressions`, `checked_out`, `checked_out_time`, `publish_up`, `publish_down`, `reset`, `created`, `language`) VALUES
@@ -2446,7 +2446,7 @@ INSERT INTO `m4pmt_banners` (`id`, `cid`, `type`, `name`, `alias`, `imptotal`, `
 -- --------------------------------------------------------
 
 --
--- Table structure for table `m4pmt_banner_clients`
+-- Structure de la table `m4pmt_banner_clients`
 --
 
 CREATE TABLE IF NOT EXISTS `m4pmt_banner_clients` (
@@ -2470,7 +2470,7 @@ CREATE TABLE IF NOT EXISTS `m4pmt_banner_clients` (
 ) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=4 ;
 
 --
--- Dumping data for table `m4pmt_banner_clients`
+-- Contenu de la table `m4pmt_banner_clients`
 --
 
 INSERT INTO `m4pmt_banner_clients` (`id`, `name`, `contact`, `email`, `extrainfo`, `state`, `checked_out`, `checked_out_time`, `metakey`, `own_prefix`, `metakey_prefix`, `purchase_type`, `track_clicks`, `track_impressions`) VALUES
@@ -2481,7 +2481,7 @@ INSERT INTO `m4pmt_banner_clients` (`id`, `name`, `contact`, `email`, `extrainfo
 -- --------------------------------------------------------
 
 --
--- Table structure for table `m4pmt_banner_tracks`
+-- Structure de la table `m4pmt_banner_tracks`
 --
 
 CREATE TABLE IF NOT EXISTS `m4pmt_banner_tracks` (
@@ -2498,7 +2498,7 @@ CREATE TABLE IF NOT EXISTS `m4pmt_banner_tracks` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `m4pmt_categories`
+-- Structure de la table `m4pmt_categories`
 --
 
 CREATE TABLE IF NOT EXISTS `m4pmt_categories` (
@@ -2539,7 +2539,7 @@ CREATE TABLE IF NOT EXISTS `m4pmt_categories` (
 ) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=79 ;
 
 --
--- Dumping data for table `m4pmt_categories`
+-- Contenu de la table `m4pmt_categories`
 --
 
 INSERT INTO `m4pmt_categories` (`id`, `asset_id`, `parent_id`, `lft`, `rgt`, `level`, `path`, `extension`, `title`, `alias`, `note`, `description`, `published`, `checked_out`, `checked_out_time`, `access`, `params`, `metadesc`, `metakey`, `metadata`, `created_user_id`, `created_time`, `modified_user_id`, `modified_time`, `hits`, `language`) VALUES
@@ -2616,7 +2616,7 @@ INSERT INTO `m4pmt_categories` (`id`, `asset_id`, `parent_id`, `lft`, `rgt`, `le
 -- --------------------------------------------------------
 
 --
--- Table structure for table `m4pmt_contact_details`
+-- Structure de la table `m4pmt_contact_details`
 --
 
 CREATE TABLE IF NOT EXISTS `m4pmt_contact_details` (
@@ -2674,7 +2674,7 @@ CREATE TABLE IF NOT EXISTS `m4pmt_contact_details` (
 ) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=10 ;
 
 --
--- Dumping data for table `m4pmt_contact_details`
+-- Contenu de la table `m4pmt_contact_details`
 --
 
 INSERT INTO `m4pmt_contact_details` (`id`, `name`, `alias`, `con_position`, `address`, `suburb`, `state`, `country`, `postcode`, `telephone`, `fax`, `misc`, `image`, `imagepos`, `email_to`, `default_con`, `published`, `checked_out`, `checked_out_time`, `ordering`, `params`, `user_id`, `catid`, `access`, `mobile`, `webpage`, `sortname1`, `sortname2`, `sortname3`, `language`, `created`, `created_by`, `created_by_alias`, `modified`, `modified_by`, `metakey`, `metadesc`, `metadata`, `featured`, `xreference`, `publish_up`, `publish_down`) VALUES
@@ -2691,7 +2691,7 @@ INSERT INTO `m4pmt_contact_details` (`id`, `name`, `alias`, `con_position`, `add
 -- --------------------------------------------------------
 
 --
--- Table structure for table `m4pmt_content`
+-- Structure de la table `m4pmt_content`
 --
 
 CREATE TABLE IF NOT EXISTS `m4pmt_content` (
@@ -2741,7 +2741,7 @@ CREATE TABLE IF NOT EXISTS `m4pmt_content` (
 ) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=76 ;
 
 --
--- Dumping data for table `m4pmt_content`
+-- Contenu de la table `m4pmt_content`
 --
 
 INSERT INTO `m4pmt_content` (`id`, `asset_id`, `title`, `alias`, `title_alias`, `introtext`, `fulltext`, `state`, `sectionid`, `mask`, `catid`, `created`, `created_by`, `created_by_alias`, `modified`, `modified_by`, `checked_out`, `checked_out_time`, `publish_up`, `publish_down`, `images`, `urls`, `attribs`, `version`, `parentid`, `ordering`, `metakey`, `metadesc`, `access`, `hits`, `metadata`, `featured`, `language`, `xreference`) VALUES
@@ -2754,7 +2754,7 @@ INSERT INTO `m4pmt_content` (`id`, `asset_id`, `title`, `alias`, `title_alias`, 
 (7, 103, 'Banner Module', 'banner-module', '', '<p>The banner module is used to display the banners that are managed by the banners component in the site administrator. <a href="http://help.joomla.org/proxy/index.php?option=com_help&amp;keyref=Help16:Extensions_Module_Manager_Banners">Help</a>.</p>\r\n<div class="sample-module">{loadmodule banners,Banners}</div>', '', 1, 0, 0, 66, '2011-01-01 00:00:01', 42, 'Joomla!', '2011-09-17 22:32:58', 42, 42, '2012-08-16 15:59:51', '2011-01-01 00:00:01', '0000-00-00 00:00:00', '', '', '{"show_title":"","link_titles":"","show_intro":"","show_category":"","link_category":"","show_parent_category":"","link_parent_category":"","show_author":"","show_create_date":"","show_modify_date":"","show_publish_date":"","show_readmore":"","show_print_icon":"","show_email_icon":"","show_hits":"","page_title":"","alternative_readmore":"","layout":""}', 4, 0, 6, '', '', 1, 14, '', 0, '*', ''),
 (8, 104, 'Shop', 'beginners', '', '<p>Amet odio ultrices, in aenean turpis augue dignissim auctor platea tortor.</p>\r\n', '\r\n<p>Explore the articles and other resources right here on your site data to learn more about how Joomla works. (When you''re done reading, you can delete or archive all of this.) You will also probably want to visit the Beginners'' Areas of the <a href="http://docs.joomla.org/Beginners">Joomla documentation</a> and <a href="http://forum.joomla.org">support forums</a>.</p>\r\n', 1, 0, 0, 19, '2011-01-01 00:00:01', 42, 'Joomla!', '2012-08-17 02:02:39', 42, 0, '0000-00-00 00:00:00', '2011-01-01 00:00:01', '0000-00-00 00:00:00', '{"image_intro":"","float_intro":"","image_intro_alt":"","image_intro_caption":"","image_fulltext":"","float_fulltext":"","image_fulltext_alt":"","image_fulltext_caption":""}', '{"urla":"","urlatext":"","targeta":"","urlb":"","urlbtext":"","targetb":"","urlc":"","urlctext":"","targetc":""}', '{"show_title":"","link_titles":"","show_intro":"","show_category":"","link_category":"","show_parent_category":"","link_parent_category":"","show_author":"","link_author":"","show_create_date":"","show_modify_date":"","show_publish_date":"","show_item_navigation":"","show_icons":"","show_print_icon":"","show_email_icon":"","show_vote":"","show_hits":"","show_noauth":"","urls_position":"","alternative_readmore":"","article_layout":"","show_publishing_options":"","show_article_options":"","show_urls_images_backend":"","show_urls_images_frontend":""}', 6, 0, 4, '', '', 1, 14, '{"robots":"","author":"","rights":"","xreference":""}', 0, '*', ''),
 (9, 105, 'Contacts', 'contact', '', '<p>The contact component provides a way to provide contact forms and information for your site or to create a complex directory that can be used for many different purposes. <a href="http://help.joomla.org/proxy/index.php?option=com_help&amp;keyref=Help16:Components_Contacts_Contacts">Help</a></p>', '', 1, 0, 0, 21, '2011-01-01 00:00:01', 42, 'Joomla!', '2011-01-10 04:15:37', 42, 0, '0000-00-00 00:00:00', '2011-01-01 00:00:01', '0000-00-00 00:00:00', '', '', '{"show_title":"","link_titles":"","show_intro":"","show_category":"","link_category":"","show_parent_category":"","link_parent_category":"","show_author":"","link_author":"","show_create_date":"","show_modify_date":"","show_publish_date":"","show_item_navigation":"","show_icons":"","show_print_icon":"","show_email_icon":"","show_vote":"","show_hits":"","show_noauth":"","alternative_readmore":"","article_layout":""}', 2, 0, 2, '', '', 1, 17, '{"robots":"","author":"","rights":"","xreference":""}', 0, '*', ''),
-(10, 106, 'Content', 'content', '', '<p>The content component (com_content) is what you use to write articles. It is extremely flexible and has the largest number of built in views. Articles can be created and edited from the front end, making content the easiest component to use to create your site content. <a href="http://help.joomla.org/proxy/index.php?option=com_help&amp;keyref=Help16:Content_Article_Manager">Help</a></p>', '', 1, 0, 0, 21, '2011-01-01 00:00:01', 42, '', '2011-01-10 04:28:12', 42, 0, '0000-00-00 00:00:00', '2011-01-01 00:00:01', '0000-00-00 00:00:00', '', '', '{"show_title":"","link_titles":"","show_intro":"","show_category":"","link_category":"","show_parent_category":"","link_parent_category":"","show_author":"","link_author":"","show_create_date":"","show_modify_date":"","show_publish_date":"","show_item_navigation":"","show_icons":"","show_print_icon":"","show_email_icon":"","show_vote":"","show_hits":"","show_noauth":"","alternative_readmore":"","article_layout":""}', 2, 0, 1, '', '', 1, 59, '{"robots":"","author":"","rights":"","xreference":""}', 0, '*', ''),
+(10, 106, 'Content', 'content', '', '<p>The content component (com_content) is what you use to write articles. It is extremely flexible and has the largest number of built in views. Articles can be created and edited from the front end, making content the easiest component to use to create your site content. <a href="http://help.joomla.org/proxy/index.php?option=com_help&amp;keyref=Help16:Content_Article_Manager">Help</a></p>', '', 1, 0, 0, 21, '2011-01-01 00:00:01', 42, '', '2011-01-10 04:28:12', 42, 0, '0000-00-00 00:00:00', '2011-01-01 00:00:01', '0000-00-00 00:00:00', '', '', '{"show_title":"","link_titles":"","show_intro":"","show_category":"","link_category":"","show_parent_category":"","link_parent_category":"","show_author":"","link_author":"","show_create_date":"","show_modify_date":"","show_publish_date":"","show_item_navigation":"","show_icons":"","show_print_icon":"","show_email_icon":"","show_vote":"","show_hits":"","show_noauth":"","alternative_readmore":"","article_layout":""}', 2, 0, 1, '', '', 1, 65, '{"robots":"","author":"","rights":"","xreference":""}', 0, '*', ''),
 (11, 107, 'Cradle Mountain', 'cradle-mountain', '', '<p> </p>\r\n', '\r\n<p> </p>', 1, 0, 0, 73, '2011-01-01 00:00:01', 42, 'Parks Webmaster', '2012-01-17 04:42:36', 42, 0, '0000-00-00 00:00:00', '2011-01-01 00:00:01', '0000-00-00 00:00:00', '{"image_intro":"images\\/sampledata\\/parks\\/landscape\\/250px_cradle_mountain_seen_from_barn_bluff.jpg","float_intro":"","image_intro_alt":"Cradle Mountain","image_intro_caption":"","image_fulltext":"images\\/sampledata\\/parks\\/landscape\\/800px_cradle_mountain_seen_from_barn_bluff.jpg","float_fulltext":"none","image_fulltext_alt":"Cradle Mountain","image_fulltext_caption":"Source: http:\\/\\/commons.wikimedia.org\\/wiki\\/File:Rainforest,bluemountainsNSW.jpg Author: Alan J.W.C. License: GNU Free Documentation License v . 1.2 or later"}', '{"urla":"","urlatext":"","targeta":"","urlb":"","urlbtext":"","targetb":"","urlc":"","urlctext":"","targetc":""}', '{"show_title":"","link_titles":"","show_intro":"","show_category":"","link_category":"","show_parent_category":"","link_parent_category":"","show_author":"","link_author":"","show_create_date":"","show_modify_date":"","show_publish_date":"","show_item_navigation":"","show_icons":"","show_print_icon":"","show_email_icon":"","show_vote":"","show_hits":"","show_noauth":"","alternative_readmore":"","article_layout":"","show_publishing_options":"","show_article_options":"","show_urls_images_backend":"","show_urls_images_frontend":""}', 4, 0, 1, '', '', 1, 8, '{"robots":"","author":"","rights":"","xreference":""}', 0, '*', ''),
 (12, 110, 'Custom HTML Module', 'custom-html-module', '', '<p>This module allows you to create your own HTML Module using a WYSIWYG editor. <a href="http://help.joomla.org/proxy/index.php?option=com_help&amp;keyref=Help16:Extensions_Module_Manager_Custom_HTML" title="Custom HTML Module">Help</a></p>\r\n<div class="sample-module">{loadmodule custom,Custom HTML}</div>', '', 1, 0, 0, 66, '2011-01-01 00:00:01', 42, '', '2011-12-27 11:12:46', 42, 0, '0000-00-00 00:00:00', '2011-01-01 00:00:01', '0000-00-00 00:00:00', '{"image_intro":"","float_intro":"","image_intro_alt":"","image_intro_caption":"","image_fulltext":"","float_fulltext":"","image_fulltext_alt":"","image_fulltext_caption":""}', '{"urla":"","urlatext":"","targeta":"","urlb":"","urlbtext":"","targetb":"","urlc":"","urlctext":"","targetc":""}', '{"show_title":"","link_titles":"","show_intro":"","show_category":"","link_category":"","show_parent_category":"","link_parent_category":"","show_author":"","link_author":"","show_create_date":"","show_modify_date":"","show_publish_date":"","show_item_navigation":"","show_icons":"","show_print_icon":"","show_email_icon":"","show_vote":"","show_hits":"","show_noauth":"","alternative_readmore":"","article_layout":"","show_publishing_options":"","show_article_options":"","show_urls_images_backend":"","show_urls_images_frontend":""}', 13, 0, 1, '', '', 1, 23, '{"robots":"","author":"","rights":"","xreference":""}', 0, '*', ''),
 (13, 111, 'Directions', 'directions', '', '<p>Here''s how to find our shop.</p><p>By car</p><p>Drive along Main Street to the intersection with First Avenue.  Look for our sign.</p><p>By foot</p><p>From the center of town, walk north on Main Street until you see our sign.</p><p>By bus</p><p>Take the #73 Bus to the last stop. We are on the north east corner.</p>', '', 1, 0, 0, 29, '2011-01-01 00:00:01', 42, 'Fruit Shop Webmaster', '2011-01-01 00:00:01', 42, 0, '0000-00-00 00:00:00', '2011-01-01 00:00:01', '0000-00-00 00:00:00', '', '', '{"show_title":"","link_titles":"","show_intro":"","show_category":"","link_category":"","show_parent_category":"","link_parent_category":"","show_author":"","show_create_date":"","show_modify_date":"","show_publish_date":"","show_readmore":"","show_print_icon":"","show_email_icon":"","show_hits":"","page_title":"","alternative_readmore":"","layout":""}', 1, 0, 2, '', '', 1, 8, '', 0, '*', ''),
@@ -2796,7 +2796,7 @@ INSERT INTO `m4pmt_content` (`id`, `asset_id`, `title`, `alias`, `title_alias`, 
 (48, 146, 'The Joomla! Project', 'the-joomla-project', '', '<p>The Joomla Project consists of all of the people who make and support the Joomla Web Platform and Content Management System.</p>\r\n<p>Our mission is to provide a flexible platform for digital publishing and collaboration.</p>\r\n<p>The core values are:</p>\r\n<ul>\r\n<li>Freedom</li>\r\n<li>Equality</li>\r\n<li>Trust</li>\r\n<li>Community</li>\r\n<li>Collaboration</li>\r\n<li>Usability</li>\r\n</ul>\r\n<p>In our vision, we see:</p>\r\n<ul>\r\n<li>People publishing and collaborating in their communities and around the world</li>\r\n<li>Software that is free, secure, and high-quality</li>\r\n<li>A community that is enjoyable and rewarding to participate in</li>\r\n<li>People around the world using their preferred languages</li>\r\n<li>A project that acts autonomously</li>\r\n<li>A project that is socially responsible</li>\r\n<li>A project dedicated to maintaining the trust of its users</li>\r\n</ul>\r\n<p>There are millions of users around the world and thousands of people who contribute to the Joomla Project. They work in three main groups: the Production Working Group, responsible for everything that goes into software and documentation; the Community Working Group, responsible for creating a nurturing the community; and Open Source Matters, the non profit organization responsible for managing legal, financial and organizational issues.</p>\r\n<p>Joomla is a free and open source project, which uses the GNU General Public License version 2 or later.</p>', '', 1, 0, 0, 19, '2011-01-01 00:00:01', 42, '', '2011-12-27 11:47:48', 42, 0, '0000-00-00 00:00:00', '2011-01-01 00:00:01', '0000-00-00 00:00:00', '{"image_intro":"","float_intro":"","image_intro_alt":"","image_intro_caption":"","image_fulltext":"","float_fulltext":"","image_fulltext_alt":"","image_fulltext_caption":""}', '{"urla":"","urlatext":"","targeta":"","urlb":"","urlbtext":"","targetb":"","urlc":"","urlctext":"","targetc":""}', '{"show_title":"","link_titles":"","show_intro":"","show_category":"","link_category":"","show_parent_category":"","link_parent_category":"","show_author":"","link_author":"","show_create_date":"","show_modify_date":"","show_publish_date":"","show_item_navigation":"","show_icons":"","show_print_icon":"","show_email_icon":"","show_vote":"","show_hits":"","show_noauth":"","alternative_readmore":"","article_layout":"","show_publishing_options":"","show_article_options":"","show_urls_images_backend":"","show_urls_images_frontend":""}', 2, 0, 1, '', '', 1, 6, '{"robots":"","author":"","rights":"","xreference":""}', 0, '*', ''),
 (49, 147, 'Typography', 'typography', '', '<h1>H1 ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmonpqrstuvwzyz</h1><h2>H2 ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmonpqrstuvwzyz</h2><h3>H3 ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmonpqrstuvwzyz</h3><h4>H4 ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmonpqrstuvwzyz</h4><h5>H5 ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmonpqrstuvwzyz</h5><h6>H6 ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmonpqrstuvwzyz</h6><p>P The quick brown fox ran over the lazy dog. THE QUICK BROWN FOX RAN OVER THE LAZY DOG.</p><ul><li>Item</li><li>Item</li><li>Item<br /> <ul><li>Item</li><li>Item</li><li>Item<br /> <ul><li>Item</li><li>Item</li><li>Item</li></ul></li></ul></li></ul><ol><li>tem</li><li>Item</li><li>Item<br /> <ol><li>Item</li><li>Item</li><li>Item<br /><ol><li>Item</li><li>Item</li><li>Item</li></ol></li></ol> </li></ol>', '', 1, 0, 0, 23, '2011-01-01 00:00:01', 42, 'Joomla!', '2011-01-01 00:00:01', 42, 0, '0000-00-00 00:00:00', '2011-01-01 00:00:01', '0000-00-00 00:00:00', '', '', '{"show_title":"","link_titles":"","show_intro":"","show_category":"","link_category":"","show_parent_category":"","link_parent_category":"","show_author":"","show_create_date":"","show_modify_date":"","show_publish_date":"","show_readmore":"","show_print_icon":"","show_email_icon":"","show_hits":"","page_title":"","alternative_readmore":"","layout":""}', 1, 0, 1, '', '', 1, 30, '', 0, '*', ''),
 (50, 148, 'Upgraders', 'upgraders', '', '<p>05/07/2012 by Name Lastname</p>\r\n<p>Amet odio ultrices, in aenean turpis augue dignissim auctor platea tortor. Placerat, velit mattis augue dapibus in enim</p>\r\n', '\r\n<p>The new user manager will let you manage who has access to what in your site. You can leave access groups exactly the way you had them in Joomla 1.5 or make them as complicated as you want. You can learn more about<a href="http://docs.joomla.org/ACL_Tutorial_for_Joomla_1.6"> how access control works</a> in on the <a href="http://docs.joomla.org">Joomla! Documentation site</a></p>', 1, 0, 0, 19, '2011-01-01 00:00:01', 42, '', '2012-08-17 02:06:00', 42, 0, '0000-00-00 00:00:00', '2011-01-01 00:00:01', '0000-00-00 00:00:00', '{"image_intro":"","float_intro":"","image_intro_alt":"","image_intro_caption":"","image_fulltext":"","float_fulltext":"","image_fulltext_alt":"","image_fulltext_caption":""}', '{"urla":"","urlatext":"","targeta":"","urlb":"","urlbtext":"","targetb":"","urlc":"","urlctext":"","targetc":""}', '{"show_title":"","link_titles":"","show_intro":"","show_category":"","link_category":"","show_parent_category":"","link_parent_category":"","show_author":"","link_author":"","show_create_date":"","show_modify_date":"","show_publish_date":"","show_item_navigation":"","show_icons":"","show_print_icon":"","show_email_icon":"","show_vote":"","show_hits":"","show_noauth":"","urls_position":"","alternative_readmore":"","article_layout":"","show_publishing_options":"","show_article_options":"","show_urls_images_backend":"","show_urls_images_frontend":""}', 9, 0, 6, '', '', 1, 15, '{"robots":"","author":"","rights":"","xreference":""}', 0, '*', ''),
-(75, 191, 'About us', 'about-us', '', '<h3>Our Story</h3>\r\n<p>Sagittis ac, lectus enim urna pulvinar, elit nascetur, elementum, sed, lorem integer sit aenean magna. Tortor! Et, odio vel non sit porttitor et elementum tempor. In. Ut pulvinar et tincidunt parturient nascetur sed placerat tempor dis? Eu ut? Dapibus hac, penatibus scelerisque, purus natoque enim augue sagittis penatibus? Magna odio, integer etiam tristique tempor a et! In mus, sed! Placerat.</p>\r\n<p>Pulvinar pid pellentesque mattis tortor hac aenean ac diam, nunc sagittis, tristique in vut magnis! A scelerisque massa turpis tristique urna eu, scelerisque, adipiscing ac:</p>\r\n<ul>\r\n<li>Pulvinar porttitor Lectus tincidunt mus egestas turpis</li>\r\n<li>Pellentesque lundium tortor amet arcu, scelerisque dis sed integer</li>\r\n<li>Odio tortor parturient, montes eu placerat, porta scelerisque in</li>\r\n<li>Ultricies augue integer. Elit ultricies cras.</li>\r\n</ul>\r\n<h3>Our Material</h3>\r\n<p>Purus lacus turpis nascetur tortor platea aenean enim, platea pid turpis! Vel platea vel, proin, sed, mauris, ridiculus integer scelerisque odio in turpis, non, est penatibus duis? Ac non, elementum nunc! Placerat enim! Ridiculus, tortor sed sit non lundium turpis in sed hac magna, scelerisque pulvinar, cursus! Porttitor! Turpis penatibus ultrices! Pulvinar lectus pulvinar nascetur, dis elementum, integer et.</p>\r\n<h3>Our Collection</h3>\r\n<p>Ut pulvinar et tincidunt parturient nascetur sed placerat tempor dis? Eu ut? Dapibus hac, penatibus scelerisque, purus natoque enim augue sagittis penatibus? Magna odio, integer etiam tristique tempor a et! Ut pulvinar et tincidunt parturient nascetur sed placerat tempor dis? Eu ut? Dapibus hac, penatibus scelerisque, purus natoque enim augue sagittis penatibus? Magna odio, integer etiam tristique tempor a et!</p>', '', 1, 0, 0, 14, '2012-08-18 02:43:34', 42, '', '2012-08-20 07:58:18', 42, 0, '0000-00-00 00:00:00', '2012-08-18 02:43:34', '0000-00-00 00:00:00', '{"image_intro":"images\\/aboutus-image.png","float_intro":"left","image_intro_alt":"","image_intro_caption":"","image_fulltext":"","float_fulltext":"","image_fulltext_alt":"","image_fulltext_caption":""}', '{"urla":null,"urlatext":"","targeta":"","urlb":null,"urlbtext":"","targetb":"","urlc":null,"urlctext":"","targetc":""}', '{"show_title":"","link_titles":"","show_intro":"","show_category":"","link_category":"","show_parent_category":"","link_parent_category":"","show_author":"","link_author":"","show_create_date":"","show_modify_date":"","show_publish_date":"","show_item_navigation":"","show_icons":"","show_print_icon":"","show_email_icon":"","show_vote":"","show_hits":"","show_noauth":"","urls_position":"","alternative_readmore":"","article_layout":"","show_publishing_options":"","show_article_options":"","show_urls_images_backend":"","show_urls_images_frontend":""}', 6, 0, 0, '', '', 1, 39, '{"robots":"","author":"","rights":"","xreference":""}', 0, '*', ''),
+(75, 191, 'About us', 'about-us', '', '<h3>Our Story</h3>\r\n<p>Sagittis ac, lectus enim urna pulvinar, elit nascetur, elementum, sed, lorem integer sit aenean magna. Tortor! Et, odio vel non sit porttitor et elementum tempor. In. Ut pulvinar et tincidunt parturient nascetur sed placerat tempor dis? Eu ut? Dapibus hac, penatibus scelerisque, purus natoque enim augue sagittis penatibus? Magna odio, integer etiam tristique tempor a et! In mus, sed! Placerat.</p>\r\n<p>Pulvinar pid pellentesque mattis tortor hac aenean ac diam, nunc sagittis, tristique in vut magnis! A scelerisque massa turpis tristique urna eu, scelerisque, adipiscing ac:</p>\r\n<ul>\r\n<li>Pulvinar porttitor Lectus tincidunt mus egestas turpis</li>\r\n<li>Pellentesque lundium tortor amet arcu, scelerisque dis sed integer</li>\r\n<li>Odio tortor parturient, montes eu placerat, porta scelerisque in</li>\r\n<li>Ultricies augue integer. Elit ultricies cras.</li>\r\n</ul>\r\n<h3>Our Material</h3>\r\n<p>Purus lacus turpis nascetur tortor platea aenean enim, platea pid turpis! Vel platea vel, proin, sed, mauris, ridiculus integer scelerisque odio in turpis, non, est penatibus duis? Ac non, elementum nunc! Placerat enim! Ridiculus, tortor sed sit non lundium turpis in sed hac magna, scelerisque pulvinar, cursus! Porttitor! Turpis penatibus ultrices! Pulvinar lectus pulvinar nascetur, dis elementum, integer et.</p>\r\n<h3>Our Collection</h3>\r\n<p>Ut pulvinar et tincidunt parturient nascetur sed placerat tempor dis? Eu ut? Dapibus hac, penatibus scelerisque, purus natoque enim augue sagittis penatibus? Magna odio, integer etiam tristique tempor a et! Ut pulvinar et tincidunt parturient nascetur sed placerat tempor dis? Eu ut? Dapibus hac, penatibus scelerisque, purus natoque enim augue sagittis penatibus? Magna odio, integer etiam tristique tempor a et!</p>', '', 1, 0, 0, 14, '2012-08-18 02:43:34', 42, '', '2012-08-23 03:05:38', 42, 0, '0000-00-00 00:00:00', '2012-08-18 02:43:34', '0000-00-00 00:00:00', '{"image_intro":"images\\/aboutus-image.png","float_intro":"left","image_intro_alt":"","image_intro_caption":"","image_fulltext":"","float_fulltext":"","image_fulltext_alt":"","image_fulltext_caption":""}', '{"urla":null,"urlatext":"","targeta":"","urlb":null,"urlbtext":"","targetb":"","urlc":null,"urlctext":"","targetc":""}', '{"show_title":"","link_titles":"","show_intro":"","show_category":"0","link_category":"0","show_parent_category":"","link_parent_category":"","show_author":"","link_author":"","show_create_date":"","show_modify_date":"","show_publish_date":"","show_item_navigation":"","show_icons":"","show_print_icon":"","show_email_icon":"","show_vote":"","show_hits":"","show_noauth":"","urls_position":"","alternative_readmore":"","article_layout":"","show_publishing_options":"","show_article_options":"","show_urls_images_backend":"","show_urls_images_frontend":""}', 8, 0, 0, '', '', 1, 54, '{"robots":"","author":"","rights":"","xreference":""}', 0, '*', ''),
 (51, 149, 'User', 'user-plugins', '', '<p>Default on:</p>\r\n<ul>\r\n<li>Joomla <a href="http://help.joomla.org/proxy/index.php?option=com_help&amp;amp;keyref=Help17:Extensions_Plugin_Manager_Edit#User_-_Joomla.21">Help</a></li>\r\n</ul>\r\n<p>Default off:</p>\r\n<p>Two new plugins are available but are disabled by default.</p>\r\n<ul>\r\n<li>Contact Creator <a href="http://help.joomla.org/proxy/index.php?option=com_help&amp;amp;keyref=Help17:Extensions_Plugin_Manager_Edit#User_-_Contact_Creator">Help</a><br />Creates a new linked contact record for each new user created.</li>\r\n<li>Profile <a href="http://help.joomla.org/proxy/index.php?option=com_help&amp;amp;keyref=Help17:Extensions_Plugin_Manager_Edit#User_-_Profile">Help</a><br />This example profile plugin allows you to insert additional fields into user registration and profile display. This is intended as an example of the types of extensions to the profile you might want to create.</li>\r\n</ul>', '', 1, 0, 0, 25, '2011-01-01 00:00:01', 42, 'Joomla!', '2011-12-27 11:51:25', 42, 0, '0000-00-00 00:00:00', '2011-01-01 00:00:01', '0000-00-00 00:00:00', '{"image_intro":"","float_intro":"","image_intro_alt":"","image_intro_caption":"","image_fulltext":"","float_fulltext":"","image_fulltext_alt":"","image_fulltext_caption":""}', '{"urla":"","urlatext":"","targeta":"","urlb":"","urlbtext":"","targetb":"","urlc":"","urlctext":"","targetc":""}', '{"show_title":"","link_titles":"","show_intro":"","show_category":"","link_category":"","show_parent_category":"","link_parent_category":"","show_author":"","link_author":"","show_create_date":"","show_modify_date":"","show_publish_date":"","show_item_navigation":"","show_icons":"","show_print_icon":"","show_email_icon":"","show_vote":"","show_hits":"","show_noauth":"","alternative_readmore":"","article_layout":"","show_publishing_options":"","show_article_options":"","show_urls_images_backend":"","show_urls_images_frontend":""}', 3, 0, 4, '', '', 1, 10, '{"robots":"","author":"","rights":"","xreference":""}', 0, '*', ''),
 (52, 150, 'Users', 'users-component', '', '<p>The users extension lets your site visitors register, login and logout, change their passwords and other information, and recover lost passwords. In the administrator it allows you to create, block and manage users and create user groups and access levels. <a href="http://help.joomla.org/proxy/index.php?option=com_help&amp;keyref=Help16:Users_User_Manager">Help</a></p>\r\n<p>Please note that some of the user views will not display if you are not logged-in to the site.</p>', '', 1, 0, 0, 21, '2011-01-01 00:00:01', 42, 'Joomla!', '2011-01-10 04:52:55', 42, 0, '0000-00-00 00:00:00', '2011-01-01 00:00:01', '0000-00-00 00:00:00', '', '', '{"show_title":"","link_titles":"","show_intro":"","show_category":"","link_category":"","show_parent_category":"","link_parent_category":"","show_author":"","link_author":"","show_create_date":"","show_modify_date":"","show_publish_date":"","show_item_navigation":"","show_icons":"","show_print_icon":"","show_email_icon":"","show_vote":"","show_hits":"","show_noauth":"","alternative_readmore":"","article_layout":""}', 2, 0, 5, '', '', 1, 8, '{"robots":"","author":"","rights":"","xreference":""}', 0, '*', ''),
 (53, 151, 'Using Joomla!', 'using-joomla', '', '<p>With Joomla you can create anything from a simple personal website to a complex ecommerce or social site with millions of visitors.</p>\r\n<p>This section of the sample data provides you with a brief introduction to Joomla concepts and reference material to help you understand how Joomla works.</p>\r\n<p><em>When you no longer need the sample data, you can can simply unpublish the sample data category found within each extension in the site administrator or you may completely delete each item and all of the categories. </em></p>', '', 1, 0, 0, 19, '2011-01-01 00:00:01', 42, 'Joomla!', '2011-12-27 11:52:45', 42, 0, '0000-00-00 00:00:00', '2011-01-01 00:00:01', '0000-00-00 00:00:00', '{"image_intro":"","float_intro":"","image_intro_alt":"","image_intro_caption":"","image_fulltext":"","float_fulltext":"","image_fulltext_alt":"","image_fulltext_caption":""}', '{"urla":"","urlatext":"","targeta":"","urlb":"","urlbtext":"","targetb":"","urlc":"","urlctext":"","targetc":""}', '{"show_title":"","link_titles":"","show_intro":"","show_category":"","link_category":"","show_parent_category":"","link_parent_category":"","show_author":"","link_author":"","show_create_date":"","show_modify_date":"","show_publish_date":"","show_item_navigation":"","show_icons":"","show_print_icon":"","show_email_icon":"","show_vote":"","show_hits":"","show_noauth":"","alternative_readmore":"","article_layout":"","show_publishing_options":"","show_article_options":"","show_urls_images_backend":"","show_urls_images_frontend":""}', 2, 0, 7, '', '', 1, 16, '{"robots":"","author":"","rights":"","xreference":""}', 0, '*', ''),
@@ -2825,7 +2825,7 @@ INSERT INTO `m4pmt_content` (`id`, `asset_id`, `title`, `alias`, `title_alias`, 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `m4pmt_content_frontpage`
+-- Structure de la table `m4pmt_content_frontpage`
 --
 
 CREATE TABLE IF NOT EXISTS `m4pmt_content_frontpage` (
@@ -2837,7 +2837,7 @@ CREATE TABLE IF NOT EXISTS `m4pmt_content_frontpage` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `m4pmt_content_rating`
+-- Structure de la table `m4pmt_content_rating`
 --
 
 CREATE TABLE IF NOT EXISTS `m4pmt_content_rating` (
@@ -2851,7 +2851,7 @@ CREATE TABLE IF NOT EXISTS `m4pmt_content_rating` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `m4pmt_core_log_searches`
+-- Structure de la table `m4pmt_core_log_searches`
 --
 
 CREATE TABLE IF NOT EXISTS `m4pmt_core_log_searches` (
@@ -2862,7 +2862,7 @@ CREATE TABLE IF NOT EXISTS `m4pmt_core_log_searches` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `m4pmt_csvi_available_fields`
+-- Structure de la table `m4pmt_csvi_available_fields`
 --
 
 CREATE TABLE IF NOT EXISTS `m4pmt_csvi_available_fields` (
@@ -2877,7 +2877,7 @@ CREATE TABLE IF NOT EXISTS `m4pmt_csvi_available_fields` (
 ) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COMMENT='Available fields for CSVI' AUTO_INCREMENT=765 ;
 
 --
--- Dumping data for table `m4pmt_csvi_available_fields`
+-- Contenu de la table `m4pmt_csvi_available_fields`
 --
 
 INSERT INTO `m4pmt_csvi_available_fields` (`id`, `csvi_name`, `component_name`, `component_table`, `component`, `isprimary`) VALUES
@@ -3650,7 +3650,7 @@ INSERT INTO `m4pmt_csvi_available_fields` (`id`, `csvi_name`, `component_name`, 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `m4pmt_csvi_currency`
+-- Structure de la table `m4pmt_csvi_currency`
 --
 
 CREATE TABLE IF NOT EXISTS `m4pmt_csvi_currency` (
@@ -3664,7 +3664,7 @@ CREATE TABLE IF NOT EXISTS `m4pmt_csvi_currency` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `m4pmt_csvi_icecat_index`
+-- Structure de la table `m4pmt_csvi_icecat_index`
 --
 
 CREATE TABLE IF NOT EXISTS `m4pmt_csvi_icecat_index` (
@@ -3694,7 +3694,7 @@ CREATE TABLE IF NOT EXISTS `m4pmt_csvi_icecat_index` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `m4pmt_csvi_icecat_suppliers`
+-- Structure de la table `m4pmt_csvi_icecat_suppliers`
 --
 
 CREATE TABLE IF NOT EXISTS `m4pmt_csvi_icecat_suppliers` (
@@ -3707,7 +3707,7 @@ CREATE TABLE IF NOT EXISTS `m4pmt_csvi_icecat_suppliers` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `m4pmt_csvi_logs`
+-- Structure de la table `m4pmt_csvi_logs`
 --
 
 CREATE TABLE IF NOT EXISTS `m4pmt_csvi_logs` (
@@ -3727,7 +3727,7 @@ CREATE TABLE IF NOT EXISTS `m4pmt_csvi_logs` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `m4pmt_csvi_log_details`
+-- Structure de la table `m4pmt_csvi_log_details`
 --
 
 CREATE TABLE IF NOT EXISTS `m4pmt_csvi_log_details` (
@@ -3743,7 +3743,7 @@ CREATE TABLE IF NOT EXISTS `m4pmt_csvi_log_details` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `m4pmt_csvi_related_products`
+-- Structure de la table `m4pmt_csvi_related_products`
 --
 
 CREATE TABLE IF NOT EXISTS `m4pmt_csvi_related_products` (
@@ -3754,7 +3754,7 @@ CREATE TABLE IF NOT EXISTS `m4pmt_csvi_related_products` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `m4pmt_csvi_replacements`
+-- Structure de la table `m4pmt_csvi_replacements`
 --
 
 CREATE TABLE IF NOT EXISTS `m4pmt_csvi_replacements` (
@@ -3772,7 +3772,7 @@ CREATE TABLE IF NOT EXISTS `m4pmt_csvi_replacements` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `m4pmt_csvi_settings`
+-- Structure de la table `m4pmt_csvi_settings`
 --
 
 CREATE TABLE IF NOT EXISTS `m4pmt_csvi_settings` (
@@ -3782,7 +3782,7 @@ CREATE TABLE IF NOT EXISTS `m4pmt_csvi_settings` (
 ) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COMMENT='Configuration values for CSVI' AUTO_INCREMENT=3 ;
 
 --
--- Dumping data for table `m4pmt_csvi_settings`
+-- Contenu de la table `m4pmt_csvi_settings`
 --
 
 INSERT INTO `m4pmt_csvi_settings` (`id`, `params`) VALUES
@@ -3792,7 +3792,7 @@ INSERT INTO `m4pmt_csvi_settings` (`id`, `params`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `m4pmt_csvi_settings_current`
+-- Structure de la table `m4pmt_csvi_settings_current`
 --
 
 CREATE TABLE IF NOT EXISTS `m4pmt_csvi_settings_current` (
@@ -3802,7 +3802,7 @@ CREATE TABLE IF NOT EXISTS `m4pmt_csvi_settings_current` (
 ) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COMMENT='Configuration values for CSVI' AUTO_INCREMENT=2 ;
 
 --
--- Dumping data for table `m4pmt_csvi_settings_current`
+-- Contenu de la table `m4pmt_csvi_settings_current`
 --
 
 INSERT INTO `m4pmt_csvi_settings_current` (`id`, `params`) VALUES
@@ -3811,7 +3811,7 @@ INSERT INTO `m4pmt_csvi_settings_current` (`id`, `params`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `m4pmt_csvi_template_fields`
+-- Structure de la table `m4pmt_csvi_template_fields`
 --
 
 CREATE TABLE IF NOT EXISTS `m4pmt_csvi_template_fields` (
@@ -3828,7 +3828,7 @@ CREATE TABLE IF NOT EXISTS `m4pmt_csvi_template_fields` (
 ) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COMMENT='Holds the fields for a CSVI template' AUTO_INCREMENT=130 ;
 
 --
--- Dumping data for table `m4pmt_csvi_template_fields`
+-- Contenu de la table `m4pmt_csvi_template_fields`
 --
 
 INSERT INTO `m4pmt_csvi_template_fields` (`id`, `template_id`, `ordering`, `field_name`, `column_header`, `default_value`, `process`, `combine`, `sort`) VALUES
@@ -3965,7 +3965,7 @@ INSERT INTO `m4pmt_csvi_template_fields` (`id`, `template_id`, `ordering`, `fiel
 -- --------------------------------------------------------
 
 --
--- Table structure for table `m4pmt_csvi_template_fields_replacement`
+-- Structure de la table `m4pmt_csvi_template_fields_replacement`
 --
 
 CREATE TABLE IF NOT EXISTS `m4pmt_csvi_template_fields_replacement` (
@@ -3978,7 +3978,7 @@ CREATE TABLE IF NOT EXISTS `m4pmt_csvi_template_fields_replacement` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `m4pmt_csvi_template_settings`
+-- Structure de la table `m4pmt_csvi_template_settings`
 --
 
 CREATE TABLE IF NOT EXISTS `m4pmt_csvi_template_settings` (
@@ -3990,7 +3990,7 @@ CREATE TABLE IF NOT EXISTS `m4pmt_csvi_template_settings` (
 ) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COMMENT='Stores the template settings for CSVI' AUTO_INCREMENT=10 ;
 
 --
--- Dumping data for table `m4pmt_csvi_template_settings`
+-- Contenu de la table `m4pmt_csvi_template_settings`
 --
 
 INSERT INTO `m4pmt_csvi_template_settings` (`id`, `name`, `settings`, `process`) VALUES
@@ -4007,7 +4007,7 @@ INSERT INTO `m4pmt_csvi_template_settings` (`id`, `name`, `settings`, `process`)
 -- --------------------------------------------------------
 
 --
--- Table structure for table `m4pmt_csvi_template_tables`
+-- Structure de la table `m4pmt_csvi_template_tables`
 --
 
 CREATE TABLE IF NOT EXISTS `m4pmt_csvi_template_tables` (
@@ -4023,7 +4023,7 @@ CREATE TABLE IF NOT EXISTS `m4pmt_csvi_template_tables` (
 ) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COMMENT='Template tables used per template type for CSVI' AUTO_INCREMENT=112 ;
 
 --
--- Dumping data for table `m4pmt_csvi_template_tables`
+-- Contenu de la table `m4pmt_csvi_template_tables`
 --
 
 INSERT INTO `m4pmt_csvi_template_tables` (`id`, `checked_out`, `checked_out_time`, `template_type_name`, `template_table`, `component`, `indexed`) VALUES
@@ -4142,7 +4142,7 @@ INSERT INTO `m4pmt_csvi_template_tables` (`id`, `checked_out`, `checked_out_time
 -- --------------------------------------------------------
 
 --
--- Table structure for table `m4pmt_csvi_template_types`
+-- Structure de la table `m4pmt_csvi_template_types`
 --
 
 CREATE TABLE IF NOT EXISTS `m4pmt_csvi_template_types` (
@@ -4159,7 +4159,7 @@ CREATE TABLE IF NOT EXISTS `m4pmt_csvi_template_types` (
 ) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COMMENT='Template types for CSVI' AUTO_INCREMENT=52 ;
 
 --
--- Dumping data for table `m4pmt_csvi_template_types`
+-- Contenu de la table `m4pmt_csvi_template_types`
 --
 
 INSERT INTO `m4pmt_csvi_template_types` (`id`, `checked_out`, `checked_out_time`, `template_type_name`, `template_type`, `component`, `url`, `options`) VALUES
@@ -4218,7 +4218,7 @@ INSERT INTO `m4pmt_csvi_template_types` (`id`, `checked_out`, `checked_out_time`
 -- --------------------------------------------------------
 
 --
--- Table structure for table `m4pmt_extensions`
+-- Structure de la table `m4pmt_extensions`
 --
 
 CREATE TABLE IF NOT EXISTS `m4pmt_extensions` (
@@ -4243,10 +4243,10 @@ CREATE TABLE IF NOT EXISTS `m4pmt_extensions` (
   KEY `element_clientid` (`element`,`client_id`),
   KEY `element_folder_clientid` (`element`,`folder`,`client_id`),
   KEY `extension` (`type`,`element`,`folder`,`client_id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=10129 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=10130 ;
 
 --
--- Dumping data for table `m4pmt_extensions`
+-- Contenu de la table `m4pmt_extensions`
 --
 
 INSERT INTO `m4pmt_extensions` (`extension_id`, `name`, `type`, `element`, `folder`, `client_id`, `enabled`, `access`, `protected`, `manifest_cache`, `params`, `custom_data`, `system_data`, `checked_out`, `checked_out_time`, `ordering`, `state`) VALUES
@@ -4271,7 +4271,7 @@ INSERT INTO `m4pmt_extensions` (`extension_id`, `name`, `type`, `element`, `fold
 (19, 'com_search', 'component', 'com_search', '', 1, 1, 1, 1, '{"legacy":false,"name":"com_search","type":"component","creationDate":"April 2006","author":"Joomla! Project","copyright":"(C) 2005 - 2012 Open Source Matters. All rights reserved.\\n\\t","authorEmail":"admin@joomla.org","authorUrl":"www.joomla.org","version":"2.5.0","description":"COM_SEARCH_XML_DESCRIPTION","group":""}', '{"enabled":"0","show_date":"1"}', '', '', 0, '0000-00-00 00:00:00', 0, 0),
 (20, 'com_templates', 'component', 'com_templates', '', 1, 1, 1, 1, '{"legacy":false,"name":"com_templates","type":"component","creationDate":"April 2006","author":"Joomla! Project","copyright":"(C) 2005 - 2012 Open Source Matters. All rights reserved.\\t","authorEmail":"admin@joomla.org","authorUrl":"www.joomla.org","version":"2.5.0","description":"COM_TEMPLATES_XML_DESCRIPTION","group":""}', '{"template_positions_display":"1"}', '', '', 0, '0000-00-00 00:00:00', 0, 0),
 (21, 'com_weblinks', 'component', 'com_weblinks', '', 1, 1, 1, 0, '{"legacy":false,"name":"com_weblinks","type":"component","creationDate":"April 2006","author":"Joomla! Project","copyright":"(C) 2005 - 2012 Open Source Matters. All rights reserved.\\n\\t","authorEmail":"admin@joomla.org","authorUrl":"www.joomla.org","version":"2.5.0","description":"COM_WEBLINKS_XML_DESCRIPTION","group":""}', '{"show_comp_description":"1","comp_description":"","show_link_hits":"1","show_link_description":"1","show_other_cats":"0","show_headings":"0","show_numbers":"0","show_report":"1","count_clicks":"1","target":"0","link_icons":""}', '', '', 0, '0000-00-00 00:00:00', 0, 0),
-(22, 'com_content', 'component', 'com_content', '', 1, 1, 0, 1, '{"legacy":false,"name":"com_content","type":"component","creationDate":"April 2006","author":"Joomla! Project","copyright":"(C) 2005 - 2012 Open Source Matters. All rights reserved.\\t","authorEmail":"admin@joomla.org","authorUrl":"www.joomla.org","version":"2.5.0","description":"COM_CONTENT_XML_DESCRIPTION","group":""}', '{"article_layout":"_:default","show_title":"1","link_titles":"1","show_intro":"1","show_category":"1","link_category":"1","show_parent_category":"0","link_parent_category":"0","show_author":"0","link_author":"0","show_create_date":"0","show_modify_date":"0","show_publish_date":"0","show_item_navigation":"0","show_vote":"0","show_readmore":"1","show_readmore_title":"1","readmore_limit":"100","show_icons":"0","show_print_icon":"0","show_email_icon":"0","show_hits":"0","show_noauth":"0","urls_position":"0","show_publishing_options":"1","show_article_options":"1","show_urls_images_frontend":"0","show_urls_images_backend":"1","targeta":0,"targetb":0,"targetc":0,"float_intro":"left","float_fulltext":"left","category_layout":"_:blog","show_category_title":"0","show_description":"0","show_description_image":"0","maxLevel":"1","show_empty_categories":"0","show_no_articles":"1","show_subcat_desc":"1","show_cat_num_articles":"0","show_base_description":"1","maxLevelcat":"-1","show_empty_categories_cat":"0","show_subcat_desc_cat":"1","show_cat_num_articles_cat":"1","num_leading_articles":"1","num_intro_articles":"4","num_columns":"2","num_links":"4","multi_column_order":"0","show_subcategory_content":"0","show_pagination_limit":"1","filter_field":"hide","show_headings":"1","list_show_date":"0","date_format":"","list_show_hits":"1","list_show_author":"1","orderby_pri":"order","orderby_sec":"rdate","order_date":"published","show_pagination":"2","show_pagination_results":"1","show_feed_link":"1","feed_summary":"0"}', '', '', 0, '0000-00-00 00:00:00', 0, 0),
+(22, 'com_content', 'component', 'com_content', '', 1, 1, 0, 1, '{"legacy":false,"name":"com_content","type":"component","creationDate":"April 2006","author":"Joomla! Project","copyright":"(C) 2005 - 2012 Open Source Matters. All rights reserved.\\t","authorEmail":"admin@joomla.org","authorUrl":"www.joomla.org","version":"2.5.0","description":"COM_CONTENT_XML_DESCRIPTION","group":""}', '{"article_layout":"_:default","show_title":"1","link_titles":"1","show_intro":"1","show_category":"0","link_category":"0","show_parent_category":"0","link_parent_category":"0","show_author":"0","link_author":"0","show_create_date":"0","show_modify_date":"0","show_publish_date":"0","show_item_navigation":"0","show_vote":"0","show_readmore":"1","show_readmore_title":"1","readmore_limit":"100","show_icons":"0","show_print_icon":"0","show_email_icon":"0","show_hits":"0","show_noauth":"0","urls_position":"0","show_publishing_options":"1","show_article_options":"1","show_urls_images_frontend":"0","show_urls_images_backend":"1","targeta":0,"targetb":0,"targetc":0,"float_intro":"left","float_fulltext":"left","category_layout":"_:blog","show_category_title":"0","show_description":"0","show_description_image":"0","maxLevel":"1","show_empty_categories":"0","show_no_articles":"1","show_subcat_desc":"1","show_cat_num_articles":"0","show_base_description":"1","maxLevelcat":"-1","show_empty_categories_cat":"0","show_subcat_desc_cat":"1","show_cat_num_articles_cat":"1","num_leading_articles":"1","num_intro_articles":"4","num_columns":"2","num_links":"4","multi_column_order":"0","show_subcategory_content":"0","show_pagination_limit":"1","filter_field":"hide","show_headings":"1","list_show_date":"0","date_format":"","list_show_hits":"1","list_show_author":"1","orderby_pri":"order","orderby_sec":"rdate","order_date":"published","show_pagination":"2","show_pagination_results":"1","show_feed_link":"1","feed_summary":"0"}', '', '', 0, '0000-00-00 00:00:00', 0, 0),
 (23, 'com_config', 'component', 'com_config', '', 1, 1, 0, 1, '{"legacy":false,"name":"com_config","type":"component","creationDate":"April 2006","author":"Joomla! Project","copyright":"(C) 2005 - 2012 Open Source Matters. All rights reserved.\\t","authorEmail":"admin@joomla.org","authorUrl":"www.joomla.org","version":"2.5.0","description":"COM_CONFIG_XML_DESCRIPTION","group":""}', '{"filters":{"1":{"filter_type":"NH","filter_tags":"","filter_attributes":""},"6":{"filter_type":"BL","filter_tags":"","filter_attributes":""},"7":{"filter_type":"NONE","filter_tags":"","filter_attributes":""},"2":{"filter_type":"NH","filter_tags":"","filter_attributes":""},"3":{"filter_type":"BL","filter_tags":"","filter_attributes":""},"4":{"filter_type":"BL","filter_tags":"","filter_attributes":""},"5":{"filter_type":"BL","filter_tags":"","filter_attributes":""},"10":{"filter_type":"BL","filter_tags":"","filter_attributes":""},"12":{"filter_type":"BL","filter_tags":"","filter_attributes":""},"8":{"filter_type":"NONE","filter_tags":"","filter_attributes":""}}}', '', '', 0, '0000-00-00 00:00:00', 0, 0),
 (24, 'com_redirect', 'component', 'com_redirect', '', 1, 1, 0, 1, '{"legacy":false,"name":"com_redirect","type":"component","creationDate":"April 2006","author":"Joomla! Project","copyright":"(C) 2005 - 2012 Open Source Matters. All rights reserved.\\t","authorEmail":"admin@joomla.org","authorUrl":"www.joomla.org","version":"2.5.0","description":"COM_REDIRECT_XML_DESCRIPTION","group":""}', '{}', '', '', 0, '0000-00-00 00:00:00', 0, 0),
 (25, 'com_users', 'component', 'com_users', '', 1, 1, 0, 1, '{"legacy":false,"name":"com_users","type":"component","creationDate":"April 2006","author":"Joomla! Project","copyright":"(C) 2005 - 2012 Open Source Matters. All rights reserved.\\t","authorEmail":"admin@joomla.org","authorUrl":"www.joomla.org","version":"2.5.0","description":"COM_USERS_XML_DESCRIPTION","group":""}', '{"allowUserRegistration":"1","new_usertype":"2","useractivation":"1","frontend_userparams":"1","mailSubjectPrefix":"","mailBodySuffix":""}', '', '', 0, '0000-00-00 00:00:00', 0, 0),
@@ -4455,12 +4455,13 @@ INSERT INTO `m4pmt_extensions` (`extension_id`, `name`, `type`, `element`, `fold
 (10116, 'mod_virtuemart_category', 'module', 'mod_virtuemart_category', '', 0, 1, 1, 0, '{"legacy":true,"name":"mod_virtuemart_category","type":"module","creationDate":"July 16 2012","author":"The VirtueMart Development Team","copyright":"Copyright (C) 2004-2012 Virtuemart Team. All rights reserved.","authorEmail":"","authorUrl":"http:\\/\\/www.virtuemart.net","version":"2.0.8e","description":"MOD_VIRTUEMART_CATEGORY_DESC","group":""}', '', '', '', 0, '0000-00-00 00:00:00', 6, 0),
 (10117, 'csvi', 'component', 'com_csvi', '', 1, 1, 0, 0, '{"legacy":false,"name":"CSVI","type":"component","creationDate":"16 juni 2012","author":"RolandD Cyber Produksi","copyright":"(C) 2006 - 2012 RolandD Cyber Produksi. All rights reserved.","authorEmail":"contact@csvimproved.com","authorUrl":"http:\\/\\/www.csvimproved.com\\/","version":"4.5.1","description":"COM_CSVI_XML_DESCRIPTION","group":""}', '{}', '', '', 0, '0000-00-00 00:00:00', 0, 0),
 (10127, 'VMCustom - dropbox', 'plugin', 'drop', 'vmcustom', 0, 1, 1, 0, '{"legacy":true,"name":"VMCustom - dropbox","type":"plugin","creationDate":"March 1 2012","author":"Unknown","copyright":" Banquet Tables Pro ","authorEmail":"","authorUrl":"","version":"2.0","description":"VMCUSTOM_DROP_BOX_DESC","group":""}', '{}', '', '', 0, '0000-00-00 00:00:00', 0, 0),
-(10128, 'eztestimonial', 'component', 'com_eztestimonial', '', 1, 1, 0, 0, '{"legacy":false,"name":"EzTestimonial","type":"component","creationDate":"2012-01-30","author":"Saran Chamling","copyright":"Copyright (C) 2011 http:\\/\\/www.saaraan.com. All rights reserved.","authorEmail":"saaraan@gmail.com","authorUrl":"http:\\/\\/www.saaraan.com","version":"1.3","description":"Testimonial","group":""}', '{}', '', '', 0, '0000-00-00 00:00:00', 0, 0);
+(10128, 'eztestimonial', 'component', 'com_eztestimonial', '', 1, 1, 0, 0, '{"legacy":false,"name":"EzTestimonial","type":"component","creationDate":"2012-01-30","author":"Saran Chamling","copyright":"Copyright (C) 2011 http:\\/\\/www.saaraan.com. All rights reserved.","authorEmail":"saaraan@gmail.com","authorUrl":"http:\\/\\/www.saaraan.com","version":"1.3","description":"Testimonial","group":""}', '{"params":{"disableadding":"0","hideaddbutton":"0","disableImg":"0","sortby":"id","sorting":"DESC","summerytxtlength":"100","imagefolder":"banners","imagesize":"4","styletype":"style.css","autoapprove":"0","whocanpost":"0","spamfilter":"0","brandingremoval":"","republickey":"","reprivatekey":"","restyle":"clean","akismetKey":"","sendemailtouser":"0","useremailfromnametxt":"Your Company","useremailfromtxt":"noreply@yoursite.com","useremailsubjecttxt":"Thanks for your Testimonial","useremailtxt":"Dear {b}{name}{\\/b},{br}{br}Thank you for your time, we have received your valuable testimonial. We will review it shortly and publish it as soon as possible.{br}{br}-Yours","sendemailtoadmin":"0","adminemails":"admin@yoursite.com","adminmailsubjecttxt":"New Testimonial Submission (Required Action)","adminmailtxt":"You have received a new Testimonial. You may want to review it or publish it.{br}{br}-Testimonial Bot"}}', '', '', 0, '0000-00-00 00:00:00', 0, 0),
+(10129, 'Last Testimonial', 'module', 'mod_last_testimonial', '', 0, 1, 0, 0, '{"legacy":true,"name":"Last Testimonial","type":"module","creationDate":"Unknown","author":"Vu Dieu Gio","copyright":"","authorEmail":"","authorUrl":"","version":"1.0","description":"Displays Last Testimonial","group":""}', '{}', '', '', 0, '0000-00-00 00:00:00', 0, 0);
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `m4pmt_finder_filters`
+-- Structure de la table `m4pmt_finder_filters`
 --
 
 CREATE TABLE IF NOT EXISTS `m4pmt_finder_filters` (
@@ -4484,7 +4485,7 @@ CREATE TABLE IF NOT EXISTS `m4pmt_finder_filters` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `m4pmt_finder_links`
+-- Structure de la table `m4pmt_finder_links`
 --
 
 CREATE TABLE IF NOT EXISTS `m4pmt_finder_links` (
@@ -4519,7 +4520,7 @@ CREATE TABLE IF NOT EXISTS `m4pmt_finder_links` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `m4pmt_finder_links_terms0`
+-- Structure de la table `m4pmt_finder_links_terms0`
 --
 
 CREATE TABLE IF NOT EXISTS `m4pmt_finder_links_terms0` (
@@ -4534,7 +4535,7 @@ CREATE TABLE IF NOT EXISTS `m4pmt_finder_links_terms0` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `m4pmt_finder_links_terms1`
+-- Structure de la table `m4pmt_finder_links_terms1`
 --
 
 CREATE TABLE IF NOT EXISTS `m4pmt_finder_links_terms1` (
@@ -4549,7 +4550,7 @@ CREATE TABLE IF NOT EXISTS `m4pmt_finder_links_terms1` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `m4pmt_finder_links_terms2`
+-- Structure de la table `m4pmt_finder_links_terms2`
 --
 
 CREATE TABLE IF NOT EXISTS `m4pmt_finder_links_terms2` (
@@ -4564,7 +4565,7 @@ CREATE TABLE IF NOT EXISTS `m4pmt_finder_links_terms2` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `m4pmt_finder_links_terms3`
+-- Structure de la table `m4pmt_finder_links_terms3`
 --
 
 CREATE TABLE IF NOT EXISTS `m4pmt_finder_links_terms3` (
@@ -4579,7 +4580,7 @@ CREATE TABLE IF NOT EXISTS `m4pmt_finder_links_terms3` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `m4pmt_finder_links_terms4`
+-- Structure de la table `m4pmt_finder_links_terms4`
 --
 
 CREATE TABLE IF NOT EXISTS `m4pmt_finder_links_terms4` (
@@ -4594,7 +4595,7 @@ CREATE TABLE IF NOT EXISTS `m4pmt_finder_links_terms4` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `m4pmt_finder_links_terms5`
+-- Structure de la table `m4pmt_finder_links_terms5`
 --
 
 CREATE TABLE IF NOT EXISTS `m4pmt_finder_links_terms5` (
@@ -4609,7 +4610,7 @@ CREATE TABLE IF NOT EXISTS `m4pmt_finder_links_terms5` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `m4pmt_finder_links_terms6`
+-- Structure de la table `m4pmt_finder_links_terms6`
 --
 
 CREATE TABLE IF NOT EXISTS `m4pmt_finder_links_terms6` (
@@ -4624,7 +4625,7 @@ CREATE TABLE IF NOT EXISTS `m4pmt_finder_links_terms6` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `m4pmt_finder_links_terms7`
+-- Structure de la table `m4pmt_finder_links_terms7`
 --
 
 CREATE TABLE IF NOT EXISTS `m4pmt_finder_links_terms7` (
@@ -4639,7 +4640,7 @@ CREATE TABLE IF NOT EXISTS `m4pmt_finder_links_terms7` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `m4pmt_finder_links_terms8`
+-- Structure de la table `m4pmt_finder_links_terms8`
 --
 
 CREATE TABLE IF NOT EXISTS `m4pmt_finder_links_terms8` (
@@ -4654,7 +4655,7 @@ CREATE TABLE IF NOT EXISTS `m4pmt_finder_links_terms8` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `m4pmt_finder_links_terms9`
+-- Structure de la table `m4pmt_finder_links_terms9`
 --
 
 CREATE TABLE IF NOT EXISTS `m4pmt_finder_links_terms9` (
@@ -4669,7 +4670,7 @@ CREATE TABLE IF NOT EXISTS `m4pmt_finder_links_terms9` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `m4pmt_finder_links_termsa`
+-- Structure de la table `m4pmt_finder_links_termsa`
 --
 
 CREATE TABLE IF NOT EXISTS `m4pmt_finder_links_termsa` (
@@ -4684,7 +4685,7 @@ CREATE TABLE IF NOT EXISTS `m4pmt_finder_links_termsa` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `m4pmt_finder_links_termsb`
+-- Structure de la table `m4pmt_finder_links_termsb`
 --
 
 CREATE TABLE IF NOT EXISTS `m4pmt_finder_links_termsb` (
@@ -4699,7 +4700,7 @@ CREATE TABLE IF NOT EXISTS `m4pmt_finder_links_termsb` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `m4pmt_finder_links_termsc`
+-- Structure de la table `m4pmt_finder_links_termsc`
 --
 
 CREATE TABLE IF NOT EXISTS `m4pmt_finder_links_termsc` (
@@ -4714,7 +4715,7 @@ CREATE TABLE IF NOT EXISTS `m4pmt_finder_links_termsc` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `m4pmt_finder_links_termsd`
+-- Structure de la table `m4pmt_finder_links_termsd`
 --
 
 CREATE TABLE IF NOT EXISTS `m4pmt_finder_links_termsd` (
@@ -4729,7 +4730,7 @@ CREATE TABLE IF NOT EXISTS `m4pmt_finder_links_termsd` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `m4pmt_finder_links_termse`
+-- Structure de la table `m4pmt_finder_links_termse`
 --
 
 CREATE TABLE IF NOT EXISTS `m4pmt_finder_links_termse` (
@@ -4744,7 +4745,7 @@ CREATE TABLE IF NOT EXISTS `m4pmt_finder_links_termse` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `m4pmt_finder_links_termsf`
+-- Structure de la table `m4pmt_finder_links_termsf`
 --
 
 CREATE TABLE IF NOT EXISTS `m4pmt_finder_links_termsf` (
@@ -4759,7 +4760,7 @@ CREATE TABLE IF NOT EXISTS `m4pmt_finder_links_termsf` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `m4pmt_finder_taxonomy`
+-- Structure de la table `m4pmt_finder_taxonomy`
 --
 
 CREATE TABLE IF NOT EXISTS `m4pmt_finder_taxonomy` (
@@ -4780,7 +4781,7 @@ CREATE TABLE IF NOT EXISTS `m4pmt_finder_taxonomy` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `m4pmt_finder_taxonomy_map`
+-- Structure de la table `m4pmt_finder_taxonomy_map`
 --
 
 CREATE TABLE IF NOT EXISTS `m4pmt_finder_taxonomy_map` (
@@ -4794,7 +4795,7 @@ CREATE TABLE IF NOT EXISTS `m4pmt_finder_taxonomy_map` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `m4pmt_finder_terms`
+-- Structure de la table `m4pmt_finder_terms`
 --
 
 CREATE TABLE IF NOT EXISTS `m4pmt_finder_terms` (
@@ -4816,7 +4817,7 @@ CREATE TABLE IF NOT EXISTS `m4pmt_finder_terms` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `m4pmt_finder_terms_common`
+-- Structure de la table `m4pmt_finder_terms_common`
 --
 
 CREATE TABLE IF NOT EXISTS `m4pmt_finder_terms_common` (
@@ -4827,7 +4828,7 @@ CREATE TABLE IF NOT EXISTS `m4pmt_finder_terms_common` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `m4pmt_finder_terms_common`
+-- Contenu de la table `m4pmt_finder_terms_common`
 --
 
 INSERT INTO `m4pmt_finder_terms_common` (`term`, `language`) VALUES
@@ -4950,7 +4951,7 @@ INSERT INTO `m4pmt_finder_terms_common` (`term`, `language`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `m4pmt_finder_tokens`
+-- Structure de la table `m4pmt_finder_tokens`
 --
 
 CREATE TABLE IF NOT EXISTS `m4pmt_finder_tokens` (
@@ -4967,7 +4968,7 @@ CREATE TABLE IF NOT EXISTS `m4pmt_finder_tokens` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `m4pmt_finder_tokens_aggregate`
+-- Structure de la table `m4pmt_finder_tokens_aggregate`
 --
 
 CREATE TABLE IF NOT EXISTS `m4pmt_finder_tokens_aggregate` (
@@ -4988,7 +4989,7 @@ CREATE TABLE IF NOT EXISTS `m4pmt_finder_tokens_aggregate` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `m4pmt_finder_types`
+-- Structure de la table `m4pmt_finder_types`
 --
 
 CREATE TABLE IF NOT EXISTS `m4pmt_finder_types` (
@@ -5002,7 +5003,7 @@ CREATE TABLE IF NOT EXISTS `m4pmt_finder_types` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `m4pmt_jms_coupons`
+-- Structure de la table `m4pmt_jms_coupons`
 --
 
 CREATE TABLE IF NOT EXISTS `m4pmt_jms_coupons` (
@@ -5029,7 +5030,7 @@ CREATE TABLE IF NOT EXISTS `m4pmt_jms_coupons` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `m4pmt_jms_coupon_subscrs`
+-- Structure de la table `m4pmt_jms_coupon_subscrs`
 --
 
 CREATE TABLE IF NOT EXISTS `m4pmt_jms_coupon_subscrs` (
@@ -5049,7 +5050,7 @@ CREATE TABLE IF NOT EXISTS `m4pmt_jms_coupon_subscrs` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `m4pmt_jms_plans`
+-- Structure de la table `m4pmt_jms_plans`
 --
 
 CREATE TABLE IF NOT EXISTS `m4pmt_jms_plans` (
@@ -5110,7 +5111,7 @@ CREATE TABLE IF NOT EXISTS `m4pmt_jms_plans` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `m4pmt_jms_plan_subscrs`
+-- Structure de la table `m4pmt_jms_plan_subscrs`
 --
 
 CREATE TABLE IF NOT EXISTS `m4pmt_jms_plan_subscrs` (
@@ -5139,7 +5140,7 @@ CREATE TABLE IF NOT EXISTS `m4pmt_jms_plan_subscrs` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `m4pmt_joomailermailchimpintegration`
+-- Structure de la table `m4pmt_joomailermailchimpintegration`
 --
 
 CREATE TABLE IF NOT EXISTS `m4pmt_joomailermailchimpintegration` (
@@ -5153,7 +5154,7 @@ CREATE TABLE IF NOT EXISTS `m4pmt_joomailermailchimpintegration` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `m4pmt_joomailermailchimpintegration_campaigns`
+-- Structure de la table `m4pmt_joomailermailchimpintegration_campaigns`
 --
 
 CREATE TABLE IF NOT EXISTS `m4pmt_joomailermailchimpintegration_campaigns` (
@@ -5178,7 +5179,7 @@ CREATE TABLE IF NOT EXISTS `m4pmt_joomailermailchimpintegration_campaigns` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `m4pmt_joomailermailchimpintegration_crm`
+-- Structure de la table `m4pmt_joomailermailchimpintegration_crm`
 --
 
 CREATE TABLE IF NOT EXISTS `m4pmt_joomailermailchimpintegration_crm` (
@@ -5191,7 +5192,7 @@ CREATE TABLE IF NOT EXISTS `m4pmt_joomailermailchimpintegration_crm` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `m4pmt_joomailermailchimpintegration_crm_users`
+-- Structure de la table `m4pmt_joomailermailchimpintegration_crm_users`
 --
 
 CREATE TABLE IF NOT EXISTS `m4pmt_joomailermailchimpintegration_crm_users` (
@@ -5204,7 +5205,7 @@ CREATE TABLE IF NOT EXISTS `m4pmt_joomailermailchimpintegration_crm_users` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `m4pmt_joomailermailchimpintegration_custom_fields`
+-- Structure de la table `m4pmt_joomailermailchimpintegration_custom_fields`
 --
 
 CREATE TABLE IF NOT EXISTS `m4pmt_joomailermailchimpintegration_custom_fields` (
@@ -5221,7 +5222,7 @@ CREATE TABLE IF NOT EXISTS `m4pmt_joomailermailchimpintegration_custom_fields` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `m4pmt_joomailermailchimpintegration_misc`
+-- Structure de la table `m4pmt_joomailermailchimpintegration_misc`
 --
 
 CREATE TABLE IF NOT EXISTS `m4pmt_joomailermailchimpintegration_misc` (
@@ -5235,7 +5236,7 @@ CREATE TABLE IF NOT EXISTS `m4pmt_joomailermailchimpintegration_misc` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `m4pmt_joomailermailchimpsignup`
+-- Structure de la table `m4pmt_joomailermailchimpsignup`
 --
 
 CREATE TABLE IF NOT EXISTS `m4pmt_joomailermailchimpsignup` (
@@ -5251,7 +5252,7 @@ CREATE TABLE IF NOT EXISTS `m4pmt_joomailermailchimpsignup` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `m4pmt_jvmauth`
+-- Structure de la table `m4pmt_jvmauth`
 --
 
 CREATE TABLE IF NOT EXISTS `m4pmt_jvmauth` (
@@ -5269,7 +5270,7 @@ CREATE TABLE IF NOT EXISTS `m4pmt_jvmauth` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `m4pmt_languages`
+-- Structure de la table `m4pmt_languages`
 --
 
 CREATE TABLE IF NOT EXISTS `m4pmt_languages` (
@@ -5295,7 +5296,7 @@ CREATE TABLE IF NOT EXISTS `m4pmt_languages` (
 ) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=2 ;
 
 --
--- Dumping data for table `m4pmt_languages`
+-- Contenu de la table `m4pmt_languages`
 --
 
 INSERT INTO `m4pmt_languages` (`lang_id`, `lang_code`, `title`, `title_native`, `sef`, `image`, `description`, `metakey`, `metadesc`, `sitename`, `published`, `access`, `ordering`) VALUES
@@ -5304,7 +5305,7 @@ INSERT INTO `m4pmt_languages` (`lang_id`, `lang_code`, `title`, `title_native`, 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `m4pmt_menu`
+-- Structure de la table `m4pmt_menu`
 --
 
 CREATE TABLE IF NOT EXISTS `m4pmt_menu` (
@@ -5344,7 +5345,7 @@ CREATE TABLE IF NOT EXISTS `m4pmt_menu` (
 ) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=549 ;
 
 --
--- Dumping data for table `m4pmt_menu`
+-- Contenu de la table `m4pmt_menu`
 --
 
 INSERT INTO `m4pmt_menu` (`id`, `menutype`, `title`, `alias`, `note`, `path`, `link`, `type`, `published`, `parent_id`, `level`, `component_id`, `ordering`, `checked_out`, `checked_out_time`, `browserNav`, `access`, `img`, `template_style_id`, `params`, `lft`, `rgt`, `home`, `language`, `client_id`) VALUES
@@ -5550,12 +5551,12 @@ INSERT INTO `m4pmt_menu` (`id`, `menutype`, `title`, `alias`, `note`, `path`, `l
 (545, 'bottommenu', 'Contact', '2012-08-20-02-42-29', '', '2012-08-20-02-42-29', '', 'url', 1, 1, 1, 0, 0, 0, '0000-00-00 00:00:00', 0, 1, '', 0, '{"menu-anchor_title":"","menu-anchor_css":"","menu_image":"","menu_text":1,"fusion_item_subtext":"","fusion_customimage":"","fusion_customclass":"","fusion_columns":"1","fusion_distribution":"even","fusion_dropdown_width":"","fusion_column_widths":"","fusion_children_group":"0","fusion_children_type":"menuitems","fusion_modules":"88","fusion_module_positions":"","splitmenu_item_subtext":""}', 391, 392, 0, '*', 0),
 (546, 'main', 'Tesimonial', 'tesimonial', '', 'tesimonial', 'index.php?option=com_eztestimonial', 'component', 0, 1, 1, 10128, 0, 0, '0000-00-00 00:00:00', 0, 1, 'components/com_eztestimonial/testimonial.png', 0, '', 393, 394, 0, '', 1),
 (547, 'hidden-menu', 'Submit Testimonial', 'submit-testimonial', '', 'submit-testimonial', 'index.php?option=com_eztestimonial&view=form', 'component', 1, 1, 1, 10128, 0, 0, '0000-00-00 00:00:00', 0, 1, '', 0, '{"menu-anchor_title":"","menu-anchor_css":"","menu_image":"","menu_text":1,"page_title":"","show_page_heading":0,"page_heading":"","pageclass_sfx":"","menu-meta_description":"","menu-meta_keywords":"","robots":"","secure":0,"fusion_item_subtext":"","fusion_customimage":"","fusion_customclass":"","fusion_columns":"1","fusion_distribution":"even","fusion_dropdown_width":"","fusion_column_widths":"","fusion_children_group":"0","fusion_children_type":"menuitems","fusion_modules":"88","fusion_module_positions":"","splitmenu_item_subtext":""}', 395, 396, 0, '*', 0),
-(548, 'hidden-menu', 'Testimonials', 'testimonials', '', 'testimonials', 'index.php?option=com_eztestimonial&view=eztestimonials', 'component', 1, 1, 1, 10128, 0, 42, '2012-08-21 20:28:25', 0, 1, '', 0, '{"menu-anchor_title":"","menu-anchor_css":"","menu_image":"","menu_text":1,"page_title":"Testimonials","show_page_heading":0,"page_heading":"Testimonials","pageclass_sfx":"","menu-meta_description":"","menu-meta_keywords":"","robots":"","secure":0,"fusion_item_subtext":"","fusion_customimage":"","fusion_customclass":"","fusion_columns":"1","fusion_distribution":"even","fusion_dropdown_width":"","fusion_column_widths":"","fusion_children_group":"0","fusion_children_type":"menuitems","fusion_modules":"88","fusion_module_positions":"","splitmenu_item_subtext":""}', 397, 398, 0, '*', 0);
+(548, 'hidden-menu', 'Testimonials', 'testimonials', '', 'testimonials', 'index.php?option=com_eztestimonial&view=eztestimonials', 'component', 1, 1, 1, 10128, 0, 42, '2012-08-22 21:49:17', 0, 1, '', 0, '{"menu-anchor_title":"","menu-anchor_css":"","menu_image":"","menu_text":1,"page_title":"Testimonials","show_page_heading":0,"page_heading":"Testimonials","pageclass_sfx":"","menu-meta_description":"","menu-meta_keywords":"","robots":"","secure":0,"fusion_item_subtext":"","fusion_customimage":"","fusion_customclass":"","fusion_columns":"1","fusion_distribution":"even","fusion_dropdown_width":"","fusion_column_widths":"","fusion_children_group":"0","fusion_children_type":"menuitems","fusion_modules":"88","fusion_module_positions":"","splitmenu_item_subtext":""}', 397, 398, 0, '*', 0);
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `m4pmt_menu_types`
+-- Structure de la table `m4pmt_menu_types`
 --
 
 CREATE TABLE IF NOT EXISTS `m4pmt_menu_types` (
@@ -5568,7 +5569,7 @@ CREATE TABLE IF NOT EXISTS `m4pmt_menu_types` (
 ) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=10 ;
 
 --
--- Dumping data for table `m4pmt_menu_types`
+-- Contenu de la table `m4pmt_menu_types`
 --
 
 INSERT INTO `m4pmt_menu_types` (`id`, `menutype`, `title`, `description`) VALUES
@@ -5582,7 +5583,7 @@ INSERT INTO `m4pmt_menu_types` (`id`, `menutype`, `title`, `description`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `m4pmt_messages`
+-- Structure de la table `m4pmt_messages`
 --
 
 CREATE TABLE IF NOT EXISTS `m4pmt_messages` (
@@ -5602,7 +5603,7 @@ CREATE TABLE IF NOT EXISTS `m4pmt_messages` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `m4pmt_messages_cfg`
+-- Structure de la table `m4pmt_messages_cfg`
 --
 
 CREATE TABLE IF NOT EXISTS `m4pmt_messages_cfg` (
@@ -5615,7 +5616,7 @@ CREATE TABLE IF NOT EXISTS `m4pmt_messages_cfg` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `m4pmt_modules`
+-- Structure de la table `m4pmt_modules`
 --
 
 CREATE TABLE IF NOT EXISTS `m4pmt_modules` (
@@ -5640,10 +5641,10 @@ CREATE TABLE IF NOT EXISTS `m4pmt_modules` (
   KEY `published` (`published`,`access`),
   KEY `newsfeeds` (`module`,`published`),
   KEY `idx_language` (`language`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=182 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=183 ;
 
 --
--- Dumping data for table `m4pmt_modules`
+-- Contenu de la table `m4pmt_modules`
 --
 
 INSERT INTO `m4pmt_modules` (`id`, `title`, `note`, `content`, `ordering`, `position`, `checked_out`, `checked_out_time`, `publish_up`, `publish_down`, `published`, `module`, `access`, `showtitle`, `params`, `client_id`, `language`) VALUES
@@ -5722,7 +5723,7 @@ INSERT INTO `m4pmt_modules` (`id`, `title`, `note`, `content`, `ordering`, `posi
 (99, '960 Grid System', '', '<p style="color: #000000; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 11px; line-height: normal;">The template is split into <strong>rows</strong> of 6 columns, culminating in a total of <strong>68 module positions</strong>, all perfectly aligned to the grid.</p>\r\n<p style="color: #000000; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 11px; line-height: normal;"><a href="index.php?option=com_content&amp;view=article&amp;id=51&amp;Itemid=54">Learn More</a></p>', 1, 'showcase-a', 0, '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 1, 'mod_custom', 1, 1, '{"prepare_content":"1","backgroundimage":"","layout":"_:default","moduleclass_sfx":"","cache":"1","cache_time":"900","cachemode":"static"}', 0, '*'),
 (100, 'Content Bottom A', '', '<p><span style="font-family: Helvetica, Arial, FreeSans, sans-serif; line-height: 20px;">Nec libero laoreet faucibus. Phasellus sodales, lectus sed vulputate rutrum.</span></p>', 1, 'content-bottom-a', 42, '2012-08-17 01:56:25', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 1, 'mod_custom', 1, 1, '{"prepare_content":"1","backgroundimage":"","layout":"_:default","moduleclass_sfx":"","cache":"1","cache_time":"900","cachemode":"static"}', 0, '*'),
 (101, 'Content Bottom B', '', '<p><span style="font-family: Helvetica, Arial, FreeSans, sans-serif; line-height: 20px;">Nec libero laoreet faucibus. Phasellus sodales, lectus sed vulputate rutrum.</span></p>', 1, 'content-bottom-b', 0, '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 1, 'mod_custom', 1, 1, '{"prepare_content":"1","backgroundimage":"","layout":"_:default","moduleclass_sfx":"","cache":"1","cache_time":"900","cachemode":"static"}', 0, '*'),
-(102, 'Content Bottom C', '', '<p><span style="font-family: Helvetica, Arial, FreeSans, sans-serif; line-height: 20px;">Nec libero laoreet faucibus. Phasellus sodales, lectus sed vulputate rutrum.</span></p>', 1, 'content-bottom-c', 0, '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 1, 'mod_custom', 1, 1, '{"prepare_content":"1","backgroundimage":"","layout":"_:default","moduleclass_sfx":"","cache":"1","cache_time":"900","cachemode":"static"}', 0, '*'),
+(102, 'Content Bottom C', '', '<p><span style="font-family: Helvetica, Arial, FreeSans, sans-serif; line-height: 20px;">Nec libero laoreet faucibus. Phasellus sodales, lectus sed vulputate rutrum.</span></p>', 1, 'content-bottom-c', 0, '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 0, 'mod_custom', 1, 1, '{"prepare_content":"1","backgroundimage":"","layout":"_:default","moduleclass_sfx":"","cache":"1","cache_time":"900","cachemode":"static"}', 0, '*'),
 (103, 'Content Top A', '', '<p><span style="font-family: Helvetica, Arial, FreeSans, sans-serif; line-height: 20px;">Lorem ipsum dolor sit amet, consec tetur adipiscing elit. Donec sit amet nibh.</span></p>', 1, 'content-top-a', 0, '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 1, 'mod_custom', 1, 1, '{"prepare_content":"1","backgroundimage":"","layout":"_:default","moduleclass_sfx":"","cache":"1","cache_time":"900","cachemode":"static"}', 0, '*'),
 (104, 'Content Top B', '', '<p><span style="font-family: Helvetica, Arial, FreeSans, sans-serif; line-height: 20px;">Lorem ipsum dolor sit amet, consec tetur adipiscing elit. Donec sit amet nibh.</span></p>', 1, 'content-top-b', 0, '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 0, 'mod_custom', 1, 1, '{"prepare_content":"1","backgroundimage":"","layout":"_:default","moduleclass_sfx":"","cache":"1","cache_time":"900","cachemode":"static"}', 0, '*'),
 (105, 'Content Top C', '', '<p><span style="font-family: Helvetica, Arial, FreeSans, sans-serif; line-height: 20px;">Lorem ipsum dolor sit amet, consec tetur adipiscing elit. Donec sit amet nibh.</span></p>', 1, 'content-top-c', 0, '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 1, 'mod_custom', 1, 1, '{"prepare_content":"1","backgroundimage":"","layout":"_:default","moduleclass_sfx":"","cache":"1","cache_time":"900","cachemode":"static"}', 0, '*'),
@@ -5791,18 +5792,19 @@ INSERT INTO `m4pmt_modules` (`id`, `title`, `note`, `content`, `ordering`, `posi
 (171, 'VM - Manufacturer', '', '', 5, 'position-4', 0, '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 1, 'mod_virtuemart_manufacturer', 1, 1, '', 0, ''),
 (172, 'VM - Shopping cart', '', '', 0, 'position-4', 0, '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 1, 'mod_virtuemart_cart', 1, 1, '', 0, ''),
 (173, 'VM - Category', '', '', 6, 'position-4', 0, '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 1, 'mod_virtuemart_category', 1, 1, '', 0, ''),
-(175, 'Shop', '', '<div class="desc">\r\n<p>Amet odio ultrices, in aenean turpis augue dignissim auctor platea tortor.</p>\r\n</div>\r\n<p><a href="#" class="more">Browse our shop</a></p>', 1, 'content-bottom-a', 0, '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 1, 'mod_custom', 1, 1, '{"prepare_content":"1","backgroundimage":"","layout":"_:default","moduleclass_sfx":"","cache":"1","cache_time":"900","cachemode":"static"}', 0, '*'),
-(176, 'Testimonials', '', '<div class="desc">\r\n<span class="quote">"</span><p class="blockquote">Odio porttitor, placerat elementum ac, ac adipiscing rhoncus, urna amet penatibus cras elementum tincidunt. <br/>Cursus scelerisque magna ...<span class="quote inset">"</span>- Name Lastname (35)</p>\r\n</div>\r\n<a href="#" class="more">Read more</a>', 1, 'content-bottom-c', 0, '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 1, 'mod_custom', 1, 1, '{"prepare_content":"1","backgroundimage":"","layout":"_:default","moduleclass_sfx":"","cache":"1","cache_time":"900","cachemode":"static"}', 0, '*'),
-(177, 'Blog', '', '<div class="desc">\r\n<span class="date-post">05/07/2012 by Name Lastname</span>\r\n<p class="post">Amet odio ultrices, in aenean turpis augue dignissim auctor platea tortor. Placerat, velit mattis augue dapibus</p>\r\n</div>\r\n<a href="#" class="more">Read our blog</a>', 1, 'content-bottom-b', 0, '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 1, 'mod_custom', 1, 1, '{"prepare_content":"1","backgroundimage":"","layout":"_:default","moduleclass_sfx":"","cache":"1","cache_time":"900","cachemode":"static"}', 0, '*'),
+(175, 'Shop', '', '<div class="desc">\r\n    <p>Amet odio ultrices, in aenean turpis augue dignissim auctor platea tortor.</p>\r\n</div>\r\n<a href="#" class="more">Browse our shop</a>', 1, 'content-bottom-a', 0, '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 1, 'mod_custom', 1, 1, '{"prepare_content":"1","backgroundimage":"","layout":"_:default","moduleclass_sfx":"","cache":"1","cache_time":"900","cachemode":"static"}', 0, '*'),
+(176, 'Testimonials', '', '<div class="desc">\r\n<span class="quote">"</span><p class="blockquote">Odio porttitor, placerat elementum ac, ac adipiscing rhoncus, urna amet penatibus cras elementum tincidunt. <br/>Cursus scelerisque magna ...<span class="quote inset">"</span>- Name Lastname (35)</p>\r\n</div>\r\n<a href="#" class="more">Read more</a>', 1, 'content-bottom-c', 0, '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 0, 'mod_custom', 1, 1, '{"prepare_content":"1","backgroundimage":"","layout":"_:default","moduleclass_sfx":"","cache":"1","cache_time":"900","cachemode":"static"}', 0, '*'),
+(177, 'Blog', '', '<div class="desc"><span class="date-post">05/07/2012 by Name Lastname</span>\r\n    <p class="post">Amet odio ultrices, in aenean turpis augue dignissim auctor platea tortor. Placerat, velit mattis augue dapibus</p>\r\n</div>\r\n<a href="#" class="more">Read our blog</a>', 1, 'content-bottom-b', 0, '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 1, 'mod_custom', 1, 1, '{"prepare_content":"1","backgroundimage":"","layout":"_:default","moduleclass_sfx":"","cache":"1","cache_time":"900","cachemode":"static"}', 0, '*'),
 (178, 'Home', '', '', 1, 'footer-a', 0, '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', -2, 'mod_articles_archive', 1, 1, '{"count":"10","layout":"_:default","moduleclass_sfx":"","cache":"1","cache_time":"900","cachemode":"static"}', 0, '*'),
 (179, 'Limited edition', '', '<div class="desc">\r\n    <p>Amet odio ultrices, in aenean turpis augue dignissim auctor platea tortor.</p>\r\n</div>\r\n<a href="#" class="more">See in shop</a>', 1, 'content-bottom-a', 0, '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 1, 'mod_custom', 1, 1, '{"prepare_content":"1","backgroundimage":"","layout":"_:default","moduleclass_sfx":"","cache":"1","cache_time":"900","cachemode":"static"}', 0, '*'),
 (180, 'Footer menu', '', '', 1, 'footer-a', 0, '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', -2, 'mod_menu', 1, 0, '{"menutype":"bottommenu","startLevel":"1","endLevel":"0","showAllChildren":"0","tag_id":"","class_sfx":"","window_open":"","layout":"_:default","moduleclass_sfx":"","cache":"1","cache_time":"900","cachemode":"itemid"}', 0, '*'),
-(181, 'Footer menu', '', '', 1, 'menu-footer', 0, '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 1, 'mod_menu', 1, 0, '{"menutype":"bottommenu","startLevel":"1","endLevel":"0","showAllChildren":"0","tag_id":"","class_sfx":"","window_open":"","layout":"_:default","moduleclass_sfx":"","cache":"1","cache_time":"900","cachemode":"itemid"}', 0, '*');
+(181, 'Footer menu', '', '', 1, 'menu-footer', 0, '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 1, 'mod_menu', 1, 0, '{"menutype":"bottommenu","startLevel":"1","endLevel":"0","showAllChildren":"0","tag_id":"","class_sfx":"","window_open":"","layout":"_:default","moduleclass_sfx":"","cache":"1","cache_time":"900","cachemode":"itemid"}', 0, '*'),
+(182, 'Testimonials', '', '', 1, 'content-bottom-c', 0, '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 1, 'mod_last_testimonial', 1, 1, '', 0, '*');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `m4pmt_modules_menu`
+-- Structure de la table `m4pmt_modules_menu`
 --
 
 CREATE TABLE IF NOT EXISTS `m4pmt_modules_menu` (
@@ -5812,7 +5814,7 @@ CREATE TABLE IF NOT EXISTS `m4pmt_modules_menu` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `m4pmt_modules_menu`
+-- Contenu de la table `m4pmt_modules_menu`
 --
 
 INSERT INTO `m4pmt_modules_menu` (`moduleid`, `menuid`) VALUES
@@ -6061,114 +6063,17 @@ INSERT INTO `m4pmt_modules_menu` (`moduleid`, `menuid`) VALUES
 (176, 0),
 (177, 0),
 (178, 0),
-(179, 201),
-(179, 207),
-(179, 227),
-(179, 229),
-(179, 249),
-(179, 251),
-(179, 252),
-(179, 253),
-(179, 254),
-(179, 255),
-(179, 256),
-(179, 257),
-(179, 259),
-(179, 260),
-(179, 262),
-(179, 263),
-(179, 265),
-(179, 266),
-(179, 267),
-(179, 268),
-(179, 270),
-(179, 271),
-(179, 272),
-(179, 273),
-(179, 274),
-(179, 275),
-(179, 276),
-(179, 277),
-(179, 278),
-(179, 279),
-(179, 280),
-(179, 281),
-(179, 282),
-(179, 283),
-(179, 284),
-(179, 285),
-(179, 300),
-(179, 301),
-(179, 302),
-(179, 303),
-(179, 304),
-(179, 305),
-(179, 306),
-(179, 307),
-(179, 309),
-(179, 310),
-(179, 311),
-(179, 312),
-(179, 313),
-(179, 316),
-(179, 317),
-(179, 318),
-(179, 319),
-(179, 320),
-(179, 321),
-(179, 322),
-(179, 323),
-(179, 324),
-(179, 325),
-(179, 326),
-(179, 402),
-(179, 403),
-(179, 404),
-(179, 405),
-(179, 406),
-(179, 409),
-(179, 410),
-(179, 411),
-(179, 412),
-(179, 413),
-(179, 414),
-(179, 415),
-(179, 416),
-(179, 417),
-(179, 418),
-(179, 419),
-(179, 422),
-(179, 423),
-(179, 424),
-(179, 436),
-(179, 437),
-(179, 443),
-(179, 444),
-(179, 447),
-(179, 449),
-(179, 450),
-(179, 452),
-(179, 453),
-(179, 455),
-(179, 456),
-(179, 457),
-(179, 458),
-(179, 459),
-(179, 464),
-(179, 466),
-(179, 467),
-(179, 534),
-(179, 535),
-(179, 536),
-(179, 537),
-(179, 538),
+(179, -539),
+(179, -464),
+(179, -435),
 (180, 0),
-(181, 0);
+(181, 0),
+(182, 0);
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `m4pmt_newsfeeds`
+-- Structure de la table `m4pmt_newsfeeds`
 --
 
 CREATE TABLE IF NOT EXISTS `m4pmt_newsfeeds` (
@@ -6210,7 +6115,7 @@ CREATE TABLE IF NOT EXISTS `m4pmt_newsfeeds` (
 ) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=5 ;
 
 --
--- Dumping data for table `m4pmt_newsfeeds`
+-- Contenu de la table `m4pmt_newsfeeds`
 --
 
 INSERT INTO `m4pmt_newsfeeds` (`catid`, `id`, `name`, `alias`, `link`, `filename`, `published`, `numarticles`, `cache_time`, `checked_out`, `checked_out_time`, `ordering`, `rtl`, `access`, `language`, `params`, `created`, `created_by`, `created_by_alias`, `modified`, `modified_by`, `metakey`, `metadesc`, `metadata`, `xreference`, `publish_up`, `publish_down`) VALUES
@@ -6222,7 +6127,7 @@ INSERT INTO `m4pmt_newsfeeds` (`catid`, `id`, `name`, `alias`, `link`, `filename
 -- --------------------------------------------------------
 
 --
--- Table structure for table `m4pmt_overrider`
+-- Structure de la table `m4pmt_overrider`
 --
 
 CREATE TABLE IF NOT EXISTS `m4pmt_overrider` (
@@ -6236,7 +6141,7 @@ CREATE TABLE IF NOT EXISTS `m4pmt_overrider` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `m4pmt_redirect_links`
+-- Structure de la table `m4pmt_redirect_links`
 --
 
 CREATE TABLE IF NOT EXISTS `m4pmt_redirect_links` (
@@ -6254,7 +6159,7 @@ CREATE TABLE IF NOT EXISTS `m4pmt_redirect_links` (
 ) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=122 ;
 
 --
--- Dumping data for table `m4pmt_redirect_links`
+-- Contenu de la table `m4pmt_redirect_links`
 --
 
 INSERT INTO `m4pmt_redirect_links` (`id`, `old_url`, `new_url`, `referer`, `comment`, `published`, `created_date`, `modified_date`) VALUES
@@ -6383,7 +6288,7 @@ INSERT INTO `m4pmt_redirect_links` (`id`, `old_url`, `new_url`, `referer`, `comm
 -- --------------------------------------------------------
 
 --
--- Table structure for table `m4pmt_rsseo_competitors`
+-- Structure de la table `m4pmt_rsseo_competitors`
 --
 
 CREATE TABLE IF NOT EXISTS `m4pmt_rsseo_competitors` (
@@ -6409,7 +6314,7 @@ CREATE TABLE IF NOT EXISTS `m4pmt_rsseo_competitors` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `m4pmt_rsseo_competitors_history`
+-- Structure de la table `m4pmt_rsseo_competitors_history`
 --
 
 CREATE TABLE IF NOT EXISTS `m4pmt_rsseo_competitors_history` (
@@ -6431,7 +6336,7 @@ CREATE TABLE IF NOT EXISTS `m4pmt_rsseo_competitors_history` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `m4pmt_rsseo_config`
+-- Structure de la table `m4pmt_rsseo_config`
 --
 
 CREATE TABLE IF NOT EXISTS `m4pmt_rsseo_config` (
@@ -6442,7 +6347,7 @@ CREATE TABLE IF NOT EXISTS `m4pmt_rsseo_config` (
 ) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=56 ;
 
 --
--- Dumping data for table `m4pmt_rsseo_config`
+-- Contenu de la table `m4pmt_rsseo_config`
 --
 
 INSERT INTO `m4pmt_rsseo_config` (`IdConfig`, `ConfigName`, `ConfigValue`) VALUES
@@ -6504,7 +6409,7 @@ INSERT INTO `m4pmt_rsseo_config` (`IdConfig`, `ConfigName`, `ConfigValue`) VALUE
 -- --------------------------------------------------------
 
 --
--- Table structure for table `m4pmt_rsseo_keywords`
+-- Structure de la table `m4pmt_rsseo_keywords`
 --
 
 CREATE TABLE IF NOT EXISTS `m4pmt_rsseo_keywords` (
@@ -6526,7 +6431,7 @@ CREATE TABLE IF NOT EXISTS `m4pmt_rsseo_keywords` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `m4pmt_rsseo_pages`
+-- Structure de la table `m4pmt_rsseo_pages`
 --
 
 CREATE TABLE IF NOT EXISTS `m4pmt_rsseo_pages` (
@@ -6548,10 +6453,10 @@ CREATE TABLE IF NOT EXISTS `m4pmt_rsseo_pages` (
   `published` tinyint(2) NOT NULL DEFAULT '1',
   PRIMARY KEY (`IdPage`),
   UNIQUE KEY `PageURL` (`PageURL`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=308 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=319 ;
 
 --
--- Dumping data for table `m4pmt_rsseo_pages`
+-- Contenu de la table `m4pmt_rsseo_pages`
 --
 
 INSERT INTO `m4pmt_rsseo_pages` (`IdPage`, `PageURL`, `PageTitle`, `PageKeywords`, `PageKeywordsDensity`, `PageDescription`, `PageSitemap`, `PageInSitemap`, `PageCrawled`, `DatePageCrawled`, `PageModified`, `PageLevel`, `PageGrade`, `params`, `densityparams`, `published`) VALUES
@@ -6861,12 +6766,23 @@ INSERT INTO `m4pmt_rsseo_pages` (`IdPage`, `PageURL`, `PageTitle`, `PageKeywords
 (304, 'index.php?option=com_eztestimonial&view=eztestimonials', 'Ugg', '', '', '', 0, 0, 0, 0, 0, 127, -1.00, '', '', 1),
 (305, 'index.php/component/eztestimonial/?view=form', 'Ugg', '', '', '', 0, 0, 0, 0, 0, 127, -1.00, '', '', 1),
 (306, 'index.php/component/eztestimonial/?limit=10&limitstart=0&view=testimonials&option=com_eztestimonial', 'Ugg', '', '', '', 0, 0, 0, 0, 0, 127, -1.00, '', '', 1),
-(307, 'index.php/component/eztestimonial/?limit=5&limitstart=0&view=testimonials&option=com_eztestimonial', 'Ugg', '', '', '', 0, 0, 0, 0, 0, 127, -1.00, '', '', 1);
+(307, 'index.php/component/eztestimonial/?limit=5&limitstart=0&view=testimonials&option=com_eztestimonial', 'Ugg', '', '', '', 0, 0, 0, 0, 0, 127, -1.00, '', '', 1),
+(308, 'index.php/component/eztestimonial/?limit=5&view=testimonials&start=5', 'Ugg', '', '', '', 0, 0, 0, 0, 0, 127, -1.00, '', '', 1),
+(309, 'index.php/component/eztestimonial/', 'Ugg', '', '', '', 0, 0, 0, 0, 0, 127, -1.00, '', '', 1),
+(310, 'index.php/component/eztestimonial', 'Ugg', '', '', '', 0, 0, 0, 0, 0, 127, -1.00, '', '', 1),
+(311, 'index.php/component/eztestimonial/?limit=0&limitstart=0&view=testimonials&option=com_eztestimonial', 'Ugg', '', '', '', 0, 0, 0, 0, 0, 127, -1.00, '', '', 1),
+(312, 'index.php/component/eztestimonial/?view=eztestimonials&start=4', 'Ugg', '', '', '', 0, 0, 0, 0, 0, 127, -1.00, '', '', 1),
+(313, 'index.php/component/eztestimonial/?view=eztestimonials&limitstart=0', 'Ugg', '', '', '', 0, 0, 0, 0, 0, 127, -1.00, '', '', 1),
+(314, 'index.php/component/eztestimonial/?view=eztestimonials&start=8', 'Ugg', '', '', '', 0, 0, 0, 0, 0, 127, -1.00, '', '', 1),
+(315, 'index.php/component/eztestimonial/?start=4', 'Ugg', '', '', '', 0, 0, 0, 0, 0, 127, -1.00, '', '', 1),
+(316, 'index.php/component/eztestimonial/?start=8', 'Ugg', '', '', '', 0, 0, 0, 0, 0, 127, -1.00, '', '', 1),
+(317, 'index.php/component/eztestimonial/?limitstart=0', 'Ugg', '', '', '', 0, 0, 0, 0, 0, 127, -1.00, '', '', 1),
+(318, 'index.php/component/eztestimonial/?view=eztestimonials', 'Ugg', '', '', '', 0, 0, 0, 0, 0, 127, -1.00, '', '', 1);
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `m4pmt_rsseo_redirects`
+-- Structure de la table `m4pmt_rsseo_redirects`
 --
 
 CREATE TABLE IF NOT EXISTS `m4pmt_rsseo_redirects` (
@@ -6881,7 +6797,7 @@ CREATE TABLE IF NOT EXISTS `m4pmt_rsseo_redirects` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `m4pmt_schemas`
+-- Structure de la table `m4pmt_schemas`
 --
 
 CREATE TABLE IF NOT EXISTS `m4pmt_schemas` (
@@ -6891,7 +6807,7 @@ CREATE TABLE IF NOT EXISTS `m4pmt_schemas` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `m4pmt_schemas`
+-- Contenu de la table `m4pmt_schemas`
 --
 
 INSERT INTO `m4pmt_schemas` (`extension_id`, `version_id`) VALUES
@@ -6900,7 +6816,7 @@ INSERT INTO `m4pmt_schemas` (`extension_id`, `version_id`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `m4pmt_session`
+-- Structure de la table `m4pmt_session`
 --
 
 CREATE TABLE IF NOT EXISTS `m4pmt_session` (
@@ -6919,18 +6835,17 @@ CREATE TABLE IF NOT EXISTS `m4pmt_session` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `m4pmt_session`
+-- Contenu de la table `m4pmt_session`
 --
 
 INSERT INTO `m4pmt_session` (`session_id`, `client_id`, `guest`, `time`, `data`, `userid`, `username`, `usertype`) VALUES
-('ssrsn1fn3tjmnpjbceln593m02', 0, 1, '1345602864', '__default|a:7:{s:15:"session.counter";i:2;s:19:"session.timer.start";i:1345602836;s:18:"session.timer.last";i:1345602836;s:17:"session.timer.now";i:1345602863;s:22:"session.client.browser";s:63:"Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; Trident/5.0)";s:8:"registry";O:9:"JRegistry":1:{s:7:"\0*\0data";O:8:"stdClass":0:{}}s:4:"user";O:5:"JUser":23:{s:9:"\0*\0isRoot";N;s:2:"id";i:0;s:4:"name";N;s:8:"username";N;s:5:"email";N;s:8:"password";N;s:14:"password_clear";s:0:"";s:8:"usertype";N;s:5:"block";N;s:9:"sendEmail";i:0;s:12:"registerDate";N;s:13:"lastvisitDate";N;s:10:"activation";N;s:6:"params";N;s:6:"groups";a:0:{}s:5:"guest";i:1;s:10:"\0*\0_params";O:9:"JRegistry":1:{s:7:"\0*\0data";O:8:"stdClass":0:{}}s:14:"\0*\0_authGroups";N;s:14:"\0*\0_authLevels";a:2:{i:0;i:1;i:1;i:1;}s:15:"\0*\0_authActions";N;s:12:"\0*\0_errorMsg";N;s:10:"\0*\0_errors";a:0:{}s:3:"aid";i:0;}}VMCHECK|s:7:"NOCHECK";', 0, '', ''),
-('judldqrlvc0j0ndi2kl7emcmk6', 1, 0, '1345606107', '__default|a:8:{s:15:"session.counter";i:61;s:19:"session.timer.start";i:1345599969;s:18:"session.timer.last";i:1345606105;s:17:"session.timer.now";i:1345606105;s:22:"session.client.browser";s:99:"Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.1 (KHTML, like Gecko) Chrome/21.0.1180.83 Safari/537.1";s:8:"registry";O:9:"JRegistry":1:{s:7:"\0*\0data";O:8:"stdClass":4:{s:11:"application";O:8:"stdClass":1:{s:4:"lang";s:0:"";}s:13:"com_installer";O:8:"stdClass":3:{s:7:"message";s:0:"";s:17:"extension_message";s:0:"";s:12:"redirect_url";N;}s:9:"com_menus";O:8:"stdClass":2:{s:4:"edit";O:8:"stdClass":2:{s:4:"menu";O:8:"stdClass":1:{s:4:"data";N;}s:4:"item";O:8:"stdClass":5:{s:4:"data";N;s:4:"type";N;s:4:"link";N;s:2:"id";a:1:{i:0;i:548;}s:8:"menutype";s:11:"hidden-menu";}}s:5:"items";O:8:"stdClass":2:{s:6:"filter";O:8:"stdClass":1:{s:8:"menutype";s:11:"hidden-menu";}s:10:"limitstart";i:0;}}s:4:"item";O:8:"stdClass":1:{s:6:"filter";O:8:"stdClass":1:{s:8:"menutype";s:11:"hidden-menu";}}}}s:4:"user";O:5:"JUser":23:{s:9:"\0*\0isRoot";b:1;s:2:"id";s:2:"42";s:4:"name";s:10:"Super User";s:8:"username";s:6:"adminm";s:5:"email";s:15:"inj@injener.net";s:8:"password";s:65:"7e9e836bdbf8d25ec156f98e0b7cd112:u7ogsNa2F2EFfF8oIRwExlXmp4tuun7w";s:14:"password_clear";s:0:"";s:8:"usertype";s:10:"deprecated";s:5:"block";s:1:"0";s:9:"sendEmail";s:1:"1";s:12:"registerDate";s:19:"2012-02-16 17:22:16";s:13:"lastvisitDate";s:19:"2012-08-21 01:21:17";s:10:"activation";s:1:"0";s:6:"params";s:92:"{"admin_style":"","admin_language":"","language":"","editor":"","helpsite":"","timezone":""}";s:6:"groups";a:1:{i:8;s:1:"8";}s:5:"guest";i:0;s:10:"\0*\0_params";O:9:"JRegistry":1:{s:7:"\0*\0data";O:8:"stdClass":6:{s:11:"admin_style";s:0:"";s:14:"admin_language";s:0:"";s:8:"language";s:0:"";s:6:"editor";s:0:"";s:8:"helpsite";s:0:"";s:8:"timezone";s:0:"";}}s:14:"\0*\0_authGroups";a:2:{i:0;i:1;i:1;i:8;}s:14:"\0*\0_authLevels";a:4:{i:0;i:1;i:1;i:1;i:2;i:2;i:3;i:3;}s:15:"\0*\0_authActions";N;s:12:"\0*\0_errorMsg";N;s:10:"\0*\0_errors";a:0:{}s:3:"aid";i:0;}s:13:"session.token";s:32:"719419e97cb5d49497a9f722f8af65e2";}VMCHECK|s:7:"NOCHECK";', 42, 'adminm', ''),
-('kvqpoljopn59m6dlfpmprqou43', 0, 1, '1345606116', '__default|a:8:{s:15:"session.counter";i:43;s:19:"session.timer.start";i:1345601165;s:18:"session.timer.last";i:1345605994;s:17:"session.timer.now";i:1345606115;s:22:"session.client.browser";s:99:"Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.1 (KHTML, like Gecko) Chrome/21.0.1180.83 Safari/537.1";s:8:"registry";O:9:"JRegistry":1:{s:7:"\0*\0data";O:8:"stdClass":1:{s:6:"global";O:8:"stdClass":1:{s:4:"list";O:8:"stdClass":1:{s:5:"limit";i:5;}}}}s:4:"user";O:5:"JUser":23:{s:9:"\0*\0isRoot";b:0;s:2:"id";i:0;s:4:"name";N;s:8:"username";N;s:5:"email";N;s:8:"password";N;s:14:"password_clear";s:0:"";s:8:"usertype";N;s:5:"block";N;s:9:"sendEmail";i:0;s:12:"registerDate";N;s:13:"lastvisitDate";N;s:10:"activation";N;s:6:"params";N;s:6:"groups";a:0:{}s:5:"guest";i:1;s:10:"\0*\0_params";O:9:"JRegistry":1:{s:7:"\0*\0data";O:8:"stdClass":0:{}}s:14:"\0*\0_authGroups";a:1:{i:0;i:1;}s:14:"\0*\0_authLevels";a:2:{i:0;i:1;i:1;i:1;}s:15:"\0*\0_authActions";N;s:12:"\0*\0_errorMsg";N;s:10:"\0*\0_errors";a:0:{}s:3:"aid";i:0;}s:13:"session.token";s:32:"3d70d7c26d6b6623e15b77603a03274c";}VMCHECK|s:7:"NOCHECK";', 0, '', '');
+('780abjqictemhb8q6u6dpilrk7', 1, 0, '1345697359', '__default|a:8:{s:15:"session.counter";i:96;s:19:"session.timer.start";i:1345690936;s:18:"session.timer.last";i:1345697356;s:17:"session.timer.now";i:1345697357;s:22:"session.client.browser";s:99:"Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.1 (KHTML, like Gecko) Chrome/21.0.1180.83 Safari/537.1";s:8:"registry";O:9:"JRegistry":1:{s:7:"\0*\0data";O:8:"stdClass":6:{s:11:"application";O:8:"stdClass":1:{s:4:"lang";s:0:"";}s:13:"com_installer";O:8:"stdClass":3:{s:7:"message";s:0:"";s:17:"extension_message";s:0:"";s:12:"redirect_url";N;}s:11:"com_content";O:8:"stdClass":1:{s:4:"edit";O:8:"stdClass":1:{s:7:"article";O:8:"stdClass":2:{s:2:"id";a:0:{}s:4:"data";N;}}}s:9:"com_menus";O:8:"stdClass":2:{s:4:"edit";O:8:"stdClass":1:{s:4:"item";O:8:"stdClass":4:{s:2:"id";a:1:{i:0;i:548;}s:4:"data";N;s:4:"type";N;s:4:"link";N;}}s:5:"items";O:8:"stdClass":2:{s:6:"filter";O:8:"stdClass":1:{s:8:"menutype";s:11:"hidden-menu";}s:10:"limitstart";i:0;}}s:11:"com_modules";O:8:"stdClass":3:{s:7:"modules";O:8:"stdClass":4:{s:6:"filter";O:8:"stdClass":8:{s:18:"client_id_previous";i:0;s:6:"search";s:0:"";s:6:"access";i:0;s:5:"state";s:0:"";s:8:"position";s:16:"content-bottom-c";s:6:"module";s:0:"";s:9:"client_id";i:0;s:8:"language";s:0:"";}s:10:"limitstart";i:0;s:8:"ordercol";s:8:"position";s:9:"orderdirn";s:3:"asc";}s:4:"edit";O:8:"stdClass":1:{s:6:"module";O:8:"stdClass":2:{s:2:"id";a:0:{}s:4:"data";N;}}s:3:"add";O:8:"stdClass":1:{s:6:"module";O:8:"stdClass":2:{s:12:"extension_id";N;s:6:"params";N;}}}s:6:"global";O:8:"stdClass":1:{s:4:"list";O:8:"stdClass":1:{s:5:"limit";s:2:"20";}}}}s:4:"user";O:5:"JUser":23:{s:9:"\0*\0isRoot";b:1;s:2:"id";s:2:"42";s:4:"name";s:10:"Super User";s:8:"username";s:6:"adminm";s:5:"email";s:15:"inj@injener.net";s:8:"password";s:65:"7e9e836bdbf8d25ec156f98e0b7cd112:u7ogsNa2F2EFfF8oIRwExlXmp4tuun7w";s:14:"password_clear";s:0:"";s:8:"usertype";s:10:"deprecated";s:5:"block";s:1:"0";s:9:"sendEmail";s:1:"1";s:12:"registerDate";s:19:"2012-02-16 17:22:16";s:13:"lastvisitDate";s:19:"2012-08-22 07:44:18";s:10:"activation";s:1:"0";s:6:"params";s:92:"{"admin_style":"","admin_language":"","language":"","editor":"","helpsite":"","timezone":""}";s:6:"groups";a:1:{i:8;s:1:"8";}s:5:"guest";i:0;s:10:"\0*\0_params";O:9:"JRegistry":1:{s:7:"\0*\0data";O:8:"stdClass":6:{s:11:"admin_style";s:0:"";s:14:"admin_language";s:0:"";s:8:"language";s:0:"";s:6:"editor";s:0:"";s:8:"helpsite";s:0:"";s:8:"timezone";s:0:"";}}s:14:"\0*\0_authGroups";a:2:{i:0;i:1;i:1;i:8;}s:14:"\0*\0_authLevels";a:4:{i:0;i:1;i:1;i:1;i:2;i:2;i:3;i:3;}s:15:"\0*\0_authActions";N;s:12:"\0*\0_errorMsg";N;s:10:"\0*\0_errors";a:0:{}s:3:"aid";i:0;}s:13:"session.token";s:32:"e56febb1f058e067c6f2737d1dd78ff3";}VMCHECK|s:7:"NOCHECK";__wf|a:1:{s:13:"session.token";s:32:"628157137f69453d7a5aef7e6efdf3b3";}', 42, 'adminm', ''),
+('htsofpklcs5v8ltiiuo4d1ead4', 0, 1, '1345697703', '__default|a:8:{s:15:"session.counter";i:115;s:19:"session.timer.start";i:1345690994;s:18:"session.timer.last";i:1345697695;s:17:"session.timer.now";i:1345697702;s:22:"session.client.browser";s:99:"Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.1 (KHTML, like Gecko) Chrome/21.0.1180.83 Safari/537.1";s:8:"registry";O:9:"JRegistry":1:{s:7:"\0*\0data";O:8:"stdClass":2:{s:6:"global";O:8:"stdClass":1:{s:4:"list";O:8:"stdClass":1:{s:5:"limit";i:5;}}s:14:"com_virtuemart";O:8:"stdClass":1:{s:9:"category2";O:8:"stdClass":1:{s:5:"limit";s:3:"int";}}}}s:4:"user";O:5:"JUser":23:{s:9:"\0*\0isRoot";b:0;s:2:"id";i:0;s:4:"name";N;s:8:"username";N;s:5:"email";N;s:8:"password";N;s:14:"password_clear";s:0:"";s:8:"usertype";N;s:5:"block";N;s:9:"sendEmail";i:0;s:12:"registerDate";N;s:13:"lastvisitDate";N;s:10:"activation";N;s:6:"params";N;s:6:"groups";a:0:{}s:5:"guest";i:1;s:10:"\0*\0_params";O:9:"JRegistry":1:{s:7:"\0*\0data";O:8:"stdClass":0:{}}s:14:"\0*\0_authGroups";a:1:{i:0;i:1;}s:14:"\0*\0_authLevels";a:2:{i:0;i:1;i:1;i:1;}s:15:"\0*\0_authActions";N;s:12:"\0*\0_errorMsg";N;s:10:"\0*\0_errors";a:0:{}s:3:"aid";i:0;}s:13:"session.token";s:32:"1d58def7f19794d89afc2fe14ac752d9";}VMCHECK|s:7:"NOCHECK";__vm|a:1:{s:23:"vmlastvisitedcategoryid";i:2;}', 0, '', '');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `m4pmt_sh404sef_aliases`
+-- Structure de la table `m4pmt_sh404sef_aliases`
 --
 
 CREATE TABLE IF NOT EXISTS `m4pmt_sh404sef_aliases` (
@@ -6948,7 +6863,7 @@ CREATE TABLE IF NOT EXISTS `m4pmt_sh404sef_aliases` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `m4pmt_sh404sef_metas`
+-- Structure de la table `m4pmt_sh404sef_metas`
 --
 
 CREATE TABLE IF NOT EXISTS `m4pmt_sh404sef_metas` (
@@ -6987,7 +6902,7 @@ CREATE TABLE IF NOT EXISTS `m4pmt_sh404sef_metas` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `m4pmt_sh404sef_pageids`
+-- Structure de la table `m4pmt_sh404sef_pageids`
 --
 
 CREATE TABLE IF NOT EXISTS `m4pmt_sh404sef_pageids` (
@@ -7005,7 +6920,7 @@ CREATE TABLE IF NOT EXISTS `m4pmt_sh404sef_pageids` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `m4pmt_sh404sef_urls`
+-- Structure de la table `m4pmt_sh404sef_urls`
 --
 
 CREATE TABLE IF NOT EXISTS `m4pmt_sh404sef_urls` (
@@ -7024,7 +6939,7 @@ CREATE TABLE IF NOT EXISTS `m4pmt_sh404sef_urls` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `m4pmt_template_styles`
+-- Structure de la table `m4pmt_template_styles`
 --
 
 CREATE TABLE IF NOT EXISTS `m4pmt_template_styles` (
@@ -7040,7 +6955,7 @@ CREATE TABLE IF NOT EXISTS `m4pmt_template_styles` (
 ) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=119 ;
 
 --
--- Dumping data for table `m4pmt_template_styles`
+-- Contenu de la table `m4pmt_template_styles`
 --
 
 INSERT INTO `m4pmt_template_styles` (`id`, `template`, `client_id`, `home`, `title`, `params`) VALUES
@@ -7052,7 +6967,7 @@ INSERT INTO `m4pmt_template_styles` (`id`, `template`, `client_id`, `home`, `tit
 -- --------------------------------------------------------
 
 --
--- Table structure for table `m4pmt_testimonials`
+-- Structure de la table `m4pmt_testimonials`
 --
 
 CREATE TABLE IF NOT EXISTS `m4pmt_testimonials` (
@@ -7070,26 +6985,28 @@ CREATE TABLE IF NOT EXISTS `m4pmt_testimonials` (
   `rating` int(5) NOT NULL,
   `approved` int(2) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=9 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=22 ;
 
 --
--- Dumping data for table `m4pmt_testimonials`
+-- Contenu de la table `m4pmt_testimonials`
 --
 
 INSERT INTO `m4pmt_testimonials` (`id`, `jomid`, `fullName`, `email`, `location`, `aboutauthor`, `website`, `message_summary`, `message_long`, `image_name`, `added_date`, `rating`, `approved`) VALUES
-(1, 0, 'Tran Hoai Phong', 'hoaiphong.thienphuc@gmail.com', 'Viet Nam', '18', '', 'Odio porttitor, placerat elementum ac, ac adipiscing rhoncus, urna amet penatibus cras elementum...', 'Odio porttitor, placerat elementum ac, ac adipiscing rhoncus, urna amet penatibus cras elementum tincidunt. \r\nCursus scelerisque magna ..', 'tran-hoai-phong-yx5xomynaw.jpg', '2012-08-22 04:07:39', 5, 1),
-(2, 0, 'Pham Tran Minh Danh', 'ptminhdanhit@gmail.com', 'Hue, Viet Nam', '28', '', 'test test test test test test test test test test test test test test test test test test test...', 'test test test test test test test test test test test test test test test test test test test test test test', 'pham-tran-minh-danh-kwofksqik2.jpg', '2012-08-22 04:16:02', 3, 1),
-(3, 0, 'Phan Anh Toan', 'phanhanhtoan@gmail.com', 'Hue, Viet Nam', '30', '', 'Hue, Viet NamHue, Viet NamHue, Viet NamHue, Viet NamHue, Viet NamHue, Viet NamHue, Viet NamHue...', 'Hue, Viet NamHue, Viet NamHue, Viet NamHue, Viet NamHue, Viet NamHue, Viet NamHue, Viet NamHue, Viet NamHue, Viet NamHue, Viet NamHue, Viet NamHue, Viet NamHue, Viet NamHue, Viet NamHue, Viet NamHue, Viet NamHue, Viet NamHue, Viet NamHue, Viet Nam', 'phan-anh-toan-zrp2n412ls.jpg', '2012-08-22 04:42:18', 1, 1),
-(4, 0, 'Tran Quoc Huy', 'phanhanhtoan@gmail.com', 'Hue, Viet Nam', '30', '', 'Hue, Viet NamHue, Viet NamHue, Viet NamHue, Viet NamHue, Viet NamHue, Viet NamHue, Viet NamHue...', 'Hue, Viet NamHue, Viet NamHue, Viet NamHue, Viet NamHue, Viet NamHue, Viet NamHue, Viet NamHue, Viet NamHue, Viet NamHue, Viet NamHue, Viet NamHue, Viet NamHue, Viet NamHue, Viet NamHue, Viet NamHue, Viet NamHue, Viet NamHue, Viet NamHue, Viet Nam', 'tran-quoc-huy-q36ur140ah.jpg', '2012-08-22 04:42:34', 1, 1),
-(5, 0, 'Tran Quoc Huy', 'phanhanhtoan@gmail.com', 'Hue, Viet Nam', '30', '', 'Hue, Viet NamHue, Viet NamHue, Viet NamHue, Viet NamHue, Viet NamHue, Viet NamHue, Viet NamHue...', 'Hue, Viet NamHue, Viet NamHue, Viet NamHue, Viet NamHue, Viet NamHue, Viet NamHue, Viet NamHue, Viet NamHue, Viet NamHue, Viet NamHue, Viet NamHue, Viet NamHue, Viet NamHue, Viet NamHue, Viet NamHue, Viet NamHue, Viet NamHue, Viet NamHue, Viet Nam', 'tran-quoc-huy-gwynaoyb6h.jpg', '2012-08-22 04:42:41', 1, 1),
-(6, 0, 'Tran Quoc Huy', 'phanhanhtoan@gmail.com', 'Hue, Viet Nam', '30', '', 'Hue, Viet NamHue, Viet NamHue, Viet NamHue, Viet NamHue, Viet NamHue, Viet NamHue, Viet NamHue...', 'Hue, Viet NamHue, Viet NamHue, Viet NamHue, Viet NamHue, Viet NamHue, Viet NamHue, Viet NamHue, Viet NamHue, Viet NamHue, Viet NamHue, Viet NamHue, Viet NamHue, Viet NamHue, Viet NamHue, Viet NamHue, Viet NamHue, Viet NamHue, Viet NamHue, Viet Nam', 'tran-quoc-huy-jk5lf5s5xl.jpg', '2012-08-22 04:42:46', 1, 1),
-(7, 0, 'Tran Quoc Huy', 'phanhanhtoan@gmail.com', 'Hue, Viet Nam', '30', '', 'Hue, Viet NamHue, Viet NamHue, Viet NamHue, Viet NamHue, Viet NamHue, Viet NamHue, Viet NamHue...', 'Hue, Viet NamHue, Viet NamHue, Viet NamHue, Viet NamHue, Viet NamHue, Viet NamHue, Viet NamHue, Viet NamHue, Viet NamHue, Viet NamHue, Viet NamHue, Viet NamHue, Viet NamHue, Viet NamHue, Viet NamHue, Viet NamHue, Viet NamHue, Viet NamHue, Viet Nam', 'tran-quoc-huy-y7t12fwoiw.jpg', '2012-08-22 04:43:00', 1, 1),
-(8, 0, 'Tran Quoc Huy', 'phanhanhtoan@gmail.com', 'Hue, Viet Nam', '30', '', 'Hue, Viet NamHue, Viet NamHue, Viet NamHue, Viet NamHue, Viet NamHue, Viet NamHue, Viet NamHue...', 'Hue, Viet NamHue, Viet NamHue, Viet NamHue, Viet NamHue, Viet NamHue, Viet NamHue, Viet NamHue, Viet NamHue, Viet NamHue, Viet NamHue, Viet NamHue, Viet NamHue, Viet NamHue, Viet NamHue, Viet NamHue, Viet NamHue, Viet NamHue, Viet NamHue, Viet Nam', 'tran-quoc-huy-m49kjzjwsl.jpg', '2012-08-22 04:43:05', 1, 1);
+(12, 0, 'Anirvan Sagar', 'demo@gmail.com', 'USA', '25', '', '“ Sagittis ac, lectus enim urna pulvinar, elit nascetur, elementum, sed, lorem integer sit...', '“ Sagittis ac, lectus enim urna pulvinar, elit nascetur, elementum, sed, lorem integer sit aenean magna. Tortor! Et, odio vel non sit porttitor et elementum tempor. In. Ut pulvinar et tincidunt parturient nascetur sed placerat tempor. ”', 'anirvan-sagar-4hlo2gxryn.png', '2012-08-22 09:27:07', 1, 1),
+(13, 0, 'Tatiana Simpson', 'demo@gmail.com', 'USA', '28', '', '“ Sagittis ac, lectus enim urna pulvinar, elit nascetur, elementum, sed, lorem integer sit...', '“ Sagittis ac, lectus enim urna pulvinar, elit nascetur, elementum, sed, lorem integer sit aenean magna. Tortor! Et, odio vel non sit porttitor et elementum tempor. In. Ut pulvinar et tincidunt parturient nascetur sed placerat tempor. ”', 'tatiana-simpson-ow8ldaebw2.png', '2012-08-22 09:28:03', 1, 1),
+(14, 0, 'Thomson Clark', 'demo@gmail.com', 'USA', '59', '', '“ Sagittis ac, lectus enim urna pulvinar, elit nascetur, elementum, sed, lorem integer sit...', '“ Sagittis ac, lectus enim urna pulvinar, elit nascetur, elementum, sed, lorem integer sit aenean magna. Tortor! Et, odio vel non sit porttitor et elementum tempor. In. Ut pulvinar et tincidunt parturient nascetur sed placerat tempor. ”', 'thomson-clark-l0xbf5k5st.png', '2012-08-22 09:28:47', 1, 1),
+(15, 0, 'Maria Jonson', 'demo@gmail.com', 'USA', '29', '', '“ Sagittis ac, lectus enim urna pulvinar, elit nascetur, elementum, sed, lorem integer sit...', '“ Sagittis ac, lectus enim urna pulvinar, elit nascetur, elementum, sed, lorem integer sit aenean magna. Tortor! Et, odio vel non sit porttitor et elementum tempor. In. Ut pulvinar et tincidunt parturient nascetur sed placerat tempor. ”', 'maria-jonson-pqo9cqh2lh.png', '2012-08-22 09:29:24', 1, 1),
+(16, 0, 'zudieu', 'zudieugio@gmail.com', 'Hue, Viet Nam', '45', '', 'Sagittis ac, lectus enim urna pulvinar, elit nascetur, elementum, sed, lorem integer sit aenean...', 'Sagittis ac, lectus enim urna pulvinar, elit nascetur, elementum, sed, lorem integer sit aenean magna. Tortor! Et, odio vel non sit porttitor et elementum tempor. In. Ut pulvinar et tincidunt parturient nascetur sed placerat tempor.', 'zudieu-ef3rysf7th.jpg', '2012-08-22 09:56:34', 3, 1),
+(17, 0, 'zudieu', 'zudieugio@gmail.com', 'Hue, Viet Nam', '45', '', 'Sagittis ac, lectus enim urna pulvinar, elit nascetur, elementum, sed, lorem integer sit aenean...', 'Sagittis ac, lectus enim urna pulvinar, elit nascetur, elementum, sed, lorem integer sit aenean magna. Tortor! Et, odio vel non sit porttitor et elementum tempor. In. Ut pulvinar et tincidunt parturient nascetur sed placerat tempor.', 'zudieu-9zun0l536y.jpg', '2012-08-22 09:56:42', 3, 1),
+(18, 0, 'OKay', 'okayse@gmail.com', 'Hue, Viet Nam', '23', '', 'tesst  tesst  tesst  tesst  tesst  tesst  tesst  tesst  tesst  tesst  tesst  tesst  tesst  tesst...', 'tesst  tesst  tesst  tesst  tesst  tesst  tesst  tesst  tesst  tesst  tesst  tesst  tesst  tesst  tesst  tesst  tesst  tesst  tesst  tesst  tesst', 'okay-kjavux7cdn.jpg', '2012-08-23 05:51:48', 1, 1),
+(19, 0, 'OKay', 'okayse@gmail.com', 'Hue, Viet Nam', '23', '', 'tesst  tesst  tesst  tesst  tesst  tesst  tesst  tesst  tesst  tesst  tesst  tesst  tesst  tesst...', 'tesst  tesst  tesst  tesst  tesst  tesst  tesst  tesst  tesst  tesst  tesst  tesst  tesst  tesst  tesst  tesst  tesst  tesst  tesst  tesst  tesst', 'okay-hwbj65gyo3.jpg', '2012-08-23 05:51:53', 1, 1),
+(20, 0, 'OKay', 'okayse@gmail.com', 'Hue, Viet Nam', '23', '', 'tesst  tesst  tesst  tesst  tesst  tesst  tesst  tesst  tesst  tesst  tesst  tesst  tesst  tesst...', 'tesst  tesst  tesst  tesst  tesst  tesst  tesst  tesst  tesst  tesst  tesst  tesst  tesst  tesst  tesst  tesst  tesst  tesst  tesst  tesst  tesst', 'okay-zr1em9m6ka.jpg', '2012-08-23 05:51:58', 1, 1),
+(21, 0, 'OKay', 'okayse@gmail.com', 'Hue, Viet Nam', '23', '', 'tesst  tesst  tesst  tesst  tesst  tesst  tesst  tesst  tesst  tesst  tesst  tesst  tesst  tesst...', 'tesst  tesst  tesst  tesst  tesst  tesst  tesst  tesst  tesst  tesst  tesst  tesst  tesst  tesst  tesst  tesst  tesst  tesst  tesst  tesst  tesst', 'okay-u0c87ro5wh.jpg', '2012-08-23 05:52:03', 1, 1);
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `m4pmt_updates`
+-- Structure de la table `m4pmt_updates`
 --
 
 CREATE TABLE IF NOT EXISTS `m4pmt_updates` (
@@ -7108,10 +7025,10 @@ CREATE TABLE IF NOT EXISTS `m4pmt_updates` (
   `detailsurl` text NOT NULL,
   `infourl` text NOT NULL,
   PRIMARY KEY (`update_id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COMMENT='Available Updates' AUTO_INCREMENT=53 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COMMENT='Available Updates' AUTO_INCREMENT=60 ;
 
 --
--- Dumping data for table `m4pmt_updates`
+-- Contenu de la table `m4pmt_updates`
 --
 
 INSERT INTO `m4pmt_updates` (`update_id`, `update_site_id`, `extension_id`, `categoryid`, `name`, `description`, `element`, `type`, `folder`, `client_id`, `version`, `data`, `detailsurl`, `infourl`) VALUES
@@ -7166,12 +7083,19 @@ INSERT INTO `m4pmt_updates` (`update_id`, `update_site_id`, `extension_id`, `cat
 (49, 8, 0, 0, 'akeebacore', 'Akeeba Backup Core', 'com_akeeba', 'component', '', 1, '3.6.2', '', 'http://nocdn.akeebabackup.com/updates/abcore.xml', 'https://www.akeebabackup.com/downloads/akeeba-backup/akeeba-backup-3-6-2.html'),
 (50, 8, 0, 0, 'akeebacore', 'Akeeba Backup Core', 'com_akeeba', 'component', '', 1, '3.6.2', '', 'http://nocdn.akeebabackup.com/updates/abcore.xml', 'https://www.akeebabackup.com/downloads/akeeba-backup/akeeba-backup-3-6-2.html'),
 (51, 7, 0, 0, 'Gantry', 'Gantry Framework', 'lib_gantry', 'library', '', 0, '3.2.22', '', 'http://www.gantry-framework.org/updates/joomla16/gantry.xml', 'http://www.gantry-framework.org'),
-(52, 8, 0, 0, 'akeebacore', 'Akeeba Backup Core', 'com_akeeba', 'component', '', 1, '3.6.2', '', 'http://nocdn.akeebabackup.com/updates/abcore.xml', 'https://www.akeebabackup.com/downloads/akeeba-backup/akeeba-backup-3-6-2.html');
+(52, 8, 0, 0, 'akeebacore', 'Akeeba Backup Core', 'com_akeeba', 'component', '', 1, '3.6.2', '', 'http://nocdn.akeebabackup.com/updates/abcore.xml', 'https://www.akeebabackup.com/downloads/akeeba-backup/akeeba-backup-3-6-2.html'),
+(53, 7, 0, 0, 'Gantry', 'Gantry Framework', 'lib_gantry', 'library', '', 0, '3.2.22', '', 'http://www.gantry-framework.org/updates/joomla16/gantry.xml', 'http://www.gantry-framework.org'),
+(54, 8, 0, 0, 'akeebacore', 'Akeeba Backup Core', 'com_akeeba', 'component', '', 1, '3.6.2', '', 'http://nocdn.akeebabackup.com/updates/abcore.xml', 'https://www.akeebabackup.com/downloads/akeeba-backup/akeeba-backup-3-6-2.html'),
+(55, 7, 0, 0, 'Gantry', 'Gantry Framework', 'lib_gantry', 'library', '', 0, '3.2.22', '', 'http://www.gantry-framework.org/updates/joomla16/gantry.xml', 'http://www.gantry-framework.org'),
+(56, 7, 0, 0, 'Gantry', 'Gantry Framework', 'lib_gantry', 'library', '', 0, '3.2.22', '', 'http://www.gantry-framework.org/updates/joomla16/gantry.xml', 'http://www.gantry-framework.org'),
+(57, 8, 0, 0, 'akeebacore', 'Akeeba Backup Core', 'com_akeeba', 'component', '', 1, '3.6.2', '', 'http://nocdn.akeebabackup.com/updates/abcore.xml', 'https://www.akeebabackup.com/downloads/akeeba-backup/akeeba-backup-3-6-2.html'),
+(58, 8, 0, 0, 'akeebacore', 'Akeeba Backup Core', 'com_akeeba', 'component', '', 1, '3.6.2', '', 'http://nocdn.akeebabackup.com/updates/abcore.xml', 'https://www.akeebabackup.com/downloads/akeeba-backup/akeeba-backup-3-6-2.html'),
+(59, 8, 0, 0, 'akeebacore', 'Akeeba Backup Core', 'com_akeeba', 'component', '', 1, '3.6.2', '', 'http://nocdn.akeebabackup.com/updates/abcore.xml', 'https://www.akeebabackup.com/downloads/akeeba-backup/akeeba-backup-3-6-2.html');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `m4pmt_update_categories`
+-- Structure de la table `m4pmt_update_categories`
 --
 
 CREATE TABLE IF NOT EXISTS `m4pmt_update_categories` (
@@ -7186,7 +7110,7 @@ CREATE TABLE IF NOT EXISTS `m4pmt_update_categories` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `m4pmt_update_sites`
+-- Structure de la table `m4pmt_update_sites`
 --
 
 CREATE TABLE IF NOT EXISTS `m4pmt_update_sites` (
@@ -7200,21 +7124,21 @@ CREATE TABLE IF NOT EXISTS `m4pmt_update_sites` (
 ) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COMMENT='Update Sites' AUTO_INCREMENT=9 ;
 
 --
--- Dumping data for table `m4pmt_update_sites`
+-- Contenu de la table `m4pmt_update_sites`
 --
 
 INSERT INTO `m4pmt_update_sites` (`update_site_id`, `name`, `type`, `location`, `enabled`, `last_check_timestamp`) VALUES
-(1, 'Joomla Core', 'collection', 'http://update.joomla.org/core/list.xml', 1, 1345606093),
-(2, 'Joomla Extension Directory', 'collection', 'http://update.joomla.org/jed/list.xml', 1, 1345606093),
-(7, 'Gantry Framework Update Site', 'extension', 'http://www.gantry-framework.org/updates/joomla16/gantry.xml', 1, 1345606093),
+(1, 'Joomla Core', 'collection', 'http://update.joomla.org/core/list.xml', 1, 1345690976),
+(2, 'Joomla Extension Directory', 'collection', 'http://update.joomla.org/jed/list.xml', 1, 1345690976),
+(7, 'Gantry Framework Update Site', 'extension', 'http://www.gantry-framework.org/updates/joomla16/gantry.xml', 1, 1345690976),
 (4, 'JCE Editor Updates', 'extension', 'https://www.joomlacontenteditor.net/index.php?option=com_updates&view=update&format=xml&id=1', 0, 1345111100),
 (5, 'JMS Updates', 'extension', 'http://www.joomlasubscriptionsites.com/jms_j17_updates.xml', 0, 1345111100),
-(8, 'Akeeba Backup Core Updates', 'extension', 'http://nocdn.akeebabackup.com/updates/abcore.xml', 1, 1345606093);
+(8, 'Akeeba Backup Core Updates', 'extension', 'http://nocdn.akeebabackup.com/updates/abcore.xml', 1, 1345690981);
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `m4pmt_update_sites_extensions`
+-- Structure de la table `m4pmt_update_sites_extensions`
 --
 
 CREATE TABLE IF NOT EXISTS `m4pmt_update_sites_extensions` (
@@ -7224,7 +7148,7 @@ CREATE TABLE IF NOT EXISTS `m4pmt_update_sites_extensions` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 COMMENT='Links extensions to update sites';
 
 --
--- Dumping data for table `m4pmt_update_sites_extensions`
+-- Contenu de la table `m4pmt_update_sites_extensions`
 --
 
 INSERT INTO `m4pmt_update_sites_extensions` (`update_site_id`, `extension_id`) VALUES
@@ -7238,7 +7162,7 @@ INSERT INTO `m4pmt_update_sites_extensions` (`update_site_id`, `extension_id`) V
 -- --------------------------------------------------------
 
 --
--- Table structure for table `m4pmt_usergroups`
+-- Structure de la table `m4pmt_usergroups`
 --
 
 CREATE TABLE IF NOT EXISTS `m4pmt_usergroups` (
@@ -7255,7 +7179,7 @@ CREATE TABLE IF NOT EXISTS `m4pmt_usergroups` (
 ) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=13 ;
 
 --
--- Dumping data for table `m4pmt_usergroups`
+-- Contenu de la table `m4pmt_usergroups`
 --
 
 INSERT INTO `m4pmt_usergroups` (`id`, `parent_id`, `lft`, `rgt`, `title`) VALUES
@@ -7273,7 +7197,7 @@ INSERT INTO `m4pmt_usergroups` (`id`, `parent_id`, `lft`, `rgt`, `title`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `m4pmt_users`
+-- Structure de la table `m4pmt_users`
 --
 
 CREATE TABLE IF NOT EXISTS `m4pmt_users` (
@@ -7298,18 +7222,18 @@ CREATE TABLE IF NOT EXISTS `m4pmt_users` (
 ) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=45 ;
 
 --
--- Dumping data for table `m4pmt_users`
+-- Contenu de la table `m4pmt_users`
 --
 
 INSERT INTO `m4pmt_users` (`id`, `name`, `username`, `email`, `password`, `usertype`, `block`, `sendEmail`, `registerDate`, `lastvisitDate`, `activation`, `params`) VALUES
-(42, 'Super User', 'adminm', 'inj@injener.net', '7e9e836bdbf8d25ec156f98e0b7cd112:u7ogsNa2F2EFfF8oIRwExlXmp4tuun7w', 'deprecated', 0, 1, '2012-02-16 17:22:16', '2012-08-22 01:46:24', '0', '{"admin_style":"","admin_language":"","language":"","editor":"","helpsite":"","timezone":""}'),
+(42, 'Super User', 'adminm', 'inj@injener.net', '7e9e836bdbf8d25ec156f98e0b7cd112:u7ogsNa2F2EFfF8oIRwExlXmp4tuun7w', 'deprecated', 0, 1, '2012-02-16 17:22:16', '2012-08-23 03:02:28', '0', '{"admin_style":"","admin_language":"","language":"","editor":"","helpsite":"","timezone":""}'),
 (43, 'Iliyan', 'inj', 'fb@injener.net', '1dff4ce44ce9645db6519536a897e584:UXRSeGzgt7WJGWddSO8z7CixC3OODQxW', '', 0, 0, '2012-02-16 18:27:53', '2012-02-16 18:28:54', '', '{"admin_style":"118","admin_language":"","language":"","editor":"","helpsite":"","timezone":""}'),
 (44, 'Tran Hoai Phong', 'hoaiphongit', 'hoaiphong.thienphuc@gmail.com', '6874e6218350913af99b4448e81a72cf:eebgtyfxuCP00fVrpG4H7XGAHlH8IiSl', '', 0, 0, '2012-08-20 04:31:04', '0000-00-00 00:00:00', '', '{"admin_style":"","admin_language":"","language":"","editor":"","helpsite":"","timezone":""}');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `m4pmt_user_notes`
+-- Structure de la table `m4pmt_user_notes`
 --
 
 CREATE TABLE IF NOT EXISTS `m4pmt_user_notes` (
@@ -7336,7 +7260,7 @@ CREATE TABLE IF NOT EXISTS `m4pmt_user_notes` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `m4pmt_user_profiles`
+-- Structure de la table `m4pmt_user_profiles`
 --
 
 CREATE TABLE IF NOT EXISTS `m4pmt_user_profiles` (
@@ -7350,7 +7274,7 @@ CREATE TABLE IF NOT EXISTS `m4pmt_user_profiles` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `m4pmt_user_usergroup_map`
+-- Structure de la table `m4pmt_user_usergroup_map`
 --
 
 CREATE TABLE IF NOT EXISTS `m4pmt_user_usergroup_map` (
@@ -7360,7 +7284,7 @@ CREATE TABLE IF NOT EXISTS `m4pmt_user_usergroup_map` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `m4pmt_user_usergroup_map`
+-- Contenu de la table `m4pmt_user_usergroup_map`
 --
 
 INSERT INTO `m4pmt_user_usergroup_map` (`user_id`, `group_id`) VALUES
@@ -7372,7 +7296,7 @@ INSERT INTO `m4pmt_user_usergroup_map` (`user_id`, `group_id`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `m4pmt_viewlevels`
+-- Structure de la table `m4pmt_viewlevels`
 --
 
 CREATE TABLE IF NOT EXISTS `m4pmt_viewlevels` (
@@ -7385,7 +7309,7 @@ CREATE TABLE IF NOT EXISTS `m4pmt_viewlevels` (
 ) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=5 ;
 
 --
--- Dumping data for table `m4pmt_viewlevels`
+-- Contenu de la table `m4pmt_viewlevels`
 --
 
 INSERT INTO `m4pmt_viewlevels` (`id`, `title`, `ordering`, `rules`) VALUES
@@ -7397,7 +7321,7 @@ INSERT INTO `m4pmt_viewlevels` (`id`, `title`, `ordering`, `rules`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `m4pmt_virtuemart_adminmenuentries`
+-- Structure de la table `m4pmt_virtuemart_adminmenuentries`
 --
 
 CREATE TABLE IF NOT EXISTS `m4pmt_virtuemart_adminmenuentries` (
@@ -7418,7 +7342,7 @@ CREATE TABLE IF NOT EXISTS `m4pmt_virtuemart_adminmenuentries` (
 ) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COMMENT='Administration Menu Items' AUTO_INCREMENT=29 ;
 
 --
--- Dumping data for table `m4pmt_virtuemart_adminmenuentries`
+-- Contenu de la table `m4pmt_virtuemart_adminmenuentries`
 --
 
 INSERT INTO `m4pmt_virtuemart_adminmenuentries` (`id`, `module_id`, `parent_id`, `name`, `link`, `depends`, `icon_class`, `ordering`, `published`, `tooltip`, `view`, `task`) VALUES
@@ -7454,7 +7378,7 @@ INSERT INTO `m4pmt_virtuemart_adminmenuentries` (`id`, `module_id`, `parent_id`,
 -- --------------------------------------------------------
 
 --
--- Table structure for table `m4pmt_virtuemart_calcs`
+-- Structure de la table `m4pmt_virtuemart_calcs`
 --
 
 CREATE TABLE IF NOT EXISTS `m4pmt_virtuemart_calcs` (
@@ -7488,7 +7412,7 @@ CREATE TABLE IF NOT EXISTS `m4pmt_virtuemart_calcs` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `m4pmt_virtuemart_calc_categories`
+-- Structure de la table `m4pmt_virtuemart_calc_categories`
 --
 
 CREATE TABLE IF NOT EXISTS `m4pmt_virtuemart_calc_categories` (
@@ -7502,7 +7426,7 @@ CREATE TABLE IF NOT EXISTS `m4pmt_virtuemart_calc_categories` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `m4pmt_virtuemart_calc_countries`
+-- Structure de la table `m4pmt_virtuemart_calc_countries`
 --
 
 CREATE TABLE IF NOT EXISTS `m4pmt_virtuemart_calc_countries` (
@@ -7516,7 +7440,7 @@ CREATE TABLE IF NOT EXISTS `m4pmt_virtuemart_calc_countries` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `m4pmt_virtuemart_calc_shoppergroups`
+-- Structure de la table `m4pmt_virtuemart_calc_shoppergroups`
 --
 
 CREATE TABLE IF NOT EXISTS `m4pmt_virtuemart_calc_shoppergroups` (
@@ -7530,7 +7454,7 @@ CREATE TABLE IF NOT EXISTS `m4pmt_virtuemart_calc_shoppergroups` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `m4pmt_virtuemart_calc_states`
+-- Structure de la table `m4pmt_virtuemart_calc_states`
 --
 
 CREATE TABLE IF NOT EXISTS `m4pmt_virtuemart_calc_states` (
@@ -7544,7 +7468,7 @@ CREATE TABLE IF NOT EXISTS `m4pmt_virtuemart_calc_states` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `m4pmt_virtuemart_categories`
+-- Structure de la table `m4pmt_virtuemart_categories`
 --
 
 CREATE TABLE IF NOT EXISTS `m4pmt_virtuemart_categories` (
@@ -7575,7 +7499,7 @@ CREATE TABLE IF NOT EXISTS `m4pmt_virtuemart_categories` (
 ) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COMMENT='Product Categories are stored here' AUTO_INCREMENT=8 ;
 
 --
--- Dumping data for table `m4pmt_virtuemart_categories`
+-- Contenu de la table `m4pmt_virtuemart_categories`
 --
 
 INSERT INTO `m4pmt_virtuemart_categories` (`virtuemart_category_id`, `virtuemart_vendor_id`, `category_template`, `category_layout`, `category_product_layout`, `products_per_row`, `limit_list_start`, `limit_list_step`, `limit_list_max`, `limit_list_initial`, `hits`, `metarobot`, `metaauthor`, `ordering`, `shared`, `published`, `created_on`, `created_by`, `modified_on`, `modified_by`, `locked_on`, `locked_by`) VALUES
@@ -7589,7 +7513,7 @@ INSERT INTO `m4pmt_virtuemart_categories` (`virtuemart_category_id`, `virtuemart
 -- --------------------------------------------------------
 
 --
--- Table structure for table `m4pmt_virtuemart_categories_en_gb`
+-- Structure de la table `m4pmt_virtuemart_categories_en_gb`
 --
 
 CREATE TABLE IF NOT EXISTS `m4pmt_virtuemart_categories_en_gb` (
@@ -7605,7 +7529,7 @@ CREATE TABLE IF NOT EXISTS `m4pmt_virtuemart_categories_en_gb` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `m4pmt_virtuemart_categories_en_gb`
+-- Contenu de la table `m4pmt_virtuemart_categories_en_gb`
 --
 
 INSERT INTO `m4pmt_virtuemart_categories_en_gb` (`virtuemart_category_id`, `category_name`, `category_description`, `metadesc`, `metakey`, `customtitle`, `slug`) VALUES
@@ -7619,7 +7543,7 @@ INSERT INTO `m4pmt_virtuemart_categories_en_gb` (`virtuemart_category_id`, `cate
 -- --------------------------------------------------------
 
 --
--- Table structure for table `m4pmt_virtuemart_category_categories`
+-- Structure de la table `m4pmt_virtuemart_category_categories`
 --
 
 CREATE TABLE IF NOT EXISTS `m4pmt_virtuemart_category_categories` (
@@ -7633,7 +7557,7 @@ CREATE TABLE IF NOT EXISTS `m4pmt_virtuemart_category_categories` (
 ) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COMMENT='Category child-parent relation list' AUTO_INCREMENT=8 ;
 
 --
--- Dumping data for table `m4pmt_virtuemart_category_categories`
+-- Contenu de la table `m4pmt_virtuemart_category_categories`
 --
 
 INSERT INTO `m4pmt_virtuemart_category_categories` (`id`, `category_parent_id`, `category_child_id`, `ordering`) VALUES
@@ -7648,7 +7572,7 @@ INSERT INTO `m4pmt_virtuemart_category_categories` (`id`, `category_parent_id`, 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `m4pmt_virtuemart_category_medias`
+-- Structure de la table `m4pmt_virtuemart_category_medias`
 --
 
 CREATE TABLE IF NOT EXISTS `m4pmt_virtuemart_category_medias` (
@@ -7661,7 +7585,7 @@ CREATE TABLE IF NOT EXISTS `m4pmt_virtuemart_category_medias` (
 ) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=13 ;
 
 --
--- Dumping data for table `m4pmt_virtuemart_category_medias`
+-- Contenu de la table `m4pmt_virtuemart_category_medias`
 --
 
 INSERT INTO `m4pmt_virtuemart_category_medias` (`id`, `virtuemart_category_id`, `virtuemart_media_id`, `ordering`) VALUES
@@ -7675,7 +7599,7 @@ INSERT INTO `m4pmt_virtuemart_category_medias` (`id`, `virtuemart_category_id`, 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `m4pmt_virtuemart_configs`
+-- Structure de la table `m4pmt_virtuemart_configs`
 --
 
 CREATE TABLE IF NOT EXISTS `m4pmt_virtuemart_configs` (
@@ -7691,7 +7615,7 @@ CREATE TABLE IF NOT EXISTS `m4pmt_virtuemart_configs` (
 ) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COMMENT='Holds configuration settings' AUTO_INCREMENT=2 ;
 
 --
--- Dumping data for table `m4pmt_virtuemart_configs`
+-- Contenu de la table `m4pmt_virtuemart_configs`
 --
 
 INSERT INTO `m4pmt_virtuemart_configs` (`virtuemart_config_id`, `config`, `created_on`, `created_by`, `modified_on`, `modified_by`, `locked_on`, `locked_by`) VALUES
@@ -7700,7 +7624,7 @@ INSERT INTO `m4pmt_virtuemart_configs` (`virtuemart_config_id`, `config`, `creat
 -- --------------------------------------------------------
 
 --
--- Table structure for table `m4pmt_virtuemart_countries`
+-- Structure de la table `m4pmt_virtuemart_countries`
 --
 
 CREATE TABLE IF NOT EXISTS `m4pmt_virtuemart_countries` (
@@ -7723,7 +7647,7 @@ CREATE TABLE IF NOT EXISTS `m4pmt_virtuemart_countries` (
 ) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COMMENT='Country records' AUTO_INCREMENT=249 ;
 
 --
--- Dumping data for table `m4pmt_virtuemart_countries`
+-- Contenu de la table `m4pmt_virtuemart_countries`
 --
 
 INSERT INTO `m4pmt_virtuemart_countries` (`virtuemart_country_id`, `virtuemart_worldzone_id`, `country_name`, `country_3_code`, `country_2_code`, `ordering`, `published`, `created_on`, `created_by`, `modified_on`, `modified_by`, `locked_on`, `locked_by`) VALUES
@@ -7977,7 +7901,7 @@ INSERT INTO `m4pmt_virtuemart_countries` (`virtuemart_country_id`, `virtuemart_w
 -- --------------------------------------------------------
 
 --
--- Table structure for table `m4pmt_virtuemart_coupons`
+-- Structure de la table `m4pmt_virtuemart_coupons`
 --
 
 CREATE TABLE IF NOT EXISTS `m4pmt_virtuemart_coupons` (
@@ -8003,7 +7927,7 @@ CREATE TABLE IF NOT EXISTS `m4pmt_virtuemart_coupons` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `m4pmt_virtuemart_currencies`
+-- Structure de la table `m4pmt_virtuemart_currencies`
 --
 
 CREATE TABLE IF NOT EXISTS `m4pmt_virtuemart_currencies` (
@@ -8036,7 +7960,7 @@ CREATE TABLE IF NOT EXISTS `m4pmt_virtuemart_currencies` (
 ) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COMMENT='Used to store currencies' AUTO_INCREMENT=202 ;
 
 --
--- Dumping data for table `m4pmt_virtuemart_currencies`
+-- Contenu de la table `m4pmt_virtuemart_currencies`
 --
 
 INSERT INTO `m4pmt_virtuemart_currencies` (`virtuemart_currency_id`, `virtuemart_vendor_id`, `currency_name`, `currency_code_2`, `currency_code_3`, `currency_numeric_code`, `currency_exchange_rate`, `currency_symbol`, `currency_decimal_place`, `currency_decimal_symbol`, `currency_thousands`, `currency_positive_style`, `currency_negative_style`, `ordering`, `shared`, `published`, `created_on`, `created_by`, `modified_on`, `modified_by`, `locked_on`, `locked_by`) VALUES
@@ -8207,7 +8131,7 @@ INSERT INTO `m4pmt_virtuemart_currencies` (`virtuemart_currency_id`, `virtuemart
 -- --------------------------------------------------------
 
 --
--- Table structure for table `m4pmt_virtuemart_customs`
+-- Structure de la table `m4pmt_virtuemart_customs`
 --
 
 CREATE TABLE IF NOT EXISTS `m4pmt_virtuemart_customs` (
@@ -8244,7 +8168,7 @@ CREATE TABLE IF NOT EXISTS `m4pmt_virtuemart_customs` (
 ) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COMMENT='custom fields definition' AUTO_INCREMENT=7 ;
 
 --
--- Dumping data for table `m4pmt_virtuemart_customs`
+-- Contenu de la table `m4pmt_virtuemart_customs`
 --
 
 INSERT INTO `m4pmt_virtuemart_customs` (`virtuemart_custom_id`, `custom_parent_id`, `virtuemart_vendor_id`, `custom_jplugin_id`, `custom_element`, `admin_only`, `custom_title`, `custom_tip`, `custom_value`, `custom_field_desc`, `field_type`, `is_list`, `is_hidden`, `is_cart_attribute`, `layout_pos`, `custom_params`, `shared`, `published`, `created_on`, `created_by`, `ordering`, `modified_on`, `modified_by`, `locked_on`, `locked_by`) VALUES
@@ -8256,7 +8180,7 @@ INSERT INTO `m4pmt_virtuemart_customs` (`virtuemart_custom_id`, `custom_parent_i
 -- --------------------------------------------------------
 
 --
--- Table structure for table `m4pmt_virtuemart_invoices`
+-- Structure de la table `m4pmt_virtuemart_invoices`
 --
 
 CREATE TABLE IF NOT EXISTS `m4pmt_virtuemart_invoices` (
@@ -8281,7 +8205,7 @@ CREATE TABLE IF NOT EXISTS `m4pmt_virtuemart_invoices` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `m4pmt_virtuemart_manufacturercategories`
+-- Structure de la table `m4pmt_virtuemart_manufacturercategories`
 --
 
 CREATE TABLE IF NOT EXISTS `m4pmt_virtuemart_manufacturercategories` (
@@ -8299,7 +8223,7 @@ CREATE TABLE IF NOT EXISTS `m4pmt_virtuemart_manufacturercategories` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `m4pmt_virtuemart_manufacturercategories_en_gb`
+-- Structure de la table `m4pmt_virtuemart_manufacturercategories_en_gb`
 --
 
 CREATE TABLE IF NOT EXISTS `m4pmt_virtuemart_manufacturercategories_en_gb` (
@@ -8314,7 +8238,7 @@ CREATE TABLE IF NOT EXISTS `m4pmt_virtuemart_manufacturercategories_en_gb` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `m4pmt_virtuemart_manufacturers`
+-- Structure de la table `m4pmt_virtuemart_manufacturers`
 --
 
 CREATE TABLE IF NOT EXISTS `m4pmt_virtuemart_manufacturers` (
@@ -8334,7 +8258,7 @@ CREATE TABLE IF NOT EXISTS `m4pmt_virtuemart_manufacturers` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `m4pmt_virtuemart_manufacturers_en_gb`
+-- Structure de la table `m4pmt_virtuemart_manufacturers_en_gb`
 --
 
 CREATE TABLE IF NOT EXISTS `m4pmt_virtuemart_manufacturers_en_gb` (
@@ -8351,7 +8275,7 @@ CREATE TABLE IF NOT EXISTS `m4pmt_virtuemart_manufacturers_en_gb` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `m4pmt_virtuemart_manufacturer_medias`
+-- Structure de la table `m4pmt_virtuemart_manufacturer_medias`
 --
 
 CREATE TABLE IF NOT EXISTS `m4pmt_virtuemart_manufacturer_medias` (
@@ -8366,7 +8290,7 @@ CREATE TABLE IF NOT EXISTS `m4pmt_virtuemart_manufacturer_medias` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `m4pmt_virtuemart_medias`
+-- Structure de la table `m4pmt_virtuemart_medias`
 --
 
 CREATE TABLE IF NOT EXISTS `m4pmt_virtuemart_medias` (
@@ -8396,7 +8320,7 @@ CREATE TABLE IF NOT EXISTS `m4pmt_virtuemart_medias` (
 ) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COMMENT='Additional Images and Files which are assigned to products' AUTO_INCREMENT=14 ;
 
 --
--- Dumping data for table `m4pmt_virtuemart_medias`
+-- Contenu de la table `m4pmt_virtuemart_medias`
 --
 
 INSERT INTO `m4pmt_virtuemart_medias` (`virtuemart_media_id`, `virtuemart_vendor_id`, `file_title`, `file_description`, `file_meta`, `file_mimetype`, `file_type`, `file_url`, `file_url_thumb`, `file_is_product_image`, `file_is_downloadable`, `file_is_forSale`, `file_params`, `shared`, `published`, `created_on`, `created_by`, `modified_on`, `modified_by`, `locked_on`, `locked_by`) VALUES
@@ -8416,7 +8340,7 @@ INSERT INTO `m4pmt_virtuemart_medias` (`virtuemart_media_id`, `virtuemart_vendor
 -- --------------------------------------------------------
 
 --
--- Table structure for table `m4pmt_virtuemart_migration_oldtonew_ids`
+-- Structure de la table `m4pmt_virtuemart_migration_oldtonew_ids`
 --
 
 CREATE TABLE IF NOT EXISTS `m4pmt_virtuemart_migration_oldtonew_ids` (
@@ -8437,7 +8361,7 @@ CREATE TABLE IF NOT EXISTS `m4pmt_virtuemart_migration_oldtonew_ids` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `m4pmt_virtuemart_modules`
+-- Structure de la table `m4pmt_virtuemart_modules`
 --
 
 CREATE TABLE IF NOT EXISTS `m4pmt_virtuemart_modules` (
@@ -8454,7 +8378,7 @@ CREATE TABLE IF NOT EXISTS `m4pmt_virtuemart_modules` (
 ) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COMMENT='VirtueMart Core Modules, not: Joomla modules' AUTO_INCREMENT=14 ;
 
 --
--- Dumping data for table `m4pmt_virtuemart_modules`
+-- Contenu de la table `m4pmt_virtuemart_modules`
 --
 
 INSERT INTO `m4pmt_virtuemart_modules` (`module_id`, `module_name`, `module_description`, `module_perms`, `published`, `is_admin`, `ordering`) VALUES
@@ -8474,7 +8398,7 @@ INSERT INTO `m4pmt_virtuemart_modules` (`module_id`, `module_name`, `module_desc
 -- --------------------------------------------------------
 
 --
--- Table structure for table `m4pmt_virtuemart_orders`
+-- Structure de la table `m4pmt_virtuemart_orders`
 --
 
 CREATE TABLE IF NOT EXISTS `m4pmt_virtuemart_orders` (
@@ -8522,7 +8446,7 @@ CREATE TABLE IF NOT EXISTS `m4pmt_virtuemart_orders` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `m4pmt_virtuemart_orderstates`
+-- Structure de la table `m4pmt_virtuemart_orderstates`
 --
 
 CREATE TABLE IF NOT EXISTS `m4pmt_virtuemart_orderstates` (
@@ -8546,7 +8470,7 @@ CREATE TABLE IF NOT EXISTS `m4pmt_virtuemart_orderstates` (
 ) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COMMENT='All available order statuses' AUTO_INCREMENT=7 ;
 
 --
--- Dumping data for table `m4pmt_virtuemart_orderstates`
+-- Contenu de la table `m4pmt_virtuemart_orderstates`
 --
 
 INSERT INTO `m4pmt_virtuemart_orderstates` (`virtuemart_orderstate_id`, `virtuemart_vendor_id`, `order_status_code`, `order_status_name`, `order_status_description`, `order_stock_handle`, `ordering`, `published`, `created_on`, `created_by`, `modified_on`, `modified_by`, `locked_on`, `locked_by`) VALUES
@@ -8560,7 +8484,7 @@ INSERT INTO `m4pmt_virtuemart_orderstates` (`virtuemart_orderstate_id`, `virtuem
 -- --------------------------------------------------------
 
 --
--- Table structure for table `m4pmt_virtuemart_order_calc_rules`
+-- Structure de la table `m4pmt_virtuemart_order_calc_rules`
 --
 
 CREATE TABLE IF NOT EXISTS `m4pmt_virtuemart_order_calc_rules` (
@@ -8582,7 +8506,7 @@ CREATE TABLE IF NOT EXISTS `m4pmt_virtuemart_order_calc_rules` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `m4pmt_virtuemart_order_histories`
+-- Structure de la table `m4pmt_virtuemart_order_histories`
 --
 
 CREATE TABLE IF NOT EXISTS `m4pmt_virtuemart_order_histories` (
@@ -8604,7 +8528,7 @@ CREATE TABLE IF NOT EXISTS `m4pmt_virtuemart_order_histories` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `m4pmt_virtuemart_order_items`
+-- Structure de la table `m4pmt_virtuemart_order_items`
 --
 
 CREATE TABLE IF NOT EXISTS `m4pmt_virtuemart_order_items` (
@@ -8639,7 +8563,7 @@ CREATE TABLE IF NOT EXISTS `m4pmt_virtuemart_order_items` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `m4pmt_virtuemart_order_userinfos`
+-- Structure de la table `m4pmt_virtuemart_order_userinfos`
 --
 
 CREATE TABLE IF NOT EXISTS `m4pmt_virtuemart_order_userinfos` (
@@ -8678,7 +8602,7 @@ CREATE TABLE IF NOT EXISTS `m4pmt_virtuemart_order_userinfos` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `m4pmt_virtuemart_paymentmethods`
+-- Structure de la table `m4pmt_virtuemart_paymentmethods`
 --
 
 CREATE TABLE IF NOT EXISTS `m4pmt_virtuemart_paymentmethods` (
@@ -8706,7 +8630,7 @@ CREATE TABLE IF NOT EXISTS `m4pmt_virtuemart_paymentmethods` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `m4pmt_virtuemart_paymentmethods_en_gb`
+-- Structure de la table `m4pmt_virtuemart_paymentmethods_en_gb`
 --
 
 CREATE TABLE IF NOT EXISTS `m4pmt_virtuemart_paymentmethods_en_gb` (
@@ -8721,7 +8645,7 @@ CREATE TABLE IF NOT EXISTS `m4pmt_virtuemart_paymentmethods_en_gb` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `m4pmt_virtuemart_paymentmethod_shoppergroups`
+-- Structure de la table `m4pmt_virtuemart_paymentmethod_shoppergroups`
 --
 
 CREATE TABLE IF NOT EXISTS `m4pmt_virtuemart_paymentmethod_shoppergroups` (
@@ -8735,7 +8659,7 @@ CREATE TABLE IF NOT EXISTS `m4pmt_virtuemart_paymentmethod_shoppergroups` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `m4pmt_virtuemart_permgroups`
+-- Structure de la table `m4pmt_virtuemart_permgroups`
 --
 
 CREATE TABLE IF NOT EXISTS `m4pmt_virtuemart_permgroups` (
@@ -8757,7 +8681,7 @@ CREATE TABLE IF NOT EXISTS `m4pmt_virtuemart_permgroups` (
 ) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COMMENT='Holds all the user groups' AUTO_INCREMENT=5 ;
 
 --
--- Dumping data for table `m4pmt_virtuemart_permgroups`
+-- Contenu de la table `m4pmt_virtuemart_permgroups`
 --
 
 INSERT INTO `m4pmt_virtuemart_permgroups` (`virtuemart_permgroup_id`, `virtuemart_vendor_id`, `group_name`, `group_level`, `ordering`, `shared`, `published`, `created_on`, `created_by`, `modified_on`, `modified_by`, `locked_on`, `locked_by`) VALUES
@@ -8769,7 +8693,7 @@ INSERT INTO `m4pmt_virtuemart_permgroups` (`virtuemart_permgroup_id`, `virtuemar
 -- --------------------------------------------------------
 
 --
--- Table structure for table `m4pmt_virtuemart_products`
+-- Structure de la table `m4pmt_virtuemart_products`
 --
 
 CREATE TABLE IF NOT EXISTS `m4pmt_virtuemart_products` (
@@ -8813,7 +8737,7 @@ CREATE TABLE IF NOT EXISTS `m4pmt_virtuemart_products` (
 ) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COMMENT='All products are stored here.' AUTO_INCREMENT=2 ;
 
 --
--- Dumping data for table `m4pmt_virtuemart_products`
+-- Contenu de la table `m4pmt_virtuemart_products`
 --
 
 INSERT INTO `m4pmt_virtuemart_products` (`virtuemart_product_id`, `virtuemart_vendor_id`, `product_parent_id`, `product_sku`, `product_weight`, `product_weight_uom`, `product_length`, `product_width`, `product_height`, `product_lwh_uom`, `product_url`, `product_in_stock`, `product_ordered`, `low_stock_notification`, `product_available_date`, `product_availability`, `product_special`, `product_sales`, `product_unit`, `product_packaging`, `product_params`, `hits`, `intnotes`, `metarobot`, `metaauthor`, `layout`, `published`, `created_on`, `created_by`, `modified_on`, `modified_by`, `locked_on`, `locked_by`) VALUES
@@ -8822,7 +8746,7 @@ INSERT INTO `m4pmt_virtuemart_products` (`virtuemart_product_id`, `virtuemart_ve
 -- --------------------------------------------------------
 
 --
--- Table structure for table `m4pmt_virtuemart_products_en_gb`
+-- Structure de la table `m4pmt_virtuemart_products_en_gb`
 --
 
 CREATE TABLE IF NOT EXISTS `m4pmt_virtuemart_products_en_gb` (
@@ -8839,7 +8763,7 @@ CREATE TABLE IF NOT EXISTS `m4pmt_virtuemart_products_en_gb` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `m4pmt_virtuemart_products_en_gb`
+-- Contenu de la table `m4pmt_virtuemart_products_en_gb`
 --
 
 INSERT INTO `m4pmt_virtuemart_products_en_gb` (`virtuemart_product_id`, `product_s_desc`, `product_desc`, `product_name`, `metadesc`, `metakey`, `customtitle`, `slug`) VALUES
@@ -8848,7 +8772,7 @@ INSERT INTO `m4pmt_virtuemart_products_en_gb` (`virtuemart_product_id`, `product
 -- --------------------------------------------------------
 
 --
--- Table structure for table `m4pmt_virtuemart_product_categories`
+-- Structure de la table `m4pmt_virtuemart_product_categories`
 --
 
 CREATE TABLE IF NOT EXISTS `m4pmt_virtuemart_product_categories` (
@@ -8863,7 +8787,7 @@ CREATE TABLE IF NOT EXISTS `m4pmt_virtuemart_product_categories` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `m4pmt_virtuemart_product_customfields`
+-- Structure de la table `m4pmt_virtuemart_product_customfields`
 --
 
 CREATE TABLE IF NOT EXISTS `m4pmt_virtuemart_product_customfields` (
@@ -8888,7 +8812,7 @@ CREATE TABLE IF NOT EXISTS `m4pmt_virtuemart_product_customfields` (
 ) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COMMENT='custom fields' AUTO_INCREMENT=5 ;
 
 --
--- Dumping data for table `m4pmt_virtuemart_product_customfields`
+-- Contenu de la table `m4pmt_virtuemart_product_customfields`
 --
 
 INSERT INTO `m4pmt_virtuemart_product_customfields` (`virtuemart_customfield_id`, `virtuemart_product_id`, `virtuemart_custom_id`, `custom_value`, `custom_price`, `custom_param`, `published`, `created_on`, `created_by`, `modified_on`, `modified_by`, `locked_on`, `locked_by`, `ordering`) VALUES
@@ -8900,7 +8824,7 @@ INSERT INTO `m4pmt_virtuemart_product_customfields` (`virtuemart_customfield_id`
 -- --------------------------------------------------------
 
 --
--- Table structure for table `m4pmt_virtuemart_product_custom_plg_specification`
+-- Structure de la table `m4pmt_virtuemart_product_custom_plg_specification`
 --
 
 CREATE TABLE IF NOT EXISTS `m4pmt_virtuemart_product_custom_plg_specification` (
@@ -8921,7 +8845,7 @@ CREATE TABLE IF NOT EXISTS `m4pmt_virtuemart_product_custom_plg_specification` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `m4pmt_virtuemart_product_manufacturers`
+-- Structure de la table `m4pmt_virtuemart_product_manufacturers`
 --
 
 CREATE TABLE IF NOT EXISTS `m4pmt_virtuemart_product_manufacturers` (
@@ -8935,7 +8859,7 @@ CREATE TABLE IF NOT EXISTS `m4pmt_virtuemart_product_manufacturers` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `m4pmt_virtuemart_product_medias`
+-- Structure de la table `m4pmt_virtuemart_product_medias`
 --
 
 CREATE TABLE IF NOT EXISTS `m4pmt_virtuemart_product_medias` (
@@ -8948,7 +8872,7 @@ CREATE TABLE IF NOT EXISTS `m4pmt_virtuemart_product_medias` (
 ) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=2 ;
 
 --
--- Dumping data for table `m4pmt_virtuemart_product_medias`
+-- Contenu de la table `m4pmt_virtuemart_product_medias`
 --
 
 INSERT INTO `m4pmt_virtuemart_product_medias` (`id`, `virtuemart_product_id`, `virtuemart_media_id`, `ordering`) VALUES
@@ -8957,7 +8881,7 @@ INSERT INTO `m4pmt_virtuemart_product_medias` (`id`, `virtuemart_product_id`, `v
 -- --------------------------------------------------------
 
 --
--- Table structure for table `m4pmt_virtuemart_product_prices`
+-- Structure de la table `m4pmt_virtuemart_product_prices`
 --
 
 CREATE TABLE IF NOT EXISTS `m4pmt_virtuemart_product_prices` (
@@ -8986,7 +8910,7 @@ CREATE TABLE IF NOT EXISTS `m4pmt_virtuemart_product_prices` (
 ) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COMMENT='Holds price records for a product' AUTO_INCREMENT=2 ;
 
 --
--- Dumping data for table `m4pmt_virtuemart_product_prices`
+-- Contenu de la table `m4pmt_virtuemart_product_prices`
 --
 
 INSERT INTO `m4pmt_virtuemart_product_prices` (`virtuemart_product_price_id`, `virtuemart_product_id`, `virtuemart_shoppergroup_id`, `product_price`, `override`, `product_override_price`, `product_tax_id`, `product_discount_id`, `product_currency`, `product_price_vdate`, `product_price_edate`, `price_quantity_start`, `price_quantity_end`, `created_on`, `created_by`, `modified_on`, `modified_by`, `locked_on`, `locked_by`) VALUES
@@ -8995,7 +8919,7 @@ INSERT INTO `m4pmt_virtuemart_product_prices` (`virtuemart_product_price_id`, `v
 -- --------------------------------------------------------
 
 --
--- Table structure for table `m4pmt_virtuemart_product_relations`
+-- Structure de la table `m4pmt_virtuemart_product_relations`
 --
 
 CREATE TABLE IF NOT EXISTS `m4pmt_virtuemart_product_relations` (
@@ -9009,7 +8933,7 @@ CREATE TABLE IF NOT EXISTS `m4pmt_virtuemart_product_relations` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `m4pmt_virtuemart_product_shoppergroups`
+-- Structure de la table `m4pmt_virtuemart_product_shoppergroups`
 --
 
 CREATE TABLE IF NOT EXISTS `m4pmt_virtuemart_product_shoppergroups` (
@@ -9023,7 +8947,7 @@ CREATE TABLE IF NOT EXISTS `m4pmt_virtuemart_product_shoppergroups` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `m4pmt_virtuemart_ratings`
+-- Structure de la table `m4pmt_virtuemart_ratings`
 --
 
 CREATE TABLE IF NOT EXISTS `m4pmt_virtuemart_ratings` (
@@ -9044,7 +8968,7 @@ CREATE TABLE IF NOT EXISTS `m4pmt_virtuemart_ratings` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `m4pmt_virtuemart_rating_reviews`
+-- Structure de la table `m4pmt_virtuemart_rating_reviews`
 --
 
 CREATE TABLE IF NOT EXISTS `m4pmt_virtuemart_rating_reviews` (
@@ -9071,7 +8995,7 @@ CREATE TABLE IF NOT EXISTS `m4pmt_virtuemart_rating_reviews` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `m4pmt_virtuemart_rating_votes`
+-- Structure de la table `m4pmt_virtuemart_rating_votes`
 --
 
 CREATE TABLE IF NOT EXISTS `m4pmt_virtuemart_rating_votes` (
@@ -9090,7 +9014,7 @@ CREATE TABLE IF NOT EXISTS `m4pmt_virtuemart_rating_votes` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `m4pmt_virtuemart_shipmentmethods`
+-- Structure de la table `m4pmt_virtuemart_shipmentmethods`
 --
 
 CREATE TABLE IF NOT EXISTS `m4pmt_virtuemart_shipmentmethods` (
@@ -9118,7 +9042,7 @@ CREATE TABLE IF NOT EXISTS `m4pmt_virtuemart_shipmentmethods` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `m4pmt_virtuemart_shipmentmethods_en_gb`
+-- Structure de la table `m4pmt_virtuemart_shipmentmethods_en_gb`
 --
 
 CREATE TABLE IF NOT EXISTS `m4pmt_virtuemart_shipmentmethods_en_gb` (
@@ -9133,7 +9057,7 @@ CREATE TABLE IF NOT EXISTS `m4pmt_virtuemart_shipmentmethods_en_gb` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `m4pmt_virtuemart_shipmentmethod_shoppergroups`
+-- Structure de la table `m4pmt_virtuemart_shipmentmethod_shoppergroups`
 --
 
 CREATE TABLE IF NOT EXISTS `m4pmt_virtuemart_shipmentmethod_shoppergroups` (
@@ -9147,7 +9071,7 @@ CREATE TABLE IF NOT EXISTS `m4pmt_virtuemart_shipmentmethod_shoppergroups` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `m4pmt_virtuemart_shoppergroups`
+-- Structure de la table `m4pmt_virtuemart_shoppergroups`
 --
 
 CREATE TABLE IF NOT EXISTS `m4pmt_virtuemart_shoppergroups` (
@@ -9173,7 +9097,7 @@ CREATE TABLE IF NOT EXISTS `m4pmt_virtuemart_shoppergroups` (
 ) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COMMENT='Shopper Groups that users can be assigned to' AUTO_INCREMENT=3 ;
 
 --
--- Dumping data for table `m4pmt_virtuemart_shoppergroups`
+-- Contenu de la table `m4pmt_virtuemart_shoppergroups`
 --
 
 INSERT INTO `m4pmt_virtuemart_shoppergroups` (`virtuemart_shoppergroup_id`, `virtuemart_vendor_id`, `shopper_group_name`, `shopper_group_desc`, `custom_price_display`, `price_display`, `default`, `ordering`, `shared`, `published`, `created_on`, `created_by`, `modified_on`, `modified_by`, `locked_on`, `locked_by`) VALUES
@@ -9183,7 +9107,7 @@ INSERT INTO `m4pmt_virtuemart_shoppergroups` (`virtuemart_shoppergroup_id`, `vir
 -- --------------------------------------------------------
 
 --
--- Table structure for table `m4pmt_virtuemart_states`
+-- Structure de la table `m4pmt_virtuemart_states`
 --
 
 CREATE TABLE IF NOT EXISTS `m4pmt_virtuemart_states` (
@@ -9211,7 +9135,7 @@ CREATE TABLE IF NOT EXISTS `m4pmt_virtuemart_states` (
 ) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COMMENT='States that are assigned to a country' AUTO_INCREMENT=653 ;
 
 --
--- Dumping data for table `m4pmt_virtuemart_states`
+-- Contenu de la table `m4pmt_virtuemart_states`
 --
 
 INSERT INTO `m4pmt_virtuemart_states` (`virtuemart_state_id`, `virtuemart_vendor_id`, `virtuemart_country_id`, `virtuemart_worldzone_id`, `state_name`, `state_3_code`, `state_2_code`, `ordering`, `shared`, `published`, `created_on`, `created_by`, `modified_on`, `modified_by`, `locked_on`, `locked_by`) VALUES
@@ -9842,7 +9766,7 @@ INSERT INTO `m4pmt_virtuemart_states` (`virtuemart_state_id`, `virtuemart_vendor
 -- --------------------------------------------------------
 
 --
--- Table structure for table `m4pmt_virtuemart_userfields`
+-- Structure de la table `m4pmt_virtuemart_userfields`
 --
 
 CREATE TABLE IF NOT EXISTS `m4pmt_virtuemart_userfields` (
@@ -9880,7 +9804,7 @@ CREATE TABLE IF NOT EXISTS `m4pmt_virtuemart_userfields` (
 ) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COMMENT='Holds the fields for the user information' AUTO_INCREMENT=30 ;
 
 --
--- Dumping data for table `m4pmt_virtuemart_userfields`
+-- Contenu de la table `m4pmt_virtuemart_userfields`
 --
 
 INSERT INTO `m4pmt_virtuemart_userfields` (`virtuemart_userfield_id`, `virtuemart_vendor_id`, `name`, `title`, `description`, `type`, `maxlength`, `size`, `required`, `cols`, `rows`, `value`, `default`, `registration`, `shipment`, `account`, `readonly`, `calculated`, `sys`, `params`, `ordering`, `shared`, `published`, `created_on`, `created_by`, `modified_on`, `modified_by`, `locked_on`, `locked_by`) VALUES
@@ -9917,7 +9841,7 @@ INSERT INTO `m4pmt_virtuemart_userfields` (`virtuemart_userfield_id`, `virtuemar
 -- --------------------------------------------------------
 
 --
--- Table structure for table `m4pmt_virtuemart_userfield_values`
+-- Structure de la table `m4pmt_virtuemart_userfield_values`
 --
 
 CREATE TABLE IF NOT EXISTS `m4pmt_virtuemart_userfield_values` (
@@ -9939,7 +9863,7 @@ CREATE TABLE IF NOT EXISTS `m4pmt_virtuemart_userfield_values` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `m4pmt_virtuemart_userinfos`
+-- Structure de la table `m4pmt_virtuemart_userinfos`
 --
 
 CREATE TABLE IF NOT EXISTS `m4pmt_virtuemart_userinfos` (
@@ -9974,7 +9898,7 @@ CREATE TABLE IF NOT EXISTS `m4pmt_virtuemart_userinfos` (
 ) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COMMENT='Customer Information, BT = BillTo and ST = ShipTo' AUTO_INCREMENT=2 ;
 
 --
--- Dumping data for table `m4pmt_virtuemart_userinfos`
+-- Contenu de la table `m4pmt_virtuemart_userinfos`
 --
 
 INSERT INTO `m4pmt_virtuemart_userinfos` (`virtuemart_userinfo_id`, `virtuemart_user_id`, `address_type`, `address_type_name`, `name`, `company`, `title`, `last_name`, `first_name`, `middle_name`, `phone_1`, `phone_2`, `fax`, `address_1`, `address_2`, `city`, `virtuemart_state_id`, `virtuemart_country_id`, `zip`, `agreed`, `created_on`, `created_by`, `modified_on`, `modified_by`, `locked_on`, `locked_by`) VALUES
@@ -9983,7 +9907,7 @@ INSERT INTO `m4pmt_virtuemart_userinfos` (`virtuemart_userinfo_id`, `virtuemart_
 -- --------------------------------------------------------
 
 --
--- Table structure for table `m4pmt_virtuemart_vendors`
+-- Structure de la table `m4pmt_virtuemart_vendors`
 --
 
 CREATE TABLE IF NOT EXISTS `m4pmt_virtuemart_vendors` (
@@ -10003,7 +9927,7 @@ CREATE TABLE IF NOT EXISTS `m4pmt_virtuemart_vendors` (
 ) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COMMENT='Vendors manage their products in your store' AUTO_INCREMENT=2 ;
 
 --
--- Dumping data for table `m4pmt_virtuemart_vendors`
+-- Contenu de la table `m4pmt_virtuemart_vendors`
 --
 
 INSERT INTO `m4pmt_virtuemart_vendors` (`virtuemart_vendor_id`, `vendor_name`, `vendor_currency`, `vendor_accepted_currencies`, `vendor_params`, `created_on`, `created_by`, `modified_on`, `modified_by`, `locked_on`, `locked_by`) VALUES
@@ -10012,7 +9936,7 @@ INSERT INTO `m4pmt_virtuemart_vendors` (`virtuemart_vendor_id`, `vendor_name`, `
 -- --------------------------------------------------------
 
 --
--- Table structure for table `m4pmt_virtuemart_vendors_en_gb`
+-- Structure de la table `m4pmt_virtuemart_vendors_en_gb`
 --
 
 CREATE TABLE IF NOT EXISTS `m4pmt_virtuemart_vendors_en_gb` (
@@ -10029,7 +9953,7 @@ CREATE TABLE IF NOT EXISTS `m4pmt_virtuemart_vendors_en_gb` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `m4pmt_virtuemart_vendors_en_gb`
+-- Contenu de la table `m4pmt_virtuemart_vendors_en_gb`
 --
 
 INSERT INTO `m4pmt_virtuemart_vendors_en_gb` (`virtuemart_vendor_id`, `vendor_store_desc`, `vendor_terms_of_service`, `vendor_legal_info`, `vendor_store_name`, `vendor_phone`, `vendor_url`, `slug`) VALUES
@@ -10038,7 +9962,7 @@ INSERT INTO `m4pmt_virtuemart_vendors_en_gb` (`virtuemart_vendor_id`, `vendor_st
 -- --------------------------------------------------------
 
 --
--- Table structure for table `m4pmt_virtuemart_vendor_medias`
+-- Structure de la table `m4pmt_virtuemart_vendor_medias`
 --
 
 CREATE TABLE IF NOT EXISTS `m4pmt_virtuemart_vendor_medias` (
@@ -10053,7 +9977,7 @@ CREATE TABLE IF NOT EXISTS `m4pmt_virtuemart_vendor_medias` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `m4pmt_virtuemart_vmusers`
+-- Structure de la table `m4pmt_virtuemart_vmusers`
 --
 
 CREATE TABLE IF NOT EXISTS `m4pmt_virtuemart_vmusers` (
@@ -10077,7 +10001,7 @@ CREATE TABLE IF NOT EXISTS `m4pmt_virtuemart_vmusers` (
 ) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COMMENT='Holds the unique user data' AUTO_INCREMENT=43 ;
 
 --
--- Dumping data for table `m4pmt_virtuemart_vmusers`
+-- Contenu de la table `m4pmt_virtuemart_vmusers`
 --
 
 INSERT INTO `m4pmt_virtuemart_vmusers` (`virtuemart_user_id`, `virtuemart_vendor_id`, `user_is_vendor`, `customer_number`, `perms`, `virtuemart_paymentmethod_id`, `virtuemart_shipmentmethod_id`, `agreed`, `created_on`, `created_by`, `modified_on`, `modified_by`, `locked_on`, `locked_by`) VALUES
@@ -10086,7 +10010,7 @@ INSERT INTO `m4pmt_virtuemart_vmusers` (`virtuemart_user_id`, `virtuemart_vendor
 -- --------------------------------------------------------
 
 --
--- Table structure for table `m4pmt_virtuemart_vmuser_shoppergroups`
+-- Structure de la table `m4pmt_virtuemart_vmuser_shoppergroups`
 --
 
 CREATE TABLE IF NOT EXISTS `m4pmt_virtuemart_vmuser_shoppergroups` (
@@ -10098,7 +10022,7 @@ CREATE TABLE IF NOT EXISTS `m4pmt_virtuemart_vmuser_shoppergroups` (
 ) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COMMENT='xref table for users to shopper group' AUTO_INCREMENT=2 ;
 
 --
--- Dumping data for table `m4pmt_virtuemart_vmuser_shoppergroups`
+-- Contenu de la table `m4pmt_virtuemart_vmuser_shoppergroups`
 --
 
 INSERT INTO `m4pmt_virtuemart_vmuser_shoppergroups` (`id`, `virtuemart_user_id`, `virtuemart_shoppergroup_id`) VALUES
@@ -10107,7 +10031,7 @@ INSERT INTO `m4pmt_virtuemart_vmuser_shoppergroups` (`id`, `virtuemart_user_id`,
 -- --------------------------------------------------------
 
 --
--- Table structure for table `m4pmt_virtuemart_waitingusers`
+-- Structure de la table `m4pmt_virtuemart_waitingusers`
 --
 
 CREATE TABLE IF NOT EXISTS `m4pmt_virtuemart_waitingusers` (
@@ -10132,7 +10056,7 @@ CREATE TABLE IF NOT EXISTS `m4pmt_virtuemart_waitingusers` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `m4pmt_virtuemart_worldzones`
+-- Structure de la table `m4pmt_virtuemart_worldzones`
 --
 
 CREATE TABLE IF NOT EXISTS `m4pmt_virtuemart_worldzones` (
@@ -10159,7 +10083,7 @@ CREATE TABLE IF NOT EXISTS `m4pmt_virtuemart_worldzones` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `m4pmt_weblinks`
+-- Structure de la table `m4pmt_weblinks`
 --
 
 CREATE TABLE IF NOT EXISTS `m4pmt_weblinks` (
@@ -10205,7 +10129,7 @@ CREATE TABLE IF NOT EXISTS `m4pmt_weblinks` (
 ) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=10 ;
 
 --
--- Dumping data for table `m4pmt_weblinks`
+-- Contenu de la table `m4pmt_weblinks`
 --
 
 INSERT INTO `m4pmt_weblinks` (`id`, `catid`, `sid`, `title`, `alias`, `url`, `description`, `date`, `hits`, `state`, `checked_out`, `checked_out_time`, `ordering`, `archived`, `approved`, `access`, `params`, `language`, `created`, `created_by`, `created_by_alias`, `modified`, `modified_by`, `metakey`, `metadesc`, `metadata`, `featured`, `xreference`, `publish_up`, `publish_down`) VALUES
@@ -10222,7 +10146,7 @@ INSERT INTO `m4pmt_weblinks` (`id`, `catid`, `sid`, `title`, `alias`, `url`, `de
 -- --------------------------------------------------------
 
 --
--- Table structure for table `m4pmt_wf_profiles`
+-- Structure de la table `m4pmt_wf_profiles`
 --
 
 CREATE TABLE IF NOT EXISTS `m4pmt_wf_profiles` (
@@ -10244,7 +10168,7 @@ CREATE TABLE IF NOT EXISTS `m4pmt_wf_profiles` (
 ) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=3 ;
 
 --
--- Dumping data for table `m4pmt_wf_profiles`
+-- Contenu de la table `m4pmt_wf_profiles`
 --
 
 INSERT INTO `m4pmt_wf_profiles` (`id`, `name`, `description`, `users`, `types`, `components`, `area`, `rows`, `plugins`, `published`, `ordering`, `checked_out`, `checked_out_time`, `params`) VALUES
@@ -10254,7 +10178,7 @@ INSERT INTO `m4pmt_wf_profiles` (`id`, `name`, `description`, `users`, `types`, 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `m4pmt_widgetkit_widget`
+-- Structure de la table `m4pmt_widgetkit_widget`
 --
 
 CREATE TABLE IF NOT EXISTS `m4pmt_widgetkit_widget` (
@@ -10271,7 +10195,7 @@ CREATE TABLE IF NOT EXISTS `m4pmt_widgetkit_widget` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `m4pmt_xmap_items`
+-- Structure de la table `m4pmt_xmap_items`
 --
 
 CREATE TABLE IF NOT EXISTS `m4pmt_xmap_items` (
@@ -10288,7 +10212,7 @@ CREATE TABLE IF NOT EXISTS `m4pmt_xmap_items` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `m4pmt_xmap_sitemap`
+-- Structure de la table `m4pmt_xmap_sitemap`
 --
 
 CREATE TABLE IF NOT EXISTS `m4pmt_xmap_sitemap` (
