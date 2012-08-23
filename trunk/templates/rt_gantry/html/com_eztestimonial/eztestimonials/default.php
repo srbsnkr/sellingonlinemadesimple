@@ -170,40 +170,37 @@ for ($i=0, $n=count( $this->items ); $i < $n; $i++)
 	$marginLftZero = 'style="margin-left:0px!important;"';
 	$imageblock ='';
 	}
-
 	#echo '<li><div class="monialItem">'.$imageblock.'<div '.$marginLftZero.' class="topblock"><div class="postername">'.$UserUrlLink.' <span class="location">'.$row->location.'</span> <span class="date" style="font-size:11px;"> '.$addedDate .'</span> <span class="star_ratings">'.$stars.$estars.'</span></div></div><div '.$marginLftZero.' class="message">'.$row->message_long.'</div><div class="authortext">'.$row->aboutauthor.'</div>		
 	#</div>';
 	echo '<li><div class="monialItem">'.$imageblock.'<div class="item-post"><div '.$marginLftZero.' class="message">'.$row->message_long.'</div>
 			<div class="postername">'.$UserUrlLink.','.$row->aboutauthor.'</div></div></div>';
-	
 	$k = 1 - $k;
-
 	echo '</li>';
-
 }
-
-
-
 $cache = & JFactory::getCache();
-
-
-
 ?>  
 
 </ul>
-
-
-<div style="display:none;">
-<?php   echo '<form action="'.JRoute::_("index.php?option=com_eztestimonial").'" method=\"post\">';
-
-  echo '<div class="pagination" align="center">'.$this->pagination->getListFooter().'</div>';
-
-  echo '<input type="hidden" name="view" value="testimonials" /><input type="hidden" name="option" value="com_eztestimonial" />
-
-  </form>'; 
-
-  echo '<div class="pagination">'.$this->crdt.'</div><br />
-  ';
-
-  ?>
+<div class="num_of_page" style="clear: both;text-align: center;">
 </div>
+<div class="next_page"></div>
+<div class="prev_page"></div>
+<div id="page_data" style="display:none">
+<?php   
+	echo '<form action="'.JRoute::_("index.php?option=com_eztestimonial").'" method=\"post\">';
+	echo '<div class="pagination" align="center">'.$this->pagination->getListFooter().'</div>';
+	echo '<input type="hidden" name="view" value="testimonials" /><input type="hidden" name="option" value="com_eztestimonial" /></form>';
+	#  echo '<div class="pagination">'.$this->crdt.'</div><br />';
+?>
+</div>
+<script>
+	jQuery(".component-content").css("position","relative");
+	
+	var num_of_page = jQuery("#page_data .list-footer .counter").html();
+	jQuery(".num_of_page").html(num_of_page);	
+	var next = jQuery("#page_data .list-footer .pagination-next").html();
+	var prev = jQuery("#page_data .list-footer .pagination-prev").html();
+	
+	jQuery(".next_page").html(next).css({"position":"absolute","top":"50%","right":"0px"});
+	jQuery(".prev_page").html(prev).css({"position":"absolute","top":"50%","left":"0px"});
+</script>

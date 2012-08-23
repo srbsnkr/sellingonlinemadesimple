@@ -108,7 +108,7 @@ class testimonialModeleztestimonials extends JModel
 
 		// Get pagination request variables
 
-		$limit = $mainframe->getUserStateFromRequest('global.list.limit', 'limit', $mainframe->getCfg('list_limit'), 'int');
+		$limit = 4;//$mainframe->getUserStateFromRequest('global.list.limit', 'limit', $mainframe->getCfg('list_limit'), 'int');
 
 		$limitstart = JRequest::getVar('limitstart', 0, '', 'int');
 
