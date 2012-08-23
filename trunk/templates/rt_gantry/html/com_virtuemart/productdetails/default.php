@@ -51,7 +51,7 @@ if (empty($this->product)) {
     return;
 }
 ?>
-
+<h2 class="title" style="visibility: visible; ">SHOP - <?php echo $this->product->category_name ; ?></h2>
 <div class="productdetails-view">
 
     <?php
@@ -143,13 +143,13 @@ if (empty($this->product)) {
     ?>
 
     <div>
-	<div class="width50 floatleft">
+	<div class="width30 floatleft">
 <?php
 echo $this->loadTemplate('images');
 ?>
 	</div>
 
-	<div class="width50 floatright">
+	<div class="width70 floatright">
 	    <div class="spacer-buy-area">
 
 		<?php
