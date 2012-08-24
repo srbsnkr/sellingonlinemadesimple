@@ -69,26 +69,25 @@ defined('_JEXEC') or die('Restricted access');
 		<a href="<?php echo JRoute::_('index.php?option=com_virtuemart&view=productdetails&layout=notify&virtuemart_product_id='.$this->product->virtuemart_product_id); ?>" class="notify"><?php echo JText::_('COM_VIRTUEMART_CART_NOTIFY') ?></a>
 
 <?php } else { ?>
-						<!-- <label for="quantity<?php echo $this->product->virtuemart_product_id; ?>" class="quantity_box"><?php echo JText::_('COM_VIRTUEMART_CART_QUANTITY'); ?>: </label> -->
-	    <span class="quantity-box">
-		<input type="text" class="quantity-input js-recalculate" name="quantity[]" value="<?php if (isset($this->product->min_order_level) && (int) $this->product->min_order_level > 0) {
-    echo $this->product->min_order_level;
-} else {
-    echo '1';
-} ?>" />
-	    </span>
-	    <span class="quantity-controls js-recalculate">
+	<!-- <label for="quantity<?php echo $this->product->virtuemart_product_id; ?>" class="quantity_box"><?php echo JText::_('COM_VIRTUEMART_CART_QUANTITY'); ?>: </label> -->
+	<span class="quantity-box">Quantity: 
+	<input type="text" class="quantity-input js-recalculate" name="quantity[]" value="<?php if (isset($this->product->min_order_level) && (int) $this->product->min_order_level > 0) {
+		echo $this->product->min_order_level;
+	} else {
+		echo '1';
+	} ?>" />
+	</span>
+	<span class="quantity-controls js-recalculate">
 		<input type="button" class="quantity-controls quantity-plus" />
 		<input type="button" class="quantity-controls quantity-minus" />
-	    </span>
-	    <?php // Display the quantity box END ?>
+	</span>	    
 
-	    <?php
-	    // Display the add to cart button
-	    ?>
-		<span class="addtocart-button">
-		<?php echo shopFunctionsF::getAddToCartButton($this->product->orderable); ?>
-		</span>
+<?php // Display the add to cart button ?>
+<p style="clear:both"></p>
+<hr>
+<span class="addtocart-button" style="">
+	<?php echo shopFunctionsF::getAddToCartButton($this->product->orderable); ?>
+</span>
 <?php } ?>
 
 	    <div class="clear"></div>

@@ -22,6 +22,7 @@ defined('_JEXEC') or die('Restricted access');
 
 // addon for joomla modal Box
 JHTML::_('behavior.modal');
+
 // JHTML::_('behavior.tooltip');
 $url = JRoute::_('index.php?option=com_virtuemart&view=productdetails&task=askquestion&virtuemart_product_id=' . $this->product->virtuemart_product_id . '&virtuemart_category_id=' . $this->product->virtuemart_category_id . '&tmpl=component');
 $document = JFactory::getDocument();
@@ -43,63 +44,56 @@ $document->addScriptDeclaration("
 			console.log(extension)
 		});*/
 	});
-");
-/* Let's see if we found the product */
+"); ?>
+
+<h2 class="title" style="visibility: visible; ">SHOP - <?php echo $this->product->category_name ; ?></h2>
+
+<?php /* Let's see if we found the product */
 if (empty($this->product)) {
     echo JText::_('COM_VIRTUEMART_PRODUCT_NOT_FOUND');
     echo '<br /><br />  ' . $this->continue_link_html;
     return;
-}
-?>
-<h2 class="title" style="visibility: visible; ">SHOP - <?php echo $this->product->category_name ; ?></h2>
-<div class="productdetails-view">
+} ?>
 
-    <?php
-    // Product Navigation
-    if (VmConfig::get('product_navigation', 1)) {
-	?>
-        <div class="product-neighbours">
-	    <?php
-	    if (!empty($this->product->neighbours ['previous'][0])) {
-		$prev_link = JRoute::_('index.php?option=com_virtuemart&view=productdetails&virtuemart_product_id=' . $this->product->neighbours ['previous'][0] ['virtuemart_product_id'] . '&virtuemart_category_id=' . $this->product->virtuemart_category_id);
-		echo JHTML::_('link', $prev_link, $this->product->neighbours ['previous'][0]
-			['product_name'], array('class' => 'previous-page'));
-	    }
-	    if (!empty($this->product->neighbours ['next'][0])) {
+<div class="productdetails-view">
+    
+<?php // Product Navigation
+	if (VmConfig::get('product_navigation', 1)) { ?>
+	<div class="product-neighbours">
+	<?php
+	if (!empty($this->product->neighbours ['previous'][0])) {
+	$prev_link = JRoute::_('index.php?option=com_virtuemart&view=productdetails&virtuemart_product_id=' . $this->product->neighbours ['previous'][0] ['virtuemart_product_id'] . '&virtuemart_category_id=' . $this->product->virtuemart_category_id);
+	echo JHTML::_('link', $prev_link, $this->product->neighbours ['previous'][0]
+		['product_name'], array('class' => 'previous-page'));
+	}
+	if (!empty($this->product->neighbours ['next'][0])) {
 		$next_link = JRoute::_('index.php?option=com_virtuemart&view=productdetails&virtuemart_product_id=' . $this->product->neighbours ['next'][0] ['virtuemart_product_id'] . '&virtuemart_category_id=' . $this->product->virtuemart_category_id);
 		echo JHTML::_('link', $next_link, $this->product->neighbours ['next'][0] ['product_name'], array('class' => 'next-page'));
-	    }
-	    ?>
-    	<div class="clear"></div>
-        </div>
-    <?php } // Product Navigation END
-    ?>
-
-	<?php // Back To Category Button
-	if ($this->product->virtuemart_category_id) {
-		$catURL =  JRoute::_('index.php?option=com_virtuemart&view=category&virtuemart_category_id='.$this->product->virtuemart_category_id);
-		$categoryName = $this->product->category_name ;
-	} else {
-		$catURL =  JRoute::_('index.php?option=com_virtuemart');
-		$categoryName = jtext::_('COM_VIRTUEMART_SHOP_HOME') ;
 	}
 	?>
-	<div class="back-to-category">
-    	<a href="<?php echo $catURL ?>" class="product-details" title="<?php echo $categoryName ?>"><?php echo JText::sprintf('COM_VIRTUEMART_CATEGORY_BACK_TO',$categoryName) ?></a>
+	<div class="clear"></div>
 	</div>
+<?php } // Product Navigation END ?>
 
-    <?php // Product Title   ?>
-    <h1><?php echo $this->product->product_name ?></h1>
-    <?php // Product Title END   ?>
+<?php // Back To Category Button
+if ($this->product->virtuemart_category_id) {
+	$catURL =  JRoute::_('index.php?option=com_virtuemart&view=category&virtuemart_category_id='.$this->product->virtuemart_category_id);
+	$categoryName = $this->product->category_name ;
+} else {
+	$catURL =  JRoute::_('index.php?option=com_virtuemart');
+	$categoryName = jtext::_('COM_VIRTUEMART_SHOP_HOME') ;
+}
+?>
+<div class="back-to-category">
+	<a href="<?php echo $catURL ?>" class="product-details" title="<?php echo $categoryName ?>"><?php echo JText::sprintf('COM_VIRTUEMART_CATEGORY_BACK_TO',$categoryName) ?></a>
+</div>        
 
-    <?php // afterDisplayTitle Event
-    echo $this->product->event->afterDisplayTitle ?>
+<?php // afterDisplayTitle Event
+echo $this->product->event->afterDisplayTitle ?>
 
-    <?php
-    // Product Edit Link
-    echo $this->edit_link;
-    // Product Edit Link END
-    ?>
+<?php // Product Edit Link
+	echo $this->edit_link;
+// Product Edit Link END ?>
 
     <?php
     // PDF - Print - Email Icon
@@ -122,18 +116,7 @@ if (empty($this->product)) {
     <?php } // PDF - Print - Email Icon END
     ?>
 
-    <?php
-    // Product Short Description
-    if (!empty($this->product->product_s_desc)) {
-	?>
-        <div class="product-short-description">
-	    <?php
-	    /** @todo Test if content plugins modify the product description */
-	    echo nl2br($this->product->product_s_desc);
-	    ?>
-        </div>
-	<?php
-    } // Product Short Description END
+    <?php    
 
 
     if (!empty($this->product->customfieldsSorted['ontop'])) {
@@ -144,22 +127,13 @@ if (empty($this->product)) {
 
     <div>
 	<div class="width30 floatleft">
-<?php
-echo $this->loadTemplate('images');
-?>
+		<?php echo $this->loadTemplate('images'); ?>
 	</div>
 
 	<div class="width70 floatright">
-	    <div class="spacer-buy-area">
-
-		<?php
-		// TODO in Multi-Vendor not needed at the moment and just would lead to confusion
-		/* $link = JRoute::_('index2.php?option=com_virtuemart&view=virtuemart&task=vendorinfo&virtuemart_vendor_id='.$this->product->virtuemart_vendor_id);
-		  $text = JText::_('COM_VIRTUEMART_VENDOR_FORM_INFO_LBL');
-		  echo '<span class="bold">'. JText::_('COM_VIRTUEMART_PRODUCT_DETAILS_VENDOR_LBL'). '</span>'; ?><a class="modal" href="<?php echo $link ?>"><?php echo $text ?></a><br />
-		 */
-		?>
-
+	    <div class="spacer-buy-area">	
+			<?php // Product Title   ?>
+			<h1><?php echo $this->product->product_name ?></h1>
 		<?php
 		if ($this->showRating) {
 		    $maxrating = VmConfig::get('vm_maximum_rating_scale', 5);
@@ -181,6 +155,24 @@ echo $this->loadTemplate('images');
 			<?php
 		    }
 		}
+		
+		// Product price
+		if ($this->show_prices and (empty($this->product->images[0]) or $this->product->images[0]->file_is_downloadable == 0)) {
+		    echo $this->loadTemplate('showprices');
+		}
+		
+		// Product Short Description
+		if (!empty($this->product->product_s_desc)) {
+		?>
+			<div class="product-short-description">
+			<?php
+			/** @todo Test if content plugins modify the product description */
+			echo nl2br($this->product->product_s_desc);
+			?>
+			</div>
+		<?php
+		} // Product Short Description END
+		
 		if (is_array($this->productDisplayShipments)) {
 		    foreach ($this->productDisplayShipments as $productDisplayShipment) {
 			echo $productDisplayShipment . '<br />';
@@ -190,16 +182,11 @@ echo $this->loadTemplate('images');
 		    foreach ($this->productDisplayPayments as $productDisplayPayment) {
 			echo $productDisplayPayment . '<br />';
 		    }
-		}
-		// Product Price
-		if ($this->show_prices and (empty($this->product->images[0]) or $this->product->images[0]->file_is_downloadable == 0)) {
-		    echo $this->loadTemplate('showprices');
-		}
+		}		
 		?>
 
 		<?php
 		// Add To Cart Button
-// 			if (!empty($this->product->prices) and !empty($this->product->images[0]) and $this->product->images[0]->file_is_downloadable==0 ) {
 		if (!VmConfig::get('use_as_catalog', 0) and !empty($this->product->prices)) {
 		    echo $this->loadTemplate('addtocart');
 		}  // Add To Cart Button END
@@ -252,15 +239,14 @@ if (VmConfig::get('ask_question', 1) == '1') {
 
 	<?php
 	// Product Description
-	if (!empty($this->product->product_desc)) {
-	    ?>
-        <div class="product-description">
-	<?php /** @todo Test if content plugins modify the product description */ ?>
+	/*
+	if (!empty($this->product->product_desc)) { ?>
+        <div class="product-description">	
     	<span class="title"><?php echo JText::_('COM_VIRTUEMART_PRODUCT_DESC_TITLE') ?></span>
 	<?php echo $this->product->product_desc; ?>
         </div>
 	<?php
-    } // Product Description END
+    } */// Product Description END
 
     if (!empty($this->product->customfieldsSorted['normal'])) {
 	$this->position = 'normal';
@@ -319,6 +305,6 @@ if (VmConfig::get('ask_question', 1) == '1') {
 echo $this->product->event->afterDisplayContent; ?>
 
 <?php
-echo $this->loadTemplate('reviews');
+#echo $this->loadTemplate('reviews');
 ?>
 </div>
