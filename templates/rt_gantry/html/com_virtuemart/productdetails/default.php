@@ -56,25 +56,7 @@ if (empty($this->product)) {
 } ?>
 
 <div class="productdetails-view">
-    
-<?php // Product Navigation
-	if (VmConfig::get('product_navigation', 1)) { ?>
-	<div class="product-neighbours">
-	<?php
-	if (!empty($this->product->neighbours ['previous'][0])) {
-	$prev_link = JRoute::_('index.php?option=com_virtuemart&view=productdetails&virtuemart_product_id=' . $this->product->neighbours ['previous'][0] ['virtuemart_product_id'] . '&virtuemart_category_id=' . $this->product->virtuemart_category_id);
-	echo JHTML::_('link', $prev_link, $this->product->neighbours ['previous'][0]
-		['product_name'], array('class' => 'previous-page'));
-	}
-	if (!empty($this->product->neighbours ['next'][0])) {
-		$next_link = JRoute::_('index.php?option=com_virtuemart&view=productdetails&virtuemart_product_id=' . $this->product->neighbours ['next'][0] ['virtuemart_product_id'] . '&virtuemart_category_id=' . $this->product->virtuemart_category_id);
-		echo JHTML::_('link', $next_link, $this->product->neighbours ['next'][0] ['product_name'], array('class' => 'next-page'));
-	}
-	?>
-	<div class="clear"></div>
-	</div>
-<?php } // Product Navigation END ?>
-
+  
 <?php // Back To Category Button
 if ($this->product->virtuemart_category_id) {
 	$catURL =  JRoute::_('index.php?option=com_virtuemart&view=category&virtuemart_category_id='.$this->product->virtuemart_category_id);
@@ -88,48 +70,13 @@ if ($this->product->virtuemart_category_id) {
 	<a href="<?php echo $catURL ?>" class="product-details" title="<?php echo $categoryName ?>"><?php echo JText::sprintf('COM_VIRTUEMART_CATEGORY_BACK_TO',$categoryName) ?></a>
 </div>        
 
-<?php // afterDisplayTitle Event
-echo $this->product->event->afterDisplayTitle ?>
+<?php 
+	// afterDisplayTitle Event
+	echo $this->product->event->afterDisplayTitle 
+?>
 
-<?php // Product Edit Link
-	echo $this->edit_link;
-// Product Edit Link END ?>
-
-    <?php
-    // PDF - Print - Email Icon
-    if (VmConfig::get('show_emailfriend') || VmConfig::get('show_printicon') || VmConfig::get('pdf_button_enable')) {
-	?>
-        <div class="icons">
-	    <?php
-	    //$link = (JVM_VERSION===1) ? 'index2.php' : 'index.php';
-	    $link = 'index.php?tmpl=component&option=com_virtuemart&view=productdetails&virtuemart_product_id=' . $this->product->virtuemart_product_id;
-	    $MailLink = 'index.php?option=com_virtuemart&view=productdetails&task=recommend&virtuemart_product_id=' . $this->product->virtuemart_product_id . '&virtuemart_category_id=' . $this->product->virtuemart_category_id . '&tmpl=component';
-
-	    if (VmConfig::get('pdf_icon', 1) == '1') {
-		echo $this->linkIcon($link . '&format=pdf', 'COM_VIRTUEMART_PDF', 'pdf_button', 'pdf_button_enable', false);
-	    }
-	    echo $this->linkIcon($link . '&print=1', 'COM_VIRTUEMART_PRINT', 'printButton', 'show_printicon');
-	    echo $this->linkIcon($MailLink, 'COM_VIRTUEMART_EMAIL', 'emailButton', 'show_emailfriend');
-	    ?>
-    	<div class="clear"></div>
-        </div>
-    <?php } // PDF - Print - Email Icon END
-    ?>
-
-    <?php    
-
-
-    if (!empty($this->product->customfieldsSorted['ontop'])) {
-	$this->position = 'ontop';
-	echo $this->loadTemplate('customfields');
-    } // Product Custom ontop end
-    ?>
-
-    <div>
-	<div class="width30 floatleft">
-		<?php echo $this->loadTemplate('images'); ?>
-	</div>
-
+<div>
+	<div class="width30 floatleft"><?php echo $this->loadTemplate('images'); ?></div>
 	<div class="width70 floatright">
 	    <div class="spacer-buy-area">	
 			<?php // Product Title   ?>
@@ -305,6 +252,6 @@ if (VmConfig::get('ask_question', 1) == '1') {
 echo $this->product->event->afterDisplayContent; ?>
 
 <?php
-#echo $this->loadTemplate('reviews');
+echo $this->loadTemplate('reviews');
 ?>
 </div>
