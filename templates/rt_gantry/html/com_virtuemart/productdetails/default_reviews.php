@@ -29,24 +29,15 @@ if ($this->allowRating || $this->showReview) {
 	$ratingWidth = $maxrating * 24;
 	for ($num = 0; $num <= $maxrating; $num++) {
 		$stars[] = '
-				<span title="' . (JText::_ ("COM_VIRTUEMART_RATING_TITLE") . $num . '/' . $maxrating) . '" class="vmicon ratingbox" style="display:inline-block;width:' . 24 * $maxrating . 'px;">
-					<span class="stars-orange" style="width:' . (24 * $num) . 'px">
-					</span>
-				</span>';
+			<span title="' . (JText::_ ("COM_VIRTUEMART_RATING_TITLE") . $num . '/' . $maxrating) . '" class="vmicon ratingbox" style="display:inline-block;width:' . 24 * $maxrating . 'px;">
+				<span class="stars-orange" style="width:' . (24 * $num) . 'px">
+				</span>
+			</span>';
 	} ?>
-
-
-
-
-
 	<div class="customer-reviews">
 		<form method="post" action="<?php echo JRoute::_ ('index.php?option=com_virtuemart&view=productdetails&virtuemart_product_id=' . $this->product->virtuemart_product_id . '&virtuemart_category_id=' . $this->product->virtuemart_category_id); ?>" name="reviewForm" id="reviewform">
-	<?php
-}
-
-if ($this->showReview) {
-
-	?>
+<?php }
+if ($this->showReview) { ?>
 	<h4><?php echo JText::_ ('COM_VIRTUEMART_REVIEWS') ?></h4>
 
 	<div class="list-reviews">

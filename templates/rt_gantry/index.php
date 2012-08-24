@@ -66,7 +66,12 @@ require_once('lib/gantry/gantry.php');
 							<input type="submit" name="Button search" value=""/>
 						</form>
 					</div>
-					<?php echo $gantry->displayModules('navigation','basic','basic'); ?>
+					<?php if ($this->countModules('menu-navigation')) : ?>
+						<div class="menu-bottom">
+						<jdoc:include type="modules" name="menu-navigation" />
+						</div>
+					<?php endif; ?>	
+					<?php #echo $gantry->displayModules('navigation','basic','basic'); ?>
 					<div class="clear"></div>
 				</div>
 			</div>
