@@ -5,7 +5,7 @@ jQuery("#rt-content-bottom").children().each(function(){
 	jQuery(this).children().addClass(arr_name[i++]);
 })
 
-var str = '<ul>';
+var str = '<ul id="color-picker">';
 var i = 1;
 jQuery("#customPlugin37dropcustom_drop option").each(function(){
 	var temp = jQuery(this).text();
@@ -15,7 +15,7 @@ jQuery("#customPlugin37dropcustom_drop option").each(function(){
 str += '</ul>';
 jQuery("#customPlugin37dropcustom_drop").parent().next().html(str);
 
-var str = '<ul>';
+var str = '<ul id="avaible-size">';
 var i = 1;
 jQuery("#customPrice16 option").each(function(){
 	var temp = jQuery(this).text();

@@ -80,7 +80,6 @@ defined('_JEXEC') or die('Restricted access');
 	</span>	    
 
 <?php // Display the add to cart button ?>
-<p style="clear:both"></p>
 <span class="addtocart-button" style="">
 	<?php echo shopFunctionsF::getAddToCartButton($this->product->orderable); ?>
 </span>
