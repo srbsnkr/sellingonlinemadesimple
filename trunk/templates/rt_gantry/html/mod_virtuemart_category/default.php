@@ -16,11 +16,13 @@ defined('_JEXEC') or die('Restricted access');
 ?>
 	<li>
 		<div class="category_item <?php echo $class_menu; ?>">
+		<a href="<?php echo $caturl; ?>">
 			<div class="img-categori">
 				<img class="category_thumb" src="<?php echo $category_thumb->file_url; ?>" alt="<?php echo $cattext; ?>">
 			</div>
-			<span class="title_item"><?php echo JHTML::link($caturl, $cattext);?></span>
+			<span class="title_item"><?php echo $cattext;?></span>
 			<?php echo $category->category_description; ?>
+		</a>
 		</div>
 	</li>
 <?php } ?>

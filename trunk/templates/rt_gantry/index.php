@@ -44,13 +44,11 @@ require_once('lib/gantry/gantry.php');
 			<?php /** Begin Header **/ if ($gantry->countModules('header')) : ?>
 			<div id="rt-header">
 				<div class="rt-container">
+					<?php if ($this->countModules('menu-top')) : ?>						
 					<div class="menu-top">
-						<ul>
-							<li><a href="#">Basket</a></li>
-							<li><a href="#">Login</a></li>
-							<li><a href="#">Sign Up</a></li>
-						</ul>
+						<jdoc:include type="modules" name="menu-top" />
 					</div><!-- End .menu-top -->
+					<?php endif; ?>					
 					<?php echo $gantry->displayModules('header','standard','standard'); ?>
 					
 					<div class="clear"></div>
