@@ -181,8 +181,6 @@ $cache = & JFactory::getCache();
 ?>  
 
 </ul>
-<div class="num_of_page" style="clear: both;text-align: center;">
-</div>
 <div class="next_page"></div>
 <div class="prev_page"></div>
 <div id="page_data" style="display:none">
@@ -193,6 +191,7 @@ $cache = & JFactory::getCache();
 	#  echo '<div class="pagination">'.$this->crdt.'</div><br />';
 ?>
 </div>
+<div class="num_of_page"></div>
 <script>
 	jQuery(".component-content").css("position","relative");
 	
@@ -201,6 +200,6 @@ $cache = & JFactory::getCache();
 	var next = jQuery("#page_data .list-footer .pagination-next").html();
 	var prev = jQuery("#page_data .list-footer .pagination-prev").html();
 	
-	jQuery(".next_page").html(next).css({"position":"absolute","top":"50%","right":"0px"});
-	jQuery(".prev_page").html(prev).css({"position":"absolute","top":"50%","left":"0px"});
+	jQuery(".next_page").html(next).css({"position":"absolute","top":"43%","right":"20px"});
+	jQuery(".prev_page").html(prev).css({"position":"absolute","top":"43%","left":"20px"});
 </script>

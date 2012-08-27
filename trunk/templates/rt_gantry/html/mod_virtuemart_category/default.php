@@ -16,7 +16,9 @@ defined('_JEXEC') or die('Restricted access');
 ?>
 	<li>
 		<div class="category_item <?php echo $class_menu; ?>">
-			<img class="category_thumb" src="<?php echo $category_thumb->file_url_thumb; ?>" alt="<?php echo $cattext; ?>">
+			<div class="img-categori">
+				<img class="category_thumb" src="<?php echo $category_thumb->file_url; ?>" alt="<?php echo $cattext; ?>">
+			</div>
 			<span class="title_item"><?php echo JHTML::link($caturl, $cattext);?></span>
 			<?php echo $category->category_description; ?>
 		</div>
