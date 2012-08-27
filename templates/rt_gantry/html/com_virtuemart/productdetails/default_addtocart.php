@@ -77,14 +77,13 @@ defined('_JEXEC') or die('Restricted access');
 		echo '1';
 	} ?>" />
 	</span>
-	<span class="quantity-controls js-recalculate">
+	<span class="quantity-controls js-recalculate" style="display:none;">
 		<input type="button" class="quantity-controls quantity-plus" />
 		<input type="button" class="quantity-controls quantity-minus" />
 	</span>	    
 
 <?php // Display the add to cart button ?>
 <p style="clear:both"></p>
-<hr>
 <span class="addtocart-button" style="">
 	<?php echo shopFunctionsF::getAddToCartButton($this->product->orderable); ?>
 </span>

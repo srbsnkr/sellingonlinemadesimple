@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Aug 27, 2012 at 03:08 AM
+-- Generation Time: Aug 27, 2012 at 04:00 AM
 -- Server version: 5.5.16
 -- PHP Version: 5.3.8
 
@@ -6457,7 +6457,7 @@ CREATE TABLE IF NOT EXISTS `m4pmt_rsseo_pages` (
   `published` tinyint(2) NOT NULL DEFAULT '1',
   PRIMARY KEY (`IdPage`),
   UNIQUE KEY `PageURL` (`PageURL`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=325 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=329 ;
 
 --
 -- Dumping data for table `m4pmt_rsseo_pages`
@@ -6788,7 +6788,11 @@ INSERT INTO `m4pmt_rsseo_pages` (`IdPage`, `PageURL`, `PageTitle`, `PageKeywords
 (322, 'index.php/component/virtuemart/bags', 'Bags', '', '', '', 0, 0, 0, 0, 0, 127, -1.00, '', '', 1);
 INSERT INTO `m4pmt_rsseo_pages` (`IdPage`, `PageURL`, `PageTitle`, `PageKeywords`, `PageKeywordsDensity`, `PageDescription`, `PageSitemap`, `PageInSitemap`, `PageCrawled`, `DatePageCrawled`, `PageModified`, `PageLevel`, `PageGrade`, `params`, `densityparams`, `published`) VALUES
 (323, 'index.php/shop/children', 'Children', '', '', '', 0, 0, 0, 0, 0, 127, -1.00, '', '', 1),
-(324, 'index.php/shop/slippers', 'Slippers', '', '', '', 0, 0, 0, 0, 0, 127, -1.00, '', '', 1);
+(324, 'index.php/shop/slippers', 'Slippers', '', '', '', 0, 0, 0, 0, 0, 127, -1.00, '', '', 1),
+(325, 'index.php/component/virtuemart/bags/newsample-detail?showall=1', 'Accessories : newsample', '', '', '', 0, 0, 0, 0, 0, 127, -1.00, '', '', 1),
+(326, 'index.php/component/virtuemart/cart?Itemid=0', 'Shopping cart', '', '', '', 0, 0, 0, 0, 0, 127, -1.00, '', '', 1),
+(327, 'index.php/component/virtuemart/bags?error=404', 'Bags 404 The requested product does not exist.', '', '', '', 0, 0, 0, 0, 0, 127, -1.00, '', '', 1),
+(328, 'index.php/component/virtuemart/boots/womens-bailey-button-triplet-detail?Itemid=0&showall=1', 'Boots : WOMENS BAILEY BUTTON TRIPLET', '', '', '', 0, 0, 0, 0, 0, 127, -1.00, '', '', 1);
 
 -- --------------------------------------------------------
 
@@ -6850,7 +6854,8 @@ CREATE TABLE IF NOT EXISTS `m4pmt_session` (
 --
 
 INSERT INTO `m4pmt_session` (`session_id`, `client_id`, `guest`, `time`, `data`, `userid`, `username`, `usertype`) VALUES
-('pqvlifi3i8b10h86m1gpoctjr6', 0, 1, '1346029662', '__default|a:7:{s:15:"session.counter";i:1;s:19:"session.timer.start";i:1346029655;s:18:"session.timer.last";i:1346029655;s:17:"session.timer.now";i:1346029655;s:22:"session.client.browser";s:99:"Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.1 (KHTML, like Gecko) Chrome/21.0.1180.83 Safari/537.1";s:8:"registry";O:9:"JRegistry":1:{s:7:"\0*\0data";O:8:"stdClass":0:{}}s:4:"user";O:5:"JUser":23:{s:9:"\0*\0isRoot";b:0;s:2:"id";i:0;s:4:"name";N;s:8:"username";N;s:5:"email";N;s:8:"password";N;s:14:"password_clear";s:0:"";s:8:"usertype";N;s:5:"block";N;s:9:"sendEmail";i:0;s:12:"registerDate";N;s:13:"lastvisitDate";N;s:10:"activation";N;s:6:"params";N;s:6:"groups";a:0:{}s:5:"guest";i:1;s:10:"\0*\0_params";O:9:"JRegistry":1:{s:7:"\0*\0data";O:8:"stdClass":0:{}}s:14:"\0*\0_authGroups";a:1:{i:0;i:1;}s:14:"\0*\0_authLevels";a:2:{i:0;i:1;i:1;i:1;}s:15:"\0*\0_authActions";N;s:12:"\0*\0_errorMsg";N;s:10:"\0*\0_errors";a:0:{}s:3:"aid";i:0;}}VMCHECK|s:7:"NOCHECK";', 0, '', '');
+('svckeem6dmtdesmhssmdll7i80', 1, 0, '1346032768', '__default|a:8:{s:15:"session.counter";i:24;s:19:"session.timer.start";i:1346031999;s:18:"session.timer.last";i:1346032764;s:17:"session.timer.now";i:1346032767;s:22:"session.client.browser";s:99:"Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.1 (KHTML, like Gecko) Chrome/21.0.1180.83 Safari/537.1";s:8:"registry";O:9:"JRegistry":1:{s:7:"\0*\0data";O:8:"stdClass":3:{s:11:"application";O:8:"stdClass":1:{s:4:"lang";s:0:"";}s:13:"com_installer";O:8:"stdClass":2:{s:7:"message";s:0:"";s:17:"extension_message";s:0:"";}s:14:"com_virtuemart";O:8:"stdClass":1:{s:7:"product";O:8:"stdClass":1:{s:16:"filter_order_Dir";s:4:"DESC";}}}}s:4:"user";O:5:"JUser":23:{s:9:"\0*\0isRoot";b:1;s:2:"id";s:2:"42";s:4:"name";s:10:"Super User";s:8:"username";s:6:"adminm";s:5:"email";s:15:"inj@injener.net";s:8:"password";s:65:"7e9e836bdbf8d25ec156f98e0b7cd112:u7ogsNa2F2EFfF8oIRwExlXmp4tuun7w";s:14:"password_clear";s:0:"";s:8:"usertype";s:10:"deprecated";s:5:"block";s:1:"0";s:9:"sendEmail";s:1:"1";s:12:"registerDate";s:19:"2012-02-16 17:22:16";s:13:"lastvisitDate";s:19:"2012-08-26 09:59:10";s:10:"activation";s:1:"0";s:6:"params";s:92:"{"admin_style":"","admin_language":"","language":"","editor":"","helpsite":"","timezone":""}";s:6:"groups";a:1:{i:8;s:1:"8";}s:5:"guest";i:0;s:10:"\0*\0_params";O:9:"JRegistry":1:{s:7:"\0*\0data";O:8:"stdClass":6:{s:11:"admin_style";s:0:"";s:14:"admin_language";s:0:"";s:8:"language";s:0:"";s:6:"editor";s:0:"";s:8:"helpsite";s:0:"";s:8:"timezone";s:0:"";}}s:14:"\0*\0_authGroups";a:2:{i:0;i:1;i:1;i:8;}s:14:"\0*\0_authLevels";a:4:{i:0;i:1;i:1;i:1;i:2;i:2;i:3;i:3;}s:15:"\0*\0_authActions";N;s:12:"\0*\0_errorMsg";N;s:10:"\0*\0_errors";a:0:{}s:3:"aid";i:0;}s:13:"session.token";s:32:"15b880a5110c74fb60726883da8e8500";}VMCHECK|s:7:"NOCHECK";__wf|a:1:{s:13:"session.token";s:32:"95fb8e058cb1f4d2df0686ffa65edf76";}', 42, 'adminm', ''),
+('pqvlifi3i8b10h86m1gpoctjr6', 0, 1, '1346032772', '__default|a:8:{s:15:"session.counter";i:52;s:19:"session.timer.start";i:1346029655;s:18:"session.timer.last";i:1346032769;s:17:"session.timer.now";i:1346032771;s:22:"session.client.browser";s:99:"Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.1 (KHTML, like Gecko) Chrome/21.0.1180.83 Safari/537.1";s:8:"registry";O:9:"JRegistry":1:{s:7:"\0*\0data";O:8:"stdClass":1:{s:14:"com_virtuemart";O:8:"stdClass":6:{s:9:"category5";O:8:"stdClass":1:{s:5:"limit";s:3:"int";}s:14:"productdetails";O:8:"stdClass":2:{s:5:"limit";s:3:"int";s:10:"limitstart";i:0;}s:4:"cart";O:8:"stdClass":2:{s:5:"limit";s:3:"int";s:10:"limitstart";i:0;}s:9:"category4";O:8:"stdClass":1:{s:5:"limit";s:3:"int";}s:8:"category";O:8:"stdClass":1:{s:10:"limitstart";i:0;}s:9:"category2";O:8:"stdClass":1:{s:5:"limit";s:3:"int";}}}}s:4:"user";O:5:"JUser":23:{s:9:"\0*\0isRoot";b:0;s:2:"id";i:0;s:4:"name";N;s:8:"username";N;s:5:"email";N;s:8:"password";N;s:14:"password_clear";s:0:"";s:8:"usertype";N;s:5:"block";N;s:9:"sendEmail";i:0;s:12:"registerDate";N;s:13:"lastvisitDate";N;s:10:"activation";N;s:6:"params";N;s:6:"groups";a:0:{}s:5:"guest";i:1;s:10:"\0*\0_params";O:9:"JRegistry":1:{s:7:"\0*\0data";O:8:"stdClass":0:{}}s:14:"\0*\0_authGroups";a:1:{i:0;i:1;}s:14:"\0*\0_authLevels";a:2:{i:0;i:1;i:1;i:1;}s:15:"\0*\0_authActions";N;s:12:"\0*\0_errorMsg";N;s:10:"\0*\0_errors";a:0:{}s:3:"aid";i:0;}s:13:"session.token";s:32:"fb0fe912ae7e57b51c9d839750c11da8";}VMCHECK|s:7:"NOCHECK";__vm|a:3:{s:6:"vmcart";s:5089:"O:8:"stdClass":22:{s:8:"products";a:1:{s:16:"1::7:5;6:5;2:6;0";O:8:"stdClass":45:{s:26:"virtuemart_manufacturer_id";a:0:{}s:4:"slug";s:9:"newsample";s:9:"published";s:1:"1";s:27:"virtuemart_product_price_id";s:1:"1";s:21:"virtuemart_product_id";s:1:"1";s:26:"virtuemart_shoppergroup_id";N;s:13:"product_price";s:8:"30.00000";s:8:"override";N;s:22:"product_override_price";s:7:"0.00000";s:14:"product_tax_id";s:1:"0";s:19:"product_discount_id";s:1:"0";s:16:"product_currency";s:1:"9";s:20:"virtuemart_vendor_id";s:1:"1";s:17:"product_parent_id";s:1:"0";s:11:"product_sku";s:5:"1234u";s:12:"product_name";s:9:"newsample";s:14:"product_s_desc";s:140:"sample shoes sample shoes sample shoes sample shoes sample shoes sample shoes sample shoessample shoes sample shoessample shoes sample shoes";s:14:"product_weight";s:6:"0.0000";s:18:"product_weight_uom";s:2:"KG";s:14:"product_length";s:6:"0.0000";s:13:"product_width";s:6:"0.0000";s:14:"product_height";s:6:"0.0000";s:15:"product_lwh_uom";s:1:"M";s:16:"product_in_stock";s:2:"50";s:15:"product_ordered";s:1:"0";s:13:"product_sales";s:1:"0";s:12:"product_unit";s:0:"";s:17:"product_packaging";s:1:"0";s:15:"min_order_level";s:1:"0";s:15:"max_order_level";s:1:"0";s:19:"virtuemart_media_id";a:2:{i:0;s:2:"14";i:1;s:2:"15";}s:10:"categories";a:3:{i:0;s:1:"4";i:1;s:1:"5";i:2;s:1:"6";}s:22:"virtuemart_category_id";s:1:"4";s:13:"category_name";s:11:"Accessories";s:4:"link";s:86:"/sellingonlinemadesimple/index.php/component/virtuemart/bags/newsample-detail?Itemid=0";s:9:"packaging";s:0:"";s:16:"customfieldsCart";b:1;s:12:"customPrices";a:3:{i:0;a:1:{i:5;s:1:"7";}i:1;a:1:{i:5;s:1:"6";}i:2;a:1:{i:6;s:1:"2";}}s:12:"customPlugin";s:73:"{"7":{"drop":{"custom_drop":"Blue"}},"6":{"drop":{"custom_drop":"Blue"}}}";s:8:"quantity";i:1;s:3:"url";s:86:"/sellingonlinemadesimple/index.php/component/virtuemart/bags/newsample-detail?Itemid=0";s:5:"param";a:2:{i:7;a:1:{s:4:"drop";a:1:{s:11:"custom_drop";s:4:"Blue";}}i:6;a:1:{s:4:"drop";a:1:{s:11:"custom_drop";s:4:"Blue";}}}s:13:"productCustom";O:8:"stdClass":17:{s:20:"virtuemart_custom_id";s:1:"5";s:14:"custom_element";s:4:"drop";s:16:"custom_parent_id";s:1:"0";s:10:"admin_only";s:1:"0";s:12:"custom_title";s:5:"Color";s:10:"custom_tip";s:0:"";s:5:"value";s:4:"drop";s:17:"custom_field_desc";s:5:"Color";s:10:"field_type";s:1:"E";s:7:"is_list";s:1:"0";s:17:"is_cart_attribute";s:1:"1";s:9:"is_hidden";s:1:"0";s:9:"published";s:1:"1";s:25:"virtuemart_customfield_id";s:1:"6";s:12:"custom_value";s:4:"drop";s:12:"custom_param";s:61:"{"custom_drop_name":"Green","custom_drop":"Blue,Green,Black"}";s:12:"custom_price";s:2:"10";}s:12:"customfields";s:248:"<div class="vm-customfield-cart"> <span class="product-field-type-E"><span>Green Blue</span></span><br /> <span class="product-field-type-E"><span>Green Blue</span></span><br /> <span class="product-field-type-V">Shoe Size size 8</span><br /></div>";s:12:"cart_item_id";s:16:"1::7:5;6:5;2:6;0";}}s:8:"vendorId";i:1;s:21:"lastVisitedCategoryId";i:0;s:28:"virtuemart_shipmentmethod_id";i:0;s:27:"virtuemart_paymentmethod_id";i:0;s:25:"automaticSelectedShipment";b:0;s:24:"automaticSelectedPayment";b:0;s:12:"order_number";N;s:2:"BT";i:0;s:2:"ST";i:0;s:11:"tosAccepted";N;s:16:"customer_comment";s:0:"";s:10:"couponCode";s:0:"";s:8:"cartData";a:7:{s:4:"duty";i:1;s:7:"payment";i:0;s:11:"paymentName";s:19:"No payment selected";s:14:"DBTaxRulesBill";a:0:{}s:12:"shipmentName";s:20:"No shipment selected";s:12:"taxRulesBill";a:0:{}s:14:"DATaxRulesBill";a:0:{}}s:5:"lists";a:2:{s:6:"shipTo";s:0:"";s:6:"billTo";i:0;}s:17:"pricesUnformatted";a:25:{s:9:"basePrice";s:2:"60";s:16:"basePriceWithTax";s:1:"0";s:25:"discountedPriceWithoutTax";s:1:"0";s:10:"salesPrice";s:2:"60";s:9:"taxAmount";s:1:"0";s:22:"salesPriceWithDiscount";s:1:"0";s:14:"discountAmount";s:1:"0";s:15:"priceWithoutTax";s:2:"60";s:16:"subTotalProducts";s:1:"0";s:16:"1::7:5;6:5;2:6;0";a:21:{s:9:"costPrice";s:8:"30.00000";s:9:"basePrice";s:2:"60";s:16:"basePriceVariant";s:2:"60";s:16:"basePriceWithTax";s:1:"0";s:25:"discountedPriceWithoutTax";s:1:"0";s:14:"priceBeforeTax";s:2:"60";s:10:"salesPrice";s:2:"60";s:9:"taxAmount";s:1:"0";s:22:"salesPriceWithDiscount";s:1:"0";s:14:"salesPriceTemp";s:2:"60";s:14:"discountAmount";s:1:"0";s:15:"priceWithoutTax";s:2:"60";s:19:"variantModification";s:2:"30";s:5:"DBTax";a:0:{}s:3:"Tax";a:0:{}s:6:"VatTax";a:0:{}s:5:"DATax";a:0:{}s:8:"subtotal";s:2:"60";s:19:"subtotal_tax_amount";s:1:"0";s:17:"subtotal_discount";s:1:"0";s:17:"subtotal_with_tax";s:2:"60";}s:13:"shipmentValue";s:1:"0";s:11:"shipmentTax";s:1:"0";s:13:"shipmentTotal";s:1:"0";s:18:"salesPriceShipment";s:1:"0";s:21:"discountBeforeTaxBill";s:1:"0";s:7:"withTax";s:2:"60";s:16:"discountAfterTax";s:2:"60";s:12:"paymentValue";s:1:"0";s:10:"paymentTax";s:1:"0";s:12:"paymentTotal";s:1:"0";s:17:"salesPricePayment";s:1:"0";s:7:"billSub";s:2:"60";s:18:"billDiscountAmount";s:1:"0";s:13:"billTaxAmount";s:1:"0";s:9:"billTotal";s:2:"60";}s:14:"pricesCurrency";i:9;s:15:"paymentCurrency";N;s:11:"_inCheckOut";b:1;s:14:"_dataValidated";b:0;s:12:"_confirmDone";b:0;s:10:"STsameAsBT";i:0;}";s:23:"vmlastvisitedcategoryid";i:2;s:23:"vmlastvisitedproductids";a:1:{i:0;i:1;}}', 0, '', '');
 
 -- --------------------------------------------------------
 
@@ -7035,7 +7040,7 @@ CREATE TABLE IF NOT EXISTS `m4pmt_updates` (
   `detailsurl` text NOT NULL,
   `infourl` text NOT NULL,
   PRIMARY KEY (`update_id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COMMENT='Available Updates' AUTO_INCREMENT=78 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COMMENT='Available Updates' AUTO_INCREMENT=82 ;
 
 --
 -- Dumping data for table `m4pmt_updates`
@@ -7118,7 +7123,11 @@ INSERT INTO `m4pmt_updates` (`update_id`, `update_site_id`, `extension_id`, `cat
 (74, 7, 0, 0, 'Gantry', 'Gantry Framework', 'lib_gantry', 'library', '', 0, '3.2.22', '', 'http://www.gantry-framework.org/updates/joomla16/gantry.xml', 'http://www.gantry-framework.org'),
 (75, 7, 0, 0, 'Gantry', 'Gantry Framework', 'lib_gantry', 'library', '', 0, '3.2.22', '', 'http://www.gantry-framework.org/updates/joomla16/gantry.xml', 'http://www.gantry-framework.org'),
 (76, 8, 0, 0, 'akeebacore', 'Akeeba Backup Core', 'com_akeeba', 'component', '', 1, '3.6.3', '', 'http://nocdn.akeebabackup.com/updates/abcore.xml', 'https://www.akeebabackup.com/downloads/akeeba-backup/akeeba-backup-3-6-3.html'),
-(77, 8, 0, 0, 'akeebacore', 'Akeeba Backup Core', 'com_akeeba', 'component', '', 1, '3.6.3', '', 'http://nocdn.akeebabackup.com/updates/abcore.xml', 'https://www.akeebabackup.com/downloads/akeeba-backup/akeeba-backup-3-6-3.html');
+(77, 8, 0, 0, 'akeebacore', 'Akeeba Backup Core', 'com_akeeba', 'component', '', 1, '3.6.3', '', 'http://nocdn.akeebabackup.com/updates/abcore.xml', 'https://www.akeebabackup.com/downloads/akeeba-backup/akeeba-backup-3-6-3.html'),
+(78, 7, 0, 0, 'Gantry', 'Gantry Framework', 'lib_gantry', 'library', '', 0, '3.2.22', '', 'http://www.gantry-framework.org/updates/joomla16/gantry.xml', 'http://www.gantry-framework.org'),
+(79, 7, 0, 0, 'Gantry', 'Gantry Framework', 'lib_gantry', 'library', '', 0, '3.2.22', '', 'http://www.gantry-framework.org/updates/joomla16/gantry.xml', 'http://www.gantry-framework.org'),
+(80, 8, 0, 0, 'akeebacore', 'Akeeba Backup Core', 'com_akeeba', 'component', '', 1, '3.6.3', '', 'http://nocdn.akeebabackup.com/updates/abcore.xml', 'https://www.akeebabackup.com/downloads/akeeba-backup/akeeba-backup-3-6-3.html'),
+(81, 8, 0, 0, 'akeebacore', 'Akeeba Backup Core', 'com_akeeba', 'component', '', 1, '3.6.3', '', 'http://nocdn.akeebabackup.com/updates/abcore.xml', 'https://www.akeebabackup.com/downloads/akeeba-backup/akeeba-backup-3-6-3.html');
 
 -- --------------------------------------------------------
 
@@ -7156,13 +7165,13 @@ CREATE TABLE IF NOT EXISTS `m4pmt_update_sites` (
 --
 
 INSERT INTO `m4pmt_update_sites` (`update_site_id`, `name`, `type`, `location`, `enabled`, `last_check_timestamp`) VALUES
-(1, 'Joomla Core', 'collection', 'http://update.joomla.org/core/list.xml', 1, 1345975157),
-(2, 'Joomla Extension Directory', 'collection', 'http://update.joomla.org/jed/list.xml', 1, 1345975157),
-(7, 'Gantry Framework Update Site', 'extension', 'http://www.gantry-framework.org/updates/joomla16/gantry.xml', 1, 1345975157),
+(1, 'Joomla Core', 'collection', 'http://update.joomla.org/core/list.xml', 1, 1346032014),
+(2, 'Joomla Extension Directory', 'collection', 'http://update.joomla.org/jed/list.xml', 1, 1346032015),
+(7, 'Gantry Framework Update Site', 'extension', 'http://www.gantry-framework.org/updates/joomla16/gantry.xml', 1, 1346032015),
 (4, 'JCE Editor Updates', 'extension', 'https://www.joomlacontenteditor.net/index.php?option=com_updates&view=update&format=xml&id=1', 0, 1345111100),
 (5, 'JMS Updates', 'extension', 'http://www.joomlasubscriptionsites.com/jms_j17_updates.xml', 0, 1345111100),
-(8, 'Akeeba Backup Core Updates', 'extension', 'http://nocdn.akeebabackup.com/updates/abcore.xml', 1, 1345975157),
-(9, 'Maximenu CK Update', 'extension', 'http://update.joomlack.fr/mod_maximenuck_update.xml', 1, 1345975157);
+(8, 'Akeeba Backup Core Updates', 'extension', 'http://nocdn.akeebabackup.com/updates/abcore.xml', 1, 1346032015),
+(9, 'Maximenu CK Update', 'extension', 'http://update.joomlack.fr/mod_maximenuck_update.xml', 1, 1346032015);
 
 -- --------------------------------------------------------
 
@@ -7256,7 +7265,7 @@ CREATE TABLE IF NOT EXISTS `m4pmt_users` (
 --
 
 INSERT INTO `m4pmt_users` (`id`, `name`, `username`, `email`, `password`, `usertype`, `block`, `sendEmail`, `registerDate`, `lastvisitDate`, `activation`, `params`) VALUES
-(42, 'Super User', 'adminm', 'inj@injener.net', '7e9e836bdbf8d25ec156f98e0b7cd112:u7ogsNa2F2EFfF8oIRwExlXmp4tuun7w', 'deprecated', 0, 1, '2012-02-16 17:22:16', '2012-08-26 09:59:10', '0', '{"admin_style":"","admin_language":"","language":"","editor":"","helpsite":"","timezone":""}'),
+(42, 'Super User', 'adminm', 'inj@injener.net', '7e9e836bdbf8d25ec156f98e0b7cd112:u7ogsNa2F2EFfF8oIRwExlXmp4tuun7w', 'deprecated', 0, 1, '2012-02-16 17:22:16', '2012-08-27 01:46:49', '0', '{"admin_style":"","admin_language":"","language":"","editor":"","helpsite":"","timezone":""}'),
 (43, 'Iliyan', 'inj', 'fb@injener.net', '1dff4ce44ce9645db6519536a897e584:UXRSeGzgt7WJGWddSO8z7CixC3OODQxW', '', 0, 0, '2012-02-16 18:27:53', '2012-02-16 18:28:54', '', '{"admin_style":"118","admin_language":"","language":"","editor":"","helpsite":"","timezone":""}'),
 (44, 'Tran Hoai Phong', 'hoaiphongit', 'hoaiphong.thienphuc@gmail.com', '6874e6218350913af99b4448e81a72cf:eebgtyfxuCP00fVrpG4H7XGAHlH8IiSl', '', 0, 0, '2012-08-20 04:31:04', '0000-00-00 00:00:00', '', '{"admin_style":"","admin_language":"","language":"","editor":"","helpsite":"","timezone":""}');
 
@@ -8347,7 +8356,7 @@ CREATE TABLE IF NOT EXISTS `m4pmt_virtuemart_medias` (
   `locked_by` int(11) NOT NULL DEFAULT '0',
   PRIMARY KEY (`virtuemart_media_id`),
   KEY `i_virtuemart_vendor_id` (`virtuemart_vendor_id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COMMENT='Additional Images and Files which are assigned to products' AUTO_INCREMENT=16 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COMMENT='Additional Images and Files which are assigned to products' AUTO_INCREMENT=18 ;
 
 --
 -- Dumping data for table `m4pmt_virtuemart_medias`
@@ -8367,7 +8376,9 @@ INSERT INTO `m4pmt_virtuemart_medias` (`virtuemart_media_id`, `virtuemart_vendor
 (12, 1, 'bags.png_category', '', '', 'image/png', 'category', 'images/stories/virtuemart/category/bags6.png', 'images/stories/virtuemart/category/resized/bags6_90x90.png', 0, 0, 0, '', 0, 1, '2012-08-18 04:01:55', 42, '2012-08-18 04:01:55', 42, '0000-00-00 00:00:00', 0),
 (13, 1, 'accessories.png_category', '', '', 'image/png', 'category', 'images/stories/virtuemart/category/accessories9.png', 'images/stories/virtuemart/category/resized/accessories9_90x90.png', 0, 0, 0, '', 0, 1, '2012-08-18 04:02:12', 42, '2012-08-18 04:02:12', 42, '0000-00-00 00:00:00', 0),
 (14, 1, '1939.jpg', '', '', 'image/jpeg', 'product', 'images/stories/virtuemart/product/1939.jpg', 'images/stories/virtuemart/product/resized/1939_90x90.jpg', 0, 0, 0, '', 0, 1, '0000-00-00 00:00:00', 0, '2012-08-23 08:21:20', 42, '0000-00-00 00:00:00', 0),
-(15, 1, '1939.jpg_product', '', '', 'image/jpeg', 'product', 'images/stories/virtuemart/product/64d0ee168dfd5ed5f7cfcbe46a14828b.jpg', 'images/stories/virtuemart/product/resized/64d0ee168dfd5ed5f7cfcbe46a14828b_90x90.jpg', 0, 0, 0, '', 0, 1, '2012-08-23 08:07:54', 42, '2012-08-23 08:07:54', 42, '0000-00-00 00:00:00', 0);
+(15, 1, '1939.jpg_product', '', '', 'image/jpeg', 'product', 'images/stories/virtuemart/product/64d0ee168dfd5ed5f7cfcbe46a14828b.jpg', 'images/stories/virtuemart/product/resized/64d0ee168dfd5ed5f7cfcbe46a14828b_90x90.jpg', 0, 0, 0, '', 0, 1, '2012-08-23 08:07:54', 42, '2012-08-23 08:07:54', 42, '0000-00-00 00:00:00', 0),
+(16, 1, '1939.jpg_product_product', '', '', 'image/png', 'product', 'images/stories/virtuemart/product/boot-1.png', 'images/stories/virtuemart/product/resized/boot-1_90x90.png', 0, 0, 0, '', 0, 1, '0000-00-00 00:00:00', 0, '2012-08-27 01:59:24', 42, '0000-00-00 00:00:00', 0),
+(17, 1, '1939.jpg_product_product_product', '', '', 'image/png', 'product', 'images/stories/virtuemart/product/boot-15.png', 'images/stories/virtuemart/product/resized/boot-15_90x90.png', 0, 0, 0, '', 0, 1, '2012-08-27 01:53:43', 42, '2012-08-27 01:53:43', 42, '0000-00-00 00:00:00', 0);
 
 -- --------------------------------------------------------
 
@@ -8773,7 +8784,7 @@ CREATE TABLE IF NOT EXISTS `m4pmt_virtuemart_products` (
 --
 
 INSERT INTO `m4pmt_virtuemart_products` (`virtuemart_product_id`, `virtuemart_vendor_id`, `product_parent_id`, `product_sku`, `product_weight`, `product_weight_uom`, `product_length`, `product_width`, `product_height`, `product_lwh_uom`, `product_url`, `product_in_stock`, `product_ordered`, `low_stock_notification`, `product_available_date`, `product_availability`, `product_special`, `product_sales`, `product_unit`, `product_packaging`, `product_params`, `hits`, `intnotes`, `metarobot`, `metaauthor`, `layout`, `published`, `created_on`, `created_by`, `modified_on`, `modified_by`, `locked_on`, `locked_by`) VALUES
-(1, 1, 0, '1234u', 0.0000, 'KG', 0.0000, 0.0000, 0.0000, 'M', '', 50, 0, 0, '2012-07-24 00:00:00', '', 0, 0, '', 0, 'min_order_level="0"|max_order_level="0"|', NULL, '', '', '', '0', 1, '2012-07-24 15:50:35', 42, '2012-08-23 08:21:20', 42, '0000-00-00 00:00:00', 0);
+(1, 1, 0, '1234u', 0.0000, 'KG', 0.0000, 0.0000, 0.0000, 'M', '', 50, 0, 0, '2012-07-24 00:00:00', '', 0, 0, '', 0, 'min_order_level="0"|max_order_level="0"|', NULL, '', '', '', '0', 1, '2012-07-24 15:50:35', 42, '2012-08-27 01:59:24', 42, '0000-00-00 00:00:00', 0);
 
 -- --------------------------------------------------------
 
@@ -8799,7 +8810,7 @@ CREATE TABLE IF NOT EXISTS `m4pmt_virtuemart_products_en_gb` (
 --
 
 INSERT INTO `m4pmt_virtuemart_products_en_gb` (`virtuemart_product_id`, `product_s_desc`, `product_desc`, `product_name`, `metadesc`, `metakey`, `customtitle`, `slug`) VALUES
-(1, 'sample shoes sample shoes sample shoes sample shoes sample shoes sample shoes sample shoessample shoes sample shoessample shoes sample shoes', '<p>sample shoes sample shoes sample shoes sample shoes sample shoes sample shoes sample shoessample shoes sample shoessample shoes sample shoes&nbsp;sample shoes sample shoes sample shoes sample shoes sample shoes sample shoes sample shoessample shoes sample shoessample shoes sample shoes&nbsp;sample shoes sample shoes sample shoes sample shoes sample shoes sample shoes sample shoessample shoes sample shoessample shoes sample shoes&nbsp;sample shoes sample shoes sample shoes sample shoes sample shoes sample shoes sample shoessample shoes sample shoessample shoes sample shoes&nbsp;sample shoes sample shoes sample shoes sample shoes sample shoes sample shoes sample shoessample shoes sample shoessample shoes sample shoes&nbsp;sample shoes sample shoes sample shoes sample shoes sample shoes sample shoes sample shoessample shoes sample shoessample shoes sample shoes&nbsp;sample shoes sample shoes sample shoes sample shoes sample shoes sample shoes sample shoessample shoes sample shoessample shoes sample shoes&nbsp;sample shoes sample shoes sample shoes sample shoes sample shoes sample shoes sample shoessample shoes sample shoessample shoes sample shoes</p>', 'newsample', '', '', '', 'newsample');
+(1, '', '<p>A fresh take on the timeless style of the Classic Tall, the Bailey Button Triplet features wooden logo buttons with elastic-band closures. Twinface sheepskin can be unbuttoned and cuffed to expose its cozy interior.</p>\r\n<p>This style tends to run a size large. We recommend ordering a size smaller from your typical shoe size. If you are in-between sizes, we recommend ordering one-half size down.</p>', 'WOMENS BAILEY BUTTON TRIPLET', '', '', '', 'womens-bailey-button-triplet');
 
 -- --------------------------------------------------------
 
@@ -8814,16 +8825,14 @@ CREATE TABLE IF NOT EXISTS `m4pmt_virtuemart_product_categories` (
   `ordering` int(11) NOT NULL DEFAULT '0',
   PRIMARY KEY (`id`),
   UNIQUE KEY `i_virtuemart_product_id` (`virtuemart_product_id`,`virtuemart_category_id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COMMENT='Maps Products to Categories' AUTO_INCREMENT=4 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COMMENT='Maps Products to Categories' AUTO_INCREMENT=5 ;
 
 --
 -- Dumping data for table `m4pmt_virtuemart_product_categories`
 --
 
 INSERT INTO `m4pmt_virtuemart_product_categories` (`id`, `virtuemart_product_id`, `virtuemart_category_id`, `ordering`) VALUES
-(1, 1, 5, 0),
-(2, 1, 4, 0),
-(3, 1, 6, 0);
+(4, 1, 2, 0);
 
 -- --------------------------------------------------------
 
@@ -8850,18 +8859,21 @@ CREATE TABLE IF NOT EXISTS `m4pmt_virtuemart_product_customfields` (
   KEY `idx_virtuemart_product_id` (`virtuemart_product_id`),
   KEY `idx_virtuemart_custom_id` (`virtuemart_custom_id`),
   KEY `idx_custom_value` (`custom_value`(333))
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COMMENT='custom fields' AUTO_INCREMENT=8 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COMMENT='custom fields' AUTO_INCREMENT=14 ;
 
 --
 -- Dumping data for table `m4pmt_virtuemart_product_customfields`
 --
 
 INSERT INTO `m4pmt_virtuemart_product_customfields` (`virtuemart_customfield_id`, `virtuemart_product_id`, `virtuemart_custom_id`, `custom_value`, `custom_price`, `custom_param`, `published`, `created_on`, `created_by`, `modified_on`, `modified_by`, `locked_on`, `locked_by`, `ordering`) VALUES
-(2, 1, 6, 'size 8', '30', '', 0, '0000-00-00 00:00:00', 0, '2012-08-23 08:21:20', 42, '0000-00-00 00:00:00', 0, 1),
-(3, 1, 6, 'size 10', '32', '', 0, '0000-00-00 00:00:00', 0, '2012-08-23 08:21:20', 42, '0000-00-00 00:00:00', 0, 2),
-(4, 1, 6, 'size 5', '23', '', 0, '0000-00-00 00:00:00', 0, '2012-08-23 08:21:20', 42, '0000-00-00 00:00:00', 0, 3),
-(7, 1, 5, 'drop', '30', '{"custom_drop_name":"Green","custom_drop":"Blue,Green,Black"}', 0, '0000-00-00 00:00:00', 0, '2012-08-23 08:21:20', 42, '0000-00-00 00:00:00', 0, 0),
-(6, 1, 5, 'drop', '10', '{"custom_drop_name":"Green","custom_drop":"Blue,Green,Black"}', 0, '0000-00-00 00:00:00', 0, '2012-08-23 08:21:20', 42, '0000-00-00 00:00:00', 0, 0);
+(7, 1, 5, 'drop', '30', '{"custom_drop_name":"Green","custom_drop":"Blue,Green,Black"}', 0, '0000-00-00 00:00:00', 0, '2012-08-27 01:59:24', 42, '0000-00-00 00:00:00', 0, 0),
+(6, 1, 5, 'drop', '10', '{"custom_drop_name":"Green","custom_drop":"Blue,Green,Black"}', 0, '0000-00-00 00:00:00', 0, '2012-08-27 01:59:24', 42, '0000-00-00 00:00:00', 0, 0),
+(8, 1, 6, '5', '210', '', 0, '0000-00-00 00:00:00', 0, '2012-08-27 01:59:24', 42, '0000-00-00 00:00:00', 0, 8),
+(9, 1, 6, '6', '230', '', 0, '0000-00-00 00:00:00', 0, '2012-08-27 01:59:24', 42, '0000-00-00 00:00:00', 0, 9),
+(10, 1, 6, '7', '250', '', 0, '0000-00-00 00:00:00', 0, '2012-08-27 01:59:24', 42, '0000-00-00 00:00:00', 0, 10),
+(11, 1, 6, '10', '300', '', 0, '0000-00-00 00:00:00', 0, '2012-08-27 01:59:24', 42, '0000-00-00 00:00:00', 0, 11),
+(12, 1, 5, 'drop', '0', '{"custom_drop_name":"Color","custom_drop":"Blue,Green,Black"}', 0, '0000-00-00 00:00:00', 0, '2012-08-27 01:59:24', 42, '0000-00-00 00:00:00', 0, 0),
+(13, 1, 5, 'drop', '0', '{"custom_drop_name":"Color","custom_drop":"Blue,Green,Black"}', 0, '0000-00-00 00:00:00', 0, '2012-08-27 01:59:24', 42, '0000-00-00 00:00:00', 0, 0);
 
 -- --------------------------------------------------------
 
@@ -8911,15 +8923,15 @@ CREATE TABLE IF NOT EXISTS `m4pmt_virtuemart_product_medias` (
   `ordering` int(2) NOT NULL DEFAULT '0',
   PRIMARY KEY (`id`),
   UNIQUE KEY `i_virtuemart_product_id` (`virtuemart_product_id`,`virtuemart_media_id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=4 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=6 ;
 
 --
 -- Dumping data for table `m4pmt_virtuemart_product_medias`
 --
 
 INSERT INTO `m4pmt_virtuemart_product_medias` (`id`, `virtuemart_product_id`, `virtuemart_media_id`, `ordering`) VALUES
-(2, 1, 14, 1),
-(3, 1, 15, 2);
+(5, 1, 17, 2),
+(4, 1, 16, 1);
 
 -- --------------------------------------------------------
 
@@ -8957,7 +8969,7 @@ CREATE TABLE IF NOT EXISTS `m4pmt_virtuemart_product_prices` (
 --
 
 INSERT INTO `m4pmt_virtuemart_product_prices` (`virtuemart_product_price_id`, `virtuemart_product_id`, `virtuemart_shoppergroup_id`, `product_price`, `override`, `product_override_price`, `product_tax_id`, `product_discount_id`, `product_currency`, `product_price_vdate`, `product_price_edate`, `price_quantity_start`, `price_quantity_end`, `created_on`, `created_by`, `modified_on`, `modified_by`, `locked_on`, `locked_by`) VALUES
-(1, 1, NULL, 30.00000, NULL, 0.00000, 0, 0, 9, NULL, NULL, NULL, NULL, '0000-00-00 00:00:00', 0, '2012-08-23 08:21:20', 42, '0000-00-00 00:00:00', 0);
+(1, 1, NULL, 30.00000, NULL, 0.00000, 0, 0, 9, NULL, NULL, NULL, NULL, '0000-00-00 00:00:00', 0, '2012-08-27 01:59:24', 42, '0000-00-00 00:00:00', 0);
 
 -- --------------------------------------------------------
 
