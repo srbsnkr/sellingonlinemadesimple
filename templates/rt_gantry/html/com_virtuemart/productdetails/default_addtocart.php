@@ -20,24 +20,21 @@
 defined('_JEXEC') or die('Restricted access');
 ?>
 <div class="addtocart-area">
-
     <form method="post" class="product js-recalculate" action="index.php" >
 	<?php // Product custom_fields
 	if (!empty($this->product->customfieldsCart)) { ?>
     	<div class="product-fields">
-		<?php foreach ($this->product->customfieldsCart as $field) { ?>
+		<?php foreach ($this->product->customfieldsCart as $field) { ?>		
 		    <div class="product-field product-field-type-<?php echo $field->field_type ?>">
-			<span class="product-fields-title" ><strong><?php echo JText::_($field->custom_title) ?></strong></span>
-			<?php if ($field->custom_tip)
-			    echo JHTML::tooltip($field->custom_tip, JText::_($field->custom_title), 'tooltip.png'); ?>
-			<span class="product-field-display"><?php echo $field->display ?></span>
-
-			<span class="product-field-desc"><?php echo $field->custom_field_desc ?></span>
-		    </div><br />
+			<span class="product-fields-title" ><strong><?php echo JText::_($field->custom_title) ?></strong></span>			
+			<span class="product-field-display" style="display:none"><?php echo $field->display ?></span>
+			<span class="product-field-display-list">				
+			</span>
+		    </div><br />			
 		    <?php
 		}
 		?>
-    	</div>
+    	</div>	
 	<?php
 	}
 	/* Product custom Childs

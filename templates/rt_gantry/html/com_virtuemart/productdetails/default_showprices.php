@@ -32,12 +32,12 @@ defined('_JEXEC') or die('Restricted access');
 	?>
         <a class="ask-a-question bold" href="<?php echo $url ?>" ><?php echo JText::_('COM_VIRTUEMART_PRODUCT_ASKPRICE') ?></a>
     <?php
-    }
-    if ($this->showBasePrice) {
+    }		
+    if ($this->showBasePrice) {	
 	echo $this->currency->createPriceDiv('basePrice', 'COM_VIRTUEMART_PRODUCT_BASEPRICE', $this->product->prices);
 	echo $this->currency->createPriceDiv('basePriceVariant', 'COM_VIRTUEMART_PRODUCT_BASEPRICE_VARIANT', $this->product->prices);
     }
-
+	
     echo $this->currency->createPriceDiv('variantModification', 'COM_VIRTUEMART_PRODUCT_VARIANT_MOD', $this->product->prices);
     echo $this->currency->createPriceDiv('basePriceWithTax', 'COM_VIRTUEMART_PRODUCT_BASEPRICE_WITHTAX', $this->product->prices);
     echo $this->currency->createPriceDiv('discountedPriceWithoutTax', 'COM_VIRTUEMART_PRODUCT_DISCOUNTED_PRICE', $this->product->prices);
@@ -46,5 +46,12 @@ defined('_JEXEC') or die('Restricted access');
     echo $this->currency->createPriceDiv('priceWithoutTax', 'COM_VIRTUEMART_PRODUCT_SALESPRICE_WITHOUT_TAX', $this->product->prices);
     echo $this->currency->createPriceDiv('discountAmount', 'COM_VIRTUEMART_PRODUCT_DISCOUNT_AMOUNT', $this->product->prices);
     echo $this->currency->createPriceDiv('taxAmount', 'COM_VIRTUEMART_PRODUCT_TAX_AMOUNT', $this->product->prices);
+	
+	//-- select and convert currency
+	jimport( 'joomla.application.module.helper' );
+	$module = JModuleHelper::getModule( 'virtuemart_currencies', 'Currency Selector');
+	echo JModuleHelper::renderModule( $module );
+	//-- end select and convert currency
+	
     ?>
 </div>
