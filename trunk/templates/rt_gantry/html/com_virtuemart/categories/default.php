@@ -90,7 +90,9 @@ $verticalseparator = " vertical-separator";
 				<div class="category floatleft<?php echo $category_cellwidth . $show_vertical_separator ?>">
 					<div class="spacer">
 						<div class="image_thumb">						
-							<?php echo $category->images[0]->displayMediaThumb("",true); ?>						
+							<?php #var_dump($category); ?>
+							<?php# echo $category->images[0]->displayMediaThumb("",true); ?>	
+							<img src="<?php echo $category->images[0]->file_url; ?>" alt="<?php echo $category->category_name; ?>">
 						</div>
 						<div class="info_category">
 						<h2>
