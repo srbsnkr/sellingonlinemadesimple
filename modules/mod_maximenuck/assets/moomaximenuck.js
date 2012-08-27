@@ -325,7 +325,7 @@ if (typeof(MooTools) != 'undefined'){
 
         animMaxiCK: function() {
 
-            if ((this.status == 'hide' && this.conteneur.style.left != 'auto') || (this.status == 'show' && this.conteneur.style.left == 'auto' && !this.hidding) ) return;
+            if ((this.status == 'hide' && this.conteneur.style.left != '0px') || (this.status == 'show' && this.conteneur.style.left == '0px' && !this.hidding) ) return;
 					
             this.conteneur.setStyle('overflow', 'hidden');
             if (this.status == 'show') {
@@ -358,7 +358,7 @@ if (typeof(MooTools) != 'undefined'){
 
             } else {
                 this.showing = 1;
-                this.conteneur.setStyle('left', 'auto');
+                this.conteneur.setStyle('left', '0px');
                 this.maxiFxCK.cancel();
                 if ((this.opentype == 'slide' && this.direction == 'normal') || (this.opentype == 'open' && this.direction == 'inverse'))
                     this.maxiFxCK2.cancel();
