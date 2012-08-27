@@ -37,72 +37,92 @@ $verticalseparator = " vertical-separator";
 
 <h2 class="title" style="visibility: visible; ">SHOP</h2>
 <div class="image-left-article">
-	<img src="/sellingonlinemadesimple/images\/image-shop.png" alt="">
+	<img src="/sellingonlinemadesimple/images/image-shop.png" alt="">
 </div>
-<div id="head_category_shop">
-	80%/20% 
-</div>
-<div class="category-view">
+<div class="view-category-shop">
+	<div id="head_category_shop">
+		<div class="head-cate left">
+			<div class="wr-head-cate">
+				<div class="footwear text">
+					<p class="percent">80%</p>
+					<p class="type">FOOTWEAR</p>
+				</div>
+				<span class="sepa">/</span>
+				<div class="acessories text">
+					<p class="percent">20%</p>
+					<p class="type">FOOTWEAR</p>
+				</div>
+			</div>
+		</div>
+		<div class="head-cate right">
+			<div class="wr-head-cate">
+				<p>Only the finest quality materials are used in the construction, high grades in leathers, suede and sheepskin.</p>
+			</div>
+		</div>
+	</div>
+	<div class="category-view">
 
-<?php // Start the Output
-if ($this->category->children ) {
-    foreach ( $this->category->children as $category ) {
+	<?php // Start the Output
+	if ($this->category->children ) {
+		foreach ( $this->category->children as $category ) {
 
-	    // Show the horizontal seperator
-	    if ($iCol == 1 && $iCategory > $categories_per_row) { ?>
-	    
-	    <?php }
+			// Show the horizontal seperator
+			if ($iCol == 1 && $iCategory > $categories_per_row) { ?>
+			
+			<?php }
 
-	    // this is an indicator wether a row needs to be opened or not
-	    if ($iCol == 1) { ?>
-	    <div class="row">
-	    <?php }
+			// this is an indicator wether a row needs to be opened or not
+			if ($iCol == 1) { ?>
+			<div class="row">
+			<?php }
 
-	    // Show the vertical separator
-	    if ($iCategory == $categories_per_row or $iCategory % $categories_per_row == 0) {
-		    $show_vertical_separator = ' ';
-	    } else {
-		    $show_vertical_separator = $verticalseparator;
-	    }
+			// Show the vertical separator
+			if ($iCategory == $categories_per_row or $iCategory % $categories_per_row == 0) {
+				$show_vertical_separator = ' ';
+			} else {
+				$show_vertical_separator = $verticalseparator;
+			}
 
-	    // Category Link
-	    $caturl = JRoute::_ ( 'index.php?option=com_virtuemart&view=category&virtuemart_category_id=' . $category->virtuemart_category_id );
+			// Category Link
+			$caturl = JRoute::_ ( 'index.php?option=com_virtuemart&view=category&virtuemart_category_id=' . $category->virtuemart_category_id );
 
-		    // Show Category ?>
-		    <div class="category floatleft<?php echo $category_cellwidth . $show_vertical_separator ?>">
-			    <div class="spacer">
-					<div class="image_thumb">						
-						<?php echo $category->images[0]->displayMediaThumb("",true); ?>						
+				// Show Category ?>
+				<div class="category floatleft<?php echo $category_cellwidth . $show_vertical_separator ?>">
+					<div class="spacer">
+						<div class="image_thumb">						
+							<?php echo $category->images[0]->displayMediaThumb("",true); ?>						
+						</div>
+						<div class="info_category">
+						<h2>
+							<a href="<?php echo $caturl ?>" title="<?php echo $category->category_name ?>"><?php echo $category->category_name ?>
+							<br /></a>
+						</h2>
+						<?php echo $category->category_description; ?>
+						</div>
 					</div>
-				    <div class="info_category">
-					<h2>
-					    <a href="<?php echo $caturl ?>" title="<?php echo $category->category_name ?>"><?php echo $category->category_name ?>
-					    <br /></a>
-				    </h2>
-					<?php echo $category->category_description; ?>
-					</div>
-			    </div>
-		    </div>
-	    <?php
-	    $iCategory ++;
+				</div>
+			<?php
+			$iCategory ++;
 
-	    // Do we need to close the current row now?
-	    if ($iCol == $categories_per_row) { ?>
-	    <div class="clear"></div>
-	    </div>
-		    <?php
-		    $iCol = 1;
-	    } else {
-		    $iCol ++;
-	    }
-    }
-}
+			// Do we need to close the current row now?
+			if ($iCol == $categories_per_row) { ?>
+			<div class="clear"></div>
+			</div>
+				<?php
+				$iCol = 1;
+			} else {
+				$iCol ++;
+			}
+		}
+	}
 // Do we need a final closing row tag?
 if ($iCol != 1) { ?>
 	<div class="clear"></div>
 	</div>
+
 <?php
 }
 ?>
+</div>
 </div>
 <?php } ?>

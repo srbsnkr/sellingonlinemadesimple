@@ -58,19 +58,15 @@ require_once('lib/gantry/gantry.php');
 			</div>
 			<?php /** End Header **/ endif; ?>
 			<?php /** Begin Menu **/ if ($gantry->countModules('navigation')) : ?>
-			<div id="rt-menu">
+			<div id="rt-menu" style="display:none;">
 				<div class="rt-container">
-					<div class="search-box">
+					<div class="search-box" style="display:none;">
 						<form method="post" action="">
 							<input type="text" name="Input search" placeholder="Search" />
 							<input type="submit" name="Button search" value=""/>
 						</form>
 					</div>
-					<?php if ($this->countModules('menu-navigation')) : ?>
-						<div class="menu-bottom">
-						<jdoc:include type="modules" name="menu-navigation" />
-						</div>
-					<?php endif; ?>	
+						
 					<?php #echo $gantry->displayModules('navigation','basic','basic'); ?>
 					<div class="clear"></div>
 				</div>
