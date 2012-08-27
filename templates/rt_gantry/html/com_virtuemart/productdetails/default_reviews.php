@@ -38,9 +38,9 @@ if ($this->allowRating || $this->showReview) {
 		<form method="post" action="<?php echo JRoute::_ ('index.php?option=com_virtuemart&view=productdetails&virtuemart_product_id=' . $this->product->virtuemart_product_id . '&virtuemart_category_id=' . $this->product->virtuemart_category_id); ?>" name="reviewForm" id="reviewform">
 <?php }
 if ($this->showReview) { ?>
-	<h4><?php echo JText::_ ('COM_VIRTUEMART_REVIEWS') ?></h4>
+	<h4 style="display:none"><?php echo JText::_ ('COM_VIRTUEMART_REVIEWS') ?></h4>
 
-	<div class="list-reviews">
+	<div class="list-reviews" style="display:none">
 		<?php
 		$i = 0;
 		$review_editable = TRUE;
