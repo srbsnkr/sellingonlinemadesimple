@@ -66,7 +66,7 @@ if ($this->product->virtuemart_category_id) {
 	$categoryName = jtext::_('COM_VIRTUEMART_SHOP_HOME') ;
 }
 ?>
-<div class="back-to-category">
+<div class="back-to-category" style="display:none;">
 	<a href="<?php echo $catURL ?>" class="product-details" title="<?php echo $categoryName ?>"><?php echo JText::sprintf('COM_VIRTUEMART_CATEGORY_BACK_TO',$categoryName) ?></a>
 </div>        
 
@@ -76,11 +76,11 @@ if ($this->product->virtuemart_category_id) {
 ?>
 
 <div>
-	<div class="width30 floatleft"><?php echo $this->loadTemplate('images'); ?></div>
-	<div class="width70 floatright">
+	<div class="image-product width30 floatleft"><?php echo $this->loadTemplate('images'); ?></div>
+	<div class="detail-product width70 floatright">
 	    <div class="spacer-buy-area">	
 			<?php // Product Title   ?>
-			<h1><?php echo $this->product->product_name ?></h1>
+			<h1 class="name-product"><?php echo $this->product->product_name ?></h1>
 		<?php
 		if ($this->showRating) {
 		    $maxrating = VmConfig::get('vm_maximum_rating_scale', 5);
