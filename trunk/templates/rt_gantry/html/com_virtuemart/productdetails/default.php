@@ -84,29 +84,25 @@ if ($this->product->virtuemart_category_id) {
 		<?php
 		if ($this->showRating) {
 		    $maxrating = VmConfig::get('vm_maximum_rating_scale', 5);
-
-		    if (empty($this->rating)) {
-			?>
+		    if (empty($this->rating)) {	?>
 			<span class="vote"><?php echo JText::_('COM_VIRTUEMART_RATING') . ' ' . JText::_('COM_VIRTUEMART_UNRATED') ?></span>
-			    <?php
+		    <?php
 			} else {
-			    $ratingwidth = $this->rating->rating * 24; //I don't use round as percetntage with works perfect, as for me
-			    ?>
+			    $ratingwidth = $this->rating->rating * 24; //I don't use round as percetntage with works perfect, as for me ?>
 			<span class="vote">
 	<?php echo JText::_('COM_VIRTUEMART_RATING') . ' ' . round($this->rating->rating) . '/' . $maxrating; ?><br/>
-			    <span title=" <?php echo (JText::_("COM_VIRTUEMART_RATING_TITLE") . round($this->rating->rating) . '/' . $maxrating) ?>" class="ratingbox" style="display:inline-block;">
-				<span class="stars-orange" style="width:<?php echo $ratingwidth.'px'; ?>">
-				</span>
-			    </span>
-			</span>
-			<?php
-		    }
-		}
-		
-		// Product price
-		if ($this->show_prices and (empty($this->product->images[0]) or $this->product->images[0]->file_is_downloadable == 0)) {
-		    echo $this->loadTemplate('showprices');
-		}
+	<span title=" <?php echo (JText::_("COM_VIRTUEMART_RATING_TITLE") . round($this->rating->rating) . '/' . $maxrating) ?>" class="ratingbox" style="display:inline-block;">
+	<span class="stars-orange" style="width:<?php echo $ratingwidth.'px'; ?>">
+	</span>
+	</span>
+	</span>
+	<?php
+	}
+}		
+	// Product price
+	if ($this->show_prices and (empty($this->product->images[0]) or $this->product->images[0]->file_is_downloadable == 0)) {
+		echo $this->loadTemplate('showprices');
+	}
 		
 		// Product Short Description
 		if (!empty($this->product->product_s_desc)) {
