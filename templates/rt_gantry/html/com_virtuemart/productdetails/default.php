@@ -75,7 +75,7 @@ if ($this->product->virtuemart_category_id) {
 	echo $this->product->event->afterDisplayTitle 
 ?>
 
-<div>
+<div class="content-details">
 	<div class="image-product width30 floatleft"><?php echo $this->loadTemplate('images'); ?></div>
 	<div class="detail-product width70 floatright">
 	    <div class="spacer-buy-area">	
@@ -92,17 +92,19 @@ if ($this->product->virtuemart_category_id) {
 			} else {
 			    $ratingwidth = $this->rating->rating * 24; //I don't use round as percetntage with works perfect, as for me
 			    ?>
-			<span class="vote">			
+			<div class="vote">			
 			    <span title=" <?php echo (JText::_("COM_VIRTUEMART_RATING_TITLE") . $this->rating->rating) ?>" class="ratingbox" style="display:inline-block;">
 					<span class="stars-orange" style="width:<?php echo $ratingwidth.'px'; ?>"></span>
 			    </span>
-				<span><?php echo $this->rating->rating ?></span>
-			</span>
-			<?php if (count($this->rating_reviews)<=1): ?>
+				<span class="score"><?php echo $this->rating->rating ?></span>
+				<span class="review"><?php if (count($this->rating_reviews)<=1): ?>
 				<?php echo '('. count($this->rating_reviews) .' review)'; ?>
-			<?php else :?>
+				<?php else :?>
 				<?php echo '('. count($this->rating_reviews) .' reviews)'; ?>
-			<?php endif; ?>
+				<?php endif; ?>
+				</span>
+			</div>
+			
 			<?php
 		    }
 		}
