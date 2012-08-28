@@ -44,3 +44,6 @@ jQuery("a[id^=size_]").live('click', function(){
 jQuery("select#virtuemart_currency_id").change(function(){
 	jQuery("input[name='submit_currency']").click();
 });
+
+jQuery("ul#color-picker li:first").addClass("active");
+jQuery("ul#avaible-size li:first").addClass("active");
