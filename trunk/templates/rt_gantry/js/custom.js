@@ -18,8 +18,10 @@ function build_list(id, custom_id, frefix){
 	str += '</ul>';
 	jQuery('#'+ id).parent().next().html(str);
 }
-build_list('customPrice16', 'avaible-size', 'size_');
-build_list('customPlugin37dropcustom_drop', 'color-picker', 'color_');
+var id_list_color = jQuery("select[id^='customPlugin']").attr("id");
+var id_list_size = jQuery("select[id^='customPrice']").attr("id");
+build_list(id_list_size, 'avaible-size', 'size_');
+build_list(id_list_color, 'color-picker', 'color_');
 
 
 function set_value(id, id_select, obj){
@@ -30,12 +32,12 @@ function set_value(id, id_select, obj){
 }
 
 jQuery("a[id^=color_]").live('click', function(){
-	set_value("color-picker", "customPlugin37dropcustom_drop", this);	
+	set_value("color-picker", id_list_color, this);	
 	return false;
 });
 
 jQuery("a[id^=size_]").live('click', function(){
-	set_value("avaible-size", "customPrice16", this);
+	set_value("avaible-size", id_list_size, this);
 	return false;
 });
 
