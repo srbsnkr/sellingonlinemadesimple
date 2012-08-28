@@ -92,13 +92,17 @@ if ($this->product->virtuemart_category_id) {
 			} else {
 			    $ratingwidth = $this->rating->rating * 24; //I don't use round as percetntage with works perfect, as for me
 			    ?>
-			<span class="vote">
-	<?php echo JText::_('COM_VIRTUEMART_RATING') . ' ' . round($this->rating->rating) . '/' . $maxrating; ?>
-			    <span title=" <?php echo (JText::_("COM_VIRTUEMART_RATING_TITLE") . round($this->rating->rating) . '/' . $maxrating) ?>" class="ratingbox" style="display:inline-block;">
-				<span class="stars-orange" style="width:<?php echo $ratingwidth.'px'; ?>">
-				</span>
+			<span class="vote">			
+			    <span title=" <?php echo (JText::_("COM_VIRTUEMART_RATING_TITLE") . $this->rating->rating) ?>" class="ratingbox" style="display:inline-block;">
+					<span class="stars-orange" style="width:<?php echo $ratingwidth.'px'; ?>"></span>
 			    </span>
+				<span><?php echo $this->rating->rating ?></span>
 			</span>
+			<?php if (count($this->rating_reviews)<=1): ?>
+				<?php echo '('. count($this->rating_reviews) .' review)'; ?>
+			<?php else :?>
+				<?php echo '('. count($this->rating_reviews) .' reviews)'; ?>
+			<?php endif; ?>
 			<?php
 		    }
 		}
