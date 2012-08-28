@@ -9,14 +9,6 @@
 // no direct access
 defined('_JEXEC') or die;
 ?>
-<style>
-#search-main-menu{
-	float: right;
-	margin-top: -55px;
-	z-index: 999;
-	position: relative;
-}
-</style>
 <form id ="search-main-menu" action="<?php echo JRoute::_('index.php');?>" method="post">
 	<div class="search<?php echo $moduleclass_sfx ?>">
 		<?php
