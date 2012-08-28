@@ -20,38 +20,13 @@
 defined('_JEXEC') or die('Restricted access');
 
 ?>
-<div class="product-price" id="productPrice<?php echo $this->product->virtuemart_product_id ?>">
-    <?php
-    if ($this->product->product_unit && VmConfig::get('price_show_packaging_pricelabel')) {
-	echo "<strong>" . JText::_('COM_VIRTUEMART_CART_PRICE_PER_UNIT') . ' (' . $this->product->product_unit . "):</strong>";
-    } else {
-	echo "<strong>" . JText::_('COM_VIRTUEMART_CART_PRICE') . "</strong>";
-    }
-
-    if (empty($this->product->prices) and VmConfig::get('askprice', 1)) {
-	?>
-        <a class="ask-a-question bold" href="<?php echo $url ?>" ><?php echo JText::_('COM_VIRTUEMART_PRODUCT_ASKPRICE') ?></a>
-    <?php
-    }		
-    if ($this->showBasePrice) {	
-	echo $this->currency->createPriceDiv('basePrice', 'COM_VIRTUEMART_PRODUCT_BASEPRICE', $this->product->prices);
-	echo $this->currency->createPriceDiv('basePriceVariant', 'COM_VIRTUEMART_PRODUCT_BASEPRICE_VARIANT', $this->product->prices);
-    }
-	
-    echo $this->currency->createPriceDiv('variantModification', 'COM_VIRTUEMART_PRODUCT_VARIANT_MOD', $this->product->prices);
-    echo $this->currency->createPriceDiv('basePriceWithTax', 'COM_VIRTUEMART_PRODUCT_BASEPRICE_WITHTAX', $this->product->prices);
-    echo $this->currency->createPriceDiv('discountedPriceWithoutTax', 'COM_VIRTUEMART_PRODUCT_DISCOUNTED_PRICE', $this->product->prices);
-    echo $this->currency->createPriceDiv('salesPriceWithDiscount', 'COM_VIRTUEMART_PRODUCT_SALESPRICE_WITH_DISCOUNT', $this->product->prices);
-    echo $this->currency->createPriceDiv('salesPrice', 'COM_VIRTUEMART_PRODUCT_SALESPRICE', $this->product->prices);
-    echo $this->currency->createPriceDiv('priceWithoutTax', 'COM_VIRTUEMART_PRODUCT_SALESPRICE_WITHOUT_TAX', $this->product->prices);
-    echo $this->currency->createPriceDiv('discountAmount', 'COM_VIRTUEMART_PRODUCT_DISCOUNT_AMOUNT', $this->product->prices);
-    echo $this->currency->createPriceDiv('taxAmount', 'COM_VIRTUEMART_PRODUCT_TAX_AMOUNT', $this->product->prices);
-	
+<div class="product-price" id="productPrice<?php echo $this->product->virtuemart_product_id ?>">        	
+	<strong>Price: </strong> <?php echo $this->currency->createPriceDiv('basePrice','basePrice' , $this->product->prices); ?>	
+	<?php
 	//-- select and convert currency
 	jimport( 'joomla.application.module.helper' );
 	$module = JModuleHelper::getModule( 'virtuemart_currencies', 'Currency Selector');
 	echo JModuleHelper::renderModule( $module );
-	//-- end select and convert currency
-	
+	//-- end select and convert currency	
     ?>
 </div>
