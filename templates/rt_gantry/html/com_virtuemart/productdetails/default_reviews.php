@@ -22,8 +22,7 @@ defined ('_JEXEC') or die ('Restricted access');
 // Customer Reviews
 if ($this->allowRating || $this->showReview) {
 	$maxrating = VmConfig::get ('vm_maximum_rating_scale', 5);
-	$ratingsShow = VmConfig::get ('vm_num_ratings_show', 3); // TODO add  vm_num_ratings_show in vmConfig
-	//$starsPath = JURI::root().VmConfig::get('assets_general_path').'images/stars/';
+	$ratingsShow = VmConfig::get ('vm_num_ratings_show', 3); // TODO add  vm_num_ratings_show in vmConfig	
 	$stars = array();
 	$showall = JRequest::getBool ('showall', FALSE);
 	$ratingWidth = $maxrating * 24;
@@ -51,10 +50,7 @@ if ($this->showReview) { ?>
 					$color = 'normal';
 				} else {
 					$color = 'highlight';
-				}
-
-				/* Check if user already commented */
-				// if ($review->virtuemart_userid == $this->user->id ) {
+				}				
 				if ($review->created_by == $this->user->id && !$review->review_editable) {
 					$review_editable = FALSE;
 				}
