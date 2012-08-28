@@ -12,7 +12,7 @@ function build_list(id, custom_id, frefix){
 	jQuery('#'+ id +' option').each(function(){		
 		var text = jQuery(this).text();
 		var value = jQuery(this).val();
-		str += '<li class="custom-fields-item"><a href="#" data="'+ value +'" class="'+ value +'" id="'+ frefix + i +'">'+ text + '</a></li>';
+		str += '<li class="custom-fields-item"><a href="#" data="'+ value +'" class="'+ value.toLowerCase() +'" id="'+ frefix + i +'">'+ text + '</a></li>';
 		i +=1;
 	});	
 	str += '</ul>';
