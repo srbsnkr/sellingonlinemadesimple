@@ -315,13 +315,13 @@ class testimonialController extends JController
 
 			  
 
-			  $image->square_crop($file['tmp_name'], $thumb_dest, $thumb_size = 100, $jpg_quality = 90);
+			  //$image->square_crop($file['tmp_name'], $thumb_dest, $thumb_size = 100, $jpg_quality = 90);
 
 			  $image->square_crop($file['tmp_name'], $thumb_dest50, $thumb_size = 50, $jpg_quality = 90);
 
 			  $image->load($file['tmp_name']);
 
-			  $image->resizeToWidth(600);
+			  //$image->resizeToWidth(600);
 
 			  $image->save($dest);
 
