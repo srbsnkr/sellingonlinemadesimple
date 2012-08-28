@@ -47,3 +47,10 @@ jQuery("select#virtuemart_currency_id").change(function(){
 
 jQuery("ul#color-picker li:first").addClass("active");
 jQuery("ul#avaible-size li:first").addClass("active");
+
+//edit module login in top menu
+if(jQuery("#login-form div:first").hasClass("login-greeting")){
+	var text = jQuery("#login-form .login-greeting").text();
+	jQuery(".item551 a span.titreck").text(text);
+	jQuery(".item552 a span.titreck").html("");
+}
