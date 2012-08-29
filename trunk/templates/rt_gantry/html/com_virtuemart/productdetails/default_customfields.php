@@ -24,8 +24,10 @@ defined ( '_JEXEC' ) or die ( 'Restricted access' );
 	    <?php
 	    $custom_title = null;
 	    foreach ($this->product->customfieldsSorted[$this->position] as $field) {
-	    	if ( $field->is_hidden ) //OSP http://forum.virtuemart.net/index.php?topic=99320.0
-	    		continue;
+	    	if ( $field->is_hidden ){ ?>
+				<span class="product-field-display-hidden"><?php echo $field->display ?></span>
+				<?php continue;	
+			}	    					
 			if ($field->display) {
 	    ?><div class="product-field product-field-type-<?php echo $field->field_type ?>">
 		    <?php if ($field->custom_title != $custom_title) { ?>

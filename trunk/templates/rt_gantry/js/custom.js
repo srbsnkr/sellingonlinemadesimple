@@ -3,7 +3,7 @@ var arr_name = new Array("shop", "blog", "testimonials");
 var i = 0;
 jQuery("#rt-content-bottom").children().each(function(){	
 	jQuery(this).children().addClass(arr_name[i++]);
-})
+});
 
 function build_list(id, custom_id, frefix){
 	var str = '<ul id="'+ custom_id +'">';
@@ -31,7 +31,12 @@ function set_value(id, id_select, obj){
 	jQuery("#"+ id_select).val(color_value);				
 }
 
-jQuery("a[id^=color_]").live('click', function(){
+jQuery("a[id^=color_]").live('click', function(){	
+	var image = jQuery(this).attr("id").replace("color_","");	
+	var name = jQuery(".product-field-display-hidden").eq(image-1).text();
+	var url_host = location.href;
+	url_host = url_host.substring(0,url_host.search("index.php"));
+	jQuery("img#medium-image").attr("src",url_host + "/images/stories/virtuemart/product/" + name);
 	set_value("color-picker", id_list_color, this);	
 	return false;
 });
@@ -54,3 +59,4 @@ if(jQuery("#login-form div:first").hasClass("login-greeting")){
 	jQuery(".item551 a span.titreck").text(text);
 	jQuery(".item552 a span.titreck").html("");
 }
+//--end edit
