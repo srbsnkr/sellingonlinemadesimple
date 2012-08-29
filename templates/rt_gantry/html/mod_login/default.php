@@ -52,7 +52,7 @@ JHtml::_('behavior.keepalive');
 	</p>
 	<?php if (JPluginHelper::isEnabled('system', 'remember')) : ?>
 	<p id="form-login-remember">
-		<input id="modlgn-remember" type="checkbox" name="remember" class="inputbox" value="yes"/>
+		<input id="modlgn-remember" type="checkbox" name="remember" class="inputbox" value="yes" style="position:static !important;"/>
 		<label for="modlgn-remember"><?php echo JText::_('MOD_LOGIN_REMEMBER_ME') ?></label>
 	</p>
 	<?php endif; ?>

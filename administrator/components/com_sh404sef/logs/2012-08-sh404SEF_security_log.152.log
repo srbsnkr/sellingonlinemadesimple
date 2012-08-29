@@ -1,2 +1,3 @@
 Date	Time	Cause	IP	Name	User agent	Request method	Request URI	Comment
 2012-08-27	06:34:13	Var not numeric: limit in URL	::1	HOAIPHONG-PC	Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.1 (KHTML, like Gecko) Chrome/21.0.1180.83 Safari/537.1	GET	/sellingonlinemadesimple/index.php/component/virtuemart/womens-bailey-button-triplet-12012-08-27-02-14-13-4-detail?limitstart=0&limit=int&showall=1	
+2012-08-29	06:05:58	Var not numeric: limit in URL	::1	qhvic-PC	Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; Trident/5.0)	GET	/sellingonlinemadesimple/index.php/component/search/?limit=int&virtuemart_product_id=6&virtuemart_category_id=2&format=opensearch	
