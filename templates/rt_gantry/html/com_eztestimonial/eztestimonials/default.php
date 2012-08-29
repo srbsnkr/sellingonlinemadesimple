@@ -89,9 +89,9 @@ if($hideaddbutton==0)
 	<span>Testimonials</span>
 </h2>
 
-<div align="right">
+<div align="right" style="display:none;">
 
-<div class="addbutton" style="display:none">
+<div class="addbutton">
 
 <a href ="<?php echo $formlink; ?>"><?php echo JText::_('COM_TESTIMONIALS_ADDTESTIMONIAL'); ?></a>
 
