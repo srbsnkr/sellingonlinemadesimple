@@ -20,15 +20,6 @@ $params		= $this->item->params;
 $canEdit	= $this->item->params->get('access-edit');
 $user		= JFactory::getUser();
 ?>
-<?php #var_dump($this->item->id); ?>
-<?php 
-	$temp_url = $this->item->images; 	
-	$temp_url = str_replace("\"","",$temp_url);	
-	$temp_array = explode(":",$temp_url);
-	$temp_array = explode(",",$temp_array[1]);
-	$image_url = $temp_array[0];	
-?>
-
 <?php if($this->item->id == 75): ?>
 <?php /** Begin Article Title **/ if ($params->get('show_title')) : ?>
 <h2 class="title">
@@ -41,7 +32,7 @@ $user		= JFactory::getUser();
 </h2>
 <?php /** End Article Title **/ endif; ?>
 <div class="image-left-article">
-	<img src="<?php echo $image_url; ?>" alt="" />
+	<img src="images/aboutus-image.png" alt="" />
 </div>
 <div class="content-article">
 	<?php echo $this->item->event->beforeDisplayContent; ?>
